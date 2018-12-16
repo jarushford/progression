@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  background: $darkGrey;
+  opacity: .94;
+  padding-left: 107px;
+}
+
+.logo {
+  width: 144px;
+  height: 107px;
+  background: url('./assets/progressionLogo.png');
+  background-size: cover;
+  position: absolute;
+  top: -36px;
+  left: -36px;
+}
+
+.nav-item {
+  color: $text;
+  text-decoration: none;
+  font-size: 2rem;
+  height: 88px;
+  line-height: 280%;
+  width: 200px;
+  text-align: center;
+  transition: .3s ease;
+
+  &:hover {
+    background: $lightGrey;
+    color: $darkGrey;
+  }
+}
+
+.active,
+.active:hover {
+  color: $accent;
+}
