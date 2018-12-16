@@ -12,7 +12,7 @@ export default class App extends Component {
       userTraining: {},
       userProjects: {},
       userAscents: {},
-      userHomeSetting: ''
+      boulder: true,
     }
   }
 
@@ -25,12 +25,25 @@ export default class App extends Component {
     })
   }
 
+  toggleHomeScreen = (e) => {
+    this.setState({
+      boulder: eval(e.target.value)
+    })
+  }
+
   render() {
+    const { boulder } = this.state 
     return (
-      <div className="app">
+      <div className={`app ${boulder && 'boulder'}`}>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/" 
+            render={() => (
+              <Home
+                toggleHomeScreen={this.toggleHomeScreen}
+                boulder={boulder}
+              />)}
+          />
           <Route path="/train" />
           <Route path="/projects" />
           <Route path="/ascents" />

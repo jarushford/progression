@@ -14,3 +14,73 @@
     font-weight: 400;
   }
 }
+
+.switcher {
+  float: right;
+  margin: 15px 10px;
+  background: $lightGrey;
+  width: 150px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid $darkGrey;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  transition: .3s;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+input[type=radio]:checked + label {
+  cursor: pointer;
+  background: $darkGrey;
+  color: $text;
+  transition: .3s;
+  border-radius: 8px;
+  box-shadow: inset 0 0 8px 2px rgba(200, 200, 200, 0.3);
+}
+
+input[type=radio]:checked + .sport-label {
+  animation: slideLeft .2s ease;
+}
+
+input[type=radio]:checked + .boulder-label {
+  animation: slideRight .2s ease;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(85px);
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    transform: translateX(0);
+    color: $text;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-85px);
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    transform: translateX(0);
+    color: $text;
+  }
+}

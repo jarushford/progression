@@ -1,6 +1,13 @@
 .app {
   height: 100vh;
   margin: 0;
-  background: url('./assets/terminus.jpg');
+  background: url('./assets/sport.jpg');
   background-size: cover;
+  transition: 1s ease;
+}
+
+.boulder {
+  background: url('./assets/boulder.jpg');
+  background-size: cover;
+  transition: 1s ease;
 }
