@@ -2,3 +2,50 @@ $text: #D9D9D9;
 $darkGrey: #373737;
 $lightGrey: #C4C4C4;
 $accent: #6AB81D;
+$ruleLine: #716D6D;
+
+@mixin button() {
+  cursor: pointer;
+  width: 140px;
+  height: 34px;
+  background: $accent;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  padding-top: 4px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  outline: none;
+}
+
+@mixin pageHeader() {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 15px 15px;
+  border-bottom: 1px solid $ruleLine;
+}
+
+@mixin pageTitle() {
+  color: $text;
+  font-weight: 400;
+  font-size: 2.1rem;
+  margin: 5px 0 0;
+}
+
+@mixin pageBody() {
+  background: $darkGrey;
+  opacity: .965;
+  position: relative;
+  z-index: 1;
+  margin: 120px 50px 50px;
+  border-bottom: 1px solid transparent;
+}
+
+@mixin ascentDetails($color, $size) {
+  color: $color;
+  font-weight: 400;
+  font-size: $size;
+  margin: 20px 0 10px;
+}

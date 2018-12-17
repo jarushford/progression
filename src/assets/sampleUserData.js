@@ -20,6 +20,7 @@ const sampleUserData = {
       movesTotal: 20,
       movesDone: 20,
       highPoint: 10,
+      season: 'Summer',
       sent: false,
       sessions: [
         {
@@ -40,6 +41,7 @@ const sampleUserData = {
       movesTotal: 7,
       movesDone: 5,
       highPoint: 0,
+      season: 'Summer',
       sent: false,
       sessions: [
         {
@@ -56,30 +58,29 @@ const sampleUserData = {
   ascents: [
     {
       name: 'William Shatner',
-      grade: 'V12',
+      grade: 12,
       location: 'Newlin Creek, CO',
       entry: 'Yay, I did it!'
     },
     {
       name: 'Nuthin But Sunshine',
-      grade: 'V13',
+      grade: 13,
       location: 'RMNP, CO',
       entry: 'Finally!'
     },
     {
       name: 'Sabretooth',
-      grade: 'V13',
+      grade: 13,
       location: 'Thunder Ridge, CO',
       entry: 'FA!'
     },
     {
       name: 'Casualties of a Dice Game',
-      grade: 'V10',
+      grade: 10,
       location: 'Newlin Creek, CO',
       entry: 'Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry Long entry'
     }
-  ],
-  homeSetting: 'boulder'
+  ]
 }
 
 export default sampleUserData

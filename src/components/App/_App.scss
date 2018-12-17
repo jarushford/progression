@@ -3,11 +3,16 @@
   margin: 0;
   background: url('./assets/sport.jpg');
   background-size: cover;
+  background-position: center;
   transition: 1s ease;
+  overflow: scroll;
+  position: relative;
+  z-index: 0;
 }
 
 .boulder {
   background: url('./assets/boulder.jpg');
   background-size: cover;
+  background-position-x: 90%;
   transition: 1s ease;
 }

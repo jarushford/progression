@@ -6,15 +6,15 @@ export default function Home({ toggleHomeScreen, boulder }) {
   if (boulder) {
     caption = (
       <div className="caption">
-        <h2>Terminus V12</h2>
-        <h3>Bishop, CA</h3>
+        <h2>Jimmy Webb | Livin' Large | V15</h2>
+        <h3>Rocklands, ZA</h3>
       </div>
     )
   } else {
     caption = (
       <div className="caption">
-        <h2>Everything Is Karate 5.14d</h2>
-        <h3>Bishop, CA</h3>
+        <h2>Margo Hayes | La Rambla | 5.15a</h2>
+        <h3>Siurana, ES</h3>
       </div>
     )
   }

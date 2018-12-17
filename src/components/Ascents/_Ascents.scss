@@ -1,0 +1,51 @@
+.ascents-header {
+  @include pageHeader();
+}
+
+.add-ascent {
+  @include button();
+}
+
+.ascents-title {
+  @include pageTitle();
+}
+
+.ascents {
+  @include pageBody();
+}
+
+.grade-section {
+  margin: 10px 18px 18px;
+
+  h3 {
+    color: $text;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $ruleLine;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+}
+
+.ascent {
+  border-bottom: 1px solid $ruleLine;
+
+  p {
+    color: $text;
+    margin: 0 0 20px 7px;
+  }
+}
+
+.ascent div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ascent-name {
+  @include ascentDetails($accent, 1.7rem);
+}
+
+.ascent-location {
+  @include ascentDetails($text, 1.1rem);
+}

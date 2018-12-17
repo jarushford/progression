@@ -2,9 +2,11 @@
 @import './components/Header/Header';
 @import './components/App/App';
 @import './components/Home/Home';
+@import './components/Ascents/Ascents';
 
 * {
   font-family: 'Rajdhani', sans-serif;
+  box-sizing: border-box;
 }
 
 body {

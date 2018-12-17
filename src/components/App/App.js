@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Header from '../Header/Header'
 import Home from '../Home/Home'
+import Ascents from '../Ascents/Ascents'
 import sampleUserData from '../../assets/sampleUserData'
 import '../../main.scss'
 
@@ -10,9 +11,9 @@ export default class App extends Component {
     super(props)
     this.state = {
       userTraining: {},
-      userProjects: {},
-      userAscents: {},
-      boulder: true,
+      userProjects: [],
+      userAscents: [],
+      boulder: true
     }
   }
 
@@ -20,19 +21,18 @@ export default class App extends Component {
     this.setState({
       userTraining: sampleUserData.trainingData,
       userProjects: sampleUserData.projects,
-      userAscents: sampleUserData.ascents,
-      userHomeSetting: sampleUserData.homeSetting
+      userAscents: sampleUserData.ascents
     })
   }
 
   toggleHomeScreen = (e) => {
-    this.setState({
-      boulder: eval(e.target.value)
-    })
+    e.target.value === 'true'
+      ? this.setState({ boulder: true })
+      : this.setState({ boulder: false })
   }
 
   render() {
-    const { boulder } = this.state 
+    const { boulder, userAscents } = this.state 
     return (
       <div className={`app ${boulder && 'boulder'}`}>
         <Header />
@@ -46,7 +46,9 @@ export default class App extends Component {
           />
           <Route path="/train" />
           <Route path="/projects" />
-          <Route path="/ascents" />
+          <Route path="/ascents"
+            render={() => <Ascents ascents={userAscents} />}
+          />
           <Route path="" />
         </Switch>
       </div>
