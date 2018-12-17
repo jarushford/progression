@@ -8,7 +8,7 @@ export default function App() {
         <NavLink to="/">
           <div className="logo" />
         </NavLink>
-        <NavLink to="/train" className="nav-item"> TRAIN </NavLink>
+        <NavLink to="/training" className="nav-item"> TRAINING </NavLink>
         <NavLink to="/projects" className="nav-item"> PROJECTS </NavLink>
         <NavLink to="/ascents" className="nav-item"> ASCENTS </NavLink>
       </div>

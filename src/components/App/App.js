@@ -44,7 +44,7 @@ export default class App extends Component {
                 boulder={boulder}
               />)}
           />
-          <Route path="/train" />
+          <Route path="/training" />
           <Route path="/projects" />
           <Route path="/ascents"
             render={() => <Ascents ascents={userAscents} />}

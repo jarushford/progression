@@ -41,6 +41,7 @@ $ruleLine: #716D6D;
   z-index: 1;
   margin: 120px 50px 50px;
   border-bottom: 1px solid transparent;
+  animation: fadeIn .3s ease;
 }
 
 @mixin ascentDetails($color, $size) {
@@ -48,4 +49,13 @@ $ruleLine: #716D6D;
   font-weight: 400;
   font-size: $size;
   margin: 20px 0 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
