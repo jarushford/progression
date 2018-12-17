@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Home from '../Home/Home'
 import Ascents from '../Ascents/Ascents'
 import Projects from '../Projects/Projects'
+import ProjectPage from '../ProjectPage/ProjectPage'
 import sampleUserData from '../../assets/sampleUserData'
 import '../../main.scss'
 
@@ -49,6 +50,13 @@ export default class App extends Component {
           <Route exact path="/projects"
             render={() => <Projects projects={userProjects} />}
           />
+          <Route path="/projects/:name" render={({ match }) => {
+            const { name } = match.params
+            const currentProject = userProjects.find(project =>
+              project.name === name
+            )
+            return <ProjectPage project={currentProject} />
+          }}/>
           <Route path="/ascents"
             render={() => <Ascents ascents={userAscents} />}
           />
