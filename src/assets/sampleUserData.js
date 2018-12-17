@@ -14,7 +14,7 @@ const sampleUserData = {
   projects: [
     {
       name: 'Big Worm',
-      grade: 'V14',
+      grade: 14,
       location: 'Mt. Evans, CO',
       priority: 9,
       movesTotal: 20,
@@ -35,7 +35,7 @@ const sampleUserData = {
     },
     {
       name: 'Top Notch',
-      grade: 'V13',
+      grade: 13,
       location: 'RMNP, CO',
       priority: 7,
       movesTotal: 7,
@@ -63,7 +63,7 @@ const sampleUserData = {
       entry: 'Yay, I did it!'
     },
     {
-      name: 'Nuthin But Sunshine',
+      name: 'Nuthin\' But Sunshine',
       grade: 13,
       location: 'RMNP, CO',
       entry: 'Finally!'

@@ -1,0 +1,45 @@
+.projects-header {
+  @include pageHeader();
+}
+
+.add-project {
+  @include button();
+}
+
+.projects-title {
+  @include pageTitle();
+}
+
+.projects {
+  @include pageBody();
+  padding-bottom: 15px;
+}
+
+.project-name {
+  @include ascentDetails($accent, 1.7rem);
+  margin: 10px 0 22px;
+  transition: .3s ease;
+}
+
+.project-location,
+.project-grade {
+  @include ascentDetails($text, 1.1rem);
+  margin: 10px 15px 22px;
+}
+
+.project,
+.project div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project {
+  margin: 15px;
+  border-bottom: 1px solid $ruleLine;
+  cursor: pointer;
+
+  &:hover .project-name {
+    color: $text;
+  }
+}

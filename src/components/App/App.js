@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Header from '../Header/Header'
 import Home from '../Home/Home'
 import Ascents from '../Ascents/Ascents'
+import Projects from '../Projects/Projects'
 import sampleUserData from '../../assets/sampleUserData'
 import '../../main.scss'
 
@@ -32,7 +33,7 @@ export default class App extends Component {
   }
 
   render() {
-    const { boulder, userAscents } = this.state 
+    const { boulder, userAscents, userProjects } = this.state 
     return (
       <div className={`app ${boulder && 'boulder'}`}>
         <Header />
@@ -45,7 +46,9 @@ export default class App extends Component {
               />)}
           />
           <Route path="/training" />
-          <Route path="/projects" />
+          <Route path="/projects"
+            render={() => <Projects projects={userProjects} />}
+          />
           <Route path="/ascents"
             render={() => <Ascents ascents={userAscents} />}
           />
