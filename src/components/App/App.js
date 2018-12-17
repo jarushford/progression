@@ -46,7 +46,7 @@ export default class App extends Component {
               />)}
           />
           <Route path="/training" />
-          <Route path="/projects"
+          <Route exact path="/projects"
             render={() => <Projects projects={userProjects} />}
           />
           <Route path="/ascents"

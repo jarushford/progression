@@ -1,17 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import gradeConverter from '../../assets/gradeConverter'
 import '../../main.scss'
 
 export default function Projects({ projects }) {
   const projectsRender = projects.map(project => {
     return (
-      <article className="project">
-        <div>
-          <h2 className="project-name">{project.name}</h2>
-          <h5 className="project-grade">{gradeConverter[project.grade]}</h5>
-        </div>
-        <h5 className="project-location">{project.location}</h5>
-      </article>
+      <Link to={`projects/${project.name}`} className="project-link">
+        <article className="project">
+          <div>
+            <h2 className="project-name">{project.name}</h2>
+            <h5 className="project-grade">{gradeConverter[project.grade]}</h5>
+          </div>
+          <h5 className="project-location">{project.location}</h5>
+        </article>
+      </Link>
     )
   })
 
