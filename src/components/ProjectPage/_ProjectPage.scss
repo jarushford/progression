@@ -1,0 +1,30 @@
+.project-header {
+  @include pageHeader();
+}
+
+.add-project,
+.add-progress,
+.add-session {
+  @include button();
+}
+
+.project-priority {
+  @include ascentDetails($accent, 1.7rem);
+  margin: 10px;
+}
+
+.project-page {
+  @include pageBody();
+  padding-bottom: 15px;
+}
+
+.proj-location,
+.proj-grade {
+  @include ascentDetails($text, 1.1rem);
+  margin: 10px;
+}
+
+.proj-name {
+  @include ascentDetails($accent, 1.7rem);
+  margin: 10px 0;
+}

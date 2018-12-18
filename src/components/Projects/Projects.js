@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import gradeConverter from '../../assets/gradeConverter'
+import { uid } from 'react-uid'
 import '../../main.scss'
 
 export default function Projects({ projects }) {
   const projectsRender = projects.map(project => {
+    const key = uid(project)
     return (
-      <Link to={`projects/${project.name}`} className="project-link">
+      <Link to={`/projects/${project.name}`} key={key} className="project-link">
         <article className="project">
           <div>
             <h2 className="project-name">{project.name}</h2>

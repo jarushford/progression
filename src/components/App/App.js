@@ -34,17 +34,18 @@ export default class App extends Component {
   }
 
   render() {
-    const { boulder, userAscents, userProjects } = this.state 
+    const { boulder, userAscents, userProjects } = this.state
     return (
       <div className={`app ${boulder && 'boulder'}`}>
         <Header />
         <Switch>
-          <Route exact path="/" 
+          <Route exact path="/"
             render={() => (
               <Home
                 toggleHomeScreen={this.toggleHomeScreen}
                 boulder={boulder}
-              />)}
+              />
+            )}
           />
           <Route path="/training" />
           <Route exact path="/projects"
