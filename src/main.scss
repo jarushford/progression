@@ -2,9 +2,10 @@
 @import './components/Header/Header';
 @import './containers/App/App';
 @import './components/Home/Home';
-@import './components/Ascents/Ascents';
-@import './components//Projects/Projects';
-@import './components//ProjectPage/ProjectPage';
+@import './containers/Ascents/Ascents';
+@import './containers/Projects/Projects';
+@import './containers/Training/Training';
+@import './components/ProjectPage/ProjectPage';
 
 * {
   font-family: 'Rajdhani', sans-serif;

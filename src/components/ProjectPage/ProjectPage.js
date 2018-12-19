@@ -20,7 +20,7 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         <button className="add-project">Back to Projects</button>
       </div>
       <div className="project-controls">
-        <p>{project.caption}</p>
+        <p className="project-caption">{project.caption}</p>
         <div className="progress-meter">
           <h3>Season: {project.season}</h3>
           {project.highPoint / project.movesTotal}

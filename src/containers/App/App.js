@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Home from '../../components/Home/Home'
+import Training from '../Training/Training'
 import Ascents from '../Ascents/Ascents'
 import Projects from '../Projects/Projects'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
@@ -31,7 +32,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/training" />
+          <Route path="/training" component={Training} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/projects/:name" render={({ match }) => {
             const { name } = match.params

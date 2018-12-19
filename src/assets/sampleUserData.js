@@ -16,7 +16,7 @@ const sampleUserData = {
       name: 'Big Worm',
       grade: 14,
       location: 'Mt. Evans, CO',
-      cpation: 'Really psyched on this one, sweet compression on awesome holds. Not necessarily my style but I had a lot of fun on it the first session and the setting is unreal.',
+      caption: 'Really psyched on this one, sweet compression on awesome holds. Not necessarily my style but I had a lot of fun on it the first session and the setting is unreal.',
       priority: 9,
       movesTotal: 20,
       movesDone: 20,
