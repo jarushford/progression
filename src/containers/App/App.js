@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     const { projects, disciplineBoulder } = this.props
 
-    if (!this.props.projects) {
+    if (!projects) {
       return <div>Loading...</div>
     }
 
@@ -42,7 +42,7 @@ class App extends Component {
             return <ProjectPage project={currentProject} />
           }}/>
           <Route path="/ascents" component={Ascents} />
-          <Route path="" />
+          <Route path="" render={() => <div>Error!</div>} />
         </Switch>
       </div>
     )
