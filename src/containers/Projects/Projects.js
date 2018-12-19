@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import gradeConverter from '../../assets/gradeConverter'
+import { connect }  from 'react-redux';
+import { withRouter } from 'react-router-dom'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
-export default function Projects({ projects }) {
+function Projects({ projects }) {
   const projectsRender = projects.map(project => {
     const key = uid(project)
     return (
@@ -30,3 +32,9 @@ export default function Projects({ projects }) {
     </section>
   )
 }
+
+const mapStateToProps = (state) => ({
+  projects: state.projects
+})
+
+export default withRouter(connect(mapStateToProps)(Projects))

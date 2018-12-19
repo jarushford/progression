@@ -1,7 +1,7 @@
 import React from 'react'
 import gradeConverter from '../../assets/gradeConverter'
 
-export default function ProjectPage({ project = {} }) {
+export default function ProjectPage({ project = { sessions: [] } }) {
   let sentStatus
   if (project.sent) {
     sentStatus = <h3>SENT!</h3>
@@ -23,8 +23,8 @@ export default function ProjectPage({ project = {} }) {
         <p>{project.caption}</p>
         <div className="progress-meter">
           <h3>Season: {project.season}</h3>
-          {project.movesTotal / project.highPoint}
-          {project.movesTotal / project.movesDone}
+          {project.highPoint / project.movesTotal}
+          {project.movesDone/ project.movesTotal}
         </div>
         <div className="project-actions">
           <button className="add-progress">Add Progress</button>

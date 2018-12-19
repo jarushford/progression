@@ -1,9 +1,12 @@
 import React from 'react'
 import '../../main.scss'
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom'
+import * as ACTIONS from '../../actions/index'
 
-export default function Home({ toggleHomeScreen, boulder }) {
+function Home({ disciplineBoulder, toggleDiscipline }) {
   let caption
-  if (boulder) {
+  if (disciplineBoulder) {
     caption = (
       <div className="caption">
         <h2>Jimmy Webb | Livin' Large | V15</h2>
@@ -26,21 +29,29 @@ export default function Home({ toggleHomeScreen, boulder }) {
           type="radio"
           name="style"
           id="sport"
-          value={false}
-          defaultChecked={!boulder}
-          onClick={toggleHomeScreen}
+          defaultChecked={!disciplineBoulder}
+          onClick={() => toggleDiscipline(false)}
         />
         <label htmlFor="sport" className="sport-label">sport</label>
         <input
           type="radio"
           name="style"
           id="boulder"
-          value={true}
-          defaultChecked={boulder}
-          onClick={toggleHomeScreen}/>
+          defaultChecked={disciplineBoulder}
+          onClick={() => toggleDiscipline(true)}/>
         <label htmlFor="boulder" className="boulder-label">boulder</label>
       </div>
       {caption}
     </div>
   )
 }
+
+const mapStateToProps = (state) => ({
+  disciplineBoulder: state.disciplineBoulder
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleDiscipline: (isBoulder) => dispatch(ACTIONS.toggleDiscipline(isBoulder))
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home))

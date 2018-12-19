@@ -1,8 +1,10 @@
 import React from 'react'
-import GradeSection from '../GradeSection/GradeSection'
+import GradeSection from '../../components/GradeSection/GradeSection'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import '../../main.scss'
 
-export default function Ascents({ ascents }) {
+function Ascents({ ascents }) {
   const gradeDivisions = ascents.reduce((grades, ascent) => {
     if (!grades[ascent.grade]) {
       grades[ascent.grade] = []
@@ -32,3 +34,9 @@ export default function Ascents({ ascents }) {
     </section>
   )
 }
+
+const mapStateToProps = (state) => ({
+  ascents: state.ascents
+})
+
+export default withRouter(connect(mapStateToProps)(Ascents))
