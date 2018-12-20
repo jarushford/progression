@@ -5,12 +5,15 @@ import '../../main.scss'
 
 function Training({ trainingData }) {
   const date = new Date()
-  const today = `${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`
+  const today = 
+    `${('0' + (date.getMonth() + 1)).slice(-2)}/`
+      + `${('0' + (date.getDate())).slice(-2)}/`
+      + `${date.getFullYear()}`
   const todayIndex = date.getDay()
   const todayM = today.substring(0, 2)
   const todayY = today.substring(6)
-  const endOfMonthIndex = ['25', '26', '27', '28', '29', '30', '31', '1', '2', '3', '4', '5','6']
-  let weekIndex = { 0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '' }
+  const endOfMonthIndex = ['25', '26', '27', '28', '29', '30', '31', '01', '02', '03', '04', '05','06']
+  const weekIndex = { 0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '' }
 
   Object.keys(trainingData).forEach(key => {
     const keyM = key.substring(0, 2)
@@ -22,12 +25,10 @@ function Training({ trainingData }) {
           <p>{trainingData[key].description}</p>
         </li>
       )
+    } else if (endOfMonthIndex.includes(today.substring(3, 5))) {
+      Object.assign(weekIndex, endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex))
     } else if (keyM === todayM && keyY === todayY) {
-      if (endOfMonthIndex.includes(date.getDate())) {
-        weekIndex = endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex)
-      } else {
-        weekIndex = daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData)
-      }
+      Object.assign(weekIndex, daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData))
     }
   })
 
@@ -78,7 +79,7 @@ const mapStateToProps = (state) => ({
 
 export default withRouter(connect(mapStateToProps)(Training))
 
-/******************
+/*******************
  PRIVATE
  *******************/
 
@@ -106,13 +107,22 @@ const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData) => {
 const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
-  const daysInMonth = daysInThisMonth()
-  const distanceUp = daysInMonth - todayDay + keyDay
-  const distanceDown = daysInPreviousMonth - keyDay + todayDay
-  if (keyDay < todayDay && distanceUp < 6 - todayIndex) {
-    // If at end of month, for start of next month
-  } else if (keyDay > todayDay && distanceDown < todayIndex) {
-    // If at start of month, for end of previous month
+  const distanceUp = daysInThisMonth() - parseInt(todayDay) + parseInt(keyDay)
+  const distanceDown = daysInPreviousMonth() - parseInt(keyDay) + parseInt(todayDay)
+  if (keyDay < todayDay && distanceUp <= 6 - todayIndex) {
+    weekIndex[parseInt(todayIndex) + parseInt(distanceUp)] = (
+      <li className="workout-item">
+        <h3>{trainingData[key].type}</h3>
+        <p>{trainingData[key].description}</p>
+      </li>
+    )
+  } else if (keyDay > todayDay && distanceDown <= todayIndex) {
+    weekIndex[parseInt(todayIndex) - parseInt(distanceDown)] = (
+      <li className="workout-item">
+        <h3>{trainingData[key].type}</h3>
+        <p>{trainingData[key].description}</p>
+      </li>
+    )
   }
 }
 
