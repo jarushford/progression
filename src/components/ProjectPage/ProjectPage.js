@@ -28,10 +28,14 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         </div>
         <div className="project-actions">
           <button className="add-progress">Add Progress</button>
+          <button className="add-milestone">Add Milestone</button>
           <button className="add-session">Add Session</button>
         </div>
       </div>
       <div className="project-entries">
+        <h1 className="proj-milestones">Milestones +</h1>
+
+        <h1 className="proj-journal">Journal -</h1>
         {project.sessions.map((session) => {
           return (
             <div className="project-entry">

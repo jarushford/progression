@@ -5,7 +5,8 @@
 
 .add-project,
 .add-progress,
-.add-session {
+.add-session,
+.add-milestone {
   @include button();
 }
 
@@ -25,9 +26,16 @@
   margin: 10px;
 }
 
-.proj-name {
+.proj-name,
+.proj-milestones,
+.proj-journal {
   @include ascentDetails($accent, 1.7rem);
   margin: 10px 0;
+}
+
+.proj-milestones,
+.proj-journal {
+  cursor: pointer;
 }
 
 .project-controls {
@@ -59,6 +67,10 @@
   margin: 20px 0;
   color: $text;
   font-size: 1.1rem;
+}
+
+.project-entries {
+  margin: 15px;
 }
 
 .project-entry {

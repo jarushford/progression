@@ -1,7 +1,7 @@
 export const trainingDataReducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_TRAINING':
-      return action.data
+      return {...state, ...action.data}
     default:
       return state
   }
@@ -10,7 +10,7 @@ export const trainingDataReducer = (state = {}, action) => {
 export const projectsReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_PROJECTS':
-      return action.data
+      return [...state, ...action.data]
     default:
       return state
   }
@@ -19,7 +19,7 @@ export const projectsReducer = (state = [], action) => {
 export const ascentsReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_ASCENTS':
-      return action.data
+      return [...state, ...action.data]
     default:
       return state
   }

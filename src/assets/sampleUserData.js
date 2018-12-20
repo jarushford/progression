@@ -1,11 +1,11 @@
 const sampleUserData = {
   trainingData: {
-    '12/13/18': {
+    '11/19/2018': {
       type: 'Power',
       description: 'Hangboard, 7on 3off, x10, 3min rest',
       completed: true
     },
-    '12/15/18': {
+    '11/21/2018': {
       type: 'Fitness',
       description: 'Ring core, 7 flys, x5, 2min rest',
       completed: false

@@ -1,0 +1,66 @@
+.training-container {
+  @include pageBody();
+  padding-bottom: 15px;
+  max-width: 1110px;
+  margin: 120px auto;
+}
+
+.training-header {
+  @include pageHeader();
+}
+
+.add-workout {
+  @include button();
+}
+
+.training-title {
+  @include pageTitle();
+}
+
+.training {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.day {
+  min-width: 130px;
+  height: 300px;
+  margin: 10px;
+  background: $lightGrey;
+  border-radius: 4px;
+  
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 7px;
+    font-weight: 400;
+    color: $accent;
+    background: $midGrey;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    width: 130px;
+  }
+}
+
+.workout-item {
+  h3 {
+    color: $accent;
+    margin: 0;
+  }
+
+  p {
+    margin: 7px 0;
+  }
+}
+
+.highlighted {
+  border: 3px solid $accent;
+  box-shadow: 0 0 5px 1px $accent;
+}
