@@ -9,6 +9,7 @@ function Training({ trainingData }) {
   const todayIndex = date.getDay()
   const todayM = today.substring(0, 2)
   const todayY = today.substring(6)
+  const endOfMonthIndex = ['25', '26', '27', '28', '29', '30', '31', '1', '2', '3', '4', '5','6']
   let weekIndex = { 0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '' }
 
   Object.keys(trainingData).forEach(key => {
@@ -22,7 +23,11 @@ function Training({ trainingData }) {
         </li>
       )
     } else if (keyM === todayM && keyY === todayY) {
-      weekIndex = daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData)
+      if (endOfMonthIndex.includes(date.getDate())) {
+        weekIndex = endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex)
+      } else {
+        weekIndex = daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData)
+      }
     }
   })
 
@@ -96,6 +101,29 @@ const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData) => {
     )
   }
   return weekIndex
+}
+
+const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex) => {
+  const keyDay = key.substring(3, 5)
+  const todayDay = today.substring(3, 5)
+  const daysInMonth = daysInThisMonth()
+  const distanceUp = daysInMonth - todayDay + keyDay
+  const distanceDown = daysInPreviousMonth - keyDay + todayDay
+  if (keyDay < todayDay && distanceUp < 6 - todayIndex) {
+    // If at end of month, for start of next month
+  } else if (keyDay > todayDay && distanceDown < todayIndex) {
+    // If at start of month, for end of previous month
+  }
+}
+
+const daysInThisMonth = () => {
+  const now = new Date()
+  return new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate()
+}
+
+const daysInPreviousMonth = () => {
+  const now = new Date()
+  return new Date(now.getFullYear(), now.getMonth(), 0).getDate()
 }
 
 const highlightHelper = (day) => {
