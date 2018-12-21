@@ -104,7 +104,7 @@ const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData) => {
   return weekIndex
 }
 
-const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex) => {
+const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
   const distanceUp = daysInThisMonth() - parseInt(todayDay) + parseInt(keyDay)

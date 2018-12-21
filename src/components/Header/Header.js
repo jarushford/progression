@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import '../../main.scss'
 
 export default function App() {
@@ -11,6 +11,7 @@ export default function App() {
         <NavLink to="/training" className="nav-item"> TRAINING </NavLink>
         <NavLink to="/projects" className="nav-item"> PROJECTS </NavLink>
         <NavLink to="/ascents" className="nav-item"> ASCENTS </NavLink>
+        <Link to='login'><button>Login / Sign Up</button></Link>
       </div>
     )
 }

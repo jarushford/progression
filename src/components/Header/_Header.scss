@@ -8,6 +8,13 @@
   z-index: 2;
   width: 100%;
   box-shadow: 0 1px 30px 1px rgba(200, 200, 200, 0.1);
+
+  button {
+    @include button();
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
 }
 
 .logo {

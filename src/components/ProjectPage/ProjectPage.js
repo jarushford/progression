@@ -1,5 +1,6 @@
 import React from 'react'
 import gradeConverter from '../../assets/gradeConverter'
+import { Link } from 'react-router-dom'
 
 export default function ProjectPage({ project = { sessions: [] } }) {
   let sentStatus
@@ -17,7 +18,9 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         <h5 className="project-priority">{project.priority}</h5>
         <h5 className="proj-location">{project.location}</h5>
         {sentStatus}
-        <button className="add-project">Back to Projects</button>
+        <Link to='/projects'>
+          <button className="add-project">Back to Projects</button>
+        </Link>
       </div>
       <div className="project-controls">
         <p className="project-caption">{project.caption}</p>
