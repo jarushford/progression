@@ -47,3 +47,67 @@
 .active:hover {
   color: $accent;
 }
+
+.current-user {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: flex;
+
+  .fa-user-circle {
+    font-size: 2.7rem;
+    color: $accent;
+    margin-top: 20px;
+  }
+
+  div {
+    margin-top: 20px;
+    transition: .3s ease;
+    border-radius: 6px;
+  }
+  
+  h2 {
+    margin: 3px 5px 0;
+    font-size: 1.2rem;
+    color: $text;
+    text-align: center;
+    transition: .3s ease;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  div:hover {
+    background: $midGrey;
+  }
+
+  .fa-caret-down {
+    transition: .4s ease;
+    padding-right: 2px;
+  }
+
+  div:hover .fa-caret-down {
+    transform: rotate(180deg);
+    padding-bottom: 2px;
+    padding-right: 2px;
+  }
+
+  h2:nth-child(1):hover ~ h2:nth-child(2) {
+    opacity: 1;
+    height: 50px;
+  }
+
+  h2:nth-child(2) {
+    margin-top: 0;
+    background: $midGrey;
+    height: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    transition: .3s ease;
+    
+    &:hover {
+      height: 50px;
+      opacity: 1;
+      color: $accent;
+    }
+  }
+}

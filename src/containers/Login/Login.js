@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addNewUser, loginUser } from '../../utils/apiCalls'
+import { Redirect } from 'react-router-dom'
 import { setUser } from '../../actions'
 
 class Login extends Component {
@@ -11,7 +12,8 @@ class Login extends Component {
       loginPassword: '',
       signUpEmail: '',
       signUpName: '',
-      signUpPassword: ''
+      signUpPassword: '',
+      loggedIn: false
     }
   }
 
@@ -25,6 +27,7 @@ class Login extends Component {
     try {
       const currentUser = await loginUser(user)
       setUser(currentUser)
+      this.setState({ loggedIn: true })
     } catch(error) {
       console.log(error.message)
     }
@@ -41,6 +44,7 @@ class Login extends Component {
     try {
       await addNewUser(user)
       setUser(user)
+      this.setState({ loggedIn: true })
     } catch(error) {
       console.log(error.message)
     }
@@ -54,7 +58,12 @@ class Login extends Component {
   }
 
   render() {
-    const { loginEmail, loginPassword, signUpName, signUpEmail, signUpPassword } = this.state
+    const { loginEmail, loginPassword, signUpName, signUpEmail, signUpPassword, loggedIn } = this.state
+
+    if (loggedIn) {
+      return <Redirect to='/' />
+    }
+
     return (
       <section className="login-section">
         <form onSubmit={this.handleLogin}>
