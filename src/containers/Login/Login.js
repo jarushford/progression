@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { addNewUser, loginUser } from '../../utils/apiCalls'
+import { setUser } from '../../actions'
 
 class Login extends Component {
   constructor() {
@@ -14,6 +16,7 @@ class Login extends Component {
   }
 
   handleLogin = async (e) => {
+    const { setUser } = this.props
     e.preventDefault()
     const user = {
       email: this.state.loginEmail.toLowerCase(),
@@ -21,13 +24,14 @@ class Login extends Component {
     }
     try {
       const currentUser = await loginUser(user)
-
+      setUser(currentUser)
     } catch(error) {
       console.log(error.message)
     }
   }
 
   handleSignUp = async (e) => {
+    const { setUser } = this.props
     e.preventDefault()
     const user = {
       name: this.state.signUpName,
@@ -36,7 +40,7 @@ class Login extends Component {
     }
     try {
       await addNewUser(user)
-
+      setUser(user)
     } catch(error) {
       console.log(error.message)
     }
@@ -54,21 +58,25 @@ class Login extends Component {
     return (
       <section className="login-section">
         <form onSubmit={this.handleLogin}>
+          <h1>Log In</h1>
           <input
             name="loginEmail"
             value={loginEmail}
             onChange={this.handleInput}
             placeholder="email"
+            type="email"
           />
           <input
             name="loginPassword"
             value={loginPassword}
             onChange={this.handleInput}
             placeholder="password"
+            type="password"
           />
           <button>Login</button>
         </form>
         <form onSubmit={this.handleSignUp}>
+          <h1>Sign Up</h1>
           <input
             name="signUpName"
             value={signUpName}
@@ -80,12 +88,14 @@ class Login extends Component {
             value={signUpEmail}
             onChange={this.handleInput}
             placeholder="email"
+            type="email"
           />
           <input
             name="signUpPassword"
             value={signUpPassword}
             onChange={this.handleInput}
             placeholder="password"
+            type="password"
           />
           <button>Sign Up</button>
         </form>
@@ -94,4 +104,8 @@ class Login extends Component {
   }
 }
 
-export default Login
+const mapDispatchToProps = (dispatch) => ({
+  setUser: (user) => dispatch(setUser(user))
+})
+
+export default connect(null, mapDispatchToProps)(Login)

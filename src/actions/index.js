@@ -17,3 +17,8 @@ export const toggleDiscipline = (discipline) => ({
   type: 'TOGGLE_DISCIPLINE',
   discipline
 })
+
+export const setUser = (user) => ({
+  type: 'SET_USER',
+  user
+})

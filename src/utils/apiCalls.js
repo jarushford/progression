@@ -24,5 +24,6 @@ export const loginUser = async (user) => {
   if (!response.ok) {
     throw new Error('Incorrect email or password')
   }
-  return await response.json().data
+  const result = await response.json()
+  return result.data
 }
