@@ -40,32 +40,32 @@ function Training({ trainingData }) {
       </div>
       <div className="training">
         <div className={`day ${highlightHelper('sunday') && 'highlighted'}`}>
-          <h2>Sunday</h2>
+          <h2>Sunday {dateHelper(0)}</h2>
           <ul>{weekIndex[0]}</ul>
         </div>
         <div className={`day ${highlightHelper('monday') && 'highlighted'}`}>
-          <h2>Monday</h2>
+          <h2>Monday {dateHelper(1)}</h2>
           <ul>{weekIndex[1]}</ul>
         </div>
         <div
           className={`day ${highlightHelper('tuesday') && 'highlighted'}`}>
-          <h2>Tuesday</h2>
+          <h2>Tuesday {dateHelper(2)}</h2>
           <ul>{weekIndex[2]}</ul>
         </div>
         <div className={`day ${highlightHelper('wednesday') && 'highlighted'}`}>
-          <h2>Wednesday</h2>
+          <h2>Wednesday {dateHelper(3)}</h2>
           <ul>{weekIndex[3]}</ul>
         </div>
         <div className={`day ${highlightHelper('thursday') && 'highlighted'}`}>
-          <h2>Thursday</h2>
+          <h2>Thursday {dateHelper(4)}</h2>
           <ul>{weekIndex[4]}</ul>
         </div>
         <div className={`day ${highlightHelper('friday') && 'highlighted'}`}>
-          <h2>Friday</h2>
+          <h2>Friday {dateHelper(5)}</h2>
           <ul>{weekIndex[5]}</ul>
         </div>
         <div className={`day ${highlightHelper('saturday') && 'highlighted'}`}>
-          <h2>Saturday</h2>
+          <h2>Saturday {dateHelper(6)}</h2>
           <ul>{weekIndex[6]}</ul>
         </div>
       </div>
@@ -152,4 +152,27 @@ const highlightHelper = (day) => {
     return true
   }
   return false
+}
+
+const dateHelper = (index) => {
+  const endOfMonthIndex = ['25', '26', '27', '28', '29', '30', '31', '1', '2', '3', '4', '5', '6']
+  const date = new Date()
+  const day = date.getDate()
+  const todayIndex = date.getDay()
+  let adjustment
+
+  if (!endOfMonthIndex.includes(day.toString())) {
+    if (index < todayIndex) {
+      adjustment = day - (todayIndex - index)
+    } else {
+      adjustment = day + (index - todayIndex)
+    }
+  } else {
+    if (index < todayIndex && todayIndex - index >= day) {
+      adjustment = daysInPreviousMonth() - ((todayIndex - day) - index)
+    } else {
+      adjustment = day - (todayIndex - index)
+    }
+  }
+  return adjustment
 }

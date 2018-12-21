@@ -52,9 +52,7 @@ class Login extends Component {
 
   handleInput = (e) => {
     const { name, value } = e.target
-    this.setState({
-      [name]: value
-    })
+    this.setState({ [name]: value })
   }
 
   render() {
