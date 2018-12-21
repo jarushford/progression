@@ -77,6 +77,10 @@
     cursor: pointer;
   }
 
+  h2:nth-child(1) {
+    font-weight: 400;
+  }
+
   div:hover {
     background: $midGrey;
   }

@@ -1,8 +1,8 @@
 @import './variables';
-@import './components/Header/Header';
 @import './containers/App/App';
-@import './components/Home/Home';
 @import './containers/Ascents/Ascents';
+@import './containers/Home/Home';
+@import './containers/Header/Header';
 @import './containers/Projects/Projects';
 @import './containers/Training/Training';
 @import './components/ProjectPage/ProjectPage';
