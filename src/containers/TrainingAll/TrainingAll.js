@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect }  from 'react-redux';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import { toggleComplete } from '../../actions'
 import { uid } from 'react-uid'
 import '../../main.scss'
@@ -24,7 +24,12 @@ function TrainingAll({ trainingData, toggleComplete }) {
     <section className="projects workout">
       <div className="projects-header workout">
         <h1 className="projects-title workout">ALL WORKOUTS</h1>
-        <button className="add-workout">Add Workout</button>
+        <div className="buttons">
+          <Link to='/training'>
+            <button className="view-workouts">Back To Calendar</button>
+          </Link>
+          <button className="add-workout">Add Workout</button>
+        </div>
       </div>
       {trainingRender}
     </section>
