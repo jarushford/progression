@@ -9,8 +9,20 @@
   @include pageHeader();
 }
 
-.add-workout {
+.add-workout,
+.view-workouts {
   @include button();
+}
+
+.view-workouts {
+  font-size: .9rem;
+  margin-right: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .training-title {

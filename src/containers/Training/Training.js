@@ -36,7 +36,10 @@ function Training({ trainingData }) {
     <section className="training-container">
       <div className="training-header">
         <h1 className="training-title">TRAINING</h1>
-        <button className="add-workout">Add Workout</button>
+        <div className="buttons">
+          <button className="view-workouts">View All Workouts</button>
+          <button className="add-workout">Add Workout</button>
+        </div>
       </div>
       <div className="training">
         <div className={`day ${highlightHelper('sunday') && 'highlighted'}`}>
