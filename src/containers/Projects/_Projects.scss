@@ -47,3 +47,9 @@
 .project-link {
   text-decoration: none;
 }
+
+.completed { 
+  text-decoration: line-through;
+  text-decoration-color: $text;
+  opacity: .5;
+}

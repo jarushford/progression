@@ -1,9 +1,10 @@
 import React from 'react'
 import { connect }  from 'react-redux';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
+import { toggleComplete } from '../../actions'
 import '../../main.scss'
 
-function Training({ trainingData }) {
+function Training({ trainingData, toggleComplete }) {
   const date = new Date()
   const today = 
     `${('0' + (date.getMonth() + 1)).slice(-2)}/`
@@ -19,16 +20,17 @@ function Training({ trainingData }) {
     const keyM = key.substring(0, 2)
     const keyY = key.substring(6)
     if (key === today) {
+
       weekIndex[todayIndex] = (
-        <li className="workout-item">
+        <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
           <h3>{trainingData[key].type}</h3>
           <p>{trainingData[key].description}</p>
         </li>
       )
     } else if (endOfMonthIndex.includes(today.substring(3, 5))) {
-      Object.assign(weekIndex, endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex))
+      Object.assign(weekIndex, endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex, toggleComplete))
     } else if (keyM === todayM && keyY === todayY) {
-      Object.assign(weekIndex, daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData))
+      Object.assign(weekIndex, daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
     }
   })
 
@@ -37,7 +39,9 @@ function Training({ trainingData }) {
       <div className="training-header">
         <h1 className="training-title">TRAINING</h1>
         <div className="buttons">
-          <button className="view-workouts">View All Workouts</button>
+          <Link to='/training/all'>
+            <button className="view-workouts">View All Workouts</button>
+          </Link>
           <button className="add-workout">Add Workout</button>
         </div>
       </div>
@@ -80,25 +84,29 @@ const mapStateToProps = (state) => ({
   trainingData: state.trainingData
 })
 
-export default withRouter(connect(mapStateToProps)(Training))
+const mapDispatchToProps = (dispatch) => ({
+  toggleComplete: (key) => dispatch(toggleComplete(key))
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Training))
 
 /*******************
  PRIVATE
  *******************/
 
-const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData) => {
+const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
   if (keyDay > todayDay && keyDay - todayDay <= 6 - todayIndex) {
     weekIndex[todayIndex + (keyDay - todayDay)] = (
-      <li className="workout-item">
+      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
         <h3>{trainingData[key].type}</h3>
         <p>{trainingData[key].description}</p>
       </li>
     )
   } else if (keyDay < todayDay && todayDay - keyDay <= todayIndex) {
     weekIndex[todayIndex - (todayDay - keyDay)] = (
-      <li className="workout-item">
+      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
         <h3>{trainingData[key].type}</h3>
         <p>{trainingData[key].description}</p>
       </li>
@@ -107,21 +115,21 @@ const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData) => {
   return weekIndex
 }
 
-const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData) => {
+const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
   const distanceUp = daysInThisMonth() - parseInt(todayDay) + parseInt(keyDay)
   const distanceDown = daysInPreviousMonth() - parseInt(keyDay) + parseInt(todayDay)
   if (keyDay < todayDay && distanceUp <= 6 - todayIndex) {
     weekIndex[parseInt(todayIndex) + parseInt(distanceUp)] = (
-      <li className="workout-item">
+      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
         <h3>{trainingData[key].type}</h3>
         <p>{trainingData[key].description}</p>
       </li>
     )
   } else if (keyDay > todayDay && distanceDown <= todayIndex) {
     weekIndex[parseInt(todayIndex) - parseInt(distanceDown)] = (
-      <li className="workout-item">
+      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
         <h3>{trainingData[key].type}</h3>
         <p>{trainingData[key].description}</p>
       </li>

@@ -3,6 +3,7 @@ import { Switch, Route, withRouter } from 'react-router-dom'
 import Header from '../Header/Header'
 import Home from '../Home/Home'
 import Training from '../Training/Training'
+import TrainingAll from '../TrainingAll/TrainingAll'
 import Ascents from '../Ascents/Ascents'
 import Projects from '../Projects/Projects'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
@@ -34,7 +35,8 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/login" component={Login} />
-          <Route path="/training" component={Training} />
+          <Route exact path="/training" component={Training} />
+          <Route path="/training/all" component={TrainingAll} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/projects/:name" render={({ match }) => {
             const { name } = match.params

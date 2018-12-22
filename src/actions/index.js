@@ -26,3 +26,8 @@ export const setUser = (user) => ({
 export const logoutUser = () => ({
   type: 'LOGOUT_USER'
 })
+
+export const toggleComplete = (key) => ({
+  type: 'TOGGLE_COMPLETE',
+  key
+})

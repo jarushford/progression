@@ -2,6 +2,16 @@ export const trainingDataReducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_TRAINING':
       return {...state, ...action.data}
+    case 'TOGGLE_COMPLETE':
+      const keys = Object.keys(state)
+      return keys.reduce((acc, key) => {
+        if (key === action.key) {
+          acc[key] = {...state[key], completed: !state[key].completed}
+        } else {
+          acc[key] = state[key]
+        }
+        return acc
+      }, {})
     default:
       return state
   }
