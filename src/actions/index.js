@@ -8,6 +8,10 @@ export const getProjects = (data) => ({
   data
 })
 
+export const clearProjects = () => ({
+  type: 'CLEAR_PROJECTS'
+})
+
 export const getAscents = (data) => ({
   type: 'GET_ASCENTS',
   data

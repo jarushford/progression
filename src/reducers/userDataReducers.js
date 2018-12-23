@@ -2,6 +2,8 @@ export const trainingDataReducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_TRAINING':
       return {...state, ...action.data}
+    case 'CLEAR_TRAINING':
+      return {}
     case 'TOGGLE_COMPLETE':
       const keys = Object.keys(state)
       return keys.reduce((acc, key) => {
@@ -21,6 +23,8 @@ export const projectsReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_PROJECTS':
       return [...state, ...action.data]
+    case 'CLEAR_PROJECTS':
+      return []
     default:
       return state
   }

@@ -7,6 +7,7 @@ import TrainingAll from '../TrainingAll/TrainingAll'
 import Ascents from '../Ascents/Ascents'
 import AscentForm from '../Ascents/AscentForm'
 import Projects from '../Projects/Projects'
+import ProjectForm from '../Projects/ProjectForm'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
 import Login from '../Login/Login'
 import sampleUserData from '../../assets/sampleUserData'
@@ -38,6 +39,7 @@ class App extends Component {
           <Route exact path="/training" component={Training} />
           <Route path="/training/all" component={TrainingAll} />
           <Route exact path="/projects" component={Projects} />
+          <Route path="/projects/add" component={ProjectForm} />
           <Route path="/projects/:name" render={({ match }) => {
             const { name } = match.params
             const currentProject = projects.find(project =>

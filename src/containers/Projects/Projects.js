@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import gradeConverter from '../../assets/gradeConverter'
 import { connect }  from 'react-redux';
-import { withRouter } from 'react-router-dom'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
@@ -26,7 +25,9 @@ function Projects({ projects }) {
     <section className="projects">
       <div className="projects-header">
         <h1 className="projects-title">PROJECTS</h1>
-        <button className="add-project">Add Project</button>
+        <Link to='/projects/add'>
+          <button className="add-project">Add Project</button>
+        </Link>
       </div>
       {projectsRender}
     </section>
