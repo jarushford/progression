@@ -5,7 +5,31 @@ import { toggleComplete } from '../../actions'
 import * as Helper from '../../utils/calendarHelpers'
 import '../../main.scss'
 
-function Training({ trainingData, toggleComplete }) {
+function Training({ trainingDataUnclean, toggleComplete }) {
+  if (!Object.keys(trainingDataUnclean).length) {
+    return (
+      <section className="training-container">
+      <div className="training-header">
+        <h1 className="training-title">TRAINING</h1>
+        <div className="buttons">
+          <Link to='/training/all'>
+            <button className="view-workouts">View All Workouts</button>
+          </Link>
+          <Link to='/training/add'>
+            <button className="add-workout">Add Workout</button>
+          </Link>
+        </div>
+      </div>
+      <div className="training"></div>
+    </section>
+    )
+  }
+
+  const keys = Object.keys(trainingDataUnclean)
+  const trainingData = keys.reduce((data, workout) => {
+    data[trainingDataUnclean[workout].workout_date] = trainingDataUnclean[workout]
+    return data
+  }, {})
   const date = new Date()
   const today = 
     `${('0' + (date.getMonth() + 1)).slice(-2)}/`
@@ -42,7 +66,9 @@ function Training({ trainingData, toggleComplete }) {
           <Link to='/training/all'>
             <button className="view-workouts">View All Workouts</button>
           </Link>
-          <button className="add-workout">Add Workout</button>
+          <Link to='/training/add'>
+            <button className="add-workout">Add Workout</button>
+          </Link>
         </div>
       </div>
       <div className="training">
@@ -81,7 +107,7 @@ function Training({ trainingData, toggleComplete }) {
 }
 
 const mapStateToProps = (state) => ({
-  trainingData: state.trainingData
+  trainingDataUnclean: state.trainingData
 })
 
 const mapDispatchToProps = (dispatch) => ({

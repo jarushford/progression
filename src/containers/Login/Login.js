@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom'
 import { setUser } from '../../actions'
 import { fetchAscentsThunk } from '../../thunks/fetchAscents';
 import { fetchProjectsThunk } from '../../thunks/fetchProjects';
+import { fetchWorkoutsThunk } from '../../thunks/fetchWorkouts';
 
 class Login extends Component {
   constructor() {
@@ -20,7 +21,7 @@ class Login extends Component {
   }
 
   handleLogin = async (e) => {
-    const { setUser, fetchAscents, fetchProjects } = this.props
+    const { setUser, fetchAscents, fetchProjects, fetchWorkouts } = this.props
     e.preventDefault()
     const user = {
       email: this.state.loginEmail.toLowerCase(),
@@ -31,6 +32,7 @@ class Login extends Component {
       setUser(currentUser)
       await fetchAscents(currentUser.id)
       await fetchProjects(currentUser.id)
+      await fetchWorkouts(currentUser.id)
       this.setState({ loggedIn: true })
     } catch(error) {
       console.log(error.message)
@@ -38,7 +40,7 @@ class Login extends Component {
   }
 
   handleSignUp = async (e) => {
-    const { setUser, fetchAscents, fetchProjects } = this.props
+    const { setUser, fetchAscents, fetchProjects, fetchWorkouts } = this.props
     e.preventDefault()
     const user = {
       name: this.state.signUpName,
@@ -50,6 +52,7 @@ class Login extends Component {
       setUser(user)
       await fetchAscents(user.id)
       await fetchProjects(user.id)
+      await fetchWorkouts(user.id)
       this.setState({ loggedIn: true })
     } catch(error) {
       console.log(error.message)
@@ -120,7 +123,8 @@ class Login extends Component {
 const mapDispatchToProps = (dispatch) => ({
   setUser: (user) => dispatch(setUser(user)),
   fetchAscents: (id) => dispatch(fetchAscentsThunk(id)),
-  fetchProjects: (id) => dispatch(fetchProjectsThunk(id))
+  fetchProjects: (id) => dispatch(fetchProjectsThunk(id)),
+  fetchWorkouts: (id) => dispatch(fetchWorkoutsThunk(id))
 })
 
 export default connect(null, mapDispatchToProps)(Login)

@@ -27,7 +27,7 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         <div className="progress-meter">
           <h3>Season: {project.season}</h3>
           <span>{project.high_point / project.moves_total}</span>
-          <span>{project.moves_done/ project.moves_total}</span>
+          <span>{project.moves_done / project.moves_total}</span>
         </div>
         <div className="project-actions">
           <button className="add-progress">Add Progress</button>

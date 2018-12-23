@@ -50,7 +50,7 @@ class ProjectForm extends Component {
 
     return (
       <form className="project-form" onSubmit={this.handleSubmit}>
-        <h2>ADD ASCENT</h2>
+        <h2>ADD PROJECT</h2>
         <input name="name"
           value={name}
           onChange={this.handleChange}

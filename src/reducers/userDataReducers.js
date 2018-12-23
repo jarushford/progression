@@ -7,7 +7,7 @@ export const trainingDataReducer = (state = {}, action) => {
     case 'TOGGLE_COMPLETE':
       const keys = Object.keys(state)
       return keys.reduce((acc, key) => {
-        if (key === action.key) {
+        if (state[key].workout_date === action.key) {
           acc[key] = {...state[key], completed: !state[key].completed}
         } else {
           acc[key] = state[key]

@@ -1,6 +1,10 @@
-export const getTrainingData = (data) => ({
+export const getTraining = (data) => ({
   type: 'GET_TRAINING',
   data
+})
+
+export const clearWorkouts = () => ({
+  type: 'CLEAR_WORKOUTS'
 })
 
 export const getProjects = (data) => ({

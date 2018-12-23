@@ -5,20 +5,28 @@ import { toggleComplete } from '../../actions'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
-function TrainingAll({ trainingData, toggleComplete }) {
-  const trainingKeys = Object.keys(trainingData).sort()
-  const trainingRender = trainingKeys.map(workout => {
-    const key = uid(trainingData[workout])
-    return (
-        <article className={`project ${trainingData[workout].completed && 'completed'}`} key={key} onClick={() => toggleComplete(workout)}>
-          <div>
-            <h2 className="project-name">{workout}</h2>
-            <h5 className="project-grade">{trainingData[workout].type}</h5>
-          </div>
-          <h5 className="project-location">{trainingData[workout].description}</h5>
-        </article>
-    )
-  })
+function TrainingAll({ trainingDataUnclean, toggleComplete }) {
+  let trainingRender = <div></div>
+  if (Object.keys(trainingDataUnclean).length) {
+    const keys = Object.keys(trainingDataUnclean)
+    const trainingData = keys.reduce((data, workout) => {
+      data[trainingDataUnclean[workout].workout_date] = trainingDataUnclean[workout]
+      return data
+    }, {})
+    const trainingKeys = Object.keys(trainingData).sort()
+    trainingRender = trainingKeys.map(workout => {
+      const key = uid(trainingData[workout])
+      return (
+          <article className={`project ${trainingData[workout].completed && 'completed'}`} key={key} onClick={() => toggleComplete(workout)}>
+            <div>
+              <h2 className="project-name">{workout}</h2>
+              <h5 className="project-grade">{trainingData[workout].type}</h5>
+            </div>
+            <h5 className="project-location">{trainingData[workout].description}</h5>
+          </article>
+      )
+    })
+  }
 
   return (
     <section className="projects workout">
@@ -28,7 +36,9 @@ function TrainingAll({ trainingData, toggleComplete }) {
           <Link to='/training'>
             <button className="view-workouts">Back To Calendar</button>
           </Link>
-          <button className="add-workout">Add Workout</button>
+          <Link to='/training/add'>
+            <button className="add-workout">Add Workout</button>
+          </Link>
         </div>
       </div>
       {trainingRender}
@@ -37,7 +47,7 @@ function TrainingAll({ trainingData, toggleComplete }) {
 }
 
 const mapStateToProps = (state) => ({
-  trainingData: state.trainingData
+  trainingDataUnclean: state.trainingData
 })
 
 const mapDispatchToProps = (dispatch) => ({
