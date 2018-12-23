@@ -1,7 +1,7 @@
 import React from 'react'
 import GradeSection from '../../components/GradeSection/GradeSection'
 import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import '../../main.scss'
 
 function Ascents({ ascents }) {
@@ -28,7 +28,9 @@ function Ascents({ ascents }) {
     <section className="ascents">
       <div className="ascents-header">
         <h1 className="ascents-title">ASCENTS</h1>
-        <button className="add-ascent">Add Ascent</button>
+        <Link to="/ascents/add">
+          <button className="add-ascent">Add Ascent</button>
+        </Link>
       </div>
       {gradeRender}
     </section>

@@ -5,6 +5,7 @@ import Home from '../Home/Home'
 import Training from '../Training/Training'
 import TrainingAll from '../TrainingAll/TrainingAll'
 import Ascents from '../Ascents/Ascents'
+import AscentForm from '../Ascents/AscentForm'
 import Projects from '../Projects/Projects'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
 import Login from '../Login/Login'
@@ -45,7 +46,8 @@ class App extends Component {
             )
             return <ProjectPage project={currentProject} />
           }}/>
-          <Route path="/ascents" component={Ascents} />
+          <Route exact path="/ascents" component={Ascents} />
+          <Route path="/ascents/add" component={AscentForm} />
           <Route path="" render={() => <div>Error!</div>} />
         </Switch>
       </div>
