@@ -51,44 +51,20 @@
 }
 
 .ascent-form {
-  margin: 130px auto 0;
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  padding: 20px 55px;
-  background: $darkGrey;
-  border-radius: 2px;
-  animation: fadeIn .4s ease;
+  @include form();
 
   input,
   button,
   select {
-    margin: 15px 0;
-    height: 34px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 7px;
-    font-size: 1rem;
-    outline: none;
-    font-weight: 600;
+    @include form-element();
   }
 
   h2 {
-    margin: 10px auto;
-    color: $accent;
-    font-weight: 400;
-    font-size: 1.7rem;
+    @include form-title();
   }
 
   textarea {
-    height: 100px;
-    margin: 15px 0;
-    font-size: .9rem;
-    padding: 5px;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    resize: none;
+    @include form-caption()
   }
 
   button {

@@ -57,7 +57,7 @@ class AscentForm extends Component {
           value={grade}
           onChange={this.handleChange}
         >
-          <option value="null"> -- </option>
+          <option value="--"> -- </option>
           <option value="0"> V0 / 4 </option>
           <option value="1"> V1 / 5 </option>
           <option value="2"> V2 / 5+ </option>

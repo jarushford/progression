@@ -53,3 +53,37 @@
   text-decoration-color: $text;
   opacity: .5;
 }
+
+.project-form {
+  @include form();
+  margin-bottom: 40px;
+
+  input,
+  button,
+  select {
+    @include form-element();
+  }
+
+  label {
+    color: $text;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    @include form-title();
+  }
+
+  textarea {
+    @include form-caption()
+  }
+
+  button {
+    @include button();
+    width: 200px;
+    margin: 30px auto;
+  }
+}

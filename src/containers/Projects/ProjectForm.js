@@ -11,7 +11,7 @@ class ProjectForm extends Component {
       location: '',
       caption: '',
       grade: '',
-      priority: 0,
+      priority: '',
       season: '',
       moves_total: 0,
       moves_done: 0,
@@ -22,13 +22,12 @@ class ProjectForm extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.target
-    console.log(e.target)
     this.setState({ [name]: value })
   }
 
   handleSubmit = async (e) => {
     e.preventDefault()
-    const ascent = {
+    const project = {
       user_id: this.props.user.id,
       name: this.state.name,
       location: this.state.location,
@@ -40,14 +39,14 @@ class ProjectForm extends Component {
       high_point: this.state.high_point,
       caption: this.state.caption
     }
-    await this.props.addProject(ascent)
+    await this.props.addProject(project)
     this.setState({ projectAdded: true })
   }
 
   render() {
     const { name, location, caption, grade, priority, season, projectAdded, moves_total, moves_done, high_point } = this.state
 
-    if (projectAdded) { return <Redirect to='/ascents' /> }
+    if (projectAdded) { return <Redirect to='/projects' /> }
 
     return (
       <form className="project-form" onSubmit={this.handleSubmit}>
@@ -68,7 +67,7 @@ class ProjectForm extends Component {
           value={grade}
           onChange={this.handleChange}
         >
-          <option value="null"> grade </option>
+          <option value="--"> grade </option>
           <option value="0"> V0 / 4 </option>
           <option value="1"> V1 / 5 </option>
           <option value="2"> V2 / 5+ </option>
@@ -92,8 +91,8 @@ class ProjectForm extends Component {
           value={priority}
           onChange={this.handleChange}
         >
-          <option value="null"> priority </option>
-          <option value="0"> 0 </option>
+          <option value="--"> priority </option>
+          <option value="0"> 0 (meh) </option>
           <option value="1"> 1 </option>
           <option value="2"> 2 </option>
           <option value="3"> 3 </option>
@@ -103,7 +102,7 @@ class ProjectForm extends Component {
           <option value="7"> 7 </option>
           <option value="8"> 8 </option>
           <option value="9"> 9 </option>
-          <option value="10"> 10 </option>
+          <option value="10"> 10 (this is the only thing I want to climb) </option>
         </select>
         <input name="season"
           value={season}
