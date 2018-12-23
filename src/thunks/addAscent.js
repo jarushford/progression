@@ -1,3 +1,6 @@
+import { fetchAscentsThunk } from './fetchAscents'
+import { clearAscents } from '../actions'
+
 export const addAscentThunk = (ascent) => {
   return async (dispatch) => {
     try {
@@ -9,7 +12,11 @@ export const addAscentThunk = (ascent) => {
           "Content-Type": "application/json"
         }
       })
-      console.log(response)
+      if (!response.ok) {
+        throw Error('Could not add ascent')
+      }
+      await dispatch(clearAscents())
+      dispatch(fetchAscentsThunk(ascent.user_id))
     } catch (error) {
       console.log(error)
     }

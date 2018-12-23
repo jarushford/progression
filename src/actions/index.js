@@ -13,6 +13,10 @@ export const getAscents = (data) => ({
   data
 })
 
+export const clearAscents = () => ({
+  type: 'CLEAR_ASCENTS'
+})
+
 export const toggleDiscipline = (discipline) => ({
   type: 'TOGGLE_DISCIPLINE',
   discipline

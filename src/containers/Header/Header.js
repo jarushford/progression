@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink, Link, withRouter } from 'react-router-dom'
 import '../../main.scss'
 import { connect } from 'react-redux';
-import { logoutUser } from '../../actions'
+import { logoutUser, clearAscents } from '../../actions'
 
-function Header({ currentUser, logoutUser }) {
+function Header({ currentUser, logoutUser, clearAscents }) {
   let userButton
 
   if (currentUser.name) {
@@ -12,7 +12,10 @@ function Header({ currentUser, logoutUser }) {
       <div className="current-user">
         <div>
           <h2><i className="fas fa-caret-down" /> Welcome, {currentUser.name}!</h2>
-          <h2 onClick={logoutUser}>Log Out</h2>
+          <h2 onClick={() => {
+            clearAscents()
+            logoutUser()
+          }}>Log Out</h2>
         </div>
         <i className="fas fa-user-circle" />
       </div>
@@ -41,6 +44,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
+  clearAscents: () => dispatch(clearAscents()),
   logoutUser: () => dispatch(logoutUser())
 })
 

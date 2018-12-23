@@ -26,7 +26,7 @@ class AscentForm extends Component {
       user_id: this.props.user.id,
       name: this.state.name,
       location: this.state.location,
-      grade: this.state.location,
+      grade: this.state.grade,
       caption: this.state.caption
     }
     await this.props.addAscent(ascent)

@@ -10,7 +10,7 @@ export default function GradeSection({ grade, ascents }) {
           <h2 className="ascent-name">{ascent.name}</h2>
           <h5 className="ascent-location">{ascent.location}</h5>
         </div>
-        <p>{ascent.entry}</p>
+        <p>{ascent.caption}</p>
       </article>
     )
   })

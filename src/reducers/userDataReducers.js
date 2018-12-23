@@ -30,6 +30,8 @@ export const ascentsReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_ASCENTS':
       return [...state, ...action.data]
+    case 'CLEAR_ASCENTS':
+      return []
     default:
       return state
   }

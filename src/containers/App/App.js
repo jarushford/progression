@@ -17,10 +17,9 @@ import '../../main.scss'
 class App extends Component {
 
   componentDidMount() {
-    const { getTrainingData, getProjects, getAscents } = this.props
+    const { getTrainingData, getProjects } = this.props
     getTrainingData(sampleUserData.trainingData)
     getProjects(sampleUserData.projects)
-    getAscents(sampleUserData.ascents)
   }
 
   render() {
@@ -62,8 +61,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getTrainingData: (data) => dispatch(ACTIONS.getTrainingData(data)),
-  getProjects: (data) => dispatch(ACTIONS.getProjects(data)),
-  getAscents: (data) => dispatch(ACTIONS.getAscents(data))
+  getProjects: (data) => dispatch(ACTIONS.getProjects(data))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))

@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { addNewUser, loginUser } from '../../utils/apiCalls'
 import { Redirect } from 'react-router-dom'
 import { setUser } from '../../actions'
+import { fetchAscentsThunk } from '../../thunks/fetchAscents';
 
 class Login extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class Login extends Component {
   }
 
   handleLogin = async (e) => {
-    const { setUser } = this.props
+    const { setUser, fetchAscents } = this.props
     e.preventDefault()
     const user = {
       email: this.state.loginEmail.toLowerCase(),
@@ -27,6 +28,7 @@ class Login extends Component {
     try {
       const currentUser = await loginUser(user)
       setUser(currentUser)
+      await fetchAscents(currentUser.id)
       this.setState({ loggedIn: true })
     } catch(error) {
       console.log(error.message)
@@ -34,7 +36,7 @@ class Login extends Component {
   }
 
   handleSignUp = async (e) => {
-    const { setUser } = this.props
+    const { setUser, fetchAscents } = this.props
     e.preventDefault()
     const user = {
       name: this.state.signUpName,
@@ -44,6 +46,7 @@ class Login extends Component {
     try {
       await addNewUser(user)
       setUser(user)
+      await fetchAscents(user.id)
       this.setState({ loggedIn: true })
     } catch(error) {
       console.log(error.message)
@@ -112,7 +115,8 @@ class Login extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  setUser: (user) => dispatch(setUser(user))
+  setUser: (user) => dispatch(setUser(user)),
+  fetchAscents: (id) => dispatch(fetchAscentsThunk(id))
 })
 
 export default connect(null, mapDispatchToProps)(Login)
