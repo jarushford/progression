@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { addAscentThunk } from '../../thunks/addAscent'
+import { Redirect } from 'react-router-dom'
 
 class AscentForm extends Component {
   constructor() {
@@ -14,17 +17,27 @@ class AscentForm extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.target
-    console.log(e.target.value)
     this.setState({ [name]: value })
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault()
-
+    const ascent = {
+      user_id: this.props.user.id,
+      name: this.state.name,
+      location: this.state.location,
+      grade: this.state.location,
+      caption: this.state.caption
+    }
+    await this.props.addAscent(ascent)
+    this.setState({ ascentAdded: true })
   }
 
   render() {
-    const { name, location, caption, grade } = this.state
+    const { name, location, caption, grade, ascentAdded } = this.state
+
+    if (ascentAdded) { return <Redirect to='/ascents' /> }
+
     return (
       <form className="ascent-form" onSubmit={this.handleSubmit}>
         <h2>ADD ASCENT</h2>
@@ -74,5 +87,13 @@ class AscentForm extends Component {
   }
 }
 
-export default AscentForm
+const mapStateToProps = (state) => ({
+  user: state.currentUser
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  addAscent: (ascent) => dispatch(addAscentThunk(ascent))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(AscentForm)
 

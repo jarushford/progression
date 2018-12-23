@@ -19,7 +19,7 @@ function Header({ currentUser, logoutUser }) {
     )
   } else {
     userButton = (
-      <Link to='login'><button>Login / Sign Up</button></Link>
+      <Link to='/login'><button>Login / Sign Up</button></Link>
     )
   }
 
