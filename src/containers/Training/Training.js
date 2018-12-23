@@ -181,6 +181,8 @@ const dateHelper = (index) => {
   } else {
     if (index < todayIndex && todayIndex - index >= day) {
       adjustment = daysInPreviousMonth() - ((todayIndex - day) - index)
+    } else if (index > todayIndex && (index - todayIndex) >= (daysInThisMonth() - day)) {
+      adjustment = (index - todayIndex) - (daysInThisMonth()  - day)
     } else {
       adjustment = day - (todayIndex - index)
     }
