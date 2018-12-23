@@ -22,6 +22,7 @@ class ProjectForm extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.target
+    console.log(e.target)
     this.setState({ [name]: value })
   }
 
@@ -44,7 +45,7 @@ class ProjectForm extends Component {
   }
 
   render() {
-    const { name, location, caption, grade, priority, projectAdded } = this.state
+    const { name, location, caption, grade, priority, season, projectAdded, moves_total, moves_done, high_point } = this.state
 
     if (projectAdded) { return <Redirect to='/ascents' /> }
 
@@ -104,6 +105,41 @@ class ProjectForm extends Component {
           <option value="9"> 9 </option>
           <option value="10"> 10 </option>
         </select>
+        <input name="season"
+          value={season}
+          onChange={this.handleChange}
+          placeholder="season"
+        />
+        <label>
+          # of Moves
+          <input
+            type="number"
+            name="moves_total"
+            value={moves_total}
+            min="0"
+            onChange={this.handleChange}
+          />
+        </label>
+        <label>
+          Moves Done
+          <input
+            type="number"
+            name="moves_done"
+            value={moves_done}
+            min="0"
+            onChange={this.handleChange}
+          />
+        </label>
+        <label>
+          High Point
+          <input
+            type="number"
+            name="high_point"
+            value={high_point}
+            min="0"
+            onChange={this.handleChange}
+          />
+        </label>
         <textarea name="caption"
           value={caption}
           onChange={this.handleChange}
