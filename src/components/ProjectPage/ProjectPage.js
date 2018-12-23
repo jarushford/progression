@@ -26,8 +26,8 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         <p className="project-caption">{project.caption}</p>
         <div className="progress-meter">
           <h3>Season: {project.season}</h3>
-          {project.highPoint / project.movesTotal}
-          {project.movesDone/ project.movesTotal}
+          <span>{project.high_point / project.moves_total}</span>
+          <span>{project.moves_done/ project.moves_total}</span>
         </div>
         <div className="project-actions">
           <button className="add-progress">Add Progress</button>
@@ -38,15 +38,8 @@ export default function ProjectPage({ project = { sessions: [] } }) {
       <div className="project-entries">
         <h1 className="proj-milestones">Milestones +</h1>
 
-        <h1 className="proj-journal">Journal -</h1>
-        {project.sessions.map((session) => {
-          return (
-            <div className="project-entry">
-              <h2>{session.date}</h2>
-              <p>{session.entry}</p>
-            </div>
-          )
-        })}
+        <h1 className="proj-journal">Journal +</h1>
+
       </div>
     </section>
   )

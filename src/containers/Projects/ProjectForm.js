@@ -143,7 +143,7 @@ class ProjectForm extends Component {
           value={caption}
           onChange={this.handleChange}
           placeholder="caption"
-          maxlength="100"
+          maxLength="100"
         />
         <button>Add Project</button>
       </form>
