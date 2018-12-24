@@ -16,6 +16,16 @@ class TrainingForm extends Component {
     }
   }
 
+  componentDidMount() {
+    const date = new Date()
+    const month = (date.getMonth() + 1).toString()
+    const day = date.getDate().toString()
+    this.setState({
+      day,
+      month
+    })
+  }
+
   handleChange = (e) => {
     const { name, value } = e.target
     this.setState({ [name]: value })
@@ -39,6 +49,20 @@ class TrainingForm extends Component {
 
     if (workoutAdded) { return <Redirect to='/training/all' /> }
 
+    const date = new Date()
+    const currentYear = date.getFullYear()
+    const longMonths = ["1", "3", "5", "7", "8", "10", "12"]
+    let isLong
+    let notFeb
+
+    if (month !== "2") {
+      notFeb = <option value="30">30</option>
+    }
+
+    if (longMonths.includes(month)) {
+      isLong = <option value="31">31</option>
+    }
+
     return (
       <form className="training-form" onSubmit={this.handleSubmit}>
         <h2>ADD WORKOUT</h2>
@@ -47,11 +71,11 @@ class TrainingForm extends Component {
           value={year}
           onChange={this.handleChange}
         >
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-          <option value="2020">2020</option>
-          <option value="2021">2021</option>
-          <option value="2022">2022</option>
+          <option value={currentYear}>{currentYear}</option>
+          <option value={currentYear + 1}>{currentYear + 1}</option>
+          <option value={currentYear + 2}>{currentYear + 2}</option>
+          <option value={currentYear + 3}>{currentYear + 3}</option>
+          <option value={currentYear + 4}>{currentYear + 4}</option>
         </select>
         <select id="month"
           name="month"
@@ -105,8 +129,8 @@ class TrainingForm extends Component {
           <option value="27">27</option>
           <option value="28">28</option>
           <option value="29">29</option>
-          <option value="30">30</option>
-          <option value="31">31</option>
+          {notFeb}
+          {isLong}
         </select>
         <select id="type"
           name="type"
@@ -142,4 +166,3 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(TrainingForm)
-
