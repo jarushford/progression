@@ -15,7 +15,10 @@ export default function ProjectPage({ project = { sessions: [] } }) {
       <div className="project-header">
         <h1 className="proj-name">{project.name}</h1>
         <h5 className="proj-grade">{gradeConverter[project.grade]}</h5>
-        <h5 className="project-priority">{project.priority}</h5>
+        <div className="project-priority">
+          <h3>Priority</h3>
+          <div className={`priority${priorityHelper(project.priority)}`}/>
+        </div>
         <h5 className="proj-location">{project.location}</h5>
         {sentStatus}
         <Link to='/projects'>
@@ -29,9 +32,11 @@ export default function ProjectPage({ project = { sessions: [] } }) {
             <h3 className="season">Season: {project.season}</h3>
             <div className="data-container">
               <div className="high-point">
+                <h3>High Point</h3>
                 <div className={dataHelper(project.high_point, project.moves_total)}/>
               </div>
               <div className="moves-done">
+                <h3>Moves Done</h3>
                 <div className={dataHelper(project.moves_done, project.moves_total)}/>
               </div>
             </div>
@@ -73,4 +78,20 @@ const dataHelper = (progress, total) => {
   }
   const index = Math.ceil(progress / total * 10)
   return classes[index]
+}
+
+const priorityHelper = (priority) => {
+  const classes = {
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    4: 'four',
+    5: 'five',
+    6: 'six',
+    7: 'seven',
+    8: 'eight',
+    9: 'nine',
+    10: 'ten'
+  }
+  return classes[priority]
 }

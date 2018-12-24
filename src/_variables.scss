@@ -101,7 +101,18 @@ $ruleLine: #716D6D;
   width: 100px;
   background: $accent;
   position: absolute;
-  bottom: 0
+  bottom: 0;
+  z-index: 4;
+}
+
+@mixin prioritygraphic($width) {
+  width: $width;
+  height: 22px;
+  background: $accent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
 }
 
 @keyframes fadeIn {
