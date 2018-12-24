@@ -11,7 +11,6 @@ import Projects from '../Projects/Projects'
 import ProjectForm from '../Projects/ProjectForm'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
 import Login from '../Login/Login'
-import * as ACTIONS from '../../actions/index'
 import { connect }  from 'react-redux';
 import '../../main.scss'
 

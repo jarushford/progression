@@ -2,7 +2,7 @@ export const trainingDataReducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_TRAINING':
       return {...state, ...action.data}
-    case 'CLEAR_TRAINING':
+    case 'CLEAR_WORKOUTS':
       return {}
     case 'TOGGLE_COMPLETE':
       const keys = Object.keys(state)
