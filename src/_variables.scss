@@ -96,6 +96,14 @@ $ruleLine: #716D6D;
   resize: none;
 }
 
+@mixin graphic($height) {
+  height: $height;
+  width: 100px;
+  background: $accent;
+  position: absolute;
+  bottom: 0
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

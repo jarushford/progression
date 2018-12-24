@@ -24,15 +24,23 @@ export default function ProjectPage({ project = { sessions: [] } }) {
       </div>
       <div className="project-controls">
         <p className="project-caption">{project.caption}</p>
-        <div className="progress-meter">
-          <h3>Season: {project.season}</h3>
-          <span>{project.high_point / project.moves_total}</span>
-          <span>{project.moves_done / project.moves_total}</span>
-        </div>
-        <div className="project-actions">
-          <button className="add-progress">Add Progress</button>
-          <button className="add-milestone">Add Milestone</button>
-          <button className="add-session">Add Session</button>
+        <div className="project-right">
+          <div className="progress-meter">
+            <h3 className="season">Season: {project.season}</h3>
+            <div className="data-container">
+              <div className="high-point">
+                <div className={dataHelper(project.high_point, project.moves_total)}/>
+              </div>
+              <div className="moves-done">
+                <div className={dataHelper(project.moves_done, project.moves_total)}/>
+              </div>
+            </div>
+          </div>
+          <div className="project-actions">
+            <button className="add-progress">Add Progress</button>
+            <button className="add-milestone">Add Milestone</button>
+            <button className="add-session">Add Session</button>
+          </div>
         </div>
       </div>
       <div className="project-entries">
@@ -43,4 +51,26 @@ export default function ProjectPage({ project = { sessions: [] } }) {
       </div>
     </section>
   )
+}
+
+
+////////////////////////////
+////////////////////////////
+
+
+const dataHelper = (progress, total) => {
+  const classes = {
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    4: 'four',
+    5: 'five',
+    6: 'six',
+    7: 'seven',
+    8: 'eight',
+    9: 'nine',
+    10: 'ten'
+  }
+  const index = Math.ceil(progress / total * 10)
+  return classes[index]
 }
