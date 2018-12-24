@@ -29,7 +29,7 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         <p className="project-caption">{project.caption}</p>
         <div className="project-right">
           <div className="progress-meter">
-            <h3 className="season">Season: {project.season}</h3>
+            <h3 className="season">Season: <span className="season-span">{project.season}</span></h3>
             <div className="data-container">
               <div className="high-point">
                 <h3>High Point</h3>
