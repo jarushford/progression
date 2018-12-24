@@ -48,12 +48,6 @@
   text-decoration: none;
 }
 
-.completed { 
-  text-decoration: line-through;
-  text-decoration-color: $text;
-  opacity: .5;
-}
-
 .project-form {
   @include form();
   margin-bottom: 40px;

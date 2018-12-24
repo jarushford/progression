@@ -48,6 +48,8 @@
 
 .ascent-location {
   @include ascentDetails($text, 1.1rem);
+  margin-left: 20px;
+  margin-bottom: 5px;
 }
 
 .ascent-form {
@@ -71,5 +73,24 @@
     @include button();
     width: 200px;
     margin: 30px auto;
+  }
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-times {
+  cursor: pointer;
+  margin: 5px 10px 20px;
+  font-size: 1.5rem;
+  color: $text;
+  transition: .4s ease;
+
+  &:hover {
+    font-size: 1.6rem;
+    color: tomato;
   }
 }

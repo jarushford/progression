@@ -60,11 +60,15 @@
 .proj-milestones,
 .proj-journal {
   cursor: pointer;
+  transition: .4s ease;
+
+  &:hover {
+    color: $text;
+  }
 }
 
 .project-controls {
-  width: 97%;
-  margin: 0 auto;
+  margin: 0 15px 10px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $ruleLine;
@@ -83,9 +87,14 @@
 
 .progress-meter {
   width: 300px;
-  margin-right: 30px;
+  margin: 20px 40px 20px 0;
   text-align: center;
   color: $accent;
+  border-right: 1px solid $ruleLine;
+}
+
+.season {
+  margin: 0 auto 15px;
 }
 
 .project-caption {
@@ -93,6 +102,7 @@
   margin: 20px 0;
   color: $text;
   font-size: 1.1rem;
+  border-right: 1px solid $ruleLine;
 }
 
 .project-right {

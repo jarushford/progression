@@ -7,8 +7,11 @@ export default function GradeSection({ grade, ascents }) {
     return (
       <article className="ascent">
         <div>
-          <h2 className="ascent-name">{ascent.name}</h2>
-          <h5 className="ascent-location">{ascent.location}</h5>
+          <div className="content-section">
+            <h2 className="ascent-name">{ascent.name}</h2>
+            <h5 className="ascent-location">{ascent.location}</h5>
+          </div>
+          <i className="fas fa-times"></i>
         </div>
         <p>{ascent.caption}</p>
       </article>

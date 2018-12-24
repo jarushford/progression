@@ -23,6 +23,7 @@ function TrainingAll({ trainingDataUnclean, toggleComplete }) {
               <h5 className="project-grade">{trainingData[workout].type}</h5>
             </div>
             <h5 className="project-location">{trainingData[workout].description}</h5>
+            <i className="fas fa-times"></i>
           </article>
       )
     })

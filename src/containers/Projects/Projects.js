@@ -16,6 +16,7 @@ function Projects({ projects }) {
             <h5 className="project-grade">{gradeConverter[project.grade]}</h5>
           </div>
           <h5 className="project-location">{project.location}</h5>
+          <i className="fas fa-times"></i>
         </article>
       </Link>
     )
