@@ -40,8 +40,10 @@ class TrainingForm extends Component {
       description: this.state.description,
       type: this.state.type
     }
-    await this.props.addWorkout(workout)
-    this.setState({ workoutAdded: true })
+    const result = await this.props.addWorkout(workout)
+    if (result) {
+      this.setState({ workoutAdded: true })
+    }
   }
 
   render() {

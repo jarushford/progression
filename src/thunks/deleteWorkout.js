@@ -1,5 +1,5 @@
 import { fetchWorkoutsThunk } from './fetchWorkouts'
-import { clearWorkouts } from '../actions'
+import { clearWorkouts, setError } from '../actions'
 
 export const deleteWorkoutThunk = (workout_id, id) => {
   return async (dispatch) => {
@@ -19,7 +19,7 @@ export const deleteWorkoutThunk = (workout_id, id) => {
       await dispatch(clearWorkouts())
       dispatch(fetchWorkoutsThunk(id))
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
     }
   }
 }

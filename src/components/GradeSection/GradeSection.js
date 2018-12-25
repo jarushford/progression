@@ -2,12 +2,13 @@ import React from 'react'
 import gradeConverter from '../../assets/gradeConverter'
 import { deleteAscentThunk } from '../../thunks/deleteAscent'
 import { connect } from 'react-redux'
+import { uid } from 'react-uid'
 import '../../main.scss'
 
 function GradeSection({ grade, ascents, user, deleteAscent }) {
   const ascentsRender = ascents.map(ascent => {
     return (
-      <article className="ascent">
+      <article className="ascent" key={uid(ascent)}>
         <div>
           <div className="content-section">
             <h2 className="ascent-name">{ascent.name}</h2>

@@ -1,4 +1,4 @@
-import { getTraining } from '../actions'
+import { getTraining, setError } from '../actions'
 
 export const fetchWorkoutsThunk = (id) => {
   return async (dispatch) => {
@@ -11,7 +11,7 @@ export const fetchWorkoutsThunk = (id) => {
       const result = await response.json()
       dispatch(getTraining(result.data))
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
     }
   }
 }

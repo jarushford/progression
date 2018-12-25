@@ -1,5 +1,5 @@
 import { fetchProjectsThunk } from './fetchProjects'
-import { clearProjects } from '../actions'
+import { clearProjects, setError } from '../actions'
 
 export const addProjectThunk = (project) => {
   return async (dispatch) => {
@@ -17,8 +17,10 @@ export const addProjectThunk = (project) => {
       }
       await dispatch(clearProjects())
       dispatch(fetchProjectsThunk(project.user_id))
+      return true
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
+      return false
     }
   }
 }

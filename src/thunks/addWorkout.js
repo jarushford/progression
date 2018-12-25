@@ -1,5 +1,5 @@
 import { fetchWorkoutsThunk } from './fetchWorkouts'
-import { clearWorkouts } from '../actions'
+import { clearWorkouts, setError } from '../actions'
 
 export const addWorkoutThunk = (workout) => {
   return async (dispatch) => {
@@ -17,8 +17,10 @@ export const addWorkoutThunk = (workout) => {
       }
       await dispatch(clearWorkouts())
       dispatch(fetchWorkoutsThunk(workout.user_id))
+      return true
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
+      return false
     }
   }
 }

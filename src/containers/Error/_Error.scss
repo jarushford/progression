@@ -1,0 +1,12 @@
+.error {
+    margin: 150px auto;
+    text-align: center;
+    background: $darkGrey;
+    padding: 20px;
+    color: $accent;
+
+    button {
+      @include button();
+      margin: 30px;
+    }
+}

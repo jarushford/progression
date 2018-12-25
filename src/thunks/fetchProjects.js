@@ -1,4 +1,4 @@
-import { getProjects } from '../actions'
+import { getProjects, setError } from '../actions'
 
 export const fetchProjectsThunk = (id) => {
   return async (dispatch) => {
@@ -11,7 +11,7 @@ export const fetchProjectsThunk = (id) => {
       const result = await response.json()
       dispatch(getProjects(result.data))
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
     }
   }
 }

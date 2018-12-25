@@ -8,13 +8,12 @@ import '../../main.scss'
 
 function Projects({ projects, deleteProject, user }) {
   const projectsRender = projects.map(project => {
-    const key = uid(project)
     return (
-        <article className="project">
+        <article className="project" key={uid(project)}>
           <div>
           <Link
             to={`/projects/${project.name}`}
-            key={key} className="project-link"
+            className="project-link"
           >
             <h2 className="project-name">{project.name}</h2>
           </Link>

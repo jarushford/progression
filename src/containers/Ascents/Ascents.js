@@ -3,6 +3,7 @@ import GradeSection from '../../components/GradeSection/GradeSection'
 import { connect } from 'react-redux'
 import { withRouter, Link } from 'react-router-dom'
 import '../../main.scss'
+import { uid } from 'react-uid';
 
 function Ascents({ ascents, user }) {
   const gradeDivisions = ascents.reduce((grades, ascent) => {
@@ -20,6 +21,7 @@ function Ascents({ ascents, user }) {
       <GradeSection
         grade={grade}
         ascents={gradeDivisions[grade]}
+        key={uid(grade)}
       />
     )
   })

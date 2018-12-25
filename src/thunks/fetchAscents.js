@@ -1,4 +1,4 @@
-import { getAscents } from '../actions'
+import { getAscents, setError } from '../actions'
 
 export const fetchAscentsThunk = (id) => {
   return async (dispatch) => {
@@ -11,7 +11,7 @@ export const fetchAscentsThunk = (id) => {
       const result = await response.json()
       dispatch(getAscents(result.data))
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
     }
   }
 }

@@ -39,8 +39,10 @@ class ProjectForm extends Component {
       high_point: this.state.high_point,
       caption: this.state.caption
     }
-    await this.props.addProject(project)
-    this.setState({ projectAdded: true })
+    const result = await this.props.addProject(project)
+    if (result) {
+      this.setState({ projectAdded: true })
+    }
   }
 
   render() {

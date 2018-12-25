@@ -1,5 +1,5 @@
 import { fetchAscentsThunk } from './fetchAscents'
-import { clearAscents } from '../actions'
+import { clearAscents, setError } from '../actions'
 
 export const deleteAscentThunk = (ascent_id, id) => {
   return async (dispatch) => {
@@ -19,7 +19,7 @@ export const deleteAscentThunk = (ascent_id, id) => {
       await dispatch(clearAscents())
       dispatch(fetchAscentsThunk(id))
     } catch (error) {
-      console.log(error)
+      dispatch(setError(error.message))
     }
   }
 }

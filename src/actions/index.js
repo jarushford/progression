@@ -43,3 +43,12 @@ export const toggleComplete = (key) => ({
   type: 'TOGGLE_COMPLETE',
   key
 })
+
+export const setError = (error) => ({
+  type: 'SET_ERROR',
+  error
+})
+
+export const clearError = () => ({
+  type: 'CLEAR_ERROR'
+})

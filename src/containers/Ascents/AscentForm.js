@@ -29,8 +29,10 @@ class AscentForm extends Component {
       grade: this.state.grade,
       caption: this.state.caption
     }
-    await this.props.addAscent(ascent)
-    this.setState({ ascentAdded: true })
+    const result = await this.props.addAscent(ascent)
+    if (result) {
+      this.setState({ ascentAdded: true })
+    }
   }
 
   render() {
@@ -89,7 +91,8 @@ class AscentForm extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  user: state.currentUser
+  user: state.currentUser,
+  error: state.error
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -11,13 +11,23 @@ import Projects from '../Projects/Projects'
 import ProjectForm from '../Projects/ProjectForm'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
 import Login from '../Login/Login'
+import Error from '../Error/Error'
 import { connect }  from 'react-redux';
 import '../../main.scss'
 
 class App extends Component {
 
   render() {
-    const { projects, disciplineBoulder } = this.props
+    const { projects, disciplineBoulder, error } = this.props
+
+    if (error) {
+      return (
+        <div className={`app ${disciplineBoulder && 'boulder'}`}>
+          <Header />
+          <Error />
+        </div>
+      )
+    }
 
     if (!projects) {
       return <div>Loading...</div>
@@ -43,7 +53,7 @@ class App extends Component {
           }}/>
           <Route exact path="/ascents" component={Ascents} />
           <Route path="/ascents/add" component={AscentForm} />
-          <Route path="" render={() => <div>Error!</div>} />
+          <Route path="" component={Error} />
         </Switch>
       </div>
     )
@@ -52,7 +62,8 @@ class App extends Component {
 
 const mapStateToProps = (state) => ({
   projects: state.projects,
-  disciplineBoulder: state.disciplineBoulder
+  disciplineBoulder: state.disciplineBoulder,
+  error: state.error
 })
 
 export default withRouter(connect(mapStateToProps)(App))
