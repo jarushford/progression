@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addNewUser, loginUser } from '../../utils/apiCalls'
 import { Redirect } from 'react-router-dom'
-import { setUser } from '../../actions'
-import { fetchAscentsThunk } from '../../thunks/fetchAscents';
-import { fetchProjectsThunk } from '../../thunks/fetchProjects';
-import { fetchWorkoutsThunk } from '../../thunks/fetchWorkouts';
+import { addNewUserThunk } from '../../thunks/addNewUser';
+import { loginUserThunk } from '../../thunks/loginUser';
 
 class Login extends Component {
   constructor() {
@@ -21,41 +18,29 @@ class Login extends Component {
   }
 
   handleLogin = async (e) => {
-    const { setUser, fetchAscents, fetchProjects, fetchWorkouts } = this.props
+    const { loginUser } = this.props
     e.preventDefault()
     const user = {
       email: this.state.loginEmail.toLowerCase(),
       password: this.state.loginPassword
     }
-    try {
-      const currentUser = await loginUser(user)
-      setUser(currentUser)
-      await fetchAscents(currentUser.id)
-      await fetchProjects(currentUser.id)
-      await fetchWorkouts(currentUser.id)
+    const result = await loginUser(user)
+    if (result) {
       this.setState({ loggedIn: true })
-    } catch(error) {
-      console.log(error.message)
     }
   }
 
   handleSignUp = async (e) => {
-    const { setUser, fetchAscents, fetchProjects, fetchWorkouts } = this.props
+    const { addNewUser } = this.props
     e.preventDefault()
     const user = {
       name: this.state.signUpName,
       email: this.state.signUpEmail,
       password: this.state.signUpPassword
     }
-    try {
-      await addNewUser(user)
-      setUser(user)
-      await fetchAscents(user.id)
-      await fetchProjects(user.id)
-      await fetchWorkouts(user.id)
+    const result = await addNewUser(user)
+    if (result) {
       this.setState({ loggedIn: true })
-    } catch(error) {
-      console.log(error.message)
     }
   }
 
@@ -121,10 +106,8 @@ class Login extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  setUser: (user) => dispatch(setUser(user)),
-  fetchAscents: (id) => dispatch(fetchAscentsThunk(id)),
-  fetchProjects: (id) => dispatch(fetchProjectsThunk(id)),
-  fetchWorkouts: (id) => dispatch(fetchWorkoutsThunk(id))
+  loginUser: (user) => dispatch(loginUserThunk(user)),
+  addNewUser: (user) => dispatch(addNewUserThunk(user))
 })
 
 export default connect(null, mapDispatchToProps)(Login)

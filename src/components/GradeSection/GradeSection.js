@@ -1,5 +1,5 @@
 import React from 'react'
-import gradeConverter from '../../assets/gradeConverter'
+import gradeConverter from '../../utils/gradeConverter'
 import { deleteAscentThunk } from '../../thunks/deleteAscent'
 import { connect } from 'react-redux'
 import { uid } from 'react-uid'

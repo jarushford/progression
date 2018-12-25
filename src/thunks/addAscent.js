@@ -12,7 +12,7 @@ export const addAscentThunk = (ascent) => {
           "Content-Type": "application/json"
         }
       })
-      if (response.ok) {
+      if (!response.ok) {
         throw Error('Could not add ascent')
       }
       await dispatch(clearAscents())

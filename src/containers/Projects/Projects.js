@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import gradeConverter from '../../assets/gradeConverter'
+import gradeConverter from '../../utils/gradeConverter'
 import { connect }  from 'react-redux';
 import { uid } from 'react-uid'
 import { deleteProjectThunk } from '../../thunks/deleteProject'

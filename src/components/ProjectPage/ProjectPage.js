@@ -1,5 +1,5 @@
 import React from 'react'
-import gradeConverter from '../../assets/gradeConverter'
+import gradeConverter from '../../utils/gradeConverter'
 import { Link } from 'react-router-dom'
 import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
 
