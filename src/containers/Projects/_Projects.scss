@@ -19,6 +19,11 @@
   @include ascentDetails($accent, 1.7rem);
   margin: 10px 0 22px;
   transition: .3s ease;
+
+  &:hover {
+    color: $text;
+    cursor: pointer;
+  }
 }
 
 .project-location,
@@ -37,11 +42,6 @@
 .project {
   margin: 15px;
   border-bottom: 1px solid $ruleLine;
-  cursor: pointer;
-
-  &:hover .project-name {
-    color: $text;
-  }
 }
 
 .project-link {

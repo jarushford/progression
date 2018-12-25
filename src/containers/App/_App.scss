@@ -16,3 +16,13 @@
   background-position-x: 90%;
   transition: 1s ease;
 }
+
+.no-user-msg {
+  text-align: center;
+  width: 100%;
+  margin-top: 150px;
+  background: $darkGrey;
+  color: $accent;
+  height: 100px;
+  padding-top: 30px;
+}

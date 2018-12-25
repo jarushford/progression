@@ -4,8 +4,9 @@ import { withRouter, Link } from 'react-router-dom'
 import { toggleComplete } from '../../actions'
 import { uid } from 'react-uid'
 import '../../main.scss'
+import { deleteWorkoutThunk } from '../../thunks/deleteWorkout';
 
-function TrainingAll({ trainingDataUnclean, toggleComplete }) {
+function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
   let trainingRender = <div></div>
   if (Object.keys(trainingDataUnclean).length) {
     const keys = Object.keys(trainingDataUnclean)
@@ -23,7 +24,7 @@ function TrainingAll({ trainingDataUnclean, toggleComplete }) {
               <h5 className="project-grade">{trainingData[workout].type}</h5>
             </div>
             <h5 className="project-location">{trainingData[workout].description}</h5>
-            <i className="fas fa-times"></i>
+            <i className="fas fa-times" onClick={() => deleteWorkout(trainingData[workout].id, user.id)}></i>
           </article>
       )
     })
@@ -48,11 +49,13 @@ function TrainingAll({ trainingDataUnclean, toggleComplete }) {
 }
 
 const mapStateToProps = (state) => ({
-  trainingDataUnclean: state.trainingData
+  trainingDataUnclean: state.trainingData,
+  user: state.currentUser
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  toggleComplete: (key) => dispatch(toggleComplete(key))
+  toggleComplete: (key) => dispatch(toggleComplete(key)),
+  deleteWorkout: (workout_id, id) => dispatch(deleteWorkoutThunk(workout_id, id))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TrainingAll))

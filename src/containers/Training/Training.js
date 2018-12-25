@@ -5,7 +5,12 @@ import { toggleComplete } from '../../actions'
 import * as Helper from '../../utils/calendarHelpers'
 import '../../main.scss'
 
-function Training({ trainingDataUnclean, toggleComplete }) {
+function Training({ trainingDataUnclean, toggleComplete, user }) {
+
+  if (!user.name) {
+    return <h1 className="no-user-msg">Log in or sign up to add workouts</h1>
+  }
+
   if (!Object.keys(trainingDataUnclean).length) {
     return (
       <section className="training-container">
@@ -107,7 +112,8 @@ function Training({ trainingDataUnclean, toggleComplete }) {
 }
 
 const mapStateToProps = (state) => ({
-  trainingDataUnclean: state.trainingData
+  trainingDataUnclean: state.trainingData,
+  user: state.currentUser
 })
 
 const mapDispatchToProps = (dispatch) => ({

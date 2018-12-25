@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { withRouter, Link } from 'react-router-dom'
 import '../../main.scss'
 
-function Ascents({ ascents }) {
+function Ascents({ ascents, user }) {
   const gradeDivisions = ascents.reduce((grades, ascent) => {
     if (!grades[ascent.grade]) {
       grades[ascent.grade] = []
@@ -24,6 +24,10 @@ function Ascents({ ascents }) {
     )
   })
 
+  if (!user.name) {
+    return <h1 className="no-user-msg">Log in or sign up to add ascents</h1>
+  }
+
   return (
     <section className="ascents">
       <div className="ascents-header">
@@ -38,7 +42,8 @@ function Ascents({ ascents }) {
 }
 
 const mapStateToProps = (state) => ({
-  ascents: state.ascents
+  ascents: state.ascents,
+  user: state.currentUser
 })
 
 export default withRouter(connect(mapStateToProps)(Ascents))

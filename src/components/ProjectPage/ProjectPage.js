@@ -1,13 +1,14 @@
 import React from 'react'
 import gradeConverter from '../../assets/gradeConverter'
 import { Link } from 'react-router-dom'
+import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
 
 export default function ProjectPage({ project = { sessions: [] } }) {
   let sentStatus
   if (project.sent) {
     sentStatus = <h3>SENT!</h3>
   } else {
-    sentStatus = <h3></h3>
+    sentStatus = <div />
   }
 
   return (
@@ -56,42 +57,4 @@ export default function ProjectPage({ project = { sessions: [] } }) {
       </div>
     </section>
   )
-}
-
-
-////////////////////////////
-////////////////////////////
-
-
-const dataHelper = (progress, total) => {
-  const classes = {
-    1: 'one',
-    2: 'two',
-    3: 'three',
-    4: 'four',
-    5: 'five',
-    6: 'six',
-    7: 'seven',
-    8: 'eight',
-    9: 'nine',
-    10: 'ten'
-  }
-  const index = Math.ceil(progress / total * 10)
-  return classes[index]
-}
-
-const priorityHelper = (priority) => {
-  const classes = {
-    1: 'one',
-    2: 'two',
-    3: 'three',
-    4: 'four',
-    5: 'five',
-    6: 'six',
-    7: 'seven',
-    8: 'eight',
-    9: 'nine',
-    10: 'ten'
-  }
-  return classes[priority]
 }
