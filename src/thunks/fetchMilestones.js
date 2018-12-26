@@ -8,7 +8,6 @@ export const fetchMilestonesThunk = (id, project_id) => {
       if (!response.ok) {
         throw Error('Could not get milestones')
       }
-      console.log(response)
       const result = await response.json()
       dispatch(getMilestones(result.data))
     } catch (error) {

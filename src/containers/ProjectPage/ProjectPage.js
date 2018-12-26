@@ -1,9 +1,12 @@
 import React from 'react'
 import gradeConverter from '../../utils/gradeConverter'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
 import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
+import Milestone from '../Milestones/Milestone'
+import { uid } from 'react-uid';
 
-export default function ProjectPage({ project = { sessions: [] } }) {
+function ProjectPage({ project = { sessions: [] }, milestones }) {
   let sentStatus
   if (project.sent) {
     sentStatus = <h3>SENT!</h3>
@@ -52,7 +55,10 @@ export default function ProjectPage({ project = { sessions: [] } }) {
         </div>
       </div>
       <div className="project-entries">
-        <h1 className="proj-milestones">Milestones +</h1>
+        <div className="milestone-container">
+          <h1 className="proj-milestones">Milestones +</h1>
+          {milestones.map(milestone => <Milestone {...milestone} key={uid(milestone)}/>)}
+        </div>
 
         <h1 className="proj-journal">Journal +</h1>
 
@@ -60,3 +66,9 @@ export default function ProjectPage({ project = { sessions: [] } }) {
     </section>
   )
 }
+
+const mapStateToProps = (state) => ({
+  milestones: state.milestones
+})
+
+export default withRouter(connect(mapStateToProps)(ProjectPage))

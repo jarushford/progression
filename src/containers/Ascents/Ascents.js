@@ -1,5 +1,5 @@
 import React from 'react'
-import GradeSection from '../../components/GradeSection/GradeSection'
+import GradeSection from '../GradeSection/GradeSection'
 import { connect } from 'react-redux'
 import { withRouter, Link } from 'react-router-dom'
 import '../../main.scss'
