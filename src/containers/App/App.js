@@ -12,6 +12,7 @@ import ProjectForm from '../Projects/ProjectForm'
 import ProjectPage from '../../components/ProjectPage/ProjectPage'
 import Login from '../Login/Login'
 import Error from '../Error/Error'
+import MilestoneForm from '../Milestones/MilestoneForm'
 import { connect }  from 'react-redux';
 import '../../main.scss'
 
@@ -53,6 +54,7 @@ class App extends Component {
           }}/>
           <Route exact path="/ascents" component={Ascents} />
           <Route path="/ascents/add" component={AscentForm} />
+          <Route path="/milestones/add" component={MilestoneForm} />
           <Route path="" component={Error} />
         </Switch>
       </div>

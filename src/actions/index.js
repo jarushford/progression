@@ -25,6 +25,15 @@ export const clearAscents = () => ({
   type: 'CLEAR_ASCENTS'
 })
 
+export const getMilestones = (data) => ({
+  type: 'GET_MILESTONES',
+  data
+})
+
+export const clearMilestones = () => ({
+  type: 'CLEAR_MILESTONES'
+})
+
 export const toggleDiscipline = (discipline) => ({
   type: 'TOGGLE_DISCIPLINE',
   discipline
@@ -51,4 +60,9 @@ export const setError = (error) => ({
 
 export const clearError = () => ({
   type: 'CLEAR_ERROR'
+})
+
+export const setCurrentProject = (id) => ({
+  type: 'SET_CURRENT_PROJECT',
+  id
 })

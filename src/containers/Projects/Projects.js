@@ -5,8 +5,10 @@ import { connect }  from 'react-redux';
 import { uid } from 'react-uid'
 import { deleteProjectThunk } from '../../thunks/deleteProject'
 import '../../main.scss'
+import { setCurrentProject } from '../../actions';
+import { fetchMilestonesThunk } from '../../thunks/fetchMilestones'
 
-function Projects({ projects, deleteProject, user }) {
+function Projects({ projects, deleteProject, user, setCurrentProject, fetchMilestones }) {
   const projectsRender = projects.map(project => {
     return (
         <article className="project" key={uid(project)}>
@@ -14,6 +16,10 @@ function Projects({ projects, deleteProject, user }) {
           <Link
             to={`/projects/${project.name}`}
             className="project-link"
+            onClick={async () => {
+              await fetchMilestones(user.id, project.id)
+              setCurrentProject(project.id)
+            }}
           >
             <h2 className="project-name">{project.name}</h2>
           </Link>
@@ -48,7 +54,9 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteProject: (project_id, id) => dispatch(deleteProjectThunk(project_id, id))
+  deleteProject: (project_id, id) => dispatch(deleteProjectThunk(project_id, id)),
+  setCurrentProject: (id) => dispatch(setCurrentProject(id)),
+  fetchMilestones: (id, project_id) => dispatch(fetchMilestonesThunk(id, project_id))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Projects))

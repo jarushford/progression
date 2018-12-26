@@ -44,7 +44,9 @@ export default function ProjectPage({ project = { sessions: [] } }) {
           </div>
           <div className="project-actions">
             <button className="add-progress">Add Progress</button>
-            <button className="add-milestone">Add Milestone</button>
+            <Link to='/milestones/add'>
+              <button className="add-milestone">Add Milestone</button>
+            </Link>
             <button className="add-session">Add Session</button>
           </div>
         </div>
