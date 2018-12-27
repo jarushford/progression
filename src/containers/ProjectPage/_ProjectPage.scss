@@ -70,6 +70,15 @@
   }
 }
 
+.collapse-section {
+  height: 0;
+  overflow: hidden;
+}
+
+.open .collapse-section {
+  height: auto;
+}
+
 .project-controls {
   margin: 0 15px 10px;
   display: flex;
