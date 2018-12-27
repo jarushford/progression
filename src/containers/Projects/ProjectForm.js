@@ -47,8 +47,9 @@ class ProjectForm extends Component {
 
   render() {
     const { name, location, caption, grade, priority, season, projectAdded, moves_total, moves_done, high_point } = this.state
+    const { user } = this.props
 
-    if (projectAdded) { return <Redirect to='/projects' /> }
+    if (projectAdded || !user.name) { return <Redirect to='/projects' /> }
 
     return (
       <form className="project-form" onSubmit={this.handleSubmit}>

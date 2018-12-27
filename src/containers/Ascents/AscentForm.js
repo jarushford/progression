@@ -37,8 +37,9 @@ class AscentForm extends Component {
 
   render() {
     const { name, location, caption, grade, ascentAdded } = this.state
+    const { user } = this.props
 
-    if (ascentAdded) { return <Redirect to='/ascents' /> }
+    if (ascentAdded || !user.name) { return <Redirect to='/ascents' /> }
 
     return (
       <form className="ascent-form" onSubmit={this.handleSubmit}>

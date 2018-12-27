@@ -2,7 +2,7 @@ import React from 'react'
 import '../../main.scss'
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
-import * as ACTIONS from '../../actions/index'
+import { toggleDiscipline } from '../../actions'
 
 function Home({ disciplineBoulder, toggleDiscipline }) {
   let caption
@@ -51,7 +51,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  toggleDiscipline: (isBoulder) => dispatch(ACTIONS.toggleDiscipline(isBoulder))
+  toggleDiscipline: (isBoulder) => dispatch(toggleDiscipline(isBoulder))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home))

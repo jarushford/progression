@@ -33,7 +33,7 @@ class ProjectPage extends Component {
     }
 
     let sentStatus
-    if (project.sent) {
+    if (project.high_point / project.moves_total === 1) {
       sentStatus = <h3>SENT!</h3>
     } else {
       sentStatus = <div />
@@ -59,7 +59,7 @@ class ProjectPage extends Component {
             <div className={`priority${priorityHelper(project.priority)}`}/>
           </div>
           <h5 className="proj-location">{project.location}</h5>
-          {sentStatus}
+          <h1 className="proj-name">{sentStatus}</h1>
           <Link to='/projects'>
             <button className="add-project">Back to Projects</button>
           </Link>

@@ -10,31 +10,37 @@ import { fetchMilestonesThunk } from '../../thunks/fetchMilestones'
 import { fetchJournalThunk } from '../../thunks/fetchJournal';
 
 function Projects({ projects, deleteProject, user, setCurrentProject, fetchMilestones, fetchJournal }) {
-  const projectsRender = projects.map(project => {
-    return (
-        <article className="project" key={uid(project)}>
-          <div>
-          <Link
-            to={`/projects/${project.id}`}
-            className="project-link"
-            onClick={async () => {
-              await fetchMilestones(user.id, project.id)
-              await fetchJournal(user.id, project.id)
-              setCurrentProject(project.id)
-            }}
-          >
-            <h2 className="project-name">{project.name}</h2>
-          </Link>
-            <h5 className="project-grade">{gradeConverter[project.grade]}</h5>
-          </div>
-          <h5 className="project-location">{project.location}</h5>
-          <i className="fas fa-times" onClick={() => deleteProject(project.id, user.id)}></i>
-        </article>
-    )
-  })
+  let projectsRender
 
   if (!user.name) {
     return <h1 className="no-user-msg">Log in or sign up to add projects</h1>
+  }
+
+  if (!projects.length) {
+    projectsRender = <h1 className="no-data-msg">You have no saved projects</h1>
+  } else {
+    projectsRender = projects.map(project => {
+      return (
+          <article className="project" key={uid(project)}>
+            <div>
+            <Link
+              to={`/projects/${project.id}`}
+              className="project-link"
+              onClick={async () => {
+                await fetchMilestones(user.id, project.id)
+                await fetchJournal(user.id, project.id)
+                setCurrentProject(project.id)
+              }}
+            >
+              <h2 className="project-name">{project.name}</h2>
+            </Link>
+              <h5 className="project-grade">{gradeConverter[project.grade]}</h5>
+            </div>
+            <h5 className="project-location">{project.location}</h5>
+            <i className="fas fa-times" onClick={() => deleteProject(project.id, user.id)}></i>
+          </article>
+      )
+    })
   }
 
   return (

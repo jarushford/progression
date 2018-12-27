@@ -7,7 +7,12 @@ import '../../main.scss'
 import { deleteWorkoutThunk } from '../../thunks/deleteWorkout';
 
 function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
-  let trainingRender = <div></div>
+  let trainingRender
+
+  if (!user.name) {
+    return <h1 className="no-user-msg">Log in or sign up to view workouts</h1>
+  }
+
   if (Object.keys(trainingDataUnclean).length) {
     const keys = Object.keys(trainingDataUnclean)
     const trainingData = keys.reduce((data, workout) => {
@@ -28,6 +33,8 @@ function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout 
           </article>
       )
     })
+  } else {
+    trainingRender = <h1 className="no-data-msg">You have no saved workouts</h1>
   }
 
   return (

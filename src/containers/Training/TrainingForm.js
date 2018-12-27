@@ -48,8 +48,9 @@ class TrainingForm extends Component {
 
   render() {
     const { day, month, year, description, type, workoutAdded } = this.state
+    const { user } = this.props
 
-    if (workoutAdded) { return <Redirect to='/training/all' /> }
+    if (workoutAdded || !user.name) { return <Redirect to='/training/all' /> }
 
     const date = new Date()
     const currentYear = date.getFullYear()
