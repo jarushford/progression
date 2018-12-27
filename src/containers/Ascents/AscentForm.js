@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addAscentThunk } from '../../thunks/addAscent'
+import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
 class AscentForm extends Component {
@@ -29,7 +29,7 @@ class AscentForm extends Component {
       grade: this.state.grade,
       caption: this.state.caption
     }
-    const result = await this.props.addAscent(ascent)
+    const result = await this.props.addAscent(ascent, 'ascent')
     if (result) {
       this.setState({ ascentAdded: true })
     }
@@ -97,7 +97,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  addAscent: (ascent) => dispatch(addAscentThunk(ascent))
+  addAscent: (ascent, type) => dispatch(addDataThunk(ascent, type))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(AscentForm)

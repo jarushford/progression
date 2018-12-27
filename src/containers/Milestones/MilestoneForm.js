@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addMilestoneThunk } from '../../thunks/addMilestone'
+import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
 class MilestoneForm extends Component {
@@ -31,7 +31,7 @@ class MilestoneForm extends Component {
       user_id: user.id,
       project_id: project
     }
-    const result = await this.props.addMilestone(milestone)
+    const result = await this.props.addMilestone(milestone, 'milestone')
     if (result) {
       this.setState({ milestoneAdded: true })
     }
@@ -64,7 +64,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  addMilestone: (ascent) => dispatch(addMilestoneThunk(ascent))
+  addMilestone: (milestone, type) => dispatch(addDataThunk(milestone, type))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(MilestoneForm)

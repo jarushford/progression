@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addProjectThunk } from '../../thunks/addProject'
+import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
 class ProjectForm extends Component {
@@ -39,7 +39,7 @@ class ProjectForm extends Component {
       high_point: this.state.high_point,
       caption: this.state.caption
     }
-    const result = await this.props.addProject(project)
+    const result = await this.props.addProject(project, 'project')
     if (result) {
       this.setState({ projectAdded: true })
     }
@@ -159,7 +159,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  addProject: (ascent) => dispatch(addProjectThunk(ascent))
+  addProject: (project, type) => dispatch(addDataThunk(project, type))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectForm)

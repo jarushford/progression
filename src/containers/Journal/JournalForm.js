@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addJournalThunk } from '../../thunks/addJournal'
+import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
 class JournalForm extends Component {
@@ -31,7 +31,7 @@ class JournalForm extends Component {
       user_id: user.id,
       project_id: project
     }
-    const result = await this.props.addJournal(entry)
+    const result = await this.props.addJournal(entry, 'journal')
     if (result) {
       this.setState({ entryAdded: true })
     }
@@ -64,7 +64,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  addJournal: (ascent) => dispatch(addJournalThunk(ascent))
+  addJournal: (entry, type) => dispatch(addDataThunk(entry, type))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(JournalForm)

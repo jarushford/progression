@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addWorkoutThunk } from '../../thunks/addWorkout'
+import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
 class TrainingForm extends Component {
@@ -40,7 +40,7 @@ class TrainingForm extends Component {
       description: this.state.description,
       type: this.state.type
     }
-    const result = await this.props.addWorkout(workout)
+    const result = await this.props.addWorkout(workout, 'workout')
     if (result) {
       this.setState({ workoutAdded: true })
     }
@@ -165,7 +165,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  addWorkout: (ascent) => dispatch(addWorkoutThunk(ascent))
+  addWorkout: (workout, type) => dispatch(addDataThunk(workout, type))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(TrainingForm)
