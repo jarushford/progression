@@ -39,6 +39,7 @@
       "!src/index.js",
       "!src/serviceWorker.js",
       "!src/setupTests.js",
+      "!src/utils/gradeConverter.js",
       "!src/reducers/index.js"
     ]
   }

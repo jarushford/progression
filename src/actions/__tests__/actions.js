@@ -1,4 +1,4 @@
-import * as ACTIONS from './index'
+import * as ACTIONS from '../index'
 
 describe('ACTIONS', () => {
   it('should return workouts when getTraining is called', () => {
