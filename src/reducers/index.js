@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { trainingDataReducer, projectsReducer, ascentsReducer, disciplineReducer, currentProjectReducer, milestonesReducer } from './userDataReducers'
+import { trainingDataReducer, projectsReducer, ascentsReducer, disciplineReducer, currentProjectReducer, milestonesReducer, journalReducer } from './userDataReducers'
 import { currentUserReducer } from './currentUserReducer'
 import { errorReducer } from './errorReducer'
 
@@ -11,7 +11,8 @@ const rootReducer = combineReducers({
   currentUser: currentUserReducer,
   error: errorReducer,
   currentProject: currentProjectReducer,
-  milestones: milestonesReducer
+  milestones: milestonesReducer,
+  journal: journalReducer
 })
 
 export default rootReducer

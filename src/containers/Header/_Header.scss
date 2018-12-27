@@ -108,12 +108,12 @@
     background: $midGrey;
   }
 
-  h2:nth-child(1):hover ~ h2:nth-child(2) {
+  h2:nth-child(1):hover ~ .logout-link h2 {
     opacity: 1;
     height: 50px;
   }
 
-  h2:nth-child(2) {
+  .logout-link h2 {
     margin-top: 0;
     background: $midGrey;
     height: 0px;
@@ -127,4 +127,8 @@
       color: $accent;
     }
   }
+}
+
+.logout-link {
+  text-decoration: none;
 }

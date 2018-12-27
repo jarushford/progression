@@ -4,6 +4,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
 import Milestone from '../Milestones/Milestone'
+import Journal from '../Journal/Journal'
 import { uid } from 'react-uid';
 
 class ProjectPage extends Component {
@@ -20,7 +21,7 @@ class ProjectPage extends Component {
   }
 
   render() {
-    const { project, user, milestones } = this.props
+    const { project, user, milestones, journal } = this.props
     const { milestonesOpen, journalOpen } = this.state
     
     if (!user.name) {
@@ -84,7 +85,9 @@ class ProjectPage extends Component {
               <Link to='/milestones/add'>
                 <button className="add-milestone">Add Milestone</button>
               </Link>
-              <button className="add-session">Add Session</button>
+              <Link to='/journal/add'>
+                <button className="add-session">Add Journal Entry</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -101,6 +104,9 @@ class ProjectPage extends Component {
             <h1 className="proj-journal"
               onClick={() => this.toggleState('journalOpen')}
             >Journal {journalToggle}</h1>
+            <div className="collapse-section">
+              {journal.map(entry => <Journal {...entry} key={uid(entry)}/>)}
+            </div>
           </div>
         </div>
       </section>
@@ -110,6 +116,7 @@ class ProjectPage extends Component {
 
 const mapStateToProps = (state) => ({
   milestones: state.milestones,
+  journal: state.journal,
   user: state.currentUser
 })
 

@@ -52,6 +52,17 @@ export const milestonesReducer = (state = [], action) => {
   }
 }
 
+export const journalReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'GET_JOURNAL':
+      return [...action.data]
+    case 'CLEAR_JOURNAL':
+      return []
+    default:
+      return state
+  }
+}
+
 export const disciplineReducer = (state = true, action) => {
   switch (action.type) {
     case 'TOGGLE_DISCIPLINE':

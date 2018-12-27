@@ -34,6 +34,15 @@ export const clearMilestones = () => ({
   type: 'CLEAR_MILESTONES'
 })
 
+export const getJournal = (data) => ({
+  type: 'GET_JOURNAL',
+  data
+})
+
+export const clearJournal = () => ({
+  type: 'CLEAR_JOURNAL'
+})
+
 export const toggleDiscipline = (discipline) => ({
   type: 'TOGGLE_DISCIPLINE',
   discipline

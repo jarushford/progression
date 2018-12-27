@@ -12,12 +12,18 @@ function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWor
       <div className="current-user">
         <div>
           <h2><i className="fas fa-caret-down" /> Welcome, {currentUser.name}!</h2>
-          <h2 onClick={() => {
-            clearAscents()
-            clearProjects()
-            clearWorkouts()
-            logoutUser()
-          }}>Log Out</h2>
+          <Link
+            to="/"
+            className="logout-link"
+            onClick={() => {
+              clearAscents()
+              clearProjects()
+              clearWorkouts()
+              logoutUser()
+            }}
+          >
+            <h2>Log Out</h2>
+          </Link>
         </div>
         <i className="fas fa-user-circle" />
       </div>

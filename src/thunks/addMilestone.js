@@ -13,7 +13,7 @@ export const addMilestoneThunk = (milestone) => {
         }
       })
       if (!response.ok) {
-        throw Error('Could not add project')
+        throw Error('Could not add milestone')
       }
       await dispatch(clearMilestones())
       dispatch(fetchMilestonesThunk(milestone.user_id, milestone.project_id))

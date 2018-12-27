@@ -7,8 +7,9 @@ import { deleteProjectThunk } from '../../thunks/deleteProject'
 import '../../main.scss'
 import { setCurrentProject } from '../../actions';
 import { fetchMilestonesThunk } from '../../thunks/fetchMilestones'
+import { fetchJournalThunk } from '../../thunks/fetchJournal';
 
-function Projects({ projects, deleteProject, user, setCurrentProject, fetchMilestones }) {
+function Projects({ projects, deleteProject, user, setCurrentProject, fetchMilestones, fetchJournal }) {
   const projectsRender = projects.map(project => {
     return (
         <article className="project" key={uid(project)}>
@@ -18,6 +19,7 @@ function Projects({ projects, deleteProject, user, setCurrentProject, fetchMiles
             className="project-link"
             onClick={async () => {
               await fetchMilestones(user.id, project.id)
+              await fetchJournal(user.id, project.id)
               setCurrentProject(project.id)
             }}
           >
@@ -56,7 +58,8 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   deleteProject: (project_id, id) => dispatch(deleteProjectThunk(project_id, id)),
   setCurrentProject: (id) => dispatch(setCurrentProject(id)),
-  fetchMilestones: (id, project_id) => dispatch(fetchMilestonesThunk(id, project_id))
+  fetchMilestones: (id, project_id) => dispatch(fetchMilestonesThunk(id, project_id)),
+  fetchJournal: (id, project_id) => dispatch(fetchJournalThunk(id, project_id))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Projects))
