@@ -40,7 +40,7 @@ class MilestoneForm extends Component {
   render() {
     const { caption, milestoneAdded } = this.state
 
-    if (milestoneAdded) { return <Redirect to='/projects/' /> }
+    if (milestoneAdded) { return <Redirect to={`/projects/${this.props.project}`} /> }
 
     return (
       <form className="milestone-form" onSubmit={this.handleSubmit}>
@@ -50,6 +50,7 @@ class MilestoneForm extends Component {
           onChange={this.handleChange}
           placeholder="caption"
           maxLength="200"
+          className="milestone-caption"
         />
         <button>Add Milestone</button>
       </form>

@@ -55,13 +55,15 @@
 .proj-milestones,
 .proj-journal {
   @include ascentDetails($accent, 1.7rem);
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 
 .proj-milestones,
 .proj-journal {
   cursor: pointer;
   transition: .4s ease;
+  border-bottom: 1px solid $ruleLine;
+  padding-bottom: 12px;
 
   &:hover {
     color: $text;

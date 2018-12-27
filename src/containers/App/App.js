@@ -45,10 +45,10 @@ class App extends Component {
           <Route path="/training/all" component={TrainingAll} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/projects/add" component={ProjectForm} />
-          <Route path="/projects/:name" render={({ match }) => {
-            const { name } = match.params
+          <Route path="/projects/:id" render={({ match }) => {
+            const { id } = match.params
             const currentProject = projects.find(project =>
-              project.name === name
+              project.id === parseInt(id)
             )
             return <ProjectPage project={currentProject} />
           }}/>

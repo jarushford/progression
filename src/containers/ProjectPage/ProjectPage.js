@@ -6,12 +6,16 @@ import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
 import Milestone from '../Milestones/Milestone'
 import { uid } from 'react-uid';
 
-function ProjectPage({ project = { sessions: [] }, milestones }) {
+function ProjectPage({ project = { sessions: [] }, milestones, user }) {
   let sentStatus
   if (project.sent) {
     sentStatus = <h3>SENT!</h3>
   } else {
     sentStatus = <div />
+  }
+
+  if (!user.name) {
+    return <h1 className="no-user-msg">Log in or sign up to add projects</h1>
   }
 
   return (
@@ -68,7 +72,8 @@ function ProjectPage({ project = { sessions: [] }, milestones }) {
 }
 
 const mapStateToProps = (state) => ({
-  milestones: state.milestones
+  milestones: state.milestones,
+  user: state.currentUser
 })
 
 export default withRouter(connect(mapStateToProps)(ProjectPage))

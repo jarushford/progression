@@ -1,0 +1,57 @@
+.milestone-form {
+  @include form();
+
+  h2 {
+    @include form-title();
+  }
+
+  .milestone-caption {
+    @include form-caption();
+    height: 100px;
+  }
+
+  button {
+    @include button();
+    margin: 20px auto;
+  }
+}
+
+.milestone {
+  border-bottom: 1px solid $ruleLine;
+  margin: 0 10px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+
+    h3 {
+      @include pageTitle();
+      font-size: 1.6rem;
+      margin: 0px;
+    }
+
+    .fa-times {
+      cursor: pointer;
+      position: absolute;
+      font-size: 1.5rem;
+      color: $text;
+      transition: .4s ease;
+      top: 10px;
+      right: 0px;
+
+      &:hover {
+        font-size: 1.6rem;
+        color: tomato;
+      }
+    }
+  }
+
+  .milestone-cap {
+    font-size: 1.2rem;
+    color: $accent;
+    margin: 0 0 20px 15px;
+  }
+}

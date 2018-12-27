@@ -14,7 +14,7 @@ function Projects({ projects, deleteProject, user, setCurrentProject, fetchMiles
         <article className="project" key={uid(project)}>
           <div>
           <Link
-            to={`/projects/${project.name}`}
+            to={`/projects/${project.id}`}
             className="project-link"
             onClick={async () => {
               await fetchMilestones(user.id, project.id)
