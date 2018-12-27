@@ -1,13 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { deleteJournalThunk } from '../../thunks/deleteJournal'
+import { deleteDataThunk } from '../../thunks/deleteData'
 
 function Journal({ journal_date, entry, id, user_id, project_id, deleteJournal }) {
   return (
     <article className="journal">
       <div>
         <h3>{journal_date}</h3>
-        <i className="fas fa-times" onClick={() => deleteJournal(id, project_id, user_id)} />
+        <i className="fas fa-times" onClick={() => deleteJournal(id, user_id, project_id, 'journal')} />
       </div>
       <p className="milestone-cap">{entry}</p>
     </article>
@@ -15,7 +15,7 @@ function Journal({ journal_date, entry, id, user_id, project_id, deleteJournal }
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteJournal: (id, project_id, user_id) => dispatch(deleteJournalThunk(id, project_id, user_id))
+  deleteJournal: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 
 export default connect(null, mapDispatchToProps)(Journal)

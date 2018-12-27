@@ -4,7 +4,7 @@ import { withRouter, Link } from 'react-router-dom'
 import { toggleComplete } from '../../actions'
 import { uid } from 'react-uid'
 import '../../main.scss'
-import { deleteWorkoutThunk } from '../../thunks/deleteWorkout';
+import { deleteDataThunk } from '../../thunks/deleteData';
 
 function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
   let trainingRender
@@ -29,7 +29,7 @@ function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout 
               <h5 className="project-grade">{trainingData[workout].type}</h5>
             </div>
             <h5 className="project-location">{trainingData[workout].description}</h5>
-            <i className="fas fa-times" onClick={() => deleteWorkout(trainingData[workout].id, user.id)}></i>
+            <i className="fas fa-times" onClick={() => deleteWorkout(trainingData[workout].id, user.id, null, 'workout')}></i>
           </article>
       )
     })
@@ -62,7 +62,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   toggleComplete: (key) => dispatch(toggleComplete(key)),
-  deleteWorkout: (workout_id, id) => dispatch(deleteWorkoutThunk(workout_id, id))
+  deleteWorkout: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TrainingAll))

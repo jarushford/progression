@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import gradeConverter from '../../utils/gradeConverter'
 import { connect }  from 'react-redux';
 import { uid } from 'react-uid'
-import { deleteProjectThunk } from '../../thunks/deleteProject'
+import { deleteDataThunk } from '../../thunks/deleteData'
 import '../../main.scss'
 import { setCurrentProject } from '../../actions';
 import { fetchMilestonesThunk } from '../../thunks/fetchMilestones'
@@ -37,7 +37,7 @@ function Projects({ projects, deleteProject, user, setCurrentProject, fetchMiles
               <h5 className="project-grade">{gradeConverter[project.grade]}</h5>
             </div>
             <h5 className="project-location">{project.location}</h5>
-            <i className="fas fa-times" onClick={() => deleteProject(project.id, user.id)}></i>
+            <i className="fas fa-times" onClick={() => deleteProject(project.id, user.id, null, 'project')}></i>
           </article>
       )
     })
@@ -62,7 +62,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteProject: (project_id, id) => dispatch(deleteProjectThunk(project_id, id)),
+  deleteProject: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type)),
   setCurrentProject: (id) => dispatch(setCurrentProject(id)),
   fetchMilestones: (id, project_id) => dispatch(fetchMilestonesThunk(id, project_id)),
   fetchJournal: (id, project_id) => dispatch(fetchJournalThunk(id, project_id))

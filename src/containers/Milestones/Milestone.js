@@ -1,13 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { deleteMilestoneThunk } from '../../thunks/deleteMilestone'
+import { deleteDataThunk } from '../../thunks/deleteData'
 
 function Milestone({ milestone_date, caption, id, user_id, project_id, deleteMilestone }) {
   return (
     <article className="milestone">
       <div>
         <h3>{milestone_date}</h3>
-        <i className="fas fa-times" onClick={() => deleteMilestone(id, project_id, user_id)} />
+        <i className="fas fa-times" onClick={() => deleteMilestone(id, user_id, project_id, 'milestone')} />
       </div>
       <p className="milestone-cap">{caption}</p>
     </article>
@@ -15,7 +15,7 @@ function Milestone({ milestone_date, caption, id, user_id, project_id, deleteMil
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteMilestone: (id, project_id, user_id) => dispatch(deleteMilestoneThunk(id, project_id, user_id))
+  deleteMilestone: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 
 export default connect(null, mapDispatchToProps)(Milestone)
