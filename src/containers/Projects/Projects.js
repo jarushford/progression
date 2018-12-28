@@ -6,10 +6,9 @@ import { uid } from 'react-uid'
 import { deleteDataThunk } from '../../thunks/deleteData'
 import '../../main.scss'
 import { setCurrentProject } from '../../actions';
-import { fetchMilestonesThunk } from '../../thunks/fetchMilestones'
-import { fetchJournalThunk } from '../../thunks/fetchJournal';
+import { fetchDataThunk } from '../../thunks/fetchData'
 
-function Projects({ projects, deleteProject, user, setCurrentProject, fetchMilestones, fetchJournal }) {
+function Projects({ projects, deleteProject, user, setCurrentProject, fetchData }) {
   let projectsRender
 
   if (!user.name) {
@@ -27,8 +26,8 @@ function Projects({ projects, deleteProject, user, setCurrentProject, fetchMiles
               to={`/projects/${project.id}`}
               className="project-link"
               onClick={async () => {
-                await fetchMilestones(user.id, project.id)
-                await fetchJournal(user.id, project.id)
+                await fetchData(user.id, project.id, 'journal')
+                await fetchData(user.id, project.id, 'milestone')
                 setCurrentProject(project.id)
               }}
             >
@@ -64,8 +63,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   deleteProject: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type)),
   setCurrentProject: (id) => dispatch(setCurrentProject(id)),
-  fetchMilestones: (id, project_id) => dispatch(fetchMilestonesThunk(id, project_id)),
-  fetchJournal: (id, project_id) => dispatch(fetchJournalThunk(id, project_id))
+  fetchData: (id, project_id, type) => dispatch(fetchDataThunk(id, project_id, type))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Projects))

@@ -1,7 +1,5 @@
 import { setError, setUser } from '../actions'
-import { fetchAscentsThunk } from './fetchAscents'
-import { fetchProjectsThunk } from './fetchProjects'
-import { fetchWorkoutsThunk } from './fetchWorkouts'
+import { fetchDataThunk } from './fetchData'
 
 export const loginUserThunk = (user) => {
   return async (dispatch) => {
@@ -20,9 +18,9 @@ export const loginUserThunk = (user) => {
       const result = await response.json()
       const currentUser = result.data
       dispatch(setUser(currentUser))
-      await dispatch(fetchAscentsThunk(currentUser.id))
-      await dispatch(fetchProjectsThunk(currentUser.id))
-      await dispatch(fetchWorkoutsThunk(currentUser.id))
+      await dispatch(fetchDataThunk(currentUser.id, '', 'ascent'))
+      await dispatch(fetchDataThunk(currentUser.id, '', 'project'))
+      await dispatch(fetchDataThunk(currentUser.id, '', 'workout'))
       return true
     } catch (error) {
       dispatch(setError(error.message))

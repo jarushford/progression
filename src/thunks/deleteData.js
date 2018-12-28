@@ -1,4 +1,5 @@
-import { clearThunkHelper, fetchThunkHelper } from '../utils/thunkHelpers'
+import { clearThunkHelper } from '../utils/thunkHelpers'
+import { fetchDataThunk } from './fetchData'
 import { setError } from '../actions'
 
 export const deleteDataThunk = (item_id, user_id, project_id, type) => {
@@ -25,8 +26,8 @@ export const deleteDataThunk = (item_id, user_id, project_id, type) => {
       await dispatch(clearThunkHelper(type)())
 
       type === 'journal' || type === 'milestone'
-        ? dispatch(fetchThunkHelper(type)(data.user_id, data.project_id))
-        : dispatch(fetchThunkHelper(type)(data.user_id))
+        ? dispatch(fetchDataThunk(data.user_id, data.project_id, type))
+        : dispatch(fetchDataThunk(data.user_id, '', type))
 
     } catch (error) {
       dispatch(setError(error.message))

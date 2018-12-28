@@ -1,9 +1,5 @@
-import { clearAscents, clearProjects, clearWorkouts, clearJournal, clearMilestones } from '../actions'
-import { fetchAscentsThunk } from '../thunks/fetchAscents';
-import { fetchProjectsThunk } from '../thunks/fetchProjects';
-import { fetchWorkoutsThunk } from '../thunks/fetchWorkouts';
-import { fetchJournalThunk } from '../thunks/fetchJournal';
-import { fetchMilestonesThunk } from '../thunks/fetchMilestones';
+import { clearAscents, clearProjects, clearWorkouts, clearJournal, clearMilestones, getAscents, getProjects, getTraining, getJournal, getMilestones } from '../actions'
+
 
 export const clearThunkHelper = (type) => {
   const helper = {
@@ -16,13 +12,13 @@ export const clearThunkHelper = (type) => {
   return helper[type]
 }
 
-export const fetchThunkHelper = (type) => {
+export const getThunkHelper = (type) => {
   const helper = {
-    ascent: fetchAscentsThunk,
-    project: fetchProjectsThunk,
-    workout: fetchWorkoutsThunk,
-    journal: fetchJournalThunk,
-    milestone: fetchMilestonesThunk
+    ascent: getAscents,
+    project: getProjects,
+    workout: getTraining,
+    journal: getJournal,
+    milestone: getMilestones
   }
   return helper[type]
 }
