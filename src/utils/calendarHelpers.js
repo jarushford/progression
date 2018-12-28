@@ -24,7 +24,7 @@ export const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData
 export const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
-  const distanceUp = daysInThisMonth() - parseInt(todayDay) + parseInt(keyDay)
+  const distanceUp = daysInThisMonth() - (parseInt(todayDay) - parseInt(keyDay))
   const distanceDown = daysInPreviousMonth() - parseInt(keyDay) + parseInt(todayDay)
   if (keyDay < todayDay && distanceUp <= 6 - todayIndex) {
     weekIndex[parseInt(todayIndex) + parseInt(distanceUp)] = (
@@ -40,7 +40,10 @@ export const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData
         <p>{trainingData[key].description}</p>
       </li>
     )
+  } else {
+    Object.assign(weekIndex, daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
   }
+  return weekIndex
 }
 
 export const daysInThisMonth = () => {

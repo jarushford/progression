@@ -40,7 +40,7 @@ function Training({ trainingDataUnclean, toggleComplete, user }) {
           </li>
         )
       } else if (endOfMonthIndex.includes(today.substring(3, 5))) {
-        Object.assign(weekIndex, Helper.endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, endOfMonthIndex, toggleComplete))
+        Object.assign(weekIndex, Helper.endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
       } else if (keyM === todayM && keyY === todayY) {
         Object.assign(weekIndex, Helper.daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
       }
