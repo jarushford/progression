@@ -1,0 +1,1094 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GradeSection GradeSection Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GradeSection
+    ascents={
+      Array [
+        Object {
+          "grade": "V13",
+          "id": 1,
+          "location": "RMNP, CO",
+          "name": "Top Notch",
+        },
+        Object {
+          "grade": "V7",
+          "id": 2,
+          "location": "Newlin, CO",
+          "name": "Megalodon",
+        },
+        Object {
+          "grade": "V13",
+          "id": 3,
+          "location": "Thunder Ridge, CO",
+          "name": "Sabretooth",
+        },
+      ]
+    }
+    user={
+      Object {
+        "email": "groot@groot.groot",
+        "id": 3,
+        "name": "Groot",
+        "password": "iamgroot",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3 />,
+        Array [
+          <article
+            className="ascent"
+          >
+            <div>
+              <div
+                className="content-section"
+              >
+                <h2
+                  className="ascent-name"
+                >
+                  Top Notch
+                </h2>
+                <h5
+                  className="ascent-location"
+                >
+                  RMNP, CO
+                </h5>
+              </div>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </div>
+            <p />
+          </article>,
+          <article
+            className="ascent"
+          >
+            <div>
+              <div
+                className="content-section"
+              >
+                <h2
+                  className="ascent-name"
+                >
+                  Megalodon
+                </h2>
+                <h5
+                  className="ascent-location"
+                >
+                  Newlin, CO
+                </h5>
+              </div>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </div>
+            <p />
+          </article>,
+          <article
+            className="ascent"
+          >
+            <div>
+              <div
+                className="content-section"
+              >
+                <h2
+                  className="ascent-name"
+                >
+                  Sabretooth
+                </h2>
+                <h5
+                  className="ascent-location"
+                >
+                  Thunder Ridge, CO
+                </h5>
+              </div>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </div>
+            <p />
+          </article>,
+        ],
+      ],
+      "className": "grade-section",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": "uid1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <div
+                className="content-section"
+              >
+                <h2
+                  className="ascent-name"
+                >
+                  Top Notch
+                </h2>
+                <h5
+                  className="ascent-location"
+                >
+                  RMNP, CO
+                </h5>
+              </div>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </div>,
+            <p />,
+          ],
+          "className": "ascent",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Top Notch
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    RMNP, CO
+                  </h5>
+                </div>,
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h2
+                      className="ascent-name"
+                    >
+                      Top Notch
+                    </h2>,
+                    <h5
+                      className="ascent-location"
+                    >
+                      RMNP, CO
+                    </h5>,
+                  ],
+                  "className": "content-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Top Notch",
+                      "className": "ascent-name",
+                    },
+                    "ref": null,
+                    "rendered": "Top Notch",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "RMNP, CO",
+                      "className": "ascent-location",
+                    },
+                    "ref": null,
+                    "rendered": "RMNP, CO",
+                    "type": "h5",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-times",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "uid2",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <div
+                className="content-section"
+              >
+                <h2
+                  className="ascent-name"
+                >
+                  Megalodon
+                </h2>
+                <h5
+                  className="ascent-location"
+                >
+                  Newlin, CO
+                </h5>
+              </div>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </div>,
+            <p />,
+          ],
+          "className": "ascent",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Megalodon
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    Newlin, CO
+                  </h5>
+                </div>,
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h2
+                      className="ascent-name"
+                    >
+                      Megalodon
+                    </h2>,
+                    <h5
+                      className="ascent-location"
+                    >
+                      Newlin, CO
+                    </h5>,
+                  ],
+                  "className": "content-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Megalodon",
+                      "className": "ascent-name",
+                    },
+                    "ref": null,
+                    "rendered": "Megalodon",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Newlin, CO",
+                      "className": "ascent-location",
+                    },
+                    "ref": null,
+                    "rendered": "Newlin, CO",
+                    "type": "h5",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-times",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "uid3",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <div
+                className="content-section"
+              >
+                <h2
+                  className="ascent-name"
+                >
+                  Sabretooth
+                </h2>
+                <h5
+                  className="ascent-location"
+                >
+                  Thunder Ridge, CO
+                </h5>
+              </div>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </div>,
+            <p />,
+          ],
+          "className": "ascent",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Sabretooth
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    Thunder Ridge, CO
+                  </h5>
+                </div>,
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h2
+                      className="ascent-name"
+                    >
+                      Sabretooth
+                    </h2>,
+                    <h5
+                      className="ascent-location"
+                    >
+                      Thunder Ridge, CO
+                    </h5>,
+                  ],
+                  "className": "content-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sabretooth",
+                      "className": "ascent-name",
+                    },
+                    "ref": null,
+                    "rendered": "Sabretooth",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Thunder Ridge, CO",
+                      "className": "ascent-location",
+                    },
+                    "ref": null,
+                    "rendered": "Thunder Ridge, CO",
+                    "type": "h5",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-times",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3 />,
+          Array [
+            <article
+              className="ascent"
+            >
+              <div>
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Top Notch
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    RMNP, CO
+                  </h5>
+                </div>
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />
+              </div>
+              <p />
+            </article>,
+            <article
+              className="ascent"
+            >
+              <div>
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Megalodon
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    Newlin, CO
+                  </h5>
+                </div>
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />
+              </div>
+              <p />
+            </article>,
+            <article
+              className="ascent"
+            >
+              <div>
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Sabretooth
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    Thunder Ridge, CO
+                  </h5>
+                </div>
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />
+              </div>
+              <p />
+            </article>,
+          ],
+        ],
+        "className": "grade-section",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Top Notch
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    RMNP, CO
+                  </h5>
+                </div>
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />
+              </div>,
+              <p />,
+            ],
+            "className": "ascent",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="content-section"
+                  >
+                    <h2
+                      className="ascent-name"
+                    >
+                      Top Notch
+                    </h2>
+                    <h5
+                      className="ascent-location"
+                    >
+                      RMNP, CO
+                    </h5>
+                  </div>,
+                  <i
+                    className="fas fa-times"
+                    onClick={[Function]}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h2
+                        className="ascent-name"
+                      >
+                        Top Notch
+                      </h2>,
+                      <h5
+                        className="ascent-location"
+                      >
+                        RMNP, CO
+                      </h5>,
+                    ],
+                    "className": "content-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Top Notch",
+                        "className": "ascent-name",
+                      },
+                      "ref": null,
+                      "rendered": "Top Notch",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "RMNP, CO",
+                        "className": "ascent-location",
+                      },
+                      "ref": null,
+                      "rendered": "RMNP, CO",
+                      "type": "h5",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-times",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "uid2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Megalodon
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    Newlin, CO
+                  </h5>
+                </div>
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />
+              </div>,
+              <p />,
+            ],
+            "className": "ascent",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="content-section"
+                  >
+                    <h2
+                      className="ascent-name"
+                    >
+                      Megalodon
+                    </h2>
+                    <h5
+                      className="ascent-location"
+                    >
+                      Newlin, CO
+                    </h5>
+                  </div>,
+                  <i
+                    className="fas fa-times"
+                    onClick={[Function]}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h2
+                        className="ascent-name"
+                      >
+                        Megalodon
+                      </h2>,
+                      <h5
+                        className="ascent-location"
+                      >
+                        Newlin, CO
+                      </h5>,
+                    ],
+                    "className": "content-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Megalodon",
+                        "className": "ascent-name",
+                      },
+                      "ref": null,
+                      "rendered": "Megalodon",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Newlin, CO",
+                        "className": "ascent-location",
+                      },
+                      "ref": null,
+                      "rendered": "Newlin, CO",
+                      "type": "h5",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-times",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "uid3",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <div
+                  className="content-section"
+                >
+                  <h2
+                    className="ascent-name"
+                  >
+                    Sabretooth
+                  </h2>
+                  <h5
+                    className="ascent-location"
+                  >
+                    Thunder Ridge, CO
+                  </h5>
+                </div>
+                <i
+                  className="fas fa-times"
+                  onClick={[Function]}
+                />
+              </div>,
+              <p />,
+            ],
+            "className": "ascent",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="content-section"
+                  >
+                    <h2
+                      className="ascent-name"
+                    >
+                      Sabretooth
+                    </h2>
+                    <h5
+                      className="ascent-location"
+                    >
+                      Thunder Ridge, CO
+                    </h5>
+                  </div>,
+                  <i
+                    className="fas fa-times"
+                    onClick={[Function]}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h2
+                        className="ascent-name"
+                      >
+                        Sabretooth
+                      </h2>,
+                      <h5
+                        className="ascent-location"
+                      >
+                        Thunder Ridge, CO
+                      </h5>,
+                    ],
+                    "className": "content-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sabretooth",
+                        "className": "ascent-name",
+                      },
+                      "ref": null,
+                      "rendered": "Sabretooth",
+                      "type": "h2",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Thunder Ridge, CO",
+                        "className": "ascent-location",
+                      },
+                      "ref": null,
+                      "rendered": "Thunder Ridge, CO",
+                      "type": "h5",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-times",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -4,7 +4,7 @@ import '../../main.scss'
 import { connect } from 'react-redux';
 import { logoutUser, clearAscents, clearProjects, clearWorkouts } from '../../actions'
 
-function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWorkouts }) {
+export function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWorkouts }) {
   let userButton
 
   if (currentUser.name) {
@@ -47,11 +47,11 @@ function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWor
     )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   currentUser: state.currentUser
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   clearAscents: () => dispatch(clearAscents()),
   clearProjects: () => dispatch(clearProjects()),
   clearWorkouts: () => dispatch(clearWorkouts()),

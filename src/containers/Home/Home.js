@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
 import { toggleDiscipline } from '../../actions'
 
-function Home({ disciplineBoulder, toggleDiscipline }) {
+export function Home({ disciplineBoulder, toggleDiscipline }) {
   let caption
   if (disciplineBoulder) {
     caption = (
@@ -46,11 +46,11 @@ function Home({ disciplineBoulder, toggleDiscipline }) {
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   disciplineBoulder: state.disciplineBoulder
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   toggleDiscipline: (isBoulder) => dispatch(toggleDiscipline(isBoulder))
 })
 

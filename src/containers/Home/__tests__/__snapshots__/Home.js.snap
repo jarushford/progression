@@ -1,0 +1,843 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Home Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home
+    disciplineBoulder={true}
+    toggleDiscipline={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="switcher"
+        >
+          <input
+            defaultChecked={false}
+            id="sport"
+            name="style"
+            onClick={[Function]}
+            type="radio"
+          />
+          <label
+            className="sport-label"
+            htmlFor="sport"
+          >
+            sport
+          </label>
+          <input
+            defaultChecked={true}
+            id="boulder"
+            name="style"
+            onClick={[Function]}
+            type="radio"
+          />
+          <label
+            className="boulder-label"
+            htmlFor="boulder"
+          >
+            boulder
+          </label>
+        </div>,
+        <div
+          className="caption"
+        >
+          <h2>
+            Jimmy Webb | Livin' Large | V15
+          </h2>
+          <h3>
+            Rocklands, ZA
+          </h3>
+        </div>,
+      ],
+      "className": "home",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              defaultChecked={false}
+              id="sport"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />,
+            <label
+              className="sport-label"
+              htmlFor="sport"
+            >
+              sport
+            </label>,
+            <input
+              defaultChecked={true}
+              id="boulder"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />,
+            <label
+              className="boulder-label"
+              htmlFor="boulder"
+            >
+              boulder
+            </label>,
+          ],
+          "className": "switcher",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "defaultChecked": false,
+              "id": "sport",
+              "name": "style",
+              "onClick": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "sport",
+              "className": "sport-label",
+              "htmlFor": "sport",
+            },
+            "ref": null,
+            "rendered": "sport",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "defaultChecked": true,
+              "id": "boulder",
+              "name": "style",
+              "onClick": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "boulder",
+              "className": "boulder-label",
+              "htmlFor": "boulder",
+            },
+            "ref": null,
+            "rendered": "boulder",
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Jimmy Webb | Livin' Large | V15
+            </h2>,
+            <h3>
+              Rocklands, ZA
+            </h3>,
+          ],
+          "className": "caption",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Jimmy Webb | Livin' Large | V15",
+            },
+            "ref": null,
+            "rendered": "Jimmy Webb | Livin' Large | V15",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Rocklands, ZA",
+            },
+            "ref": null,
+            "rendered": "Rocklands, ZA",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="switcher"
+          >
+            <input
+              defaultChecked={false}
+              id="sport"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />
+            <label
+              className="sport-label"
+              htmlFor="sport"
+            >
+              sport
+            </label>
+            <input
+              defaultChecked={true}
+              id="boulder"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />
+            <label
+              className="boulder-label"
+              htmlFor="boulder"
+            >
+              boulder
+            </label>
+          </div>,
+          <div
+            className="caption"
+          >
+            <h2>
+              Jimmy Webb | Livin' Large | V15
+            </h2>
+            <h3>
+              Rocklands, ZA
+            </h3>
+          </div>,
+        ],
+        "className": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                defaultChecked={false}
+                id="sport"
+                name="style"
+                onClick={[Function]}
+                type="radio"
+              />,
+              <label
+                className="sport-label"
+                htmlFor="sport"
+              >
+                sport
+              </label>,
+              <input
+                defaultChecked={true}
+                id="boulder"
+                name="style"
+                onClick={[Function]}
+                type="radio"
+              />,
+              <label
+                className="boulder-label"
+                htmlFor="boulder"
+              >
+                boulder
+              </label>,
+            ],
+            "className": "switcher",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "defaultChecked": false,
+                "id": "sport",
+                "name": "style",
+                "onClick": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "sport",
+                "className": "sport-label",
+                "htmlFor": "sport",
+              },
+              "ref": null,
+              "rendered": "sport",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "defaultChecked": true,
+                "id": "boulder",
+                "name": "style",
+                "onClick": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "boulder",
+                "className": "boulder-label",
+                "htmlFor": "boulder",
+              },
+              "ref": null,
+              "rendered": "boulder",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Jimmy Webb | Livin' Large | V15
+              </h2>,
+              <h3>
+                Rocklands, ZA
+              </h3>,
+            ],
+            "className": "caption",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Jimmy Webb | Livin' Large | V15",
+              },
+              "ref": null,
+              "rendered": "Jimmy Webb | Livin' Large | V15",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rocklands, ZA",
+              },
+              "ref": null,
+              "rendered": "Rocklands, ZA",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Home Home Component should match the snapshot with discipline false 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home
+    disciplineBoulder={false}
+    toggleDiscipline={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="switcher"
+        >
+          <input
+            defaultChecked={true}
+            id="sport"
+            name="style"
+            onClick={[Function]}
+            type="radio"
+          />
+          <label
+            className="sport-label"
+            htmlFor="sport"
+          >
+            sport
+          </label>
+          <input
+            defaultChecked={false}
+            id="boulder"
+            name="style"
+            onClick={[Function]}
+            type="radio"
+          />
+          <label
+            className="boulder-label"
+            htmlFor="boulder"
+          >
+            boulder
+          </label>
+        </div>,
+        <div
+          className="caption"
+        >
+          <h2>
+            Margo Hayes | La Rambla | 5.15a
+          </h2>
+          <h3>
+            Siurana, ES
+          </h3>
+        </div>,
+      ],
+      "className": "home",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              defaultChecked={true}
+              id="sport"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />,
+            <label
+              className="sport-label"
+              htmlFor="sport"
+            >
+              sport
+            </label>,
+            <input
+              defaultChecked={false}
+              id="boulder"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />,
+            <label
+              className="boulder-label"
+              htmlFor="boulder"
+            >
+              boulder
+            </label>,
+          ],
+          "className": "switcher",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "defaultChecked": true,
+              "id": "sport",
+              "name": "style",
+              "onClick": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "sport",
+              "className": "sport-label",
+              "htmlFor": "sport",
+            },
+            "ref": null,
+            "rendered": "sport",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "defaultChecked": false,
+              "id": "boulder",
+              "name": "style",
+              "onClick": [Function],
+              "type": "radio",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "boulder",
+              "className": "boulder-label",
+              "htmlFor": "boulder",
+            },
+            "ref": null,
+            "rendered": "boulder",
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Margo Hayes | La Rambla | 5.15a
+            </h2>,
+            <h3>
+              Siurana, ES
+            </h3>,
+          ],
+          "className": "caption",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Margo Hayes | La Rambla | 5.15a",
+            },
+            "ref": null,
+            "rendered": "Margo Hayes | La Rambla | 5.15a",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Siurana, ES",
+            },
+            "ref": null,
+            "rendered": "Siurana, ES",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="switcher"
+          >
+            <input
+              defaultChecked={true}
+              id="sport"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />
+            <label
+              className="sport-label"
+              htmlFor="sport"
+            >
+              sport
+            </label>
+            <input
+              defaultChecked={false}
+              id="boulder"
+              name="style"
+              onClick={[Function]}
+              type="radio"
+            />
+            <label
+              className="boulder-label"
+              htmlFor="boulder"
+            >
+              boulder
+            </label>
+          </div>,
+          <div
+            className="caption"
+          >
+            <h2>
+              Margo Hayes | La Rambla | 5.15a
+            </h2>
+            <h3>
+              Siurana, ES
+            </h3>
+          </div>,
+        ],
+        "className": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                defaultChecked={true}
+                id="sport"
+                name="style"
+                onClick={[Function]}
+                type="radio"
+              />,
+              <label
+                className="sport-label"
+                htmlFor="sport"
+              >
+                sport
+              </label>,
+              <input
+                defaultChecked={false}
+                id="boulder"
+                name="style"
+                onClick={[Function]}
+                type="radio"
+              />,
+              <label
+                className="boulder-label"
+                htmlFor="boulder"
+              >
+                boulder
+              </label>,
+            ],
+            "className": "switcher",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "defaultChecked": true,
+                "id": "sport",
+                "name": "style",
+                "onClick": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "sport",
+                "className": "sport-label",
+                "htmlFor": "sport",
+              },
+              "ref": null,
+              "rendered": "sport",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "defaultChecked": false,
+                "id": "boulder",
+                "name": "style",
+                "onClick": [Function],
+                "type": "radio",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "boulder",
+                "className": "boulder-label",
+                "htmlFor": "boulder",
+              },
+              "ref": null,
+              "rendered": "boulder",
+              "type": "label",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Margo Hayes | La Rambla | 5.15a
+              </h2>,
+              <h3>
+                Siurana, ES
+              </h3>,
+            ],
+            "className": "caption",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Margo Hayes | La Rambla | 5.15a",
+              },
+              "ref": null,
+              "rendered": "Margo Hayes | La Rambla | 5.15a",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Siurana, ES",
+              },
+              "ref": null,
+              "rendered": "Siurana, ES",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
