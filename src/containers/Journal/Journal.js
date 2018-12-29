@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { deleteDataThunk } from '../../thunks/deleteData'
 
-function Journal({ journal_date, entry, id, user_id, project_id, deleteJournal }) {
+export function Journal({ journal_date, entry, id, user_id, project_id, deleteJournal }) {
   return (
     <article className="journal">
       <div>
@@ -14,7 +14,7 @@ function Journal({ journal_date, entry, id, user_id, project_id, deleteJournal }
   )
 }
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   deleteJournal: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 

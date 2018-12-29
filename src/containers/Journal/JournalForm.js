@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
-class JournalForm extends Component {
+export class JournalForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -58,12 +58,12 @@ class JournalForm extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   user: state.currentUser,
   project: state.currentProject
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   addJournal: (entry, type) => dispatch(addDataThunk(entry, type))
 })
 
