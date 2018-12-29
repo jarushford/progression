@@ -5,7 +5,7 @@ import { withRouter, Link } from 'react-router-dom'
 import '../../main.scss'
 import { uid } from 'react-uid';
 
-function Ascents({ ascents, user }) {
+export function Ascents({ ascents, user }) {
   let gradeRender
 
   if (!user.name) {
@@ -49,7 +49,7 @@ function Ascents({ ascents, user }) {
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   ascents: state.ascents,
   user: state.currentUser
 })
