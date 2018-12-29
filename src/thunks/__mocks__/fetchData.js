@@ -1,0 +1,1 @@
+export const fetchDataThunk = jest.fn()

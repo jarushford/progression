@@ -1,5 +1,7 @@
 import { dataHelper, priorityHelper } from '../projectHelpers'
+import { clearThunkHelper, getThunkHelper } from '../thunkHelpers'
 import * as cal from '../calendarHelpers'
+import { clearAscents, getAscents } from '../../actions'
 
 describe('UTILS', () => {
   describe('projectHelpers', () => {
@@ -20,7 +22,21 @@ describe('UTILS', () => {
     })
   })
 
-  describe('calendarHelpers', () => {
-    
+  describe('thunkHelpers', () => {
+    it('clearThunkHelper should return the correct action', () => {
+      const expected = clearAscents
+
+      const result = clearThunkHelper('ascent')
+      
+      expect(result).toEqual(expected)
+    })
+
+    it('getThunkHelper should return the correct action', () => {
+      const expected = getAscents
+      
+      const result = getThunkHelper('ascent')
+
+      expect(result).toEqual(expected)
+    })
   })
 })

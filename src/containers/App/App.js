@@ -17,7 +17,7 @@ import JournalForm from '../Journal/JournalForm'
 import { connect }  from 'react-redux';
 import '../../main.scss'
 
-class App extends Component {
+export class App extends Component {
 
   render() {
     const { projects, disciplineBoulder, error } = this.props
@@ -64,7 +64,7 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   projects: state.projects,
   disciplineBoulder: state.disciplineBoulder,
   error: state.error
