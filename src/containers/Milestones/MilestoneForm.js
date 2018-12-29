@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
-class MilestoneForm extends Component {
+export class MilestoneForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -58,12 +58,12 @@ class MilestoneForm extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   user: state.currentUser,
   project: state.currentProject
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   addMilestone: (milestone, type) => dispatch(addDataThunk(milestone, type))
 })
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { deleteDataThunk } from '../../thunks/deleteData'
 
-function Milestone({ milestone_date, caption, id, user_id, project_id, deleteMilestone }) {
+export function Milestone({ milestone_date, caption, id, user_id, project_id, deleteMilestone }) {
   return (
     <article className="milestone">
       <div>
@@ -14,7 +14,7 @@ function Milestone({ milestone_date, caption, id, user_id, project_id, deleteMil
   )
 }
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   deleteMilestone: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 

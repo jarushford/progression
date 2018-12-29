@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom'
 import { addNewUserThunk } from '../../thunks/addNewUser';
 import { loginUserThunk } from '../../thunks/loginUser';
 
-class Login extends Component {
+export class Login extends Component {
   constructor() {
     super()
     this.state = {
@@ -105,7 +105,7 @@ class Login extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   loginUser: (user) => dispatch(loginUserThunk(user)),
   addNewUser: (user) => dispatch(addNewUserThunk(user))
 })
