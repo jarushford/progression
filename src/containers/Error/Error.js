@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { clearError } from '../../actions'
 import '../../main.scss'
 
-function Error({ error, clearError }) {
+export function Error({ error, clearError }) {
   return (
     <section className="error">
       <h2>{error}</h2>
@@ -13,11 +13,11 @@ function Error({ error, clearError }) {
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   error: state.error
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   clearError: () => dispatch(clearError())
 })
 
