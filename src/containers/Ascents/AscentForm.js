@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
-class AscentForm extends Component {
+export class AscentForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -91,12 +91,12 @@ class AscentForm extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   user: state.currentUser,
   error: state.error
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   addAscent: (ascent, type) => dispatch(addDataThunk(ascent, type))
 })
 

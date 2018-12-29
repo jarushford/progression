@@ -1,0 +1,1098 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AscentForm AscentForm Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AscentForm
+    user={
+      Object {
+        "email": "chompy@yahoo.com",
+        "id": 4,
+        "name": "T-Rex",
+        "password": "smallarms",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          ADD ASCENT
+        </h2>,
+        <input
+          autoFocus={true}
+          name="name"
+          onChange={[Function]}
+          placeholder="name"
+          value=""
+        />,
+        <input
+          name="location"
+          onChange={[Function]}
+          placeholder="location"
+          value=""
+        />,
+        <select
+          id="grade"
+          name="grade"
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value="--"
+          >
+             -- 
+          </option>
+          <option
+            value="0"
+          >
+             V0 / 4 
+          </option>
+          <option
+            value="1"
+          >
+             V1 / 5 
+          </option>
+          <option
+            value="2"
+          >
+             V2 / 5+ 
+          </option>
+          <option
+            value="3"
+          >
+             V3 / 6A 
+          </option>
+          <option
+            value="4"
+          >
+             V4 / 6B 
+          </option>
+          <option
+            value="5"
+          >
+             V5 / 6C 
+          </option>
+          <option
+            value="6"
+          >
+             V6 / 7A 
+          </option>
+          <option
+            value="7"
+          >
+             V7 / 7A+ 
+          </option>
+          <option
+            value="8"
+          >
+             V8 / 7B+ 
+          </option>
+          <option
+            value="9"
+          >
+             V9 / 7C 
+          </option>
+          <option
+            value="10"
+          >
+             V10 / 7C+ 
+          </option>
+          <option
+            value="11"
+          >
+             V11 / 8A 
+          </option>
+          <option
+            value="12"
+          >
+             V12 / 8A+ 
+          </option>
+          <option
+            value="13"
+          >
+             V13 / 8B 
+          </option>
+          <option
+            value="14"
+          >
+             V14 / 8B+ 
+          </option>
+          <option
+            value="15"
+          >
+             V15 / 8C 
+          </option>
+          <option
+            value="16"
+          >
+             V16 / 8C+ 
+          </option>
+        </select>,
+        <textarea
+          maxLength="500"
+          name="caption"
+          onChange={[Function]}
+          placeholder="caption"
+          value=""
+        />,
+        <button>
+          Add Ascent
+        </button>,
+      ],
+      "className": "ascent-form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ADD ASCENT",
+        },
+        "ref": null,
+        "rendered": "ADD ASCENT",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "autoFocus": true,
+          "name": "name",
+          "onChange": [Function],
+          "placeholder": "name",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "location",
+          "onChange": [Function],
+          "placeholder": "location",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="--"
+            >
+               -- 
+            </option>,
+            <option
+              value="0"
+            >
+               V0 / 4 
+            </option>,
+            <option
+              value="1"
+            >
+               V1 / 5 
+            </option>,
+            <option
+              value="2"
+            >
+               V2 / 5+ 
+            </option>,
+            <option
+              value="3"
+            >
+               V3 / 6A 
+            </option>,
+            <option
+              value="4"
+            >
+               V4 / 6B 
+            </option>,
+            <option
+              value="5"
+            >
+               V5 / 6C 
+            </option>,
+            <option
+              value="6"
+            >
+               V6 / 7A 
+            </option>,
+            <option
+              value="7"
+            >
+               V7 / 7A+ 
+            </option>,
+            <option
+              value="8"
+            >
+               V8 / 7B+ 
+            </option>,
+            <option
+              value="9"
+            >
+               V9 / 7C 
+            </option>,
+            <option
+              value="10"
+            >
+               V10 / 7C+ 
+            </option>,
+            <option
+              value="11"
+            >
+               V11 / 8A 
+            </option>,
+            <option
+              value="12"
+            >
+               V12 / 8A+ 
+            </option>,
+            <option
+              value="13"
+            >
+               V13 / 8B 
+            </option>,
+            <option
+              value="14"
+            >
+               V14 / 8B+ 
+            </option>,
+            <option
+              value="15"
+            >
+               V15 / 8C 
+            </option>,
+            <option
+              value="16"
+            >
+               V16 / 8C+ 
+            </option>,
+          ],
+          "id": "grade",
+          "name": "grade",
+          "onChange": [Function],
+          "value": "",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " -- ",
+              "value": "--",
+            },
+            "ref": null,
+            "rendered": " -- ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V0 / 4 ",
+              "value": "0",
+            },
+            "ref": null,
+            "rendered": " V0 / 4 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V1 / 5 ",
+              "value": "1",
+            },
+            "ref": null,
+            "rendered": " V1 / 5 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V2 / 5+ ",
+              "value": "2",
+            },
+            "ref": null,
+            "rendered": " V2 / 5+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V3 / 6A ",
+              "value": "3",
+            },
+            "ref": null,
+            "rendered": " V3 / 6A ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V4 / 6B ",
+              "value": "4",
+            },
+            "ref": null,
+            "rendered": " V4 / 6B ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V5 / 6C ",
+              "value": "5",
+            },
+            "ref": null,
+            "rendered": " V5 / 6C ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V6 / 7A ",
+              "value": "6",
+            },
+            "ref": null,
+            "rendered": " V6 / 7A ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V7 / 7A+ ",
+              "value": "7",
+            },
+            "ref": null,
+            "rendered": " V7 / 7A+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V8 / 7B+ ",
+              "value": "8",
+            },
+            "ref": null,
+            "rendered": " V8 / 7B+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V9 / 7C ",
+              "value": "9",
+            },
+            "ref": null,
+            "rendered": " V9 / 7C ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V10 / 7C+ ",
+              "value": "10",
+            },
+            "ref": null,
+            "rendered": " V10 / 7C+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V11 / 8A ",
+              "value": "11",
+            },
+            "ref": null,
+            "rendered": " V11 / 8A ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V12 / 8A+ ",
+              "value": "12",
+            },
+            "ref": null,
+            "rendered": " V12 / 8A+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V13 / 8B ",
+              "value": "13",
+            },
+            "ref": null,
+            "rendered": " V13 / 8B ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V14 / 8B+ ",
+              "value": "14",
+            },
+            "ref": null,
+            "rendered": " V14 / 8B+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V15 / 8C ",
+              "value": "15",
+            },
+            "ref": null,
+            "rendered": " V15 / 8C ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " V16 / 8C+ ",
+              "value": "16",
+            },
+            "ref": null,
+            "rendered": " V16 / 8C+ ",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "maxLength": "500",
+          "name": "caption",
+          "onChange": [Function],
+          "placeholder": "caption",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "textarea",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Ascent",
+        },
+        "ref": null,
+        "rendered": "Add Ascent",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            ADD ASCENT
+          </h2>,
+          <input
+            autoFocus={true}
+            name="name"
+            onChange={[Function]}
+            placeholder="name"
+            value=""
+          />,
+          <input
+            name="location"
+            onChange={[Function]}
+            placeholder="location"
+            value=""
+          />,
+          <select
+            id="grade"
+            name="grade"
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value="--"
+            >
+               -- 
+            </option>
+            <option
+              value="0"
+            >
+               V0 / 4 
+            </option>
+            <option
+              value="1"
+            >
+               V1 / 5 
+            </option>
+            <option
+              value="2"
+            >
+               V2 / 5+ 
+            </option>
+            <option
+              value="3"
+            >
+               V3 / 6A 
+            </option>
+            <option
+              value="4"
+            >
+               V4 / 6B 
+            </option>
+            <option
+              value="5"
+            >
+               V5 / 6C 
+            </option>
+            <option
+              value="6"
+            >
+               V6 / 7A 
+            </option>
+            <option
+              value="7"
+            >
+               V7 / 7A+ 
+            </option>
+            <option
+              value="8"
+            >
+               V8 / 7B+ 
+            </option>
+            <option
+              value="9"
+            >
+               V9 / 7C 
+            </option>
+            <option
+              value="10"
+            >
+               V10 / 7C+ 
+            </option>
+            <option
+              value="11"
+            >
+               V11 / 8A 
+            </option>
+            <option
+              value="12"
+            >
+               V12 / 8A+ 
+            </option>
+            <option
+              value="13"
+            >
+               V13 / 8B 
+            </option>
+            <option
+              value="14"
+            >
+               V14 / 8B+ 
+            </option>
+            <option
+              value="15"
+            >
+               V15 / 8C 
+            </option>
+            <option
+              value="16"
+            >
+               V16 / 8C+ 
+            </option>
+          </select>,
+          <textarea
+            maxLength="500"
+            name="caption"
+            onChange={[Function]}
+            placeholder="caption"
+            value=""
+          />,
+          <button>
+            Add Ascent
+          </button>,
+        ],
+        "className": "ascent-form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ADD ASCENT",
+          },
+          "ref": null,
+          "rendered": "ADD ASCENT",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "autoFocus": true,
+            "name": "name",
+            "onChange": [Function],
+            "placeholder": "name",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "location",
+            "onChange": [Function],
+            "placeholder": "location",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="--"
+              >
+                 -- 
+              </option>,
+              <option
+                value="0"
+              >
+                 V0 / 4 
+              </option>,
+              <option
+                value="1"
+              >
+                 V1 / 5 
+              </option>,
+              <option
+                value="2"
+              >
+                 V2 / 5+ 
+              </option>,
+              <option
+                value="3"
+              >
+                 V3 / 6A 
+              </option>,
+              <option
+                value="4"
+              >
+                 V4 / 6B 
+              </option>,
+              <option
+                value="5"
+              >
+                 V5 / 6C 
+              </option>,
+              <option
+                value="6"
+              >
+                 V6 / 7A 
+              </option>,
+              <option
+                value="7"
+              >
+                 V7 / 7A+ 
+              </option>,
+              <option
+                value="8"
+              >
+                 V8 / 7B+ 
+              </option>,
+              <option
+                value="9"
+              >
+                 V9 / 7C 
+              </option>,
+              <option
+                value="10"
+              >
+                 V10 / 7C+ 
+              </option>,
+              <option
+                value="11"
+              >
+                 V11 / 8A 
+              </option>,
+              <option
+                value="12"
+              >
+                 V12 / 8A+ 
+              </option>,
+              <option
+                value="13"
+              >
+                 V13 / 8B 
+              </option>,
+              <option
+                value="14"
+              >
+                 V14 / 8B+ 
+              </option>,
+              <option
+                value="15"
+              >
+                 V15 / 8C 
+              </option>,
+              <option
+                value="16"
+              >
+                 V16 / 8C+ 
+              </option>,
+            ],
+            "id": "grade",
+            "name": "grade",
+            "onChange": [Function],
+            "value": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " -- ",
+                "value": "--",
+              },
+              "ref": null,
+              "rendered": " -- ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V0 / 4 ",
+                "value": "0",
+              },
+              "ref": null,
+              "rendered": " V0 / 4 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V1 / 5 ",
+                "value": "1",
+              },
+              "ref": null,
+              "rendered": " V1 / 5 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V2 / 5+ ",
+                "value": "2",
+              },
+              "ref": null,
+              "rendered": " V2 / 5+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V3 / 6A ",
+                "value": "3",
+              },
+              "ref": null,
+              "rendered": " V3 / 6A ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V4 / 6B ",
+                "value": "4",
+              },
+              "ref": null,
+              "rendered": " V4 / 6B ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V5 / 6C ",
+                "value": "5",
+              },
+              "ref": null,
+              "rendered": " V5 / 6C ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V6 / 7A ",
+                "value": "6",
+              },
+              "ref": null,
+              "rendered": " V6 / 7A ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V7 / 7A+ ",
+                "value": "7",
+              },
+              "ref": null,
+              "rendered": " V7 / 7A+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V8 / 7B+ ",
+                "value": "8",
+              },
+              "ref": null,
+              "rendered": " V8 / 7B+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V9 / 7C ",
+                "value": "9",
+              },
+              "ref": null,
+              "rendered": " V9 / 7C ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V10 / 7C+ ",
+                "value": "10",
+              },
+              "ref": null,
+              "rendered": " V10 / 7C+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V11 / 8A ",
+                "value": "11",
+              },
+              "ref": null,
+              "rendered": " V11 / 8A ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V12 / 8A+ ",
+                "value": "12",
+              },
+              "ref": null,
+              "rendered": " V12 / 8A+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V13 / 8B ",
+                "value": "13",
+              },
+              "ref": null,
+              "rendered": " V13 / 8B ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V14 / 8B+ ",
+                "value": "14",
+              },
+              "ref": null,
+              "rendered": " V14 / 8B+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V15 / 8C ",
+                "value": "15",
+              },
+              "ref": null,
+              "rendered": " V15 / 8C ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " V16 / 8C+ ",
+                "value": "16",
+              },
+              "ref": null,
+              "rendered": " V16 / 8C+ ",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "maxLength": "500",
+            "name": "caption",
+            "onChange": [Function],
+            "placeholder": "caption",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "textarea",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Ascent",
+          },
+          "ref": null,
+          "rendered": "Add Ascent",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
