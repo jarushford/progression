@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
-function GradeSection({ grade, ascents, user, deleteAscent }) {
+export function GradeSection({ grade, ascents, user, deleteAscent }) {
   const ascentsRender = ascents.map(ascent => {
     return (
       <article className="ascent" key={uid(ascent)}>
@@ -29,11 +29,11 @@ function GradeSection({ grade, ascents, user, deleteAscent }) {
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   user: state.currentUser
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   deleteAscent: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 
