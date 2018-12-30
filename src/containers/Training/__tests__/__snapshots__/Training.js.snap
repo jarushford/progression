@@ -1,0 +1,3190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Training Training Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Training
+    trainingDataUnclean={
+      Object {
+        "0": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "12/30/2018",
+        },
+        "2": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "14/12//2018",
+        },
+        "3": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "29/12//2018",
+        },
+      }
+    }
+    user={
+      Object {
+        "email": "larry@gmail.com",
+        "id": 8,
+        "name": "Larry",
+        "password": "chrimbus",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="training-header"
+        >
+          <h1
+            className="training-title"
+          >
+            TRAINING
+          </h1>
+          <div
+            className="buttons"
+          >
+            <Link
+              replace={false}
+              to="/training/all"
+            >
+              <button
+                className="view-workouts"
+              >
+                View All Workouts
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="/training/add"
+            >
+              <button
+                className="add-workout"
+              >
+                Add Workout
+              </button>
+            </Link>
+          </div>
+        </div>,
+        <div
+          className="training"
+        >
+          <div
+            className="day highlighted"
+          >
+            <h2>
+              Sunday 
+              30
+            </h2>
+            <ul>
+              <li
+                className="workout-item completed"
+                onClick={[Function]}
+              >
+                <h3>
+                  Power
+                </h3>
+                <p>
+                  do stuff
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Monday 
+              0
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Tuesday 
+              1
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Wednesday 
+              2
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Thursday 
+              3
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Friday 
+              4
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Saturday 
+              5
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+        </div>,
+      ],
+      "className": "training-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="training-title"
+            >
+              TRAINING
+            </h1>,
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training/all"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  View All Workouts
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>,
+          ],
+          "className": "training-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "TRAINING",
+              "className": "training-title",
+            },
+            "ref": null,
+            "rendered": "TRAINING",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/training/all"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    View All Workouts
+                  </button>
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>,
+              ],
+              "className": "buttons",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="view-workouts"
+                  >
+                    View All Workouts
+                  </button>,
+                  "replace": false,
+                  "to": "/training/all",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "View All Workouts",
+                    "className": "view-workouts",
+                  },
+                  "ref": null,
+                  "rendered": "View All Workouts",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>,
+                  "replace": false,
+                  "to": "/training/add",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Add Workout",
+                    "className": "add-workout",
+                  },
+                  "ref": null,
+                  "rendered": "Add Workout",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="day highlighted"
+            >
+              <h2>
+                Sunday 
+                30
+              </h2>
+              <ul>
+                <li
+                  className="workout-item completed"
+                  onClick={[Function]}
+                >
+                  <h3>
+                    Power
+                  </h3>
+                  <p>
+                    do stuff
+                  </p>
+                </li>
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Monday 
+                0
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Tuesday 
+                1
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Wednesday 
+                2
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Thursday 
+                3
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Friday 
+                4
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Saturday 
+                5
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+          ],
+          "className": "training",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Sunday 
+                  30
+                </h2>,
+                <ul>
+                  <li
+                    className="workout-item completed"
+                    onClick={[Function]}
+                  >
+                    <h3>
+                      Power
+                    </h3>
+                    <p>
+                      do stuff
+                    </p>
+                  </li>
+                </ul>,
+              ],
+              "className": "day highlighted",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Sunday ",
+                    30,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Sunday ",
+                  30,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <li
+                    className="workout-item completed"
+                    onClick={[Function]}
+                  >
+                    <h3>
+                      Power
+                    </h3>
+                    <p>
+                      do stuff
+                    </p>
+                  </li>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3>
+                        Power
+                      </h3>,
+                      <p>
+                        do stuff
+                      </p>,
+                    ],
+                    "className": "workout-item completed",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Power",
+                      },
+                      "ref": null,
+                      "rendered": "Power",
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "do stuff",
+                      },
+                      "ref": null,
+                      "rendered": "do stuff",
+                      "type": "p",
+                    },
+                  ],
+                  "type": "li",
+                },
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Monday 
+                  0
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Monday ",
+                    0,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Monday ",
+                  0,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Tuesday 
+                  1
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Tuesday ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Tuesday ",
+                  1,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Wednesday 
+                  2
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Wednesday ",
+                    2,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Wednesday ",
+                  2,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Thursday 
+                  3
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Thursday ",
+                    3,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Thursday ",
+                  3,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Friday 
+                  4
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Friday ",
+                    4,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Friday ",
+                  4,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Saturday 
+                  5
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Saturday ",
+                    5,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Saturday ",
+                  5,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="training-header"
+          >
+            <h1
+              className="training-title"
+            >
+              TRAINING
+            </h1>
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training/all"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  View All Workouts
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>
+          </div>,
+          <div
+            className="training"
+          >
+            <div
+              className="day highlighted"
+            >
+              <h2>
+                Sunday 
+                30
+              </h2>
+              <ul>
+                <li
+                  className="workout-item completed"
+                  onClick={[Function]}
+                >
+                  <h3>
+                    Power
+                  </h3>
+                  <p>
+                    do stuff
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Monday 
+                0
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Tuesday 
+                1
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Wednesday 
+                2
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Thursday 
+                3
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Friday 
+                4
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Saturday 
+                5
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+          </div>,
+        ],
+        "className": "training-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="training-title"
+              >
+                TRAINING
+              </h1>,
+              <div
+                className="buttons"
+              >
+                <Link
+                  replace={false}
+                  to="/training/all"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    View All Workouts
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>
+              </div>,
+            ],
+            "className": "training-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "TRAINING",
+                "className": "training-title",
+              },
+              "ref": null,
+              "rendered": "TRAINING",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    replace={false}
+                    to="/training/all"
+                  >
+                    <button
+                      className="view-workouts"
+                    >
+                      View All Workouts
+                    </button>
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/training/add"
+                  >
+                    <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>
+                  </Link>,
+                ],
+                "className": "buttons",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="view-workouts"
+                    >
+                      View All Workouts
+                    </button>,
+                    "replace": false,
+                    "to": "/training/all",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "View All Workouts",
+                      "className": "view-workouts",
+                    },
+                    "ref": null,
+                    "rendered": "View All Workouts",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>,
+                    "replace": false,
+                    "to": "/training/add",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Add Workout",
+                      "className": "add-workout",
+                    },
+                    "ref": null,
+                    "rendered": "Add Workout",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="day highlighted"
+              >
+                <h2>
+                  Sunday 
+                  30
+                </h2>
+                <ul>
+                  <li
+                    className="workout-item completed"
+                    onClick={[Function]}
+                  >
+                    <h3>
+                      Power
+                    </h3>
+                    <p>
+                      do stuff
+                    </p>
+                  </li>
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Monday 
+                  0
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Tuesday 
+                  1
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Wednesday 
+                  2
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Thursday 
+                  3
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Friday 
+                  4
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Saturday 
+                  5
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+            ],
+            "className": "training",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Sunday 
+                    30
+                  </h2>,
+                  <ul>
+                    <li
+                      className="workout-item completed"
+                      onClick={[Function]}
+                    >
+                      <h3>
+                        Power
+                      </h3>
+                      <p>
+                        do stuff
+                      </p>
+                    </li>
+                  </ul>,
+                ],
+                "className": "day highlighted",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Sunday ",
+                      30,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Sunday ",
+                    30,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <li
+                      className="workout-item completed"
+                      onClick={[Function]}
+                    >
+                      <h3>
+                        Power
+                      </h3>
+                      <p>
+                        do stuff
+                      </p>
+                    </li>,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3>
+                          Power
+                        </h3>,
+                        <p>
+                          do stuff
+                        </p>,
+                      ],
+                      "className": "workout-item completed",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Power",
+                        },
+                        "ref": null,
+                        "rendered": "Power",
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "do stuff",
+                        },
+                        "ref": null,
+                        "rendered": "do stuff",
+                        "type": "p",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Monday 
+                    0
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Monday ",
+                      0,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Monday ",
+                    0,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Tuesday 
+                    1
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Tuesday ",
+                      1,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Tuesday ",
+                    1,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Wednesday 
+                    2
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Wednesday ",
+                      2,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Wednesday ",
+                    2,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Thursday 
+                    3
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Thursday ",
+                      3,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Thursday ",
+                    3,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Friday 
+                    4
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Friday ",
+                      4,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Friday ",
+                    4,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Saturday 
+                    5
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Saturday ",
+                      5,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Saturday ",
+                    5,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Training Training Component should match the snapshot with no data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Training
+    trainingDataUnclean={Object {}}
+    user={
+      Object {
+        "email": "larry@gmail.com",
+        "id": 8,
+        "name": "Larry",
+        "password": "chrimbus",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="training-header"
+        >
+          <h1
+            className="training-title"
+          >
+            TRAINING
+          </h1>
+          <div
+            className="buttons"
+          >
+            <Link
+              replace={false}
+              to="/training/all"
+            >
+              <button
+                className="view-workouts"
+              >
+                View All Workouts
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="/training/add"
+            >
+              <button
+                className="add-workout"
+              >
+                Add Workout
+              </button>
+            </Link>
+          </div>
+        </div>,
+        <div
+          className="training"
+        >
+          <div
+            className="day highlighted"
+          >
+            <h2>
+              Sunday 
+              30
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Monday 
+              0
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Tuesday 
+              1
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Wednesday 
+              2
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Thursday 
+              3
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Friday 
+              4
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Saturday 
+              5
+            </h2>
+            <ul>
+              
+            </ul>
+          </div>
+        </div>,
+      ],
+      "className": "training-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="training-title"
+            >
+              TRAINING
+            </h1>,
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training/all"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  View All Workouts
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>,
+          ],
+          "className": "training-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "TRAINING",
+              "className": "training-title",
+            },
+            "ref": null,
+            "rendered": "TRAINING",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/training/all"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    View All Workouts
+                  </button>
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>,
+              ],
+              "className": "buttons",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="view-workouts"
+                  >
+                    View All Workouts
+                  </button>,
+                  "replace": false,
+                  "to": "/training/all",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "View All Workouts",
+                    "className": "view-workouts",
+                  },
+                  "ref": null,
+                  "rendered": "View All Workouts",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>,
+                  "replace": false,
+                  "to": "/training/add",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Add Workout",
+                    "className": "add-workout",
+                  },
+                  "ref": null,
+                  "rendered": "Add Workout",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="day highlighted"
+            >
+              <h2>
+                Sunday 
+                30
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Monday 
+                0
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Tuesday 
+                1
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Wednesday 
+                2
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Thursday 
+                3
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Friday 
+                4
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Saturday 
+                5
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>,
+          ],
+          "className": "training",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Sunday 
+                  30
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day highlighted",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Sunday ",
+                    30,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Sunday ",
+                  30,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Monday 
+                  0
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Monday ",
+                    0,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Monday ",
+                  0,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Tuesday 
+                  1
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Tuesday ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Tuesday ",
+                  1,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Wednesday 
+                  2
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Wednesday ",
+                    2,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Wednesday ",
+                  2,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Thursday 
+                  3
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Thursday ",
+                    3,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Thursday ",
+                  3,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Friday 
+                  4
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Friday ",
+                    4,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Friday ",
+                  4,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  Saturday 
+                  5
+                </h2>,
+                <ul>
+                  
+                </ul>,
+              ],
+              "className": "day false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Saturday ",
+                    5,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Saturday ",
+                  5,
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                },
+                "ref": null,
+                "rendered": "",
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="training-header"
+          >
+            <h1
+              className="training-title"
+            >
+              TRAINING
+            </h1>
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training/all"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  View All Workouts
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>
+          </div>,
+          <div
+            className="training"
+          >
+            <div
+              className="day highlighted"
+            >
+              <h2>
+                Sunday 
+                30
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Monday 
+                0
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Tuesday 
+                1
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Wednesday 
+                2
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Thursday 
+                3
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Friday 
+                4
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Saturday 
+                5
+              </h2>
+              <ul>
+                
+              </ul>
+            </div>
+          </div>,
+        ],
+        "className": "training-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="training-title"
+              >
+                TRAINING
+              </h1>,
+              <div
+                className="buttons"
+              >
+                <Link
+                  replace={false}
+                  to="/training/all"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    View All Workouts
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>
+              </div>,
+            ],
+            "className": "training-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "TRAINING",
+                "className": "training-title",
+              },
+              "ref": null,
+              "rendered": "TRAINING",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    replace={false}
+                    to="/training/all"
+                  >
+                    <button
+                      className="view-workouts"
+                    >
+                      View All Workouts
+                    </button>
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/training/add"
+                  >
+                    <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>
+                  </Link>,
+                ],
+                "className": "buttons",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="view-workouts"
+                    >
+                      View All Workouts
+                    </button>,
+                    "replace": false,
+                    "to": "/training/all",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "View All Workouts",
+                      "className": "view-workouts",
+                    },
+                    "ref": null,
+                    "rendered": "View All Workouts",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>,
+                    "replace": false,
+                    "to": "/training/add",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Add Workout",
+                      "className": "add-workout",
+                    },
+                    "ref": null,
+                    "rendered": "Add Workout",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="day highlighted"
+              >
+                <h2>
+                  Sunday 
+                  30
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Monday 
+                  0
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Tuesday 
+                  1
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Wednesday 
+                  2
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Thursday 
+                  3
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Friday 
+                  4
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Saturday 
+                  5
+                </h2>
+                <ul>
+                  
+                </ul>
+              </div>,
+            ],
+            "className": "training",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Sunday 
+                    30
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day highlighted",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Sunday ",
+                      30,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Sunday ",
+                    30,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Monday 
+                    0
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Monday ",
+                      0,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Monday ",
+                    0,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Tuesday 
+                    1
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Tuesday ",
+                      1,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Tuesday ",
+                    1,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Wednesday 
+                    2
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Wednesday ",
+                      2,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Wednesday ",
+                    2,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Thursday 
+                    3
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Thursday ",
+                      3,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Thursday ",
+                    3,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Friday 
+                    4
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Friday ",
+                      4,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Friday ",
+                    4,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    Saturday 
+                    5
+                  </h2>,
+                  <ul>
+                    
+                  </ul>,
+                ],
+                "className": "day false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Saturday ",
+                      5,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Saturday ",
+                    5,
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "",
+                  },
+                  "ref": null,
+                  "rendered": "",
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Training Training Component should match the snapshot with no user 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Training
+    trainingDataUnclean={
+      Object {
+        "0": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "12/30/2018",
+        },
+        "2": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "14/12//2018",
+        },
+        "3": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "29/12//2018",
+        },
+      }
+    }
+    user={
+      Object {
+        "email": "",
+        "name": "",
+        "password": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Log in or sign up to add workouts",
+      "className": "no-user-msg",
+    },
+    "ref": null,
+    "rendered": "Log in or sign up to add workouts",
+    "type": "h1",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Log in or sign up to add workouts",
+        "className": "no-user-msg",
+      },
+      "ref": null,
+      "rendered": "Log in or sign up to add workouts",
+      "type": "h1",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

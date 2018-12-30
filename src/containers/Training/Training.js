@@ -5,7 +5,7 @@ import { toggleComplete } from '../../actions'
 import * as Helper from '../../utils/calendarHelpers'
 import '../../main.scss'
 
-function Training({ trainingDataUnclean, toggleComplete, user }) {
+export function Training({ trainingDataUnclean, toggleComplete, user }) {
 
   if (!user.name) {
     return <h1 className="no-user-msg">Log in or sign up to add workouts</h1>
@@ -42,6 +42,7 @@ function Training({ trainingDataUnclean, toggleComplete, user }) {
       } else if (endOfMonthIndex.includes(today.substring(3, 5))) {
         Object.assign(weekIndex, Helper.endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
       } else if (keyM === todayM && keyY === todayY) {
+        console.log(key)
         Object.assign(weekIndex, Helper.daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
       }
     })
@@ -95,12 +96,12 @@ function Training({ trainingDataUnclean, toggleComplete, user }) {
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   trainingDataUnclean: state.trainingData,
   user: state.currentUser
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   toggleComplete: (key) => dispatch(toggleComplete(key))
 })
 
