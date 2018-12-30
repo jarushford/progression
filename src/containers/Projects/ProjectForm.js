@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
 
-class ProjectForm extends Component {
+export class ProjectForm extends Component {
   constructor() {
     super()
     this.state = {
@@ -154,11 +154,11 @@ class ProjectForm extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   user: state.currentUser
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   addProject: (project, type) => dispatch(addDataThunk(project, type))
 })
 

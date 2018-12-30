@@ -73,10 +73,24 @@ describe('Milestone Form', () => {
   })
 
   describe('mapStateToProps', () => {
+    it('should return a props object with data from store', () => {
+      const mockState = { currentUser: mockUser, currentProject: mockProject }
+      const expected = { user: mockUser, project: mockProject }
+      const mappedProps = mapStateToProps(mockState)
 
+      expect(mappedProps).toEqual(expected)
+    })
   })
 
   describe('mapDispatchToProps', () => {
-    
+    it('should return a props object with a method addMilestone', () => {
+      const mockDispatch = jest.fn()
+      const expected = addDataThunk()
+
+      const mappedProps = mapDispatchToProps(mockDispatch)
+      mappedProps.addMilestone()
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
   })
 })

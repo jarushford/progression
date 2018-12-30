@@ -6,7 +6,7 @@ import { uid } from 'react-uid'
 import '../../main.scss'
 import { deleteDataThunk } from '../../thunks/deleteData';
 
-function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
+export function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
   let trainingRender
 
   if (!user.name) {
@@ -55,12 +55,12 @@ function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout 
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   trainingDataUnclean: state.trainingData,
   user: state.currentUser
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   toggleComplete: (key) => dispatch(toggleComplete(key)),
   deleteWorkout: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })

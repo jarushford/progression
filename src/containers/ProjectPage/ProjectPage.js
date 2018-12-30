@@ -7,7 +7,7 @@ import Milestone from '../Milestones/Milestone'
 import Journal from '../Journal/Journal'
 import { uid } from 'react-uid';
 
-class ProjectPage extends Component {
+export class ProjectPage extends Component {
   constructor() {
     super()
     this.state = {
@@ -114,7 +114,7 @@ class ProjectPage extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   milestones: state.milestones,
   journal: state.journal,
   user: state.currentUser

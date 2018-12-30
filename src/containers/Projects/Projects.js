@@ -8,7 +8,7 @@ import '../../main.scss'
 import { setCurrentProject } from '../../actions';
 import { fetchDataThunk } from '../../thunks/fetchData'
 
-function Projects({ projects, deleteProject, user, setCurrentProject, fetchData }) {
+export function Projects({ projects, deleteProject, user, setCurrentProject, fetchData }) {
   let projectsRender
 
   if (!user.name) {
@@ -28,7 +28,7 @@ function Projects({ projects, deleteProject, user, setCurrentProject, fetchData 
               onClick={async () => {
                 await fetchData(user.id, project.id, 'journal')
                 await fetchData(user.id, project.id, 'milestone')
-                setCurrentProject(project.id)
+                await setCurrentProject(project.id)
               }}
             >
               <h2 className="project-name">{project.name}</h2>
@@ -55,12 +55,12 @@ function Projects({ projects, deleteProject, user, setCurrentProject, fetchData 
   )
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   projects: state.projects,
   user: state.currentUser
 })
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   deleteProject: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type)),
   setCurrentProject: (id) => dispatch(setCurrentProject(id)),
   fetchData: (id, project_id, type) => dispatch(fetchDataThunk(id, project_id, type))

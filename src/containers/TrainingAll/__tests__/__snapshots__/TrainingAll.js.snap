@@ -1,0 +1,1246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Training All TrainingAll Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TrainingAll
+    trainingDataUnclean={
+      Object {
+        "0": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "3/3/31",
+        },
+      }
+    }
+    user={
+      Object {
+        "email": "larry@gmail.com",
+        "id": 8,
+        "name": "Larry",
+        "password": "chrimbus",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="projects-header workout"
+        >
+          <h1
+            className="projects-title workout"
+          >
+            ALL WORKOUTS
+          </h1>
+          <div
+            className="buttons"
+          >
+            <Link
+              replace={false}
+              to="/training"
+            >
+              <button
+                className="view-workouts"
+              >
+                Back To Calendar
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="/training/add"
+            >
+              <button
+                className="add-workout"
+              >
+                Add Workout
+              </button>
+            </Link>
+          </div>
+        </div>,
+        Array [
+          <article
+            className="project completed"
+            onClick={[Function]}
+          >
+            <div>
+              <h2
+                className="project-name"
+              >
+                3/3/31
+              </h2>
+              <h5
+                className="project-grade"
+              >
+                Power
+              </h5>
+            </div>
+            <h5
+              className="project-location"
+            >
+              do stuff
+            </h5>
+            <i
+              className="fas fa-times"
+              onClick={[Function]}
+            />
+          </article>,
+        ],
+      ],
+      "className": "projects workout",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="projects-title workout"
+            >
+              ALL WORKOUTS
+            </h1>,
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  Back To Calendar
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>,
+          ],
+          "className": "projects-header workout",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ALL WORKOUTS",
+              "className": "projects-title workout",
+            },
+            "ref": null,
+            "rendered": "ALL WORKOUTS",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/training"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    Back To Calendar
+                  </button>
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>,
+              ],
+              "className": "buttons",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="view-workouts"
+                  >
+                    Back To Calendar
+                  </button>,
+                  "replace": false,
+                  "to": "/training",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Back To Calendar",
+                    "className": "view-workouts",
+                  },
+                  "ref": null,
+                  "rendered": "Back To Calendar",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>,
+                  "replace": false,
+                  "to": "/training/add",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Add Workout",
+                    "className": "add-workout",
+                  },
+                  "ref": null,
+                  "rendered": "Add Workout",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "uid1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <h2
+                className="project-name"
+              >
+                3/3/31
+              </h2>
+              <h5
+                className="project-grade"
+              >
+                Power
+              </h5>
+            </div>,
+            <h5
+              className="project-location"
+            >
+              do stuff
+            </h5>,
+            <i
+              className="fas fa-times"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "project completed",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2
+                  className="project-name"
+                >
+                  3/3/31
+                </h2>,
+                <h5
+                  className="project-grade"
+                >
+                  Power
+                </h5>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "3/3/31",
+                  "className": "project-name",
+                },
+                "ref": null,
+                "rendered": "3/3/31",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Power",
+                  "className": "project-grade",
+                },
+                "ref": null,
+                "rendered": "Power",
+                "type": "h5",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "do stuff",
+              "className": "project-location",
+            },
+            "ref": null,
+            "rendered": "do stuff",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-times",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="projects-header workout"
+          >
+            <h1
+              className="projects-title workout"
+            >
+              ALL WORKOUTS
+            </h1>
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  Back To Calendar
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>
+          </div>,
+          Array [
+            <article
+              className="project completed"
+              onClick={[Function]}
+            >
+              <div>
+                <h2
+                  className="project-name"
+                >
+                  3/3/31
+                </h2>
+                <h5
+                  className="project-grade"
+                >
+                  Power
+                </h5>
+              </div>
+              <h5
+                className="project-location"
+              >
+                do stuff
+              </h5>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </article>,
+          ],
+        ],
+        "className": "projects workout",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="projects-title workout"
+              >
+                ALL WORKOUTS
+              </h1>,
+              <div
+                className="buttons"
+              >
+                <Link
+                  replace={false}
+                  to="/training"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    Back To Calendar
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>
+              </div>,
+            ],
+            "className": "projects-header workout",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ALL WORKOUTS",
+                "className": "projects-title workout",
+              },
+              "ref": null,
+              "rendered": "ALL WORKOUTS",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    replace={false}
+                    to="/training"
+                  >
+                    <button
+                      className="view-workouts"
+                    >
+                      Back To Calendar
+                    </button>
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/training/add"
+                  >
+                    <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>
+                  </Link>,
+                ],
+                "className": "buttons",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="view-workouts"
+                    >
+                      Back To Calendar
+                    </button>,
+                    "replace": false,
+                    "to": "/training",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Back To Calendar",
+                      "className": "view-workouts",
+                    },
+                    "ref": null,
+                    "rendered": "Back To Calendar",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>,
+                    "replace": false,
+                    "to": "/training/add",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Add Workout",
+                      "className": "add-workout",
+                    },
+                    "ref": null,
+                    "rendered": "Add Workout",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <h2
+                  className="project-name"
+                >
+                  3/3/31
+                </h2>
+                <h5
+                  className="project-grade"
+                >
+                  Power
+                </h5>
+              </div>,
+              <h5
+                className="project-location"
+              >
+                do stuff
+              </h5>,
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "project completed",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2
+                    className="project-name"
+                  >
+                    3/3/31
+                  </h2>,
+                  <h5
+                    className="project-grade"
+                  >
+                    Power
+                  </h5>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "3/3/31",
+                    "className": "project-name",
+                  },
+                  "ref": null,
+                  "rendered": "3/3/31",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Power",
+                    "className": "project-grade",
+                  },
+                  "ref": null,
+                  "rendered": "Power",
+                  "type": "h5",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "do stuff",
+                "className": "project-location",
+              },
+              "ref": null,
+              "rendered": "do stuff",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-times",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Training All TrainingAll Component should match the snapshot with no data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TrainingAll
+    trainingDataUnclean={Object {}}
+    user={
+      Object {
+        "email": "larry@gmail.com",
+        "id": 8,
+        "name": "Larry",
+        "password": "chrimbus",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="projects-header workout"
+        >
+          <h1
+            className="projects-title workout"
+          >
+            ALL WORKOUTS
+          </h1>
+          <div
+            className="buttons"
+          >
+            <Link
+              replace={false}
+              to="/training"
+            >
+              <button
+                className="view-workouts"
+              >
+                Back To Calendar
+              </button>
+            </Link>
+            <Link
+              replace={false}
+              to="/training/add"
+            >
+              <button
+                className="add-workout"
+              >
+                Add Workout
+              </button>
+            </Link>
+          </div>
+        </div>,
+        <h1
+          className="no-data-msg"
+        >
+          You have no saved workouts
+        </h1>,
+      ],
+      "className": "projects workout",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="projects-title workout"
+            >
+              ALL WORKOUTS
+            </h1>,
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  Back To Calendar
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>,
+          ],
+          "className": "projects-header workout",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ALL WORKOUTS",
+              "className": "projects-title workout",
+            },
+            "ref": null,
+            "rendered": "ALL WORKOUTS",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  replace={false}
+                  to="/training"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    Back To Calendar
+                  </button>
+                </Link>,
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>,
+              ],
+              "className": "buttons",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="view-workouts"
+                  >
+                    Back To Calendar
+                  </button>,
+                  "replace": false,
+                  "to": "/training",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Back To Calendar",
+                    "className": "view-workouts",
+                  },
+                  "ref": null,
+                  "rendered": "Back To Calendar",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>,
+                  "replace": false,
+                  "to": "/training/add",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Add Workout",
+                    "className": "add-workout",
+                  },
+                  "ref": null,
+                  "rendered": "Add Workout",
+                  "type": "button",
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "You have no saved workouts",
+          "className": "no-data-msg",
+        },
+        "ref": null,
+        "rendered": "You have no saved workouts",
+        "type": "h1",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="projects-header workout"
+          >
+            <h1
+              className="projects-title workout"
+            >
+              ALL WORKOUTS
+            </h1>
+            <div
+              className="buttons"
+            >
+              <Link
+                replace={false}
+                to="/training"
+              >
+                <button
+                  className="view-workouts"
+                >
+                  Back To Calendar
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/training/add"
+              >
+                <button
+                  className="add-workout"
+                >
+                  Add Workout
+                </button>
+              </Link>
+            </div>
+          </div>,
+          <h1
+            className="no-data-msg"
+          >
+            You have no saved workouts
+          </h1>,
+        ],
+        "className": "projects workout",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="projects-title workout"
+              >
+                ALL WORKOUTS
+              </h1>,
+              <div
+                className="buttons"
+              >
+                <Link
+                  replace={false}
+                  to="/training"
+                >
+                  <button
+                    className="view-workouts"
+                  >
+                    Back To Calendar
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/training/add"
+                >
+                  <button
+                    className="add-workout"
+                  >
+                    Add Workout
+                  </button>
+                </Link>
+              </div>,
+            ],
+            "className": "projects-header workout",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ALL WORKOUTS",
+                "className": "projects-title workout",
+              },
+              "ref": null,
+              "rendered": "ALL WORKOUTS",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    replace={false}
+                    to="/training"
+                  >
+                    <button
+                      className="view-workouts"
+                    >
+                      Back To Calendar
+                    </button>
+                  </Link>,
+                  <Link
+                    replace={false}
+                    to="/training/add"
+                  >
+                    <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>
+                  </Link>,
+                ],
+                "className": "buttons",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="view-workouts"
+                    >
+                      Back To Calendar
+                    </button>,
+                    "replace": false,
+                    "to": "/training",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Back To Calendar",
+                      "className": "view-workouts",
+                    },
+                    "ref": null,
+                    "rendered": "Back To Calendar",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <button
+                      className="add-workout"
+                    >
+                      Add Workout
+                    </button>,
+                    "replace": false,
+                    "to": "/training/add",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Add Workout",
+                      "className": "add-workout",
+                    },
+                    "ref": null,
+                    "rendered": "Add Workout",
+                    "type": "button",
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "You have no saved workouts",
+            "className": "no-data-msg",
+          },
+          "ref": null,
+          "rendered": "You have no saved workouts",
+          "type": "h1",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Training All TrainingAll Component should match the snapshot with no user 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TrainingAll
+    trainingDataUnclean={
+      Object {
+        "0": Object {
+          "completed": true,
+          "description": "do stuff",
+          "type": "Power",
+          "workout_date": "3/3/31",
+        },
+      }
+    }
+    user={
+      Object {
+        "email": "",
+        "name": "",
+        "password": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Log in or sign up to view workouts",
+      "className": "no-user-msg",
+    },
+    "ref": null,
+    "rendered": "Log in or sign up to view workouts",
+    "type": "h1",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Log in or sign up to view workouts",
+        "className": "no-user-msg",
+      },
+      "ref": null,
+      "rendered": "Log in or sign up to view workouts",
+      "type": "h1",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

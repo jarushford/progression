@@ -1,0 +1,1300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects Projects Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Projects
+    projects={
+      Array [
+        Object {
+          "caption": "",
+          "grade": "V13",
+          "high_point": 5,
+          "id": 42,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Nuthin But Sunshine",
+        },
+        Object {
+          "caption": "",
+          "grade": "V13",
+          "high_point": 7,
+          "id": 4,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Top Notch",
+        },
+      ]
+    }
+    user={
+      Object {
+        "email": "olaf@thatplace.com",
+        "id": 1,
+        "name": "Olaf",
+        "password": "olaf",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="projects-header"
+        >
+          <h1
+            className="projects-title"
+          >
+            PROJECTS
+          </h1>
+          <Link
+            replace={false}
+            to="/projects/add"
+          >
+            <button
+              className="add-project"
+            >
+              Add Project
+            </button>
+          </Link>
+        </div>,
+        Array [
+          <article
+            className="project"
+          >
+            <div>
+              <Link
+                className="project-link"
+                onClick={[Function]}
+                replace={false}
+                to="/projects/42"
+              >
+                <h2
+                  className="project-name"
+                >
+                  Nuthin But Sunshine
+                </h2>
+              </Link>
+              <h5
+                className="project-grade"
+              />
+            </div>
+            <h5
+              className="project-location"
+            >
+              RMNP, CO
+            </h5>
+            <i
+              className="fas fa-times"
+              onClick={[Function]}
+            />
+          </article>,
+          <article
+            className="project"
+          >
+            <div>
+              <Link
+                className="project-link"
+                onClick={[Function]}
+                replace={false}
+                to="/projects/4"
+              >
+                <h2
+                  className="project-name"
+                >
+                  Top Notch
+                </h2>
+              </Link>
+              <h5
+                className="project-grade"
+              />
+            </div>
+            <h5
+              className="project-location"
+            >
+              RMNP, CO
+            </h5>
+            <i
+              className="fas fa-times"
+              onClick={[Function]}
+            />
+          </article>,
+        ],
+      ],
+      "className": "projects",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="projects-title"
+            >
+              PROJECTS
+            </h1>,
+            <Link
+              replace={false}
+              to="/projects/add"
+            >
+              <button
+                className="add-project"
+              >
+                Add Project
+              </button>
+            </Link>,
+          ],
+          "className": "projects-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "PROJECTS",
+              "className": "projects-title",
+            },
+            "ref": null,
+            "rendered": "PROJECTS",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="add-project"
+              >
+                Add Project
+              </button>,
+              "replace": false,
+              "to": "/projects/add",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add Project",
+                "className": "add-project",
+              },
+              "ref": null,
+              "rendered": "Add Project",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "uid1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <Link
+                className="project-link"
+                onClick={[Function]}
+                replace={false}
+                to="/projects/42"
+              >
+                <h2
+                  className="project-name"
+                >
+                  Nuthin But Sunshine
+                </h2>
+              </Link>
+              <h5
+                className="project-grade"
+              />
+            </div>,
+            <h5
+              className="project-location"
+            >
+              RMNP, CO
+            </h5>,
+            <i
+              className="fas fa-times"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "project",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  className="project-link"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/projects/42"
+                >
+                  <h2
+                    className="project-name"
+                  >
+                    Nuthin But Sunshine
+                  </h2>
+                </Link>,
+                <h5
+                  className="project-grade"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <h2
+                    className="project-name"
+                  >
+                    Nuthin But Sunshine
+                  </h2>,
+                  "className": "project-link",
+                  "onClick": [Function],
+                  "replace": false,
+                  "to": "/projects/42",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Nuthin But Sunshine",
+                    "className": "project-name",
+                  },
+                  "ref": null,
+                  "rendered": "Nuthin But Sunshine",
+                  "type": "h2",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "project-grade",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "h5",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "RMNP, CO",
+              "className": "project-location",
+            },
+            "ref": null,
+            "rendered": "RMNP, CO",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-times",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "uid2",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <Link
+                className="project-link"
+                onClick={[Function]}
+                replace={false}
+                to="/projects/4"
+              >
+                <h2
+                  className="project-name"
+                >
+                  Top Notch
+                </h2>
+              </Link>
+              <h5
+                className="project-grade"
+              />
+            </div>,
+            <h5
+              className="project-location"
+            >
+              RMNP, CO
+            </h5>,
+            <i
+              className="fas fa-times"
+              onClick={[Function]}
+            />,
+          ],
+          "className": "project",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  className="project-link"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/projects/4"
+                >
+                  <h2
+                    className="project-name"
+                  >
+                    Top Notch
+                  </h2>
+                </Link>,
+                <h5
+                  className="project-grade"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <h2
+                    className="project-name"
+                  >
+                    Top Notch
+                  </h2>,
+                  "className": "project-link",
+                  "onClick": [Function],
+                  "replace": false,
+                  "to": "/projects/4",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Top Notch",
+                    "className": "project-name",
+                  },
+                  "ref": null,
+                  "rendered": "Top Notch",
+                  "type": "h2",
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                  "className": "project-grade",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "h5",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "RMNP, CO",
+              "className": "project-location",
+            },
+            "ref": null,
+            "rendered": "RMNP, CO",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-times",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="projects-header"
+          >
+            <h1
+              className="projects-title"
+            >
+              PROJECTS
+            </h1>
+            <Link
+              replace={false}
+              to="/projects/add"
+            >
+              <button
+                className="add-project"
+              >
+                Add Project
+              </button>
+            </Link>
+          </div>,
+          Array [
+            <article
+              className="project"
+            >
+              <div>
+                <Link
+                  className="project-link"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/projects/42"
+                >
+                  <h2
+                    className="project-name"
+                  >
+                    Nuthin But Sunshine
+                  </h2>
+                </Link>
+                <h5
+                  className="project-grade"
+                />
+              </div>
+              <h5
+                className="project-location"
+              >
+                RMNP, CO
+              </h5>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </article>,
+            <article
+              className="project"
+            >
+              <div>
+                <Link
+                  className="project-link"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/projects/4"
+                >
+                  <h2
+                    className="project-name"
+                  >
+                    Top Notch
+                  </h2>
+                </Link>
+                <h5
+                  className="project-grade"
+                />
+              </div>
+              <h5
+                className="project-location"
+              >
+                RMNP, CO
+              </h5>
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />
+            </article>,
+          ],
+        ],
+        "className": "projects",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="projects-title"
+              >
+                PROJECTS
+              </h1>,
+              <Link
+                replace={false}
+                to="/projects/add"
+              >
+                <button
+                  className="add-project"
+                >
+                  Add Project
+                </button>
+              </Link>,
+            ],
+            "className": "projects-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "PROJECTS",
+                "className": "projects-title",
+              },
+              "ref": null,
+              "rendered": "PROJECTS",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="add-project"
+                >
+                  Add Project
+                </button>,
+                "replace": false,
+                "to": "/projects/add",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Add Project",
+                  "className": "add-project",
+                },
+                "ref": null,
+                "rendered": "Add Project",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <Link
+                  className="project-link"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/projects/42"
+                >
+                  <h2
+                    className="project-name"
+                  >
+                    Nuthin But Sunshine
+                  </h2>
+                </Link>
+                <h5
+                  className="project-grade"
+                />
+              </div>,
+              <h5
+                className="project-location"
+              >
+                RMNP, CO
+              </h5>,
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "project",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    className="project-link"
+                    onClick={[Function]}
+                    replace={false}
+                    to="/projects/42"
+                  >
+                    <h2
+                      className="project-name"
+                    >
+                      Nuthin But Sunshine
+                    </h2>
+                  </Link>,
+                  <h5
+                    className="project-grade"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <h2
+                      className="project-name"
+                    >
+                      Nuthin But Sunshine
+                    </h2>,
+                    "className": "project-link",
+                    "onClick": [Function],
+                    "replace": false,
+                    "to": "/projects/42",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Nuthin But Sunshine",
+                      "className": "project-name",
+                    },
+                    "ref": null,
+                    "rendered": "Nuthin But Sunshine",
+                    "type": "h2",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "project-grade",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h5",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "RMNP, CO",
+                "className": "project-location",
+              },
+              "ref": null,
+              "rendered": "RMNP, CO",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-times",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "uid2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <Link
+                  className="project-link"
+                  onClick={[Function]}
+                  replace={false}
+                  to="/projects/4"
+                >
+                  <h2
+                    className="project-name"
+                  >
+                    Top Notch
+                  </h2>
+                </Link>
+                <h5
+                  className="project-grade"
+                />
+              </div>,
+              <h5
+                className="project-location"
+              >
+                RMNP, CO
+              </h5>,
+              <i
+                className="fas fa-times"
+                onClick={[Function]}
+              />,
+            ],
+            "className": "project",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    className="project-link"
+                    onClick={[Function]}
+                    replace={false}
+                    to="/projects/4"
+                  >
+                    <h2
+                      className="project-name"
+                    >
+                      Top Notch
+                    </h2>
+                  </Link>,
+                  <h5
+                    className="project-grade"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <h2
+                      className="project-name"
+                    >
+                      Top Notch
+                    </h2>,
+                    "className": "project-link",
+                    "onClick": [Function],
+                    "replace": false,
+                    "to": "/projects/4",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Top Notch",
+                      "className": "project-name",
+                    },
+                    "ref": null,
+                    "rendered": "Top Notch",
+                    "type": "h2",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "project-grade",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h5",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "RMNP, CO",
+                "className": "project-location",
+              },
+              "ref": null,
+              "rendered": "RMNP, CO",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "fas fa-times",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Projects Projects Component should match the snapshot with no projects 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Projects
+    projects={Array []}
+    user={
+      Object {
+        "email": "olaf@thatplace.com",
+        "id": 1,
+        "name": "Olaf",
+        "password": "olaf",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="projects-header"
+        >
+          <h1
+            className="projects-title"
+          >
+            PROJECTS
+          </h1>
+          <Link
+            replace={false}
+            to="/projects/add"
+          >
+            <button
+              className="add-project"
+            >
+              Add Project
+            </button>
+          </Link>
+        </div>,
+        <h1
+          className="no-data-msg"
+        >
+          You have no saved projects
+        </h1>,
+      ],
+      "className": "projects",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="projects-title"
+            >
+              PROJECTS
+            </h1>,
+            <Link
+              replace={false}
+              to="/projects/add"
+            >
+              <button
+                className="add-project"
+              >
+                Add Project
+              </button>
+            </Link>,
+          ],
+          "className": "projects-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "PROJECTS",
+              "className": "projects-title",
+            },
+            "ref": null,
+            "rendered": "PROJECTS",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="add-project"
+              >
+                Add Project
+              </button>,
+              "replace": false,
+              "to": "/projects/add",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add Project",
+                "className": "add-project",
+              },
+              "ref": null,
+              "rendered": "Add Project",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "You have no saved projects",
+          "className": "no-data-msg",
+        },
+        "ref": null,
+        "rendered": "You have no saved projects",
+        "type": "h1",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="projects-header"
+          >
+            <h1
+              className="projects-title"
+            >
+              PROJECTS
+            </h1>
+            <Link
+              replace={false}
+              to="/projects/add"
+            >
+              <button
+                className="add-project"
+              >
+                Add Project
+              </button>
+            </Link>
+          </div>,
+          <h1
+            className="no-data-msg"
+          >
+            You have no saved projects
+          </h1>,
+        ],
+        "className": "projects",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="projects-title"
+              >
+                PROJECTS
+              </h1>,
+              <Link
+                replace={false}
+                to="/projects/add"
+              >
+                <button
+                  className="add-project"
+                >
+                  Add Project
+                </button>
+              </Link>,
+            ],
+            "className": "projects-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "PROJECTS",
+                "className": "projects-title",
+              },
+              "ref": null,
+              "rendered": "PROJECTS",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="add-project"
+                >
+                  Add Project
+                </button>,
+                "replace": false,
+                "to": "/projects/add",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Add Project",
+                  "className": "add-project",
+                },
+                "ref": null,
+                "rendered": "Add Project",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "You have no saved projects",
+            "className": "no-data-msg",
+          },
+          "ref": null,
+          "rendered": "You have no saved projects",
+          "type": "h1",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Projects Projects Component should match the snapshot with no user 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Projects
+    projects={
+      Array [
+        Object {
+          "caption": "",
+          "grade": "V13",
+          "high_point": 5,
+          "id": 42,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Nuthin But Sunshine",
+        },
+        Object {
+          "caption": "",
+          "grade": "V13",
+          "high_point": 7,
+          "id": 4,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Top Notch",
+        },
+      ]
+    }
+    user={
+      Object {
+        "email": "",
+        "name": "",
+        "password": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Log in or sign up to add projects",
+      "className": "no-user-msg",
+    },
+    "ref": null,
+    "rendered": "Log in or sign up to add projects",
+    "type": "h1",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Log in or sign up to add projects",
+        "className": "no-user-msg",
+      },
+      "ref": null,
+      "rendered": "Log in or sign up to add projects",
+      "type": "h1",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
