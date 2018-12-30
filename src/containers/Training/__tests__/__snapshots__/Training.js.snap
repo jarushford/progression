@@ -16,13 +16,13 @@ ShallowWrapper {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "14/12//2018",
+          "workout_date": "12/14/2018",
         },
         "3": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "29/12//2018",
+          "workout_date": "12/29/2018",
         },
       }
     }
@@ -3117,13 +3117,13 @@ ShallowWrapper {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "14/12//2018",
+          "workout_date": "12/14/2018",
         },
         "3": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "29/12//2018",
+          "workout_date": "12/29/2018",
         },
       }
     }

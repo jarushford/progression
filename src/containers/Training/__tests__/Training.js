@@ -15,7 +15,7 @@ describe('Training', () => {
       id: 8
     }
     const date = new Date()
-    const month = `${('0' + (date.getMonth() + 1)).slice(-2)}/`
+    const month = `${('0' + (date.getMonth() + 1)).slice(-2)}`
     const year = `${date.getFullYear()}`
     const today = 
       `${('0' + (date.getMonth() + 1)).slice(-2)}/`
@@ -23,8 +23,8 @@ describe('Training', () => {
         + `${date.getFullYear()}`
     mockData = {
       0: { workout_date: today, type: 'Power', description: 'do stuff', completed: true },
-      2: { workout_date: `14/${month}/${year}`, type: 'Power', description: 'do stuff', completed: true },
-      3: { workout_date: `29/${month}/${year}`, type: 'Power', description: 'do stuff', completed: true }
+      2: { workout_date: `${month}/14/${year}`, type: 'Power', description: 'do stuff', completed: true },
+      3: { workout_date: `${month}/29/${year}`, type: 'Power', description: 'do stuff', completed: true }
     }
   })
 
@@ -54,7 +54,9 @@ describe('Training', () => {
       const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} />)
 
       wrapper.find('.workout-item').first().simulate('click')
+      expect(mockToggle).toBeCalled()
 
+      wrapper.find('.workout-item').last().simulate('click')
       expect(mockToggle).toBeCalled()
     })
   })

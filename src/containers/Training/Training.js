@@ -42,7 +42,6 @@ export function Training({ trainingDataUnclean, toggleComplete, user }) {
       } else if (endOfMonthIndex.includes(today.substring(3, 5))) {
         Object.assign(weekIndex, Helper.endOfMonthHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
       } else if (keyM === todayM && keyY === todayY) {
-        console.log(key)
         Object.assign(weekIndex, Helper.daysOfWeekHelper(key, today, weekIndex, todayIndex, trainingData, toggleComplete))
       }
     })
