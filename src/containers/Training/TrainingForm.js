@@ -20,9 +20,11 @@ export class TrainingForm extends Component {
     const date = new Date()
     const month = (date.getMonth() + 1).toString()
     const day = date.getDate().toString()
+    const year = date.getFullYear().toString()
     this.setState({
       day,
-      month
+      month,
+      year
     })
   }
 

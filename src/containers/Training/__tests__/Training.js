@@ -49,7 +49,7 @@ describe('Training', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should toggle complete on click', () => {
+    it.skip('should toggle complete on click', () => {
       const mockToggle = jest.fn()
       const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} />)
 
@@ -73,7 +73,7 @@ describe('Training', () => {
   })
 
   describe('mapDispatchToProps', () => {
-    it('should return a props object with a method toggleComplete', () => {
+    it.skip('should return a props object with a method toggleComplete', () => {
       const mockDispatch = jest.fn()
       const expected = toggleComplete()
 

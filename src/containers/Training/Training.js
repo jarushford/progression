@@ -4,7 +4,7 @@ import { withRouter, Link } from 'react-router-dom'
 import * as Helper from '../../utils/calendarHelpers'
 import { updateDataThunk } from '../../thunks/updateData'
 import '../../main.scss'
-const uuidv1 = require('uuid/v1')
+import { uid } from 'react-uid'
 
 export function Training({ trainingDataUnclean, toggleComplete, user }) {
 
@@ -36,7 +36,7 @@ export function Training({ trainingDataUnclean, toggleComplete, user }) {
       const keyY = key.substring(6)
       if (key === today) {
         weekIndex[todayIndex].push(
-          <li className={`workout-item ${id.completed && 'completed'}`} onClick={() => toggleComplete(id, 'workout')} key={uuidv1()}>
+          <li className={`workout-item ${id.completed && 'completed'}`} onClick={() => toggleComplete(id, 'workout')} key={uid(id)}>
             <h3>{id.type}</h3>
             <p>{id.description}</p>
           </li>

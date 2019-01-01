@@ -211,11 +211,16 @@ ShallowWrapper {
             <div
               className="project-actions"
             >
-              <button
-                className="add-progress"
+              <Link
+                replace={false}
+                to="/projects/edit"
               >
-                Add Progress
-              </button>
+                <button
+                  className="add-progress"
+                >
+                  Edit Progress
+                </button>
+              </Link>
               <Link
                 replace={false}
                 to="/milestones/add"
@@ -521,11 +526,16 @@ ShallowWrapper {
               <div
                 className="project-actions"
               >
-                <button
-                  className="add-progress"
+                <Link
+                  replace={false}
+                  to="/projects/edit"
                 >
-                  Add Progress
-                </button>
+                  <button
+                    className="add-progress"
+                  >
+                    Edit Progress
+                  </button>
+                </Link>
                 <Link
                   replace={false}
                   to="/milestones/add"
@@ -608,11 +618,16 @@ ShallowWrapper {
                 <div
                   className="project-actions"
                 >
-                  <button
-                    className="add-progress"
+                  <Link
+                    replace={false}
+                    to="/projects/edit"
                   >
-                    Add Progress
-                  </button>
+                    <button
+                      className="add-progress"
+                    >
+                      Edit Progress
+                    </button>
+                  </Link>
                   <Link
                     replace={false}
                     to="/milestones/add"
@@ -834,11 +849,16 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <button
-                      className="add-progress"
+                    <Link
+                      replace={false}
+                      to="/projects/edit"
                     >
-                      Add Progress
-                    </button>,
+                      <button
+                        className="add-progress"
+                      >
+                        Edit Progress
+                      </button>
+                    </Link>,
                     <Link
                       replace={false}
                       to="/milestones/add"
@@ -867,14 +887,30 @@ ShallowWrapper {
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
-                      "children": "Add Progress",
-                      "className": "add-progress",
+                      "children": <button
+                        className="add-progress"
+                      >
+                        Edit Progress
+                      </button>,
+                      "replace": false,
+                      "to": "/projects/edit",
                     },
                     "ref": null,
-                    "rendered": "Add Progress",
-                    "type": "button",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Edit Progress",
+                        "className": "add-progress",
+                      },
+                      "ref": null,
+                      "rendered": "Edit Progress",
+                      "type": "button",
+                    },
+                    "type": [Function],
                   },
                   Object {
                     "instance": null,
@@ -1251,11 +1287,16 @@ ShallowWrapper {
               <div
                 className="project-actions"
               >
-                <button
-                  className="add-progress"
+                <Link
+                  replace={false}
+                  to="/projects/edit"
                 >
-                  Add Progress
-                </button>
+                  <button
+                    className="add-progress"
+                  >
+                    Edit Progress
+                  </button>
+                </Link>
                 <Link
                   replace={false}
                   to="/milestones/add"
@@ -1561,11 +1602,16 @@ ShallowWrapper {
                 <div
                   className="project-actions"
                 >
-                  <button
-                    className="add-progress"
+                  <Link
+                    replace={false}
+                    to="/projects/edit"
                   >
-                    Add Progress
-                  </button>
+                    <button
+                      className="add-progress"
+                    >
+                      Edit Progress
+                    </button>
+                  </Link>
                   <Link
                     replace={false}
                     to="/milestones/add"
@@ -1648,11 +1694,16 @@ ShallowWrapper {
                   <div
                     className="project-actions"
                   >
-                    <button
-                      className="add-progress"
+                    <Link
+                      replace={false}
+                      to="/projects/edit"
                     >
-                      Add Progress
-                    </button>
+                      <button
+                        className="add-progress"
+                      >
+                        Edit Progress
+                      </button>
+                    </Link>
                     <Link
                       replace={false}
                       to="/milestones/add"
@@ -1874,11 +1925,16 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <button
-                        className="add-progress"
+                      <Link
+                        replace={false}
+                        to="/projects/edit"
                       >
-                        Add Progress
-                      </button>,
+                        <button
+                          className="add-progress"
+                        >
+                          Edit Progress
+                        </button>
+                      </Link>,
                       <Link
                         replace={false}
                         to="/milestones/add"
@@ -1907,14 +1963,30 @@ ShallowWrapper {
                     Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "host",
+                      "nodeType": "class",
                       "props": Object {
-                        "children": "Add Progress",
-                        "className": "add-progress",
+                        "children": <button
+                          className="add-progress"
+                        >
+                          Edit Progress
+                        </button>,
+                        "replace": false,
+                        "to": "/projects/edit",
                       },
                       "ref": null,
-                      "rendered": "Add Progress",
-                      "type": "button",
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Edit Progress",
+                          "className": "add-progress",
+                        },
+                        "ref": null,
+                        "rendered": "Edit Progress",
+                        "type": "button",
+                      },
+                      "type": [Function],
                     },
                     Object {
                       "instance": null,

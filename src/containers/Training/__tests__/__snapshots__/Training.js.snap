@@ -10,19 +10,19 @@ ShallowWrapper {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "12/31/2018",
+          "workout_date": "01/01/2019",
         },
         "2": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "12/14/2018",
+          "workout_date": "01/14/2019",
         },
         "3": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "12/29/2018",
+          "workout_date": "01/29/2019",
         },
       }
     }
@@ -92,16 +92,23 @@ ShallowWrapper {
               Sunday 
               30
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
+          </div>
+          <div
+            className="day false"
+          >
+            <h2>
+              Monday 
+              31
+            </h2>
+            <ul />
           </div>
           <div
             className="day highlighted"
           >
             <h2>
-              Monday 
-              31
+              Tuesday 
+              1
             </h2>
             <ul>
               <li
@@ -121,23 +128,10 @@ ShallowWrapper {
             className="day false"
           >
             <h2>
-              Tuesday 
-              1
-            </h2>
-            <ul>
-              
-            </ul>
-          </div>
-          <div
-            className="day false"
-          >
-            <h2>
               Wednesday 
               2
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -146,9 +140,7 @@ ShallowWrapper {
               Thursday 
               3
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -157,9 +149,7 @@ ShallowWrapper {
               Friday 
               4
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -168,9 +158,7 @@ ShallowWrapper {
               Saturday 
               5
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
         </div>,
       ],
@@ -336,16 +324,23 @@ ShallowWrapper {
                 Sunday 
                 30
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
+            </div>,
+            <div
+              className="day false"
+            >
+              <h2>
+                Monday 
+                31
+              </h2>
+              <ul />
             </div>,
             <div
               className="day highlighted"
             >
               <h2>
-                Monday 
-                31
+                Tuesday 
+                1
               </h2>
               <ul>
                 <li
@@ -365,23 +360,10 @@ ShallowWrapper {
               className="day false"
             >
               <h2>
-                Tuesday 
-                1
-              </h2>
-              <ul>
-                
-              </ul>
-            </div>,
-            <div
-              className="day false"
-            >
-              <h2>
                 Wednesday 
                 2
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -390,9 +372,7 @@ ShallowWrapper {
                 Thursday 
                 3
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -401,9 +381,7 @@ ShallowWrapper {
                 Friday 
                 4
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -412,9 +390,7 @@ ShallowWrapper {
                 Saturday 
                 5
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
           ],
           "className": "training",
@@ -431,9 +407,7 @@ ShallowWrapper {
                   Sunday 
                   30
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -461,10 +435,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -480,21 +454,9 @@ ShallowWrapper {
                   Monday 
                   31
                 </h2>,
-                <ul>
-                  <li
-                    className="workout-item completed"
-                    onClick={[Function]}
-                  >
-                    <h3>
-                      Power
-                    </h3>
-                    <p>
-                      do stuff
-                    </p>
-                  </li>
-                </ul>,
+                <ul />,
               ],
-              "className": "day highlighted",
+              "className": "day false",
             },
             "ref": null,
             "rendered": Array [
@@ -520,62 +482,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <li
-                    className="workout-item completed"
-                    onClick={[Function]}
-                  >
-                    <h3>
-                      Power
-                    </h3>
-                    <p>
-                      do stuff
-                    </p>
-                  </li>,
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <h3>
-                        Power
-                      </h3>,
-                      <p>
-                        do stuff
-                      </p>,
-                    ],
-                    "className": "workout-item completed",
-                    "onClick": [Function],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Power",
-                      },
-                      "ref": null,
-                      "rendered": "Power",
-                      "type": "h3",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "do stuff",
-                      },
-                      "ref": null,
-                      "rendered": "do stuff",
-                      "type": "p",
-                    },
-                  ],
-                  "type": "li",
-                },
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -592,10 +502,20 @@ ShallowWrapper {
                   1
                 </h2>,
                 <ul>
-                  
+                  <li
+                    className="workout-item completed"
+                    onClick={[Function]}
+                  >
+                    <h3>
+                      Power
+                    </h3>
+                    <p>
+                      do stuff
+                    </p>
+                  </li>
                 </ul>,
               ],
-              "className": "day false",
+              "className": "day highlighted",
             },
             "ref": null,
             "rendered": Array [
@@ -621,10 +541,66 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [
+                    <li
+                      className="workout-item completed"
+                      onClick={[Function]}
+                    >
+                      <h3>
+                        Power
+                      </h3>
+                      <p>
+                        do stuff
+                      </p>
+                    </li>,
+                  ],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "uid1",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h3>
+                          Power
+                        </h3>,
+                        <p>
+                          do stuff
+                        </p>,
+                      ],
+                      "className": "workout-item completed",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Power",
+                        },
+                        "ref": null,
+                        "rendered": "Power",
+                        "type": "h3",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "do stuff",
+                        },
+                        "ref": null,
+                        "rendered": "do stuff",
+                        "type": "p",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                ],
                 "type": "ul",
               },
             ],
@@ -640,9 +616,7 @@ ShallowWrapper {
                   Wednesday 
                   2
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -670,10 +644,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -689,9 +663,7 @@ ShallowWrapper {
                   Thursday 
                   3
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -719,10 +691,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -738,9 +710,7 @@ ShallowWrapper {
                   Friday 
                   4
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -768,10 +738,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -787,9 +757,7 @@ ShallowWrapper {
                   Saturday 
                   5
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -817,10 +785,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -882,16 +850,23 @@ ShallowWrapper {
                 Sunday 
                 30
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
+            </div>
+            <div
+              className="day false"
+            >
+              <h2>
+                Monday 
+                31
+              </h2>
+              <ul />
             </div>
             <div
               className="day highlighted"
             >
               <h2>
-                Monday 
-                31
+                Tuesday 
+                1
               </h2>
               <ul>
                 <li
@@ -911,23 +886,10 @@ ShallowWrapper {
               className="day false"
             >
               <h2>
-                Tuesday 
-                1
-              </h2>
-              <ul>
-                
-              </ul>
-            </div>
-            <div
-              className="day false"
-            >
-              <h2>
                 Wednesday 
                 2
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -936,9 +898,7 @@ ShallowWrapper {
                 Thursday 
                 3
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -947,9 +907,7 @@ ShallowWrapper {
                 Friday 
                 4
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -958,9 +916,7 @@ ShallowWrapper {
                 Saturday 
                 5
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
           </div>,
         ],
@@ -1126,16 +1082,23 @@ ShallowWrapper {
                   Sunday 
                   30
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
+              </div>,
+              <div
+                className="day false"
+              >
+                <h2>
+                  Monday 
+                  31
+                </h2>
+                <ul />
               </div>,
               <div
                 className="day highlighted"
               >
                 <h2>
-                  Monday 
-                  31
+                  Tuesday 
+                  1
                 </h2>
                 <ul>
                   <li
@@ -1155,23 +1118,10 @@ ShallowWrapper {
                 className="day false"
               >
                 <h2>
-                  Tuesday 
-                  1
-                </h2>
-                <ul>
-                  
-                </ul>
-              </div>,
-              <div
-                className="day false"
-              >
-                <h2>
                   Wednesday 
                   2
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -1180,9 +1130,7 @@ ShallowWrapper {
                   Thursday 
                   3
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -1191,9 +1139,7 @@ ShallowWrapper {
                   Friday 
                   4
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -1202,9 +1148,7 @@ ShallowWrapper {
                   Saturday 
                   5
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
             ],
             "className": "training",
@@ -1221,9 +1165,7 @@ ShallowWrapper {
                     Sunday 
                     30
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -1251,10 +1193,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -1270,21 +1212,9 @@ ShallowWrapper {
                     Monday 
                     31
                   </h2>,
-                  <ul>
-                    <li
-                      className="workout-item completed"
-                      onClick={[Function]}
-                    >
-                      <h3>
-                        Power
-                      </h3>
-                      <p>
-                        do stuff
-                      </p>
-                    </li>
-                  </ul>,
+                  <ul />,
                 ],
-                "className": "day highlighted",
+                "className": "day false",
               },
               "ref": null,
               "rendered": Array [
@@ -1310,62 +1240,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <li
-                      className="workout-item completed"
-                      onClick={[Function]}
-                    >
-                      <h3>
-                        Power
-                      </h3>
-                      <p>
-                        do stuff
-                      </p>
-                    </li>,
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <h3>
-                          Power
-                        </h3>,
-                        <p>
-                          do stuff
-                        </p>,
-                      ],
-                      "className": "workout-item completed",
-                      "onClick": [Function],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Power",
-                        },
-                        "ref": null,
-                        "rendered": "Power",
-                        "type": "h3",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "do stuff",
-                        },
-                        "ref": null,
-                        "rendered": "do stuff",
-                        "type": "p",
-                      },
-                    ],
-                    "type": "li",
-                  },
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -1382,10 +1260,20 @@ ShallowWrapper {
                     1
                   </h2>,
                   <ul>
-                    
+                    <li
+                      className="workout-item completed"
+                      onClick={[Function]}
+                    >
+                      <h3>
+                        Power
+                      </h3>
+                      <p>
+                        do stuff
+                      </p>
+                    </li>
                   </ul>,
                 ],
-                "className": "day false",
+                "className": "day highlighted",
               },
               "ref": null,
               "rendered": Array [
@@ -1411,10 +1299,66 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [
+                      <li
+                        className="workout-item completed"
+                        onClick={[Function]}
+                      >
+                        <h3>
+                          Power
+                        </h3>
+                        <p>
+                          do stuff
+                        </p>
+                      </li>,
+                    ],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "uid1",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <h3>
+                            Power
+                          </h3>,
+                          <p>
+                            do stuff
+                          </p>,
+                        ],
+                        "className": "workout-item completed",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Power",
+                          },
+                          "ref": null,
+                          "rendered": "Power",
+                          "type": "h3",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "do stuff",
+                          },
+                          "ref": null,
+                          "rendered": "do stuff",
+                          "type": "p",
+                        },
+                      ],
+                      "type": "li",
+                    },
+                  ],
                   "type": "ul",
                 },
               ],
@@ -1430,9 +1374,7 @@ ShallowWrapper {
                     Wednesday 
                     2
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -1460,10 +1402,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -1479,9 +1421,7 @@ ShallowWrapper {
                     Thursday 
                     3
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -1509,10 +1449,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -1528,9 +1468,7 @@ ShallowWrapper {
                     Friday 
                     4
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -1558,10 +1496,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -1577,9 +1515,7 @@ ShallowWrapper {
                     Saturday 
                     5
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -1607,10 +1543,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -1714,31 +1650,25 @@ ShallowWrapper {
               Sunday 
               30
             </h2>
-            <ul>
-              
-            </ul>
-          </div>
-          <div
-            className="day highlighted"
-          >
-            <h2>
-              Monday 
-              31
-            </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
           >
             <h2>
+              Monday 
+              31
+            </h2>
+            <ul />
+          </div>
+          <div
+            className="day highlighted"
+          >
+            <h2>
               Tuesday 
               1
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -1747,9 +1677,7 @@ ShallowWrapper {
               Wednesday 
               2
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -1758,9 +1686,7 @@ ShallowWrapper {
               Thursday 
               3
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -1769,9 +1695,7 @@ ShallowWrapper {
               Friday 
               4
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
           <div
             className="day false"
@@ -1780,9 +1704,7 @@ ShallowWrapper {
               Saturday 
               5
             </h2>
-            <ul>
-              
-            </ul>
+            <ul />
           </div>
         </div>,
       ],
@@ -1948,31 +1870,25 @@ ShallowWrapper {
                 Sunday 
                 30
               </h2>
-              <ul>
-                
-              </ul>
-            </div>,
-            <div
-              className="day highlighted"
-            >
-              <h2>
-                Monday 
-                31
-              </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
             >
               <h2>
+                Monday 
+                31
+              </h2>
+              <ul />
+            </div>,
+            <div
+              className="day highlighted"
+            >
+              <h2>
                 Tuesday 
                 1
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -1981,9 +1897,7 @@ ShallowWrapper {
                 Wednesday 
                 2
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -1992,9 +1906,7 @@ ShallowWrapper {
                 Thursday 
                 3
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -2003,9 +1915,7 @@ ShallowWrapper {
                 Friday 
                 4
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
             <div
               className="day false"
@@ -2014,9 +1924,7 @@ ShallowWrapper {
                 Saturday 
                 5
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>,
           ],
           "className": "training",
@@ -2033,9 +1941,7 @@ ShallowWrapper {
                   Sunday 
                   30
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -2063,10 +1969,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2082,11 +1988,9 @@ ShallowWrapper {
                   Monday 
                   31
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
-              "className": "day highlighted",
+              "className": "day false",
             },
             "ref": null,
             "rendered": Array [
@@ -2112,10 +2016,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2131,11 +2035,9 @@ ShallowWrapper {
                   Tuesday 
                   1
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
-              "className": "day false",
+              "className": "day highlighted",
             },
             "ref": null,
             "rendered": Array [
@@ -2161,10 +2063,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2180,9 +2082,7 @@ ShallowWrapper {
                   Wednesday 
                   2
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -2210,10 +2110,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2229,9 +2129,7 @@ ShallowWrapper {
                   Thursday 
                   3
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -2259,10 +2157,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2278,9 +2176,7 @@ ShallowWrapper {
                   Friday 
                   4
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -2308,10 +2204,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2327,9 +2223,7 @@ ShallowWrapper {
                   Saturday 
                   5
                 </h2>,
-                <ul>
-                  
-                </ul>,
+                <ul />,
               ],
               "className": "day false",
             },
@@ -2357,10 +2251,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": Array [],
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": Array [],
                 "type": "ul",
               },
             ],
@@ -2422,31 +2316,25 @@ ShallowWrapper {
                 Sunday 
                 30
               </h2>
-              <ul>
-                
-              </ul>
-            </div>
-            <div
-              className="day highlighted"
-            >
-              <h2>
-                Monday 
-                31
-              </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
             >
               <h2>
+                Monday 
+                31
+              </h2>
+              <ul />
+            </div>
+            <div
+              className="day highlighted"
+            >
+              <h2>
                 Tuesday 
                 1
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -2455,9 +2343,7 @@ ShallowWrapper {
                 Wednesday 
                 2
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -2466,9 +2352,7 @@ ShallowWrapper {
                 Thursday 
                 3
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -2477,9 +2361,7 @@ ShallowWrapper {
                 Friday 
                 4
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
             <div
               className="day false"
@@ -2488,9 +2370,7 @@ ShallowWrapper {
                 Saturday 
                 5
               </h2>
-              <ul>
-                
-              </ul>
+              <ul />
             </div>
           </div>,
         ],
@@ -2656,31 +2536,25 @@ ShallowWrapper {
                   Sunday 
                   30
                 </h2>
-                <ul>
-                  
-                </ul>
-              </div>,
-              <div
-                className="day highlighted"
-              >
-                <h2>
-                  Monday 
-                  31
-                </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
               >
                 <h2>
+                  Monday 
+                  31
+                </h2>
+                <ul />
+              </div>,
+              <div
+                className="day highlighted"
+              >
+                <h2>
                   Tuesday 
                   1
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -2689,9 +2563,7 @@ ShallowWrapper {
                   Wednesday 
                   2
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -2700,9 +2572,7 @@ ShallowWrapper {
                   Thursday 
                   3
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -2711,9 +2581,7 @@ ShallowWrapper {
                   Friday 
                   4
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
               <div
                 className="day false"
@@ -2722,9 +2590,7 @@ ShallowWrapper {
                   Saturday 
                   5
                 </h2>
-                <ul>
-                  
-                </ul>
+                <ul />
               </div>,
             ],
             "className": "training",
@@ -2741,9 +2607,7 @@ ShallowWrapper {
                     Sunday 
                     30
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -2771,10 +2635,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -2790,11 +2654,9 @@ ShallowWrapper {
                     Monday 
                     31
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
-                "className": "day highlighted",
+                "className": "day false",
               },
               "ref": null,
               "rendered": Array [
@@ -2820,10 +2682,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -2839,11 +2701,9 @@ ShallowWrapper {
                     Tuesday 
                     1
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
-                "className": "day false",
+                "className": "day highlighted",
               },
               "ref": null,
               "rendered": Array [
@@ -2869,10 +2729,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -2888,9 +2748,7 @@ ShallowWrapper {
                     Wednesday 
                     2
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -2918,10 +2776,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -2937,9 +2795,7 @@ ShallowWrapper {
                     Thursday 
                     3
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -2967,10 +2823,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -2986,9 +2842,7 @@ ShallowWrapper {
                     Friday 
                     4
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -3016,10 +2870,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -3035,9 +2889,7 @@ ShallowWrapper {
                     Saturday 
                     5
                   </h2>,
-                  <ul>
-                    
-                  </ul>,
+                  <ul />,
                 ],
                 "className": "day false",
               },
@@ -3065,10 +2917,10 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": Array [],
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": Array [],
                   "type": "ul",
                 },
               ],
@@ -3111,19 +2963,19 @@ ShallowWrapper {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "12/31/2018",
+          "workout_date": "01/01/2019",
         },
         "2": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "12/14/2018",
+          "workout_date": "01/14/2019",
         },
         "3": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "12/29/2018",
+          "workout_date": "01/29/2019",
         },
       }
     }

@@ -34,13 +34,8 @@ ShallowWrapper {
           id="year"
           name="year"
           onChange={[Function]}
-          value="2018"
+          value="2019"
         >
-          <option
-            value={2018}
-          >
-            2018
-          </option>
           <option
             value={2019}
           >
@@ -61,55 +56,60 @@ ShallowWrapper {
           >
             2022
           </option>
+          <option
+            value={2023}
+          >
+            2023
+          </option>
         </select>,
         <select
           id="month"
           name="month"
           onChange={[Function]}
-          value="12"
+          value="1"
         >
           <option
-            value="1"
+            value="01"
           >
             1
           </option>
           <option
-            value="2"
+            value="02"
           >
             2
           </option>
           <option
-            value="3"
+            value="03"
           >
             3
           </option>
           <option
-            value="4"
+            value="04"
           >
             4
           </option>
           <option
-            value="5"
+            value="05"
           >
             5
           </option>
           <option
-            value="6"
+            value="06"
           >
             6
           </option>
           <option
-            value="7"
+            value="07"
           >
             7
           </option>
           <option
-            value="8"
+            value="08"
           >
             8
           </option>
           <option
-            value="9"
+            value="09"
           >
             9
           </option>
@@ -133,50 +133,50 @@ ShallowWrapper {
           id="day"
           name="day"
           onChange={[Function]}
-          value="31"
+          value="1"
         >
           <option
-            value="1"
+            value="01"
           >
             1
           </option>
           <option
-            value="2"
+            value="02"
           >
             2
           </option>
           <option
-            value="3"
+            value="03"
           >
             3
           </option>
           <option
-            value="4"
+            value="04"
           >
             4
           </option>
           <option
-            value="5"
+            value="05"
           >
             5
           </option>
           <option
-            value="6"
+            value="06"
           >
             6
           </option>
           <option
-            value="7"
+            value="07"
           >
             7
           </option>
           <option
-            value="8"
+            value="08"
           >
             8
           </option>
           <option
-            value="9"
+            value="09"
           >
             9
           </option>
@@ -367,11 +367,6 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value={2018}
-            >
-              2018
-            </option>,
-            <option
               value={2019}
             >
               2019
@@ -391,26 +386,19 @@ ShallowWrapper {
             >
               2022
             </option>,
+            <option
+              value={2023}
+            >
+              2023
+            </option>,
           ],
           "id": "year",
           "name": "year",
           "onChange": [Function],
-          "value": "2018",
+          "value": "2019",
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": 2018,
-              "value": 2018,
-            },
-            "ref": null,
-            "rendered": 2018,
-            "type": "option",
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -459,6 +447,18 @@ ShallowWrapper {
             "rendered": 2022,
             "type": "option",
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2023,
+              "value": 2023,
+            },
+            "ref": null,
+            "rendered": 2023,
+            "type": "option",
+          },
         ],
         "type": "select",
       },
@@ -469,47 +469,47 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value="1"
+              value="01"
             >
               1
             </option>,
             <option
-              value="2"
+              value="02"
             >
               2
             </option>,
             <option
-              value="3"
+              value="03"
             >
               3
             </option>,
             <option
-              value="4"
+              value="04"
             >
               4
             </option>,
             <option
-              value="5"
+              value="05"
             >
               5
             </option>,
             <option
-              value="6"
+              value="06"
             >
               6
             </option>,
             <option
-              value="7"
+              value="07"
             >
               7
             </option>,
             <option
-              value="8"
+              value="08"
             >
               8
             </option>,
             <option
-              value="9"
+              value="09"
             >
               9
             </option>,
@@ -532,7 +532,7 @@ ShallowWrapper {
           "id": "month",
           "name": "month",
           "onChange": [Function],
-          "value": "12",
+          "value": "1",
         },
         "ref": null,
         "rendered": Array [
@@ -542,7 +542,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "1",
-              "value": "1",
+              "value": "01",
             },
             "ref": null,
             "rendered": "1",
@@ -554,7 +554,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "2",
-              "value": "2",
+              "value": "02",
             },
             "ref": null,
             "rendered": "2",
@@ -566,7 +566,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "3",
-              "value": "3",
+              "value": "03",
             },
             "ref": null,
             "rendered": "3",
@@ -578,7 +578,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "4",
-              "value": "4",
+              "value": "04",
             },
             "ref": null,
             "rendered": "4",
@@ -590,7 +590,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "5",
-              "value": "5",
+              "value": "05",
             },
             "ref": null,
             "rendered": "5",
@@ -602,7 +602,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "6",
-              "value": "6",
+              "value": "06",
             },
             "ref": null,
             "rendered": "6",
@@ -614,7 +614,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "7",
-              "value": "7",
+              "value": "07",
             },
             "ref": null,
             "rendered": "7",
@@ -626,7 +626,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "8",
-              "value": "8",
+              "value": "08",
             },
             "ref": null,
             "rendered": "8",
@@ -638,7 +638,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "9",
-              "value": "9",
+              "value": "09",
             },
             "ref": null,
             "rendered": "9",
@@ -690,47 +690,47 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value="1"
+              value="01"
             >
               1
             </option>,
             <option
-              value="2"
+              value="02"
             >
               2
             </option>,
             <option
-              value="3"
+              value="03"
             >
               3
             </option>,
             <option
-              value="4"
+              value="04"
             >
               4
             </option>,
             <option
-              value="5"
+              value="05"
             >
               5
             </option>,
             <option
-              value="6"
+              value="06"
             >
               6
             </option>,
             <option
-              value="7"
+              value="07"
             >
               7
             </option>,
             <option
-              value="8"
+              value="08"
             >
               8
             </option>,
             <option
-              value="9"
+              value="09"
             >
               9
             </option>,
@@ -848,7 +848,7 @@ ShallowWrapper {
           "id": "day",
           "name": "day",
           "onChange": [Function],
-          "value": "31",
+          "value": "1",
         },
         "ref": null,
         "rendered": Array [
@@ -858,7 +858,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "1",
-              "value": "1",
+              "value": "01",
             },
             "ref": null,
             "rendered": "1",
@@ -870,7 +870,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "2",
-              "value": "2",
+              "value": "02",
             },
             "ref": null,
             "rendered": "2",
@@ -882,7 +882,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "3",
-              "value": "3",
+              "value": "03",
             },
             "ref": null,
             "rendered": "3",
@@ -894,7 +894,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "4",
-              "value": "4",
+              "value": "04",
             },
             "ref": null,
             "rendered": "4",
@@ -906,7 +906,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "5",
-              "value": "5",
+              "value": "05",
             },
             "ref": null,
             "rendered": "5",
@@ -918,7 +918,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "6",
-              "value": "6",
+              "value": "06",
             },
             "ref": null,
             "rendered": "6",
@@ -930,7 +930,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "7",
-              "value": "7",
+              "value": "07",
             },
             "ref": null,
             "rendered": "7",
@@ -942,7 +942,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "8",
-              "value": "8",
+              "value": "08",
             },
             "ref": null,
             "rendered": "8",
@@ -954,7 +954,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "9",
-              "value": "9",
+              "value": "09",
             },
             "ref": null,
             "rendered": "9",
@@ -1406,13 +1406,8 @@ ShallowWrapper {
             id="year"
             name="year"
             onChange={[Function]}
-            value="2018"
+            value="2019"
           >
-            <option
-              value={2018}
-            >
-              2018
-            </option>
             <option
               value={2019}
             >
@@ -1433,55 +1428,60 @@ ShallowWrapper {
             >
               2022
             </option>
+            <option
+              value={2023}
+            >
+              2023
+            </option>
           </select>,
           <select
             id="month"
             name="month"
             onChange={[Function]}
-            value="12"
+            value="1"
           >
             <option
-              value="1"
+              value="01"
             >
               1
             </option>
             <option
-              value="2"
+              value="02"
             >
               2
             </option>
             <option
-              value="3"
+              value="03"
             >
               3
             </option>
             <option
-              value="4"
+              value="04"
             >
               4
             </option>
             <option
-              value="5"
+              value="05"
             >
               5
             </option>
             <option
-              value="6"
+              value="06"
             >
               6
             </option>
             <option
-              value="7"
+              value="07"
             >
               7
             </option>
             <option
-              value="8"
+              value="08"
             >
               8
             </option>
             <option
-              value="9"
+              value="09"
             >
               9
             </option>
@@ -1505,50 +1505,50 @@ ShallowWrapper {
             id="day"
             name="day"
             onChange={[Function]}
-            value="31"
+            value="1"
           >
             <option
-              value="1"
+              value="01"
             >
               1
             </option>
             <option
-              value="2"
+              value="02"
             >
               2
             </option>
             <option
-              value="3"
+              value="03"
             >
               3
             </option>
             <option
-              value="4"
+              value="04"
             >
               4
             </option>
             <option
-              value="5"
+              value="05"
             >
               5
             </option>
             <option
-              value="6"
+              value="06"
             >
               6
             </option>
             <option
-              value="7"
+              value="07"
             >
               7
             </option>
             <option
-              value="8"
+              value="08"
             >
               8
             </option>
             <option
-              value="9"
+              value="09"
             >
               9
             </option>
@@ -1739,11 +1739,6 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value={2018}
-              >
-                2018
-              </option>,
-              <option
                 value={2019}
               >
                 2019
@@ -1763,26 +1758,19 @@ ShallowWrapper {
               >
                 2022
               </option>,
+              <option
+                value={2023}
+              >
+                2023
+              </option>,
             ],
             "id": "year",
             "name": "year",
             "onChange": [Function],
-            "value": "2018",
+            "value": "2019",
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 2018,
-                "value": 2018,
-              },
-              "ref": null,
-              "rendered": 2018,
-              "type": "option",
-            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1831,6 +1819,18 @@ ShallowWrapper {
               "rendered": 2022,
               "type": "option",
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2023,
+                "value": 2023,
+              },
+              "ref": null,
+              "rendered": 2023,
+              "type": "option",
+            },
           ],
           "type": "select",
         },
@@ -1841,47 +1841,47 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value="1"
+                value="01"
               >
                 1
               </option>,
               <option
-                value="2"
+                value="02"
               >
                 2
               </option>,
               <option
-                value="3"
+                value="03"
               >
                 3
               </option>,
               <option
-                value="4"
+                value="04"
               >
                 4
               </option>,
               <option
-                value="5"
+                value="05"
               >
                 5
               </option>,
               <option
-                value="6"
+                value="06"
               >
                 6
               </option>,
               <option
-                value="7"
+                value="07"
               >
                 7
               </option>,
               <option
-                value="8"
+                value="08"
               >
                 8
               </option>,
               <option
-                value="9"
+                value="09"
               >
                 9
               </option>,
@@ -1904,7 +1904,7 @@ ShallowWrapper {
             "id": "month",
             "name": "month",
             "onChange": [Function],
-            "value": "12",
+            "value": "1",
           },
           "ref": null,
           "rendered": Array [
@@ -1914,7 +1914,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "1",
-                "value": "1",
+                "value": "01",
               },
               "ref": null,
               "rendered": "1",
@@ -1926,7 +1926,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "2",
-                "value": "2",
+                "value": "02",
               },
               "ref": null,
               "rendered": "2",
@@ -1938,7 +1938,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "3",
-                "value": "3",
+                "value": "03",
               },
               "ref": null,
               "rendered": "3",
@@ -1950,7 +1950,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "4",
-                "value": "4",
+                "value": "04",
               },
               "ref": null,
               "rendered": "4",
@@ -1962,7 +1962,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "5",
-                "value": "5",
+                "value": "05",
               },
               "ref": null,
               "rendered": "5",
@@ -1974,7 +1974,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "6",
-                "value": "6",
+                "value": "06",
               },
               "ref": null,
               "rendered": "6",
@@ -1986,7 +1986,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "7",
-                "value": "7",
+                "value": "07",
               },
               "ref": null,
               "rendered": "7",
@@ -1998,7 +1998,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "8",
-                "value": "8",
+                "value": "08",
               },
               "ref": null,
               "rendered": "8",
@@ -2010,7 +2010,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "9",
-                "value": "9",
+                "value": "09",
               },
               "ref": null,
               "rendered": "9",
@@ -2062,47 +2062,47 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value="1"
+                value="01"
               >
                 1
               </option>,
               <option
-                value="2"
+                value="02"
               >
                 2
               </option>,
               <option
-                value="3"
+                value="03"
               >
                 3
               </option>,
               <option
-                value="4"
+                value="04"
               >
                 4
               </option>,
               <option
-                value="5"
+                value="05"
               >
                 5
               </option>,
               <option
-                value="6"
+                value="06"
               >
                 6
               </option>,
               <option
-                value="7"
+                value="07"
               >
                 7
               </option>,
               <option
-                value="8"
+                value="08"
               >
                 8
               </option>,
               <option
-                value="9"
+                value="09"
               >
                 9
               </option>,
@@ -2220,7 +2220,7 @@ ShallowWrapper {
             "id": "day",
             "name": "day",
             "onChange": [Function],
-            "value": "31",
+            "value": "1",
           },
           "ref": null,
           "rendered": Array [
@@ -2230,7 +2230,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "1",
-                "value": "1",
+                "value": "01",
               },
               "ref": null,
               "rendered": "1",
@@ -2242,7 +2242,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "2",
-                "value": "2",
+                "value": "02",
               },
               "ref": null,
               "rendered": "2",
@@ -2254,7 +2254,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "3",
-                "value": "3",
+                "value": "03",
               },
               "ref": null,
               "rendered": "3",
@@ -2266,7 +2266,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "4",
-                "value": "4",
+                "value": "04",
               },
               "ref": null,
               "rendered": "4",
@@ -2278,7 +2278,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "5",
-                "value": "5",
+                "value": "05",
               },
               "ref": null,
               "rendered": "5",
@@ -2290,7 +2290,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "6",
-                "value": "6",
+                "value": "06",
               },
               "ref": null,
               "rendered": "6",
@@ -2302,7 +2302,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "7",
-                "value": "7",
+                "value": "07",
               },
               "ref": null,
               "rendered": "7",
@@ -2314,7 +2314,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "8",
-                "value": "8",
+                "value": "08",
               },
               "ref": null,
               "rendered": "8",
@@ -2326,7 +2326,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "9",
-                "value": "9",
+                "value": "09",
               },
               "ref": null,
               "rendered": "9",
@@ -2819,13 +2819,8 @@ ShallowWrapper {
           id="year"
           name="year"
           onChange={[Function]}
-          value="2018"
+          value="2019"
         >
-          <option
-            value={2018}
-          >
-            2018
-          </option>
           <option
             value={2019}
           >
@@ -2846,6 +2841,11 @@ ShallowWrapper {
           >
             2022
           </option>
+          <option
+            value={2023}
+          >
+            2023
+          </option>
         </select>,
         <select
           id="month"
@@ -2854,47 +2854,47 @@ ShallowWrapper {
           value="2"
         >
           <option
-            value="1"
+            value="01"
           >
             1
           </option>
           <option
-            value="2"
+            value="02"
           >
             2
           </option>
           <option
-            value="3"
+            value="03"
           >
             3
           </option>
           <option
-            value="4"
+            value="04"
           >
             4
           </option>
           <option
-            value="5"
+            value="05"
           >
             5
           </option>
           <option
-            value="6"
+            value="06"
           >
             6
           </option>
           <option
-            value="7"
+            value="07"
           >
             7
           </option>
           <option
-            value="8"
+            value="08"
           >
             8
           </option>
           <option
-            value="9"
+            value="09"
           >
             9
           </option>
@@ -2918,50 +2918,50 @@ ShallowWrapper {
           id="day"
           name="day"
           onChange={[Function]}
-          value="31"
+          value="1"
         >
           <option
-            value="1"
+            value="01"
           >
             1
           </option>
           <option
-            value="2"
+            value="02"
           >
             2
           </option>
           <option
-            value="3"
+            value="03"
           >
             3
           </option>
           <option
-            value="4"
+            value="04"
           >
             4
           </option>
           <option
-            value="5"
+            value="05"
           >
             5
           </option>
           <option
-            value="6"
+            value="06"
           >
             6
           </option>
           <option
-            value="7"
+            value="07"
           >
             7
           </option>
           <option
-            value="8"
+            value="08"
           >
             8
           </option>
           <option
-            value="9"
+            value="09"
           >
             9
           </option>
@@ -3142,11 +3142,6 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value={2018}
-            >
-              2018
-            </option>,
-            <option
               value={2019}
             >
               2019
@@ -3166,26 +3161,19 @@ ShallowWrapper {
             >
               2022
             </option>,
+            <option
+              value={2023}
+            >
+              2023
+            </option>,
           ],
           "id": "year",
           "name": "year",
           "onChange": [Function],
-          "value": "2018",
+          "value": "2019",
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": 2018,
-              "value": 2018,
-            },
-            "ref": null,
-            "rendered": 2018,
-            "type": "option",
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -3234,6 +3222,18 @@ ShallowWrapper {
             "rendered": 2022,
             "type": "option",
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2023,
+              "value": 2023,
+            },
+            "ref": null,
+            "rendered": 2023,
+            "type": "option",
+          },
         ],
         "type": "select",
       },
@@ -3244,47 +3244,47 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value="1"
+              value="01"
             >
               1
             </option>,
             <option
-              value="2"
+              value="02"
             >
               2
             </option>,
             <option
-              value="3"
+              value="03"
             >
               3
             </option>,
             <option
-              value="4"
+              value="04"
             >
               4
             </option>,
             <option
-              value="5"
+              value="05"
             >
               5
             </option>,
             <option
-              value="6"
+              value="06"
             >
               6
             </option>,
             <option
-              value="7"
+              value="07"
             >
               7
             </option>,
             <option
-              value="8"
+              value="08"
             >
               8
             </option>,
             <option
-              value="9"
+              value="09"
             >
               9
             </option>,
@@ -3317,7 +3317,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "1",
-              "value": "1",
+              "value": "01",
             },
             "ref": null,
             "rendered": "1",
@@ -3329,7 +3329,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "2",
-              "value": "2",
+              "value": "02",
             },
             "ref": null,
             "rendered": "2",
@@ -3341,7 +3341,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "3",
-              "value": "3",
+              "value": "03",
             },
             "ref": null,
             "rendered": "3",
@@ -3353,7 +3353,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "4",
-              "value": "4",
+              "value": "04",
             },
             "ref": null,
             "rendered": "4",
@@ -3365,7 +3365,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "5",
-              "value": "5",
+              "value": "05",
             },
             "ref": null,
             "rendered": "5",
@@ -3377,7 +3377,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "6",
-              "value": "6",
+              "value": "06",
             },
             "ref": null,
             "rendered": "6",
@@ -3389,7 +3389,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "7",
-              "value": "7",
+              "value": "07",
             },
             "ref": null,
             "rendered": "7",
@@ -3401,7 +3401,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "8",
-              "value": "8",
+              "value": "08",
             },
             "ref": null,
             "rendered": "8",
@@ -3413,7 +3413,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "9",
-              "value": "9",
+              "value": "09",
             },
             "ref": null,
             "rendered": "9",
@@ -3465,47 +3465,47 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <option
-              value="1"
+              value="01"
             >
               1
             </option>,
             <option
-              value="2"
+              value="02"
             >
               2
             </option>,
             <option
-              value="3"
+              value="03"
             >
               3
             </option>,
             <option
-              value="4"
+              value="04"
             >
               4
             </option>,
             <option
-              value="5"
+              value="05"
             >
               5
             </option>,
             <option
-              value="6"
+              value="06"
             >
               6
             </option>,
             <option
-              value="7"
+              value="07"
             >
               7
             </option>,
             <option
-              value="8"
+              value="08"
             >
               8
             </option>,
             <option
-              value="9"
+              value="09"
             >
               9
             </option>,
@@ -3615,7 +3615,7 @@ ShallowWrapper {
           "id": "day",
           "name": "day",
           "onChange": [Function],
-          "value": "31",
+          "value": "1",
         },
         "ref": null,
         "rendered": Array [
@@ -3625,7 +3625,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "1",
-              "value": "1",
+              "value": "01",
             },
             "ref": null,
             "rendered": "1",
@@ -3637,7 +3637,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "2",
-              "value": "2",
+              "value": "02",
             },
             "ref": null,
             "rendered": "2",
@@ -3649,7 +3649,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "3",
-              "value": "3",
+              "value": "03",
             },
             "ref": null,
             "rendered": "3",
@@ -3661,7 +3661,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "4",
-              "value": "4",
+              "value": "04",
             },
             "ref": null,
             "rendered": "4",
@@ -3673,7 +3673,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "5",
-              "value": "5",
+              "value": "05",
             },
             "ref": null,
             "rendered": "5",
@@ -3685,7 +3685,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "6",
-              "value": "6",
+              "value": "06",
             },
             "ref": null,
             "rendered": "6",
@@ -3697,7 +3697,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "7",
-              "value": "7",
+              "value": "07",
             },
             "ref": null,
             "rendered": "7",
@@ -3709,7 +3709,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "8",
-              "value": "8",
+              "value": "08",
             },
             "ref": null,
             "rendered": "8",
@@ -3721,7 +3721,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "9",
-              "value": "9",
+              "value": "09",
             },
             "ref": null,
             "rendered": "9",
@@ -4151,13 +4151,8 @@ ShallowWrapper {
             id="year"
             name="year"
             onChange={[Function]}
-            value="2018"
+            value="2019"
           >
-            <option
-              value={2018}
-            >
-              2018
-            </option>
             <option
               value={2019}
             >
@@ -4178,6 +4173,11 @@ ShallowWrapper {
             >
               2022
             </option>
+            <option
+              value={2023}
+            >
+              2023
+            </option>
           </select>,
           <select
             id="month"
@@ -4186,47 +4186,47 @@ ShallowWrapper {
             value="2"
           >
             <option
-              value="1"
+              value="01"
             >
               1
             </option>
             <option
-              value="2"
+              value="02"
             >
               2
             </option>
             <option
-              value="3"
+              value="03"
             >
               3
             </option>
             <option
-              value="4"
+              value="04"
             >
               4
             </option>
             <option
-              value="5"
+              value="05"
             >
               5
             </option>
             <option
-              value="6"
+              value="06"
             >
               6
             </option>
             <option
-              value="7"
+              value="07"
             >
               7
             </option>
             <option
-              value="8"
+              value="08"
             >
               8
             </option>
             <option
-              value="9"
+              value="09"
             >
               9
             </option>
@@ -4250,50 +4250,50 @@ ShallowWrapper {
             id="day"
             name="day"
             onChange={[Function]}
-            value="31"
+            value="1"
           >
             <option
-              value="1"
+              value="01"
             >
               1
             </option>
             <option
-              value="2"
+              value="02"
             >
               2
             </option>
             <option
-              value="3"
+              value="03"
             >
               3
             </option>
             <option
-              value="4"
+              value="04"
             >
               4
             </option>
             <option
-              value="5"
+              value="05"
             >
               5
             </option>
             <option
-              value="6"
+              value="06"
             >
               6
             </option>
             <option
-              value="7"
+              value="07"
             >
               7
             </option>
             <option
-              value="8"
+              value="08"
             >
               8
             </option>
             <option
-              value="9"
+              value="09"
             >
               9
             </option>
@@ -4474,11 +4474,6 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value={2018}
-              >
-                2018
-              </option>,
-              <option
                 value={2019}
               >
                 2019
@@ -4498,26 +4493,19 @@ ShallowWrapper {
               >
                 2022
               </option>,
+              <option
+                value={2023}
+              >
+                2023
+              </option>,
             ],
             "id": "year",
             "name": "year",
             "onChange": [Function],
-            "value": "2018",
+            "value": "2019",
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": 2018,
-                "value": 2018,
-              },
-              "ref": null,
-              "rendered": 2018,
-              "type": "option",
-            },
             Object {
               "instance": null,
               "key": undefined,
@@ -4566,6 +4554,18 @@ ShallowWrapper {
               "rendered": 2022,
               "type": "option",
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2023,
+                "value": 2023,
+              },
+              "ref": null,
+              "rendered": 2023,
+              "type": "option",
+            },
           ],
           "type": "select",
         },
@@ -4576,47 +4576,47 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value="1"
+                value="01"
               >
                 1
               </option>,
               <option
-                value="2"
+                value="02"
               >
                 2
               </option>,
               <option
-                value="3"
+                value="03"
               >
                 3
               </option>,
               <option
-                value="4"
+                value="04"
               >
                 4
               </option>,
               <option
-                value="5"
+                value="05"
               >
                 5
               </option>,
               <option
-                value="6"
+                value="06"
               >
                 6
               </option>,
               <option
-                value="7"
+                value="07"
               >
                 7
               </option>,
               <option
-                value="8"
+                value="08"
               >
                 8
               </option>,
               <option
-                value="9"
+                value="09"
               >
                 9
               </option>,
@@ -4649,7 +4649,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "1",
-                "value": "1",
+                "value": "01",
               },
               "ref": null,
               "rendered": "1",
@@ -4661,7 +4661,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "2",
-                "value": "2",
+                "value": "02",
               },
               "ref": null,
               "rendered": "2",
@@ -4673,7 +4673,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "3",
-                "value": "3",
+                "value": "03",
               },
               "ref": null,
               "rendered": "3",
@@ -4685,7 +4685,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "4",
-                "value": "4",
+                "value": "04",
               },
               "ref": null,
               "rendered": "4",
@@ -4697,7 +4697,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "5",
-                "value": "5",
+                "value": "05",
               },
               "ref": null,
               "rendered": "5",
@@ -4709,7 +4709,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "6",
-                "value": "6",
+                "value": "06",
               },
               "ref": null,
               "rendered": "6",
@@ -4721,7 +4721,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "7",
-                "value": "7",
+                "value": "07",
               },
               "ref": null,
               "rendered": "7",
@@ -4733,7 +4733,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "8",
-                "value": "8",
+                "value": "08",
               },
               "ref": null,
               "rendered": "8",
@@ -4745,7 +4745,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "9",
-                "value": "9",
+                "value": "09",
               },
               "ref": null,
               "rendered": "9",
@@ -4797,47 +4797,47 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <option
-                value="1"
+                value="01"
               >
                 1
               </option>,
               <option
-                value="2"
+                value="02"
               >
                 2
               </option>,
               <option
-                value="3"
+                value="03"
               >
                 3
               </option>,
               <option
-                value="4"
+                value="04"
               >
                 4
               </option>,
               <option
-                value="5"
+                value="05"
               >
                 5
               </option>,
               <option
-                value="6"
+                value="06"
               >
                 6
               </option>,
               <option
-                value="7"
+                value="07"
               >
                 7
               </option>,
               <option
-                value="8"
+                value="08"
               >
                 8
               </option>,
               <option
-                value="9"
+                value="09"
               >
                 9
               </option>,
@@ -4947,7 +4947,7 @@ ShallowWrapper {
             "id": "day",
             "name": "day",
             "onChange": [Function],
-            "value": "31",
+            "value": "1",
           },
           "ref": null,
           "rendered": Array [
@@ -4957,7 +4957,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "1",
-                "value": "1",
+                "value": "01",
               },
               "ref": null,
               "rendered": "1",
@@ -4969,7 +4969,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "2",
-                "value": "2",
+                "value": "02",
               },
               "ref": null,
               "rendered": "2",
@@ -4981,7 +4981,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "3",
-                "value": "3",
+                "value": "03",
               },
               "ref": null,
               "rendered": "3",
@@ -4993,7 +4993,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "4",
-                "value": "4",
+                "value": "04",
               },
               "ref": null,
               "rendered": "4",
@@ -5005,7 +5005,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "5",
-                "value": "5",
+                "value": "05",
               },
               "ref": null,
               "rendered": "5",
@@ -5017,7 +5017,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "6",
-                "value": "6",
+                "value": "06",
               },
               "ref": null,
               "rendered": "6",
@@ -5029,7 +5029,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "7",
-                "value": "7",
+                "value": "07",
               },
               "ref": null,
               "rendered": "7",
@@ -5041,7 +5041,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "8",
-                "value": "8",
+                "value": "08",
               },
               "ref": null,
               "rendered": "8",
@@ -5053,7 +5053,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "9",
-                "value": "9",
+                "value": "09",
               },
               "ref": null,
               "rendered": "9",

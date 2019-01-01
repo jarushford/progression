@@ -222,6 +222,10 @@ ShallowWrapper {
             path="/projects/add"
           />
           <Route
+            component={[Function]}
+            path="/projects/edit"
+          />
+          <Route
             path="/projects/:id"
             render={[Function]}
           />
@@ -297,6 +301,10 @@ ShallowWrapper {
             <Route
               component={[Function]}
               path="/projects/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/projects/edit"
             />,
             <Route
               path="/projects/:id"
@@ -409,6 +417,18 @@ ShallowWrapper {
             "props": Object {
               "component": [Function],
               "path": "/projects/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/projects/edit",
             },
             "ref": null,
             "rendered": null,
@@ -534,6 +554,10 @@ ShallowWrapper {
               path="/projects/add"
             />
             <Route
+              component={[Function]}
+              path="/projects/edit"
+            />
+            <Route
               path="/projects/:id"
               render={[Function]}
             />
@@ -609,6 +633,10 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 path="/projects/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/projects/edit"
               />,
               <Route
                 path="/projects/:id"
@@ -721,6 +749,18 @@ ShallowWrapper {
               "props": Object {
                 "component": [Function],
                 "path": "/projects/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/projects/edit",
               },
               "ref": null,
               "rendered": null,

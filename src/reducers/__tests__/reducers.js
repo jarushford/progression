@@ -106,25 +106,6 @@ describe('reducers', () => {
 
       expect(result).toEqual(expected)
     })
-
-    it('should toggle workouts as completed', () => {
-      const action = {
-        type: 'TOGGLE_COMPLETE',
-        key: '12/12/12'
-      }
-      const state = {
-        2: { description: 'do stuff', completed: false, workout_date: '12/12/12' },
-        1: { description: 'do other stuff', completed: false, workout_date: '12/14/14' }
-      }
-      const expected = {
-        2: { description: 'do stuff', completed: true, workout_date: '12/12/12' },
-        1: { description: 'do other stuff', completed: false, workout_date: '12/14/14' }
-      }
-
-      const result = trainingDataReducer(state, action)
-
-      expect(result).toEqual(expected)
-    })
   })
 
   describe('projectsReducer', () => {

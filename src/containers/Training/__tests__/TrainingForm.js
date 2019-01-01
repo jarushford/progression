@@ -40,7 +40,7 @@ describe('TrainingForm', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should have the correct default state', () => {
+    it('should have the correct default state', async () => {
       const date = new Date()
       const expected = {
         day: date.getDate().toString(),
@@ -51,6 +51,7 @@ describe('TrainingForm', () => {
         workoutAdded: false
       }
       const wrapper = shallow(<TrainingForm user={mockUser} />)
+      await wrapper.instance().componentDidMount()
 
       expect(wrapper.state()).toEqual(expected)
     })

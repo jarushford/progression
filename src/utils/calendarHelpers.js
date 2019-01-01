@@ -1,5 +1,5 @@
 import React from 'react'
-const uuidv1 = require('uuid/v1');
+import { uid } from 'react-uid'
 
 export const daysOfWeekHelper = (id, key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
 
@@ -7,14 +7,14 @@ export const daysOfWeekHelper = (id, key, today, weekIndex, todayIndex, training
   const todayDay = today.substring(3, 5)
   if (keyDay > todayDay && keyDay - todayDay <= 6 - todayIndex) {
     weekIndex[todayIndex + (keyDay - todayDay)].push(
-      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uuidv1()}>
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uid(id)}>
           <h3>{id.type}</h3>
           <p>{id.description}</p>
       </li>
     )
   } else if (keyDay < todayDay && todayDay - keyDay <= todayIndex) {
     weekIndex[todayIndex - (todayDay - keyDay)].push(
-      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uuidv1()}>
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uid(id)}>
           <h3>{id.type}</h3>
           <p>{id.description}</p>
       </li>
@@ -30,14 +30,14 @@ export const endOfMonthHelper = (id, key, today, weekIndex, todayIndex, training
   const distanceDown = daysInPreviousMonth() - parseInt(keyDay) + parseInt(todayDay)
   if (keyDay < todayDay && distanceUp <= 6 - todayIndex) {
     weekIndex[parseInt(todayIndex) + parseInt(distanceUp)].push(
-      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uuidv1()}>
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uid(id)}>
           <h3>{id.type}</h3>
           <p>{id.description}</p>
       </li>
     )
   } else if (keyDay > todayDay && distanceDown <= todayIndex) {
     weekIndex[parseInt(todayIndex) - parseInt(distanceDown)].push(
-      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uuidv1()}>
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id, 'workout')} key={uid(id)}>
           <h3>{id.type}</h3>
           <p>{id.description}</p>
       </li>

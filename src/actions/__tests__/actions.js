@@ -154,18 +154,6 @@ describe('ACTIONS', () => {
     expect(result).toEqual(expected)
   })
 
-  it('should return TOGGLE_COMPLETE and a key when toggleComplete is called', () => {
-    const key = '3/1/10'
-    const expected = {
-      type: 'TOGGLE_COMPLETE',
-      key
-    }
-
-    const result = ACTIONS.toggleComplete(key)
-
-    expect(result).toEqual(expected)
-  })
-
   it('should return SET_ERROR and a message when setError is called', () => {
     const error = 'Oh no!'
     const expected = {
