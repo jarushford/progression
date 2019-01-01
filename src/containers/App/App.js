@@ -10,6 +10,7 @@ import AscentForm from '../Ascents/AscentForm'
 import Projects from '../Projects/Projects'
 import ProjectForm from '../Projects/ProjectForm'
 import ProjectPage from '../ProjectPage/ProjectPage'
+import EditForm from '../Projects/EditForm'
 import Login from '../Login/Login'
 import Error from '../Error/Error'
 import MilestoneForm from '../Milestones/MilestoneForm'
@@ -46,6 +47,7 @@ export class App extends Component {
           <Route path="/training/all" component={TrainingAll} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/projects/add" component={ProjectForm} />
+          <Route path="/projects/edit" component={EditForm} />
           <Route path="/projects/:id" render={({ match }) => {
             const { id } = match.params
             const currentProject = projects.find(project =>

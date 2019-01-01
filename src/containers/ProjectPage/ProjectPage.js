@@ -81,7 +81,9 @@ export class ProjectPage extends Component {
               </div>
             </div>
             <div className="project-actions">
-              <button className="add-progress">Add Progress</button>
+              <Link to="/projects/edit">
+                <button className="add-progress">Edit Progress</button>
+              </Link>
               <Link to='/milestones/add'>
                 <button className="add-milestone">Add Milestone</button>
               </Link>
