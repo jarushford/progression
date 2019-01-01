@@ -1,43 +1,44 @@
 import React from 'react'
+const uuidv1 = require('uuid/v1');
 
-export const daysOfWeekHelper = (key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
+export const daysOfWeekHelper = (id, key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
   if (keyDay > todayDay && keyDay - todayDay <= 6 - todayIndex) {
-    weekIndex[todayIndex + (keyDay - todayDay)] = (
-      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
-        <h3>{trainingData[key].type}</h3>
-        <p>{trainingData[key].description}</p>
+    weekIndex[todayIndex + (keyDay - todayDay)].push(
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id.id)} key={uuidv1()}>
+          <h3>{id.type}</h3>
+          <p>{id.description}</p>
       </li>
     )
   } else if (keyDay < todayDay && todayDay - keyDay <= todayIndex) {
-    weekIndex[todayIndex - (todayDay - keyDay)] = (
-      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
-        <h3>{trainingData[key].type}</h3>
-        <p>{trainingData[key].description}</p>
+    weekIndex[todayIndex - (todayDay - keyDay)].push(
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id.id)} key={uuidv1()}>
+          <h3>{id.type}</h3>
+          <p>{id.description}</p>
       </li>
     )
   }
   return weekIndex
 }
 
-export const endOfMonthHelper = (key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
+export const endOfMonthHelper = (id, key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
   const keyDay = key.substring(3, 5)
   const todayDay = today.substring(3, 5)
   const distanceUp = daysInThisMonth() - (parseInt(todayDay) - parseInt(keyDay))
   const distanceDown = daysInPreviousMonth() - parseInt(keyDay) + parseInt(todayDay)
   if (keyDay < todayDay && distanceUp <= 6 - todayIndex) {
-    weekIndex[parseInt(todayIndex) + parseInt(distanceUp)] = (
-      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
-        <h3>{trainingData[key].type}</h3>
-        <p>{trainingData[key].description}</p>
+    weekIndex[parseInt(todayIndex) + parseInt(distanceUp)].push(
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id.id)} key={uuidv1()}>
+          <h3>{id.type}</h3>
+          <p>{id.description}</p>
       </li>
     )
   } else if (keyDay > todayDay && distanceDown <= todayIndex) {
-    weekIndex[parseInt(todayIndex) - parseInt(distanceDown)] = (
-      <li className={`workout-item ${trainingData[key].completed && 'completed'}`} onClick={() => toggleComplete(key)}>
-        <h3>{trainingData[key].type}</h3>
-        <p>{trainingData[key].description}</p>
+    weekIndex[parseInt(todayIndex) - parseInt(distanceDown)].push(
+      <li className={`workout-item ${id.completed && 'completed'}`} onClick={()   => toggleComplete(id.id)} key={uuidv1()}>
+          <h3>{id.type}</h3>
+          <p>{id.description}</p>
       </li>
     )
   } else {

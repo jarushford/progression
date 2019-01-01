@@ -16,23 +16,26 @@ export function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteW
   if (Object.keys(trainingDataUnclean).length) {
     const keys = Object.keys(trainingDataUnclean)
     const trainingData = keys.reduce((data, workout) => {
-      data[trainingDataUnclean[workout].workout_date] = trainingDataUnclean[workout]
+      data[trainingDataUnclean[workout].id] = trainingDataUnclean[workout]
       return data
     }, {})
     const trainingKeys = Object.keys(trainingData).sort()
-    trainingRender = trainingKeys.map(workout => {
-      const key = uid(trainingData[workout])
-      return (
-          <article className={`project ${trainingData[workout].completed && 'completed'}`} key={key} onClick={() => toggleComplete(workout)}>
-            <div>
-              <h2 className="project-name">{workout}</h2>
-              <h5 className="project-grade">{trainingData[workout].type}</h5>
-            </div>
-            <h5 className="project-location">{trainingData[workout].description}</h5>
-            <i className="fas fa-times" onClick={() => deleteWorkout(trainingData[workout].id, user.id, null, 'workout')}></i>
-          </article>
-      )
-    })
+    trainingRender = trainingKeys.sort((a, b) => {
+      return trainingData[a].workout_date > trainingData[b].workout_date
+        ? a - b : b - a
+    }).map(workout => {
+        const key = uid(trainingData[workout])
+        return (
+            <article className={`project ${trainingData[workout].completed && 'completed'}`} key={key} onClick={() => toggleComplete(parseInt(workout))}>
+              <div>
+                <h2 className="project-name">{trainingData[workout].workout_date}</h2>
+                <h5 className="project-grade">{trainingData[workout].type}</h5>
+              </div>
+              <h5 className="project-location">{trainingData[workout].description}</h5>
+              <i className="fas fa-times" onClick={() => deleteWorkout(trainingData[workout].id, user.id, null, 'workout')}></i>
+            </article>
+        )
+      })
   } else {
     trainingRender = <h1 className="no-data-msg">You have no saved workouts</h1>
   }

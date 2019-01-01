@@ -38,7 +38,8 @@ export class TrainingForm extends Component {
       user_id: this.props.user.id,
       workout_date,
       description: this.state.description,
-      type: this.state.type
+      type: this.state.type,
+      completed: false
     }
     const result = await this.props.addWorkout(workout, 'workout')
     if (result) {
