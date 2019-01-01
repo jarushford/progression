@@ -1,19 +1,9 @@
 export const trainingDataReducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_TRAINING':
-      return {...state, ...action.data}
+      return {...action.data}
     case 'CLEAR_WORKOUTS':
       return {}
-    case 'TOGGLE_COMPLETE':
-      const keys = Object.keys(state)
-      return keys.reduce((acc, key) => {
-        if (state[key].id === action.key) {
-          acc[key] = {...state[key], completed: !state[key].completed}
-        } else {
-          acc[key] = state[key]
-        }
-        return acc
-      }, {})
     default:
       return state
   }
@@ -22,7 +12,7 @@ export const trainingDataReducer = (state = {}, action) => {
 export const projectsReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_PROJECTS':
-      return [...state, ...action.data]
+      return [...action.data]
     case 'CLEAR_PROJECTS':
       return []
     default:
@@ -33,7 +23,7 @@ export const projectsReducer = (state = [], action) => {
 export const ascentsReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_ASCENTS':
-      return [...state, ...action.data]
+      return [...action.data]
     case 'CLEAR_ASCENTS':
       return []
     default:

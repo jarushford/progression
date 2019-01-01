@@ -57,11 +57,6 @@ export const logoutUser = () => ({
   type: 'LOGOUT_USER'
 })
 
-export const toggleComplete = (key) => ({
-  type: 'TOGGLE_COMPLETE',
-  key
-})
-
 export const setError = (error) => ({
   type: 'SET_ERROR',
   error

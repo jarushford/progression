@@ -19,7 +19,7 @@ export function Training({ trainingDataUnclean, toggleComplete, user }) {
     const trainingData = keys.reduce((data, workout) => {
       data.push(trainingDataUnclean[workout])
       return data
-    }, [])
+    }, []).sort((a, b) => a.id - b.id)
     const date = new Date()
     const today = 
       `${('0' + (date.getMonth() + 1)).slice(-2)}/`

@@ -1,4 +1,3 @@
-import { clearThunkHelper } from '../utils/thunkHelpers'
 import { fetchDataThunk } from './fetchData'
 import { setError } from '../actions'
 
@@ -21,7 +20,6 @@ export const updateDataThunk = (data, type) => {
         throw Error(`Could not update ${type}`)
       }
 
-      await dispatch(clearThunkHelper(type)())
       await dispatch(fetchDataThunk(data.user_id, '', type))
       return true
     } catch (error) {
