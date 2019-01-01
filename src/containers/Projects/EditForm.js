@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { updateProjectThunk } from '../../thunks/updateProject'
+import { updateDataThunk } from '../../thunks/updateData'
 import { Redirect } from 'react-router-dom'
 
 class EditForm extends Component {
@@ -183,7 +183,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  editProject: (project) => dispatch(updateProjectThunk(project))
+  editProject: (project) => dispatch(updateDataThunk(project, 'project'))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditForm)

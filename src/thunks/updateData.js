@@ -2,10 +2,13 @@ import { clearThunkHelper } from '../utils/thunkHelpers'
 import { fetchDataThunk } from './fetchData'
 import { setError } from '../actions'
 
-export const updateProjectThunk = (data) => {
+export const updateDataThunk = (data, type) => {
   return async (dispatch) => {
     try {
-      const url = `http://localhost:3000/api/progressionusers/${data.user_id}/projects/${data.id}`
+      if (type === 'workout') {
+        data.completed = !data.completed
+      }
+      const url = `http://localhost:3000/api/progressionusers/${data.user_id}/${type}s/${data.id}`
       const response = await fetch(url, {
         method: 'PUT',
         body: JSON.stringify(data),
@@ -15,11 +18,11 @@ export const updateProjectThunk = (data) => {
       })
 
       if (!response.ok) {
-        throw Error('Could not update project')
+        throw Error(`Could not update ${type}`)
       }
 
-      await dispatch(clearThunkHelper('project')())
-      await dispatch(fetchDataThunk(data.user_id, '', 'project'))
+      await dispatch(clearThunkHelper(type)())
+      await dispatch(fetchDataThunk(data.user_id, '', type))
       return true
     } catch (error) {
       dispatch(setError(error.message))

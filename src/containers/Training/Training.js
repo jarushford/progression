@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect }  from 'react-redux';
 import { withRouter, Link } from 'react-router-dom'
-import { toggleComplete } from '../../actions'
 import * as Helper from '../../utils/calendarHelpers'
+import { updateDataThunk } from '../../thunks/updateData'
 import '../../main.scss'
 const uuidv1 = require('uuid/v1')
 
@@ -36,7 +36,7 @@ export function Training({ trainingDataUnclean, toggleComplete, user }) {
       const keyY = key.substring(6)
       if (key === today) {
         weekIndex[todayIndex].push(
-          <li className={`workout-item ${id.completed && 'completed'}`} onClick={() => toggleComplete(id.id)} key={uuidv1()}>
+          <li className={`workout-item ${id.completed && 'completed'}`} onClick={() => toggleComplete(id, 'workout')} key={uuidv1()}>
             <h3>{id.type}</h3>
             <p>{id.description}</p>
           </li>
@@ -103,7 +103,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  toggleComplete: (key) => dispatch(toggleComplete(key))
+  toggleComplete: (workout, type) => dispatch(updateDataThunk(workout, type))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Training))

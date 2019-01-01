@@ -1,10 +1,10 @@
 import React from 'react'
 import { connect }  from 'react-redux';
 import { withRouter, Link } from 'react-router-dom'
-import { toggleComplete } from '../../actions'
 import { uid } from 'react-uid'
 import '../../main.scss'
-import { deleteDataThunk } from '../../thunks/deleteData';
+import { deleteDataThunk } from '../../thunks/deleteData'
+import { updateDataThunk } from '../../thunks/updateData'
 
 export function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
   let trainingRender
@@ -26,7 +26,7 @@ export function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteW
     }).map(workout => {
         const key = uid(trainingData[workout])
         return (
-            <article className={`project ${trainingData[workout].completed && 'completed'}`} key={key} onClick={() => toggleComplete(parseInt(workout))}>
+            <article className={`project ${trainingData[workout].completed && 'completed'}`} key={key} onClick={() => toggleComplete(trainingData[workout], 'workout')}>
               <div>
                 <h2 className="project-name">{trainingData[workout].workout_date}</h2>
                 <h5 className="project-grade">{trainingData[workout].type}</h5>
@@ -64,7 +64,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = (dispatch) => ({
-  toggleComplete: (key) => dispatch(toggleComplete(key)),
+  toggleComplete: (workout, type) => dispatch(updateDataThunk(workout, type)),
   deleteWorkout: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 
