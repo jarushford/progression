@@ -162,6 +162,7 @@
   text-align: center;
   transition: .3s ease;
   display: none;
+  margin: 4px auto 6px;
 
   &:hover {
     color: $accent;
@@ -173,7 +174,7 @@
 }
 
 input[type="checkbox"]:checked ~ .drop-box  {
-  height: 334px;
+  height: 344px;
 }
 
 input[type="checkbox"]:checked ~ .drop-box .drop-nav,
