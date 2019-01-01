@@ -24,17 +24,19 @@ class EditForm extends Component {
     const project = this.props.projects.find(project => {
       return project.id === this.props.project
     })
-    this.setState({
-      name: project.name,
-      location: project.location,
-      grade: project.grade,
-      priority: project.priority,
-      season: project.season,
-      moves_total: project.moves_total,
-      moves_done: project.moves_done,
-      high_point: project.high_point,
-      caption: project.caption
-    })
+    if (project) {
+      this.setState({
+        name: project.name,
+        location: project.location,
+        grade: project.grade,
+        priority: project.priority,
+        season: project.season,
+        moves_total: project.moves_total,
+        moves_done: project.moves_done,
+        high_point: project.high_point,
+        caption: project.caption
+      })
+    }
   }
 
   handleChange = (e) => {
@@ -147,16 +149,18 @@ class EditForm extends Component {
             name="moves_done"
             value={moves_done}
             min="0"
+            max={this.state.moves_total}
             onChange={this.handleChange}
           />
         </label>
         <label>
-          High Point
+          High Point 
           <input
             type="number"
             name="high_point"
             value={high_point}
             min="0"
+            max={this.state.moves_total}
             onChange={this.handleChange}
           />
         </label>
