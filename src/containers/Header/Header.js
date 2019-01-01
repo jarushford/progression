@@ -9,23 +9,50 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
 
   if (currentUser.name) {
     userButton = (
-      <div className="current-user">
-        <div>
-          <h2><i className="fas fa-caret-down" /> Welcome, {currentUser.name}!</h2>
-          <Link
-            to="/"
-            className="logout-link"
-            onClick={() => {
-              clearAscents()
-              clearProjects()
-              clearWorkouts()
-              logoutUser()
-            }}
-          >
-            <h2>Log Out</h2>
-          </Link>
+      <div>
+        <div className="current-user">
+          <div>
+            <h2><i className="fas fa-caret-down" /> Welcome, {currentUser.name}!</h2>
+            <Link
+              to="/"
+              className="logout-link"
+              onClick={() => {
+                clearAscents()
+                clearProjects()
+                clearWorkouts()
+                logoutUser()
+              }}
+            >
+              <h2>Log Out</h2>
+            </Link>
+          </div>
+          <i className="fas fa-user-circle" />
         </div>
-        <i className="fas fa-user-circle" />
+        <div className="drop-down">
+          <input type="checkbox" id="burger-check" />
+          <label htmlFor="burger-check" className="burger">
+            <div className="burgerbar b1"></div>
+            <div className="burgerbar b2"></div>
+            <div className="burgerbar b3"></div>
+          </label>
+          <div className="drop-box">
+            <NavLink to="/training" className="nav-item drop-nav"> TRAINING </NavLink>
+            <NavLink to="/projects" className="nav-item drop-nav"> PROJECTS </NavLink>
+            <NavLink to="/ascents" className="nav-item drop-nav"> ASCENTS </NavLink>
+            <Link
+              to="/"
+              className="logout-link drop-logout"
+              onClick={() => {
+                clearAscents()
+                clearProjects()
+                clearWorkouts()
+                logoutUser()
+              }}
+            >
+              <h2>Log Out</h2>
+            </Link>
+          </div>
+        </div>
       </div>
     )
   } else {
@@ -39,9 +66,9 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
         <NavLink to="/">
           <div className="logo" />
         </NavLink>
-        <NavLink to="/training" className="nav-item"> TRAINING </NavLink>
-        <NavLink to="/projects" className="nav-item"> PROJECTS </NavLink>
-        <NavLink to="/ascents" className="nav-item"> ASCENTS </NavLink>
+        <NavLink to="/training" className="nav-item wide-nav"> TRAINING </NavLink>
+        <NavLink to="/projects" className="nav-item wide-nav"> PROJECTS </NavLink>
+        <NavLink to="/ascents" className="nav-item wide-nav"> ASCENTS </NavLink>
         {userButton}
       </div>
     )

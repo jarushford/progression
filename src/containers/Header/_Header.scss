@@ -7,6 +7,7 @@
   position: fixed;
   z-index: 2;
   width: 100%;
+  height: 88px;
   box-shadow: 0 1px 30px 1px rgba(200, 200, 200, 0.1);
 
   button {
@@ -131,4 +132,171 @@
 
 .logout-link {
   text-decoration: none;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.drop-box {
+  display: flex;
+  flex-direction: column;
+  background: $darkGrey;
+  margin-top: 27px;
+  height: 0;
+  width: 200px;
+  transition: .4s ease;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 4px 5px 1px rgba(200, 200, 200, 0.1);
+}
+
+.drop-nav {
+  display: none;
+}
+
+.drop-logout {
+  color: $text;
+  text-align: center;
+  transition: .3s ease;
+  display: none;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+#burger-check {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .drop-box  {
+  height: 334px;
+}
+
+input[type="checkbox"]:checked ~ .drop-box .drop-nav,
+input[type="checkbox"]:checked ~ .drop-box .drop-logout  {
+  display: unset;
+  animation: slide 1s ease forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bar2 {
+  0% {
+    transform: translateX(0px)
+  }
+  50%, 100% {
+    transform: translateX(150px)
+  }
+}
+
+@keyframes bar2back {
+  0% {
+    transform: translateX(150px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+@keyframes bar1 {
+  0% {
+    transform-origin: right;
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+  100% {
+    transform-origin: right;
+    transform: rotate(44deg) translateY(30px) translateX(20px);
+  }
+}
+
+@keyframes bar1back {
+  0% {
+    transform-origin: right;
+    transform: rotate(44deg) translateY(30px) translateX(20px);
+  }
+  100% {
+    transform-origin: right;
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes bar3 {
+  0% {
+    transform-origin: left;
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+  100% {
+    transform-origin: left;
+    transform: rotate(-45.5deg) translateY(10px) translateX(2px);
+  }
+}
+
+@keyframes bar3back {
+  0% {
+    transform-origin: left;
+    transform: rotate(-45.5deg) translateY(10px) translateX(2px);
+  }
+  100% {
+    transform-origin: left;
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+}
+
+input[type="checkbox"]:checked ~ .burger .b2 {
+  animation: bar2 .6s ease forwards;
+}
+
+input[type="checkbox"]:checked ~ .burger .b1 {
+  animation: bar1 .6s ease forwards;
+}
+
+input[type="checkbox"]:checked ~ .burger .b3 {
+  animation: bar3 .6s ease forwards;
+}
+
+.b1 {
+  animation: bar1back .6s ease forwards;
+}
+
+.b2 {
+  animation: bar2back .6s ease forwards;
+}
+
+.b3 {
+  animation: bar3back .6s ease forwards;
+}
+
+.burgerbar {
+  width: 50px;
+  height: 10px;
+  background: $accent;
+  margin: 0px 20px 5px auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .wide-nav {
+    display: none;
+  }
+
+  .drop-down {
+    display: unset;
+  }
+
+  .current-user {
+    display: none;
+  }
 }
