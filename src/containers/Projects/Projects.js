@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
-export function Projects({ projects, deleteProject, user, setCurrentProject, fetchData }) {
+export function Projects({ projects, deleteProject, user, setCurrentProject, fetchData, disciplineBoulder }) {
   let projectsRender
 
   if (!user.name) {
@@ -19,7 +19,17 @@ export function Projects({ projects, deleteProject, user, setCurrentProject, fet
   if (!projects.length) {
     projectsRender = <h1 className="no-data-msg">You have no saved projects</h1>
   } else {
-    projectsRender = projects.map(project => {
+    let currentProjects
+    if (disciplineBoulder) {
+      currentProjects = projects.filter(project => {
+        return project.grade < 17
+      })
+    } else {
+      currentProjects = projects.filter(project => {
+        return project.grade > 17
+      })
+    }
+    projectsRender = currentProjects.map(project => {
       return (
           <article className="project" key={uid(project)}>
             <div>
@@ -58,7 +68,8 @@ export function Projects({ projects, deleteProject, user, setCurrentProject, fet
 
 export const mapStateToProps = (state) => ({
   projects: state.projects,
-  user: state.currentUser
+  user: state.currentUser,
+  disciplineBoulder: state.disciplineBoulder
 })
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -74,5 +85,6 @@ Projects.propTypes = {
   user: PropTypes.object.isRequired,
   deleteProject: PropTypes.func.isRequired,
   setCurrentProject: PropTypes.func.isRequired,
-  fetchData: PropTypes.func.isRequired
+  fetchData: PropTypes.func.isRequired,
+  disciplineBoulder: PropTypes.bool.isRequired
 }

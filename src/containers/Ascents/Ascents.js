@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
-export function Ascents({ ascents, user }) {
+export function Ascents({ ascents, user, disciplineBoulder }) {
   let gradeRender
 
   if (!user.name) {
@@ -24,7 +24,18 @@ export function Ascents({ ascents, user }) {
       return grades
     }, {})
 
-    const gradeKeys = Object.keys(gradeDivisions).sort((a, b) => b - a)
+    const allGradeKeys = Object.keys(gradeDivisions).sort((a, b) => b - a)
+    let gradeKeys
+
+    if (disciplineBoulder) {
+      gradeKeys = allGradeKeys.filter(key => {
+        return parseInt(key) < 17
+      })
+    } else {
+      gradeKeys = allGradeKeys.filter(key => {
+        return parseInt(key) > 17
+      })
+    }
 
     gradeRender = gradeKeys.map(grade => {
       return (
@@ -52,12 +63,14 @@ export function Ascents({ ascents, user }) {
 
 export const mapStateToProps = (state) => ({
   ascents: state.ascents,
-  user: state.currentUser
+  user: state.currentUser,
+  disciplineBoulder: state.disciplineBoulder
 })
 
 export default connect(mapStateToProps)(Ascents)
 
 Ascents.propTypes = {
   ascents: PropTypes.array.isRequired,
-  user: PropTypes.object.isRequired
+  user: PropTypes.object.isRequired,
+  disciplineBoulder: PropTypes.bool.isRequired
 }

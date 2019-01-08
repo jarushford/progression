@@ -68,30 +68,17 @@ class EditForm extends Component {
 
   render() {
     const { name, location, caption, grade, priority, season, projectEdited, moves_total, moves_done, high_point } = this.state
-    const { user, project } = this.props
+    const { user, project, disciplineBoulder } = this.props
+    let gradeInput
 
-    if (projectEdited || !user.name) { return <Redirect to={`/projects/${project}`} /> }
-
-    return (
-      <form className="project-form" onSubmit={this.handleSubmit}>
-        <h2>EDIT</h2>
-        <input name="name"
-          value={name}
-          onChange={this.handleChange}
-          placeholder="name"
-          autoFocus={true}
-        />
-        <input name="location"
-          value={location}
-          onChange={this.handleChange}
-          placeholder="location"
-        />
+    if (disciplineBoulder) {
+      gradeInput = (
         <select id="grade"
           name="grade"
           value={grade}
           onChange={this.handleChange}
         >
-          <option value="--"> grade </option>
+          <option value="--"> -- </option>
           <option value="0"> V0 / 4 </option>
           <option value="1"> V1 / 5 </option>
           <option value="2"> V2 / 5+ </option>
@@ -110,6 +97,63 @@ class EditForm extends Component {
           <option value="15"> V15 / 8C </option>
           <option value="16"> V16 / 8C+ </option>
         </select>
+      )
+    } else {
+      gradeInput = (
+        <select id="grade"
+          name="grade"
+          value={grade}
+          onChange={this.handleChange}
+        >
+          <option value="--"> -- </option>
+          <option value="5600"> 5.6 / 5a </option>
+          <option value="5700"> 5.7 / 5b </option>
+          <option value="5800"> 5.8 / 5c </option>
+          <option value="5900"> 5.9 / 6a </option>
+          <option value="5101"> 5.10a / 6a+ </option>
+          <option value="5102"> 5.10b / 6a+ </option>
+          <option value="5103"> 5.10c / 6b </option>
+          <option value="5104"> 5.10d / 6b+ </option>
+          <option value="5111"> 5.11a / 6c </option>
+          <option value="5112"> 5.11b / 6c+ </option>
+          <option value="5113"> 5.11c / 7a </option>
+          <option value="5114"> 5.11d / 7a+ </option>
+          <option value="5121"> 5.12a / 7b </option>
+          <option value="5122"> 5.12b / 7b+ </option>
+          <option value="5123"> 5.12c / 7c </option>
+          <option value="5124"> 5.12d / 7c+ </option>
+          <option value="5131"> 5.13a / 7c+ </option>
+          <option value="5132"> 5.13b / 8a </option>
+          <option value="5133"> 5.13c / 8a+ </option>
+          <option value="5134"> 5.13d / 8b </option>
+          <option value="5141"> 5.14a / 8b+ </option>
+          <option value="5142"> 5.14b / 8c </option>
+          <option value="5143"> 5.14c / 8c+ </option>
+          <option value="5144"> 5.14d / 9a </option>
+          <option value="5151"> 5.15a / 9a+ </option>
+          <option value="5152"> 5.15b / 9b</option>
+          <option value="5153"> 5.15c / 9b+ </option>
+        </select>
+      )
+    }
+
+    if (projectEdited || !user.name) { return <Redirect to={`/projects/${project}`} /> }
+
+    return (
+      <form className="project-form" onSubmit={this.handleSubmit}>
+        <h2>EDIT</h2>
+        <input name="name"
+          value={name}
+          onChange={this.handleChange}
+          placeholder="name"
+          autoFocus={true}
+        />
+        <input name="location"
+          value={location}
+          onChange={this.handleChange}
+          placeholder="location"
+        />
+        {gradeInput}
         <select id="priority"
           name="priority"
           value={priority}
@@ -180,7 +224,8 @@ class EditForm extends Component {
 export const mapStateToProps = (state) => ({
   user: state.currentUser,
   project: state.currentProject,
-  projects: state.projects
+  projects: state.projects,
+  disciplineBoulder: state.disciplineBoulder
 })
 
 export const mapDispatchToProps = (dispatch) => ({
@@ -192,5 +237,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(EditForm)
 EditForm.propTypes = {
   user: PropTypes.object.isRequired,
   project: PropTypes.number.isRequired,
-  projects: PropTypes.array.isRequired
+  projects: PropTypes.array.isRequired,
+  disciplineBoulder: PropTypes.bool.isRequired
 }

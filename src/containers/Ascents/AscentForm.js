@@ -76,23 +76,33 @@ export class AscentForm extends Component {
           onChange={this.handleChange}
         >
           <option value="--"> -- </option>
-          <option value="5600"> V0 / 4 </option>
-          <option value="5700"> V1 / 5 </option>
-          <option value="5800"> V2 / 5+ </option>
-          <option value="5900"> V3 / 6A </option>
-          <option value="5101"> V4 / 6B </option>
-          <option value="5"> V5 / 6C </option>
-          <option value="6"> V6 / 7A </option>
-          <option value="7"> V7 / 7A+ </option>
-          <option value="8"> V8 / 7B+ </option>
-          <option value="9"> V9 / 7C </option>
-          <option value="10"> V10 / 7C+ </option>
-          <option value="11"> V11 / 8A </option>
-          <option value="12"> V12 / 8A+ </option>
-          <option value="13"> V13 / 8B </option>
-          <option value="14"> V14 / 8B+ </option>
-          <option value="15"> V15 / 8C </option>
-          <option value="16"> V16 / 8C+ </option>
+          <option value="5600"> 5.6 / 5a </option>
+          <option value="5700"> 5.7 / 5b </option>
+          <option value="5800"> 5.8 / 5c </option>
+          <option value="5900"> 5.9 / 6a </option>
+          <option value="5101"> 5.10a / 6a+ </option>
+          <option value="5102"> 5.10b / 6a+ </option>
+          <option value="5103"> 5.10c / 6b </option>
+          <option value="5104"> 5.10d / 6b+ </option>
+          <option value="5111"> 5.11a / 6c </option>
+          <option value="5112"> 5.11b / 6c+ </option>
+          <option value="5113"> 5.11c / 7a </option>
+          <option value="5114"> 5.11d / 7a+ </option>
+          <option value="5121"> 5.12a / 7b </option>
+          <option value="5122"> 5.12b / 7b+ </option>
+          <option value="5123"> 5.12c / 7c </option>
+          <option value="5124"> 5.12d / 7c+ </option>
+          <option value="5131"> 5.13a / 7c+ </option>
+          <option value="5132"> 5.13b / 8a </option>
+          <option value="5133"> 5.13c / 8a+ </option>
+          <option value="5134"> 5.13d / 8b </option>
+          <option value="5141"> 5.14a / 8b+ </option>
+          <option value="5142"> 5.14b / 8c </option>
+          <option value="5143"> 5.14c / 8c+ </option>
+          <option value="5144"> 5.14d / 9a </option>
+          <option value="5151"> 5.15a / 9a+ </option>
+          <option value="5152"> 5.15b / 9b</option>
+          <option value="5153"> 5.15c / 9b+ </option>
         </select>
       )
     }
