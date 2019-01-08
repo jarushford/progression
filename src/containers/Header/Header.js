@@ -1,11 +1,11 @@
 import React from 'react'
-import { logoutUser, clearAscents, clearProjects, clearWorkouts } from '../../actions'
+import { logoutUser, clearAscents, clearProjects, clearWorkouts, toggleMenu } from '../../actions'
 import { NavLink, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import '../../main.scss'
 
-export function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWorkouts }) {
+export function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWorkouts, toggleMenu, menuOpen }) {
   let userButton
 
   if (currentUser.name) {
@@ -30,16 +30,21 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
           <i className="fas fa-user-circle" />
         </div>
         <div className="drop-down">
-          <input type="checkbox" id="burger-check" />
+          <input
+            type="checkbox"
+            id="burger-check"
+            checked={menuOpen}
+            onClick={toggleMenu}
+          />
           <label htmlFor="burger-check" className="burger">
             <div className="burgerbar b1"></div>
             <div className="burgerbar b2"></div>
             <div className="burgerbar b3"></div>
           </label>
           <div className="drop-box">
-            <NavLink to="/training" className="nav-item drop-nav"> TRAINING </NavLink>
-            <NavLink to="/projects" className="nav-item drop-nav"> PROJECTS </NavLink>
-            <NavLink to="/ascents" className="nav-item drop-nav"> ASCENTS </NavLink>
+            <NavLink onClick={toggleMenu} to="/training" className="nav-item drop-nav"> TRAINING </NavLink>
+            <NavLink onClick={toggleMenu} to="/projects" className="nav-item drop-nav"> PROJECTS </NavLink>
+            <NavLink onClick={toggleMenu} to="/ascents" className="nav-item drop-nav"> ASCENTS </NavLink>
             <Link
               to="/"
               className="logout-link drop-logout"
@@ -76,14 +81,16 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
 }
 
 export const mapStateToProps = (state) => ({
-  currentUser: state.currentUser
+  currentUser: state.currentUser,
+  menuOpen: state.menuOpen
 })
 
 export const mapDispatchToProps = (dispatch) => ({
   clearAscents: () => dispatch(clearAscents()),
   clearProjects: () => dispatch(clearProjects()),
   clearWorkouts: () => dispatch(clearWorkouts()),
-  logoutUser: () => dispatch(logoutUser())
+  logoutUser: () => dispatch(logoutUser()),
+  toggleMenu: () => dispatch(toggleMenu())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)
@@ -93,5 +100,6 @@ Header.propTypes = {
   clearAscents: PropTypes.func.isRequired,
   clearProjects: PropTypes.func.isRequired,
   clearWorkouts: PropTypes.func.isRequired,
-  logoutUser: PropTypes.func.isRequired
+  logoutUser: PropTypes.func.isRequired,
+  toggleMenu: PropTypes.func.isRequired
 }

@@ -70,3 +70,7 @@ export const setCurrentProject = (id) => ({
   type: 'SET_CURRENT_PROJECT',
   id
 })
+
+export const toggleMenu = () => ({
+  type: 'TOGGLE_MENU'
+})

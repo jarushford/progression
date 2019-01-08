@@ -3,6 +3,7 @@
   bottom: 10px;
   left: 20px;
   color: $text;
+  z-index: -1;
 
   h2,
   h3 {
@@ -17,7 +18,7 @@
 
 .switcher {
   float: right;
-  margin: 100px 10px;
+  margin: 100px 10px 0;
   background: $lightGrey;
   width: 150px;
   display: flex;

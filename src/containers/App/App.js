@@ -40,8 +40,9 @@ export class App extends Component {
     return (
       <div className={`app ${disciplineBoulder && 'boulder'}`}>
         <Header />
+        <Home />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" />
           <Route path="/login" component={Login} />
           <Route exact path="/training" component={Training} />
           <Route path="/training/add" component={TrainingForm} />
@@ -60,7 +61,7 @@ export class App extends Component {
           <Route path="/ascents/add" component={AscentForm} />
           <Route path="/milestones/add" component={MilestoneForm} />
           <Route path="/journal/add" component={JournalForm} />
-          <Route path="" component={Error} />
+          <Route component={Error} />
         </Switch>
       </div>
     )
