@@ -35,3 +35,10 @@
   height: 100px;
   padding-top: 30px;
 }
+
+@media screen and (max-width: 500px) {
+  .no-data-msg,
+  .no-user-msg {
+    font-size: 1.4rem;
+  }
+}

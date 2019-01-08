@@ -55,3 +55,21 @@
     margin: 0 0 20px 15px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .milestone-form {
+    width: 95%;
+
+    .milestone-caption {
+      width: 250px;
+      margin: 15px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .milestone-form {
+    width: 300px;
+    padding: 22px 26px;
+  }
+}

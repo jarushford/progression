@@ -94,3 +94,38 @@
     color: tomato;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .ascents-title {
+    font-size: 1.4rem;
+  }
+
+  .add-ascent {
+    width: 110px;
+  }
+
+  .ascents {
+    width: 95%;
+    margin: 120px auto;
+  }
+
+  .ascent-form {
+    width: 95%;
+
+    input,
+    button,
+    select,
+    textarea {
+      width: 250px;
+      margin: 15px auto;
+    }
+  }
+} 
+
+@media screen and (max-width: 360px) {
+  .ascent-form {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 22px 26px;
+  }
+}

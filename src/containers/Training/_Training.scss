@@ -181,13 +181,18 @@
 
 @media screen and (max-width: 500px) {
   .project-name {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .project-grade,
   .project-location {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
+  }
+
+  .projects {
+    width: 95%;
+    margin: 120px auto;
   }
 }
 
