@@ -8,9 +8,9 @@ export class TrainingForm extends Component {
   constructor() {
     super()
     this.state = {
-      day: '1',
-      month: '1',
-      year: '2018',
+      day: '01',
+      month: '01',
+      year: '2019',
       type: '',
       description: '',
       workoutAdded: false
@@ -19,8 +19,8 @@ export class TrainingForm extends Component {
 
   componentDidMount() {
     const date = new Date()
-    const month = (date.getMonth() + 1).toString()
-    const day = date.getDate().toString()
+    const month = ('0' + (date.getMonth() + 1)).slice(-2).toString()
+    const day = ('0' + (date.getDate())).slice(-2).toString()
     const year = date.getFullYear().toString()
     this.setState({
       day,
