@@ -1,6 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { clearError } from '../../actions'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import '../../main.scss'
 
 export function Error({ error, clearError }) {
@@ -22,3 +23,8 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Error)
+
+Error.propTypes = {
+  error: PropTypes.string.isRequired,
+  clearError: PropTypes.func.isRequired
+}

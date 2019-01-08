@@ -1,10 +1,11 @@
 import React from 'react'
-import { connect }  from 'react-redux';
-import { withRouter, Link } from 'react-router-dom'
-import { uid } from 'react-uid'
-import '../../main.scss'
 import { deleteDataThunk } from '../../thunks/deleteData'
 import { updateDataThunk } from '../../thunks/updateData'
+import { Link } from 'react-router-dom'
+import { connect }  from 'react-redux'
+import PropTypes from 'prop-types'
+import { uid } from 'react-uid'
+import '../../main.scss'
 
 export function TrainingAll({ trainingDataUnclean, toggleComplete, user, deleteWorkout }) {
   let trainingRender
@@ -68,4 +69,11 @@ export const mapDispatchToProps = (dispatch) => ({
   deleteWorkout: (item_id, user_id, project_id, type) => dispatch(deleteDataThunk(item_id, user_id, project_id, type))
 })
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TrainingAll))
+export default connect(mapStateToProps, mapDispatchToProps)(TrainingAll)
+
+TrainingAll.propTypes = {
+  trainingDataUnclean: PropTypes.object.isRequired,
+  user: PropTypes.object.isRequired,
+  toggleComplete: PropTypes.func.isRequired,
+  deleteWorkout: PropTypes.func.isRequired
+}

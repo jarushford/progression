@@ -1,8 +1,8 @@
 import React from 'react'
-import '../../main.scss'
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom'
 import { toggleDiscipline } from '../../actions'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import '../../main.scss'
 
 export function Home({ disciplineBoulder, toggleDiscipline }) {
   let caption
@@ -54,4 +54,9 @@ export const mapDispatchToProps = (dispatch) => ({
   toggleDiscipline: (isBoulder) => dispatch(toggleDiscipline(isBoulder))
 })
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home))
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
+
+Home.propTypes = {
+  disciplineBoulder: PropTypes.bool.isRequired,
+  toggleDiscipline: PropTypes.func.isRequired
+}

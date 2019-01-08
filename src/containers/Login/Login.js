@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { Redirect } from 'react-router-dom'
 import { addNewUserThunk } from '../../thunks/addNewUser';
 import { loginUserThunk } from '../../thunks/loginUser';
+import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 export class Login extends Component {
   constructor() {
@@ -111,3 +112,8 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(Login)
+
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired,
+  addNewUser: PropTypes.func.isRequired
+}

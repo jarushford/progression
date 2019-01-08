@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 export class AscentForm extends Component {
   constructor() {
@@ -102,3 +103,8 @@ export const mapDispatchToProps = (dispatch) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(AscentForm)
 
+AscentForm.propTypes = {
+  user: PropTypes.object.isRequired,
+  error: PropTypes.string.isRequired,
+  addAscent: PropTypes.func.isRequired
+}

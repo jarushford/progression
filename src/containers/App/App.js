@@ -1,21 +1,22 @@
 import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
-import Header from '../Header/Header'
-import Home from '../Home/Home'
-import Training from '../Training/Training'
-import TrainingForm from '../Training/TrainingForm'
+import MilestoneForm from '../Milestones/MilestoneForm'
+import ProjectPage from '../ProjectPage/ProjectPage'
 import TrainingAll from '../TrainingAll/TrainingAll'
-import Ascents from '../Ascents/Ascents'
+import TrainingForm from '../Training/TrainingForm'
+import ProjectForm from '../Projects/ProjectForm'
+import JournalForm from '../Journal/JournalForm'
 import AscentForm from '../Ascents/AscentForm'
 import Projects from '../Projects/Projects'
-import ProjectForm from '../Projects/ProjectForm'
-import ProjectPage from '../ProjectPage/ProjectPage'
+import Training from '../Training/Training'
 import EditForm from '../Projects/EditForm'
+import Ascents from '../Ascents/Ascents'
+import { connect }  from 'react-redux'
+import Header from '../Header/Header'
 import Login from '../Login/Login'
+import PropTypes from 'prop-types'
 import Error from '../Error/Error'
-import MilestoneForm from '../Milestones/MilestoneForm'
-import JournalForm from '../Journal/JournalForm'
-import { connect }  from 'react-redux';
+import Home from '../Home/Home'
 import '../../main.scss'
 
 export class App extends Component {
@@ -73,3 +74,9 @@ export const mapStateToProps = (state) => ({
 })
 
 export default withRouter(connect(mapStateToProps)(App))
+
+App.propTypes = {
+  projects: PropTypes.array.isRequired,
+  disciplineBoulder: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired
+}

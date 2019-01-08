@@ -1,6 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { deleteDataThunk } from '../../thunks/deleteData'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 export function Milestone({ milestone_date, caption, id, user_id, project_id, deleteMilestone }) {
   return (
@@ -19,3 +20,12 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(Milestone)
+
+Milestone.propTypes = {
+  deleteMilestone: PropTypes.func.isRequired,
+  milestone_date: PropTypes.string.isRequired,
+  caption: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  user_id: PropTypes.number.isRequired,
+  project_id: PropTypes.number.isRequired
+}

@@ -1,8 +1,9 @@
 import React from 'react'
-import { NavLink, Link, withRouter } from 'react-router-dom'
-import '../../main.scss'
-import { connect } from 'react-redux';
 import { logoutUser, clearAscents, clearProjects, clearWorkouts } from '../../actions'
+import { NavLink, Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import '../../main.scss'
 
 export function Header({ currentUser, logoutUser, clearAscents, clearProjects, clearWorkouts }) {
   let userButton
@@ -85,4 +86,12 @@ export const mapDispatchToProps = (dispatch) => ({
   logoutUser: () => dispatch(logoutUser())
 })
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header))
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
+
+Header.propTypes = {
+  currentUser: PropTypes.object.isRequired,
+  clearAscents: PropTypes.func.isRequired,
+  clearProjects: PropTypes.func.isRequired,
+  clearWorkouts: PropTypes.func.isRequired,
+  logoutUser: PropTypes.func.isRequired
+}

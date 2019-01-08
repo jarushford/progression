@@ -1,10 +1,11 @@
 import React from 'react'
-import { connect }  from 'react-redux';
-import { withRouter, Link } from 'react-router-dom'
-import * as Helper from '../../utils/calendarHelpers'
 import { updateDataThunk } from '../../thunks/updateData'
-import '../../main.scss'
+import * as Helper from '../../utils/calendarHelpers'
+import { Link } from 'react-router-dom'
+import { connect }  from 'react-redux'
+import PropTypes from 'prop-types'
 import { uid } from 'react-uid'
+import '../../main.scss'
 
 export function Training({ trainingDataUnclean, toggleComplete, user }) {
 
@@ -106,4 +107,10 @@ export const mapDispatchToProps = (dispatch) => ({
   toggleComplete: (workout, type) => dispatch(updateDataThunk(workout, type))
 })
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Training))
+export default connect(mapStateToProps, mapDispatchToProps)(Training)
+
+Training.propTypes = {
+  trainingDataUnclean: PropTypes.object.isRequired,
+  user: PropTypes.object.isRequired,
+  toggleComplete: PropTypes.func.isRequired
+}

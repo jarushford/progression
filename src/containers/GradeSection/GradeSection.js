@@ -1,7 +1,8 @@
 import React from 'react'
-import gradeConverter from '../../utils/gradeConverter'
 import { deleteDataThunk } from '../../thunks/deleteData'
+import gradeConverter from '../../utils/gradeConverter'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import { uid } from 'react-uid'
 import '../../main.scss'
 
@@ -38,3 +39,8 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(GradeSection)
+
+GradeSection.propTypes = {
+  user: PropTypes.object.isRequired,
+  deleteAscent: PropTypes.func.isRequired
+}

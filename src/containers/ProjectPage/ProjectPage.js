@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
 import gradeConverter from '../../utils/gradeConverter'
 import { Link, withRouter } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { dataHelper, priorityHelper } from '../../utils/projectHelpers'
 import Milestone from '../Milestones/Milestone'
 import Journal from '../Journal/Journal'
-import { uid } from 'react-uid';
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { uid } from 'react-uid'
 
 export class ProjectPage extends Component {
   constructor() {
@@ -123,3 +124,9 @@ export const mapStateToProps = (state) => ({
 })
 
 export default withRouter(connect(mapStateToProps)(ProjectPage))
+
+ProjectPage.propTypes = {
+  milestones: PropTypes.array.isRequired,
+  journal: PropTypes.array.isRequired,
+  user: PropTypes.object.isRequired
+}

@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link, withRouter } from 'react-router-dom'
-import gradeConverter from '../../utils/gradeConverter'
-import { connect }  from 'react-redux';
-import { uid } from 'react-uid'
 import { deleteDataThunk } from '../../thunks/deleteData'
-import '../../main.scss'
-import { setCurrentProject } from '../../actions';
+import gradeConverter from '../../utils/gradeConverter'
 import { fetchDataThunk } from '../../thunks/fetchData'
+import { Link, withRouter } from 'react-router-dom'
+import { setCurrentProject } from '../../actions'
+import { connect }  from 'react-redux'
+import PropTypes from 'prop-types'
+import { uid } from 'react-uid'
+import '../../main.scss'
 
 export function Projects({ projects, deleteProject, user, setCurrentProject, fetchData }) {
   let projectsRender
@@ -67,3 +68,11 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Projects))
+
+Projects.propTypes = {
+  projects: PropTypes.array.isRequired,
+  user: PropTypes.object.isRequired,
+  deleteProject: PropTypes.func.isRequired,
+  setCurrentProject: PropTypes.func.isRequired,
+  fetchData: PropTypes.func.isRequired
+}

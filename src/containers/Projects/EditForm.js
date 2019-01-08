@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import { updateDataThunk } from '../../thunks/updateData'
 import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 class EditForm extends Component {
   constructor() {
@@ -187,3 +188,9 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditForm)
+
+EditForm.propTypes = {
+  user: PropTypes.object.isRequired,
+  project: PropTypes.number.isRequired,
+  projects: PropTypes.array.isRequired
+}

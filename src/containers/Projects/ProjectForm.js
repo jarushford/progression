@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import { addDataThunk } from '../../thunks/addData'
 import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 export class ProjectForm extends Component {
   constructor() {
@@ -164,3 +165,7 @@ export const mapDispatchToProps = (dispatch) => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectForm)
 
+ProjectForm.propTypes = {
+  user: PropTypes.object.isRequired,
+  addProject: PropTypes.func.isRequired
+}

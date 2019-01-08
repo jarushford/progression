@@ -1,9 +1,10 @@
 import React from 'react'
 import GradeSection from '../GradeSection/GradeSection'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { withRouter, Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { uid } from 'react-uid'
 import '../../main.scss'
-import { uid } from 'react-uid';
 
 export function Ascents({ ascents, user }) {
   let gradeRender
@@ -54,4 +55,9 @@ export const mapStateToProps = (state) => ({
   user: state.currentUser
 })
 
-export default withRouter(connect(mapStateToProps)(Ascents))
+export default connect(mapStateToProps)(Ascents)
+
+Ascents.propTypes = {
+  ascents: PropTypes.array.isRequired,
+  user: PropTypes.object.isRequired
+}

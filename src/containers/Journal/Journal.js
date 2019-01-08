@@ -1,6 +1,7 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { deleteDataThunk } from '../../thunks/deleteData'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
 export function Journal({ journal_date, entry, id, user_id, project_id, deleteJournal }) {
   return (
@@ -19,3 +20,7 @@ export const mapDispatchToProps = (dispatch) => ({
 })
 
 export default connect(null, mapDispatchToProps)(Journal)
+
+Journal.propTypes = {
+  deleteJournal: PropTypes.func.isRequired
+}
