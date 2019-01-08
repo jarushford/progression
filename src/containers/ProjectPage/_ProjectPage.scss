@@ -200,3 +200,7 @@
   .nine { @include graphic(90px) }
   .ten { @include graphic(100px) }
 }
+
+@media screen and (max-width: 850px) {
+  
+}

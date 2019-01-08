@@ -128,3 +128,88 @@
     margin: 30px auto;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .training-container {
+    min-width: unset;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .buttons {
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .training {
+    margin: auto 20px auto;
+    width: 88%;
+  }
+
+  .view-workouts {
+    margin: 0 0 10px;
+  }
+
+  .training-header,
+  .projects-header {
+    height: 100px;
+  }
+
+  .projects-title {
+    font-size: 1.4rem;
+  }
+
+  .training-form {
+    width: 95%;
+
+    input,
+    button,
+    select,
+    textarea {
+      width: 250px;
+      margin: 15px auto;
+    }
+  }
+
+  .add-workout,
+  .view-workouts {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-name {
+    font-size: 1rem;
+  }
+
+  .project-grade,
+  .project-location {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .training-title {
+    font-size: 1.4rem;
+  }
+
+  .training-form {
+    width: 300px;
+    padding: 22px 26px;
+  }
+
+  .add-workout,
+  .view-workouts {
+    width: 90px;
+    margin-left: 5px;
+    font-size: .6rem;
+  }
+
+  .project-grade,
+  .project-location {
+    font-size: .6rem;
+  }
+}

@@ -84,5 +84,45 @@
 
 input[type=number] {
   width: 157px;
+}
 
+@media screen and (max-width: 650px) {
+  .project-form {
+    width: 95%;
+
+    input,
+    button,
+    select,
+    textarea {
+      width: 250px;
+      margin: 15px auto;
+    }
+
+    input[type=number] {
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    label {
+      margin-left: 20%;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  button.add-project {
+    width: 90px;
+    font-size: .6rem;
+    margin-left: 5px;
+  }
+
+  .project-form label {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .project-form {
+    padding: 22px 26px;
+  }
 }
