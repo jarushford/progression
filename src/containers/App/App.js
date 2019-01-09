@@ -33,8 +33,8 @@ export class App extends Component {
       )
     }
 
-    if (!projects) {
-      return <div>Loading...</div>
+    if (!projects.length) {
+      return <h1 className="no-data-msg">Loading...</h1>
     }
 
     return (

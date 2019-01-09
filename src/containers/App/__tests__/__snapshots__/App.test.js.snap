@@ -4,12 +4,728 @@ exports[`App should match the snapshot in default case 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
-    disciplineBoulder={false}
+    disciplineBoulder={true}
+    error=""
+    projects={
+      Array [
+        Object {
+          "grade": 13,
+          "id": 2,
+          "name": "Top Notch",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Connect(Header) />,
+        <Connect(Home) />,
+        <Switch>
+          <Route
+            exact={true}
+            path="/"
+          />
+          <Route
+            component={[Function]}
+            path="/login"
+          />
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/training"
+          />
+          <Route
+            component={[Function]}
+            path="/training/add"
+          />
+          <Route
+            component={[Function]}
+            path="/training/all"
+          />
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/projects"
+          />
+          <Route
+            component={[Function]}
+            path="/projects/add"
+          />
+          <Route
+            component={[Function]}
+            path="/projects/edit"
+          />
+          <Route
+            path="/projects/:id"
+            render={[Function]}
+          />
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/ascents"
+          />
+          <Route
+            component={[Function]}
+            path="/ascents/add"
+          />
+          <Route
+            component={[Function]}
+            path="/milestones/add"
+          />
+          <Route
+            component={[Function]}
+            path="/journal/add"
+          />
+          <Route
+            component={[Function]}
+          />
+        </Switch>,
+      ],
+      "className": "app boulder",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Route
+              exact={true}
+              path="/"
+            />,
+            <Route
+              component={[Function]}
+              path="/login"
+            />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/training"
+            />,
+            <Route
+              component={[Function]}
+              path="/training/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/training/all"
+            />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/projects"
+            />,
+            <Route
+              component={[Function]}
+              path="/projects/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/projects/edit"
+            />,
+            <Route
+              path="/projects/:id"
+              render={[Function]}
+            />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/ascents"
+            />,
+            <Route
+              component={[Function]}
+              path="/ascents/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/milestones/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/journal/add"
+            />,
+            <Route
+              component={[Function]}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/login",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/training",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/training/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/training/all",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/projects",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/projects/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/projects/edit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/projects/:id",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/ascents",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/ascents/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/milestones/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/journal/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(Header) />,
+          <Connect(Home) />,
+          <Switch>
+            <Route
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+              path="/login"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/training"
+            />
+            <Route
+              component={[Function]}
+              path="/training/add"
+            />
+            <Route
+              component={[Function]}
+              path="/training/all"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/projects"
+            />
+            <Route
+              component={[Function]}
+              path="/projects/add"
+            />
+            <Route
+              component={[Function]}
+              path="/projects/edit"
+            />
+            <Route
+              path="/projects/:id"
+              render={[Function]}
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/ascents"
+            />
+            <Route
+              component={[Function]}
+              path="/ascents/add"
+            />
+            <Route
+              component={[Function]}
+              path="/milestones/add"
+            />
+            <Route
+              component={[Function]}
+              path="/journal/add"
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>,
+        ],
+        "className": "app boulder",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                exact={true}
+                path="/"
+              />,
+              <Route
+                component={[Function]}
+                path="/login"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/training"
+              />,
+              <Route
+                component={[Function]}
+                path="/training/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/training/all"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/projects"
+              />,
+              <Route
+                component={[Function]}
+                path="/projects/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/projects/edit"
+              />,
+              <Route
+                path="/projects/:id"
+                render={[Function]}
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/ascents"
+              />,
+              <Route
+                component={[Function]}
+                path="/ascents/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/milestones/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/journal/add"
+              />,
+              <Route
+                component={[Function]}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/training",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/training/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/training/all",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/projects",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/projects/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/projects/edit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/projects/:id",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/ascents",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/ascents/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/milestones/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/journal/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App should match the snapshot with an error for boulder 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    disciplineBoulder={true}
     error="Oh no!"
     projects={
       Array [
         Object {
-          "grade": "V13",
+          "grade": 13,
           "id": 2,
           "name": "Top Notch",
         },
@@ -33,7 +749,7 @@ ShallowWrapper {
         <Connect(Header) />,
         <Connect(Error) />,
       ],
-      "className": "app false",
+      "className": "app boulder",
     },
     "ref": null,
     "rendered": Array [
@@ -68,7 +784,7 @@ ShallowWrapper {
           <Connect(Header) />,
           <Connect(Error) />,
         ],
-        "className": "app false",
+        "className": "app boulder",
       },
       "ref": null,
       "rendered": Array [
@@ -114,7 +830,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`App should match the snapshot with an error 1`] = `
+exports[`App should match the snapshot with an error for sport 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
@@ -123,121 +839,7 @@ ShallowWrapper {
     projects={
       Array [
         Object {
-          "grade": "V13",
-          "id": 2,
-          "name": "Top Notch",
-        },
-      ]
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <Connect(Header) />,
-        <Connect(Error) />,
-      ],
-      "className": "app false",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Connect(Header) />,
-          <Connect(Error) />,
-        ],
-        "className": "app false",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
-`;
-
-exports[`App should match the snapshot with data 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    disciplineBoulder={false}
-    error="Oh no!"
-    projects={
-      Array [
-        Object {
-          "grade": "V13",
+          "grade": 13,
           "id": 2,
           "name": "Top Notch",
         },
@@ -347,11 +949,11 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App
     disciplineBoulder={false}
-    error="Oh no!"
+    error=""
     projects={
       Array [
         Object {
-          "grade": "V13",
+          "grade": 13,
           "id": 2,
           "name": "Top Notch",
         },
@@ -373,7 +975,67 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Connect(Header) />,
-        <Connect(Error) />,
+        <Connect(Home) />,
+        <Switch>
+          <Route
+            exact={true}
+            path="/"
+          />
+          <Route
+            component={[Function]}
+            path="/login"
+          />
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/training"
+          />
+          <Route
+            component={[Function]}
+            path="/training/add"
+          />
+          <Route
+            component={[Function]}
+            path="/training/all"
+          />
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/projects"
+          />
+          <Route
+            component={[Function]}
+            path="/projects/add"
+          />
+          <Route
+            component={[Function]}
+            path="/projects/edit"
+          />
+          <Route
+            path="/projects/:id"
+            render={[Function]}
+          />
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/ascents"
+          />
+          <Route
+            component={[Function]}
+            path="/ascents/add"
+          />
+          <Route
+            component={[Function]}
+            path="/milestones/add"
+          />
+          <Route
+            component={[Function]}
+            path="/journal/add"
+          />
+          <Route
+            component={[Function]}
+          />
+        </Switch>,
       ],
       "className": "app false",
     },
@@ -397,6 +1059,247 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Route
+              exact={true}
+              path="/"
+            />,
+            <Route
+              component={[Function]}
+              path="/login"
+            />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/training"
+            />,
+            <Route
+              component={[Function]}
+              path="/training/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/training/all"
+            />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/projects"
+            />,
+            <Route
+              component={[Function]}
+              path="/projects/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/projects/edit"
+            />,
+            <Route
+              path="/projects/:id"
+              render={[Function]}
+            />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/ascents"
+            />,
+            <Route
+              component={[Function]}
+              path="/ascents/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/milestones/add"
+            />,
+            <Route
+              component={[Function]}
+              path="/journal/add"
+            />,
+            <Route
+              component={[Function]}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/login",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/training",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/training/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/training/all",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/projects",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/projects/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/projects/edit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "path": "/projects/:id",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/ascents",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/ascents/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/milestones/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/journal/add",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -408,7 +1311,67 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Connect(Header) />,
-          <Connect(Error) />,
+          <Connect(Home) />,
+          <Switch>
+            <Route
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+              path="/login"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/training"
+            />
+            <Route
+              component={[Function]}
+              path="/training/add"
+            />
+            <Route
+              component={[Function]}
+              path="/training/all"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/projects"
+            />
+            <Route
+              component={[Function]}
+              path="/projects/add"
+            />
+            <Route
+              component={[Function]}
+              path="/projects/edit"
+            />
+            <Route
+              path="/projects/:id"
+              render={[Function]}
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/ascents"
+            />
+            <Route
+              component={[Function]}
+              path="/ascents/add"
+            />
+            <Route
+              component={[Function]}
+              path="/milestones/add"
+            />
+            <Route
+              component={[Function]}
+              path="/journal/add"
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>,
         ],
         "className": "app false",
       },
@@ -432,8 +1395,311 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                exact={true}
+                path="/"
+              />,
+              <Route
+                component={[Function]}
+                path="/login"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/training"
+              />,
+              <Route
+                component={[Function]}
+                path="/training/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/training/all"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/projects"
+              />,
+              <Route
+                component={[Function]}
+                path="/projects/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/projects/edit"
+              />,
+              <Route
+                path="/projects/:id"
+                render={[Function]}
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/ascents"
+              />,
+              <Route
+                component={[Function]}
+                path="/ascents/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/milestones/add"
+              />,
+              <Route
+                component={[Function]}
+                path="/journal/add"
+              />,
+              <Route
+                component={[Function]}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/training",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/training/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/training/all",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/projects",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/projects/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/projects/edit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "path": "/projects/:id",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/ascents",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/ascents/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/milestones/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/journal/add",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
       ],
       "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App should match the snapshot with no data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    disciplineBoulder={false}
+    error=""
+    projects={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "Loading...",
+      "className": "no-data-msg",
+    },
+    "ref": null,
+    "rendered": "Loading...",
+    "type": "h1",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "Loading...",
+        "className": "no-data-msg",
+      },
+      "ref": null,
+      "rendered": "Loading...",
+      "type": "h1",
     },
   ],
   Symbol(enzyme.__options__): Object {
