@@ -1666,7 +1666,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <App
     disciplineBoulder={false}
     error=""
-    projects={Array []}
+    projects={null}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

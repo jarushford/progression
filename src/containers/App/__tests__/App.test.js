@@ -40,7 +40,7 @@ describe('App', () => {
   })
 
   it('should match the snapshot with no data', () => {
-    const wrapper = shallow(<App error='' projects={[]} disciplineBoulder={false} />)
+    const wrapper = shallow(<App error='' projects={null} disciplineBoulder={false} />)
 
     expect(wrapper).toMatchSnapshot()
   })

@@ -33,7 +33,7 @@ export class App extends Component {
       )
     }
 
-    if (!projects.length) {
+    if (!projects) {
       return <h1 className="no-data-msg">Loading...</h1>
     }
 
@@ -77,7 +77,11 @@ export const mapStateToProps = (state) => ({
 export default withRouter(connect(mapStateToProps)(App))
 
 App.propTypes = {
-  projects: PropTypes.array.isRequired,
+  projects: PropTypes.array,
   disciplineBoulder: PropTypes.bool.isRequired,
   error: PropTypes.string.isRequired
+}
+
+App.defaultProps = {
+  projects: null
 }
