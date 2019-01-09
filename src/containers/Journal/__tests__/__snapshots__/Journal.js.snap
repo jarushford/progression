@@ -3,7 +3,9 @@
 exports[`Journal should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Journal />,
+  Symbol(enzyme.__unrendered__): <Journal
+    deleteJournal={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

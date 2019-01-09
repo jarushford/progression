@@ -8,6 +8,8 @@ jest.mock('../../../thunks/deleteData')
 describe('Training All', () => {
   let mockUser 
   let mockData
+  let mockToggle
+  let mockDelete
 
   beforeEach(() => {
     mockUser = {
@@ -19,32 +21,33 @@ describe('Training All', () => {
     mockData = {
       0: { workout_date: '3/3/31', type: 'Power', description: 'do stuff', completed: true }
     }
+    mockToggle = jest.fn()
+    mockDelete = jest.fn()
   })
 
   describe('TrainingAll Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} />)
+      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} deleteWorkout={mockDelete} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<TrainingAll user={noUser} trainingDataUnclean={mockData} />)
+      const wrapper = shallow(<TrainingAll user={noUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} deleteWorkout={mockDelete} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no data', () => {
       const noData = {}
-      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={noData} />)
+      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={noData} toggleComplete={mockToggle} deleteWorkout={mockDelete} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it.skip('should toggle a workout completed', () => {
-      const mockToggle = jest.fn()
-      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} />)
+      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} deleteWorkout={mockDelete} />)
 
       wrapper.find('.project').first().simulate('click')
 
@@ -52,8 +55,7 @@ describe('Training All', () => {
     })
 
     it('should delete a workout on click', () => {
-      const mockDelete = jest.fn()
-      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} deleteWorkout={mockDelete} />)
+      const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} deleteWorkout={mockDelete} toggleComplete={mockToggle} />)
 
       wrapper.find('.fa-times').first().simulate('click')
 

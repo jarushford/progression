@@ -4,6 +4,8 @@ exports[`Project Form ProjectForm Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProjectForm
+    addProject={[MockFunction]}
+    disciplineBoulder={true}
     user={
       Object {
         "email": "olaf@thatplace.com",
@@ -52,7 +54,7 @@ ShallowWrapper {
           <option
             value="--"
           >
-             grade 
+             -- 
           </option>
           <option
             value="0"
@@ -308,7 +310,7 @@ ShallowWrapper {
             <option
               value="--"
             >
-               grade 
+               -- 
             </option>,
             <option
               value="0"
@@ -408,11 +410,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": " grade ",
+              "children": " -- ",
               "value": "--",
             },
             "ref": null,
-            "rendered": " grade ",
+            "rendered": " -- ",
             "type": "option",
           },
           Object {
@@ -1029,7 +1031,7 @@ ShallowWrapper {
             <option
               value="--"
             >
-               grade 
+               -- 
             </option>
             <option
               value="0"
@@ -1285,7 +1287,7 @@ ShallowWrapper {
               <option
                 value="--"
               >
-                 grade 
+                 -- 
               </option>,
               <option
                 value="0"
@@ -1385,11 +1387,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": " grade ",
+                "children": " -- ",
                 "value": "--",
               },
               "ref": null,
-              "rendered": " grade ",
+              "rendered": " -- ",
               "type": "option",
             },
             Object {

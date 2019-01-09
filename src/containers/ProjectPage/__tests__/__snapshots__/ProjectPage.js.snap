@@ -4,72 +4,6 @@ exports[`Project Page ProjectPage Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProjectPage
-    user={
-      Object {
-        "email": "solo@solo.com",
-        "name": "Han Solo",
-        "password": "hansolo",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": "You have no projects",
-      "className": "no-user-msg",
-    },
-    "ref": null,
-    "rendered": "You have no projects",
-    "type": "h1",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "You have no projects",
-        "className": "no-user-msg",
-      },
-      "ref": null,
-      "rendered": "You have no projects",
-      "type": "h1",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
-`;
-
-exports[`Project Page ProjectPage Component should match the snapshot with a completed project 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectPage
     journal={
       Array [
         Object {
@@ -146,11 +80,9 @@ ShallowWrapper {
             RMNP, CO
           </h5>
           <h1
-            className="proj-name"
+            className="sent"
           >
-            <h3>
-              SENT!
-            </h3>
+            SENT!
           </h1>
           <Link
             replace={false}
@@ -321,11 +253,9 @@ ShallowWrapper {
               RMNP, CO
             </h5>,
             <h1
-              className="proj-name"
+              className="sent"
             >
-              <h3>
-                SENT!
-              </h3>
+              SENT!
             </h1>,
             <Link
               replace={false}
@@ -425,23 +355,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h3>
-                SENT!
-              </h3>,
-              "className": "proj-name",
+              "children": "SENT!",
+              "className": "sent",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "SENT!",
-              },
-              "ref": null,
-              "rendered": "SENT!",
-              "type": "h3",
-            },
+            "rendered": "SENT!",
             "type": "h1",
           },
           Object {
@@ -1222,11 +1140,9 @@ ShallowWrapper {
               RMNP, CO
             </h5>
             <h1
-              className="proj-name"
+              className="sent"
             >
-              <h3>
-                SENT!
-              </h3>
+              SENT!
             </h1>
             <Link
               replace={false}
@@ -1397,11 +1313,9 @@ ShallowWrapper {
                 RMNP, CO
               </h5>,
               <h1
-                className="proj-name"
+                className="sent"
               >
-                <h3>
-                  SENT!
-                </h3>
+                SENT!
               </h1>,
               <Link
                 replace={false}
@@ -1501,23 +1415,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <h3>
-                  SENT!
-                </h3>,
-                "className": "proj-name",
+                "children": "SENT!",
+                "className": "sent",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "SENT!",
-                },
-                "ref": null,
-                "rendered": "SENT!",
-                "type": "h3",
-              },
+              "rendered": "SENT!",
               "type": "h1",
             },
             Object {
@@ -2285,10 +2187,2224 @@ ShallowWrapper {
 }
 `;
 
+exports[`Project Page ProjectPage Component should match the snapshot with a completed project 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProjectPage
+    journal={
+      Array [
+        Object {
+          "date": "11/14/15",
+          "entry": "Some stuff about some things",
+        },
+      ]
+    }
+    milestones={
+      Array [
+        Object {
+          "caption": "Did something",
+          "date": "4/6/76",
+        },
+      ]
+    }
+    project={
+      Object {
+        "caption": "",
+        "grade": "V13",
+        "high_point": 7,
+        "id": 4,
+        "location": "RMNP, CO",
+        "moves_total": 7,
+        "name": "Top Notch",
+      }
+    }
+    user={
+      Object {
+        "email": "solo@solo.com",
+        "name": "Han Solo",
+        "password": "hansolo",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="project-header"
+        >
+          <h1
+            className="proj-name"
+          >
+            Top Notch
+          </h1>
+          <h5
+            className="proj-grade"
+          />
+          <div
+            className="project-priority"
+          >
+            <h3>
+              Priority
+            </h3>
+            <div
+              className="priorityundefined"
+            />
+          </div>
+          <h5
+            className="proj-location"
+          >
+            RMNP, CO
+          </h5>
+          <h1
+            className="sent"
+          >
+            SENT!
+          </h1>
+          <Link
+            replace={false}
+            to="/projects"
+          >
+            <button
+              className="add-project"
+            >
+              Back to Projects
+            </button>
+          </Link>
+        </div>,
+        <div
+          className="project-controls"
+        >
+          <p
+            className="project-caption"
+          >
+            
+          </p>
+          <div
+            className="project-right"
+          >
+            <div
+              className="progress-meter"
+            >
+              <h3
+                className="season"
+              >
+                Season: 
+                <span
+                  className="season-span"
+                />
+              </h3>
+              <div
+                className="data-container"
+              >
+                <div
+                  className="high-point"
+                >
+                  <h3>
+                    High Point
+                  </h3>
+                  <div
+                    className="ten"
+                  />
+                </div>
+                <div
+                  className="moves-done"
+                >
+                  <h3>
+                    Moves Done
+                  </h3>
+                  <div />
+                </div>
+              </div>
+            </div>
+            <div
+              className="project-actions"
+            >
+              <Link
+                replace={false}
+                to="/projects/edit"
+              >
+                <button
+                  className="add-progress"
+                >
+                  Edit Progress
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/milestones/add"
+              >
+                <button
+                  className="add-milestone"
+                >
+                  Add Milestone
+                </button>
+              </Link>
+              <Link
+                replace={false}
+                to="/journal/add"
+              >
+                <button
+                  className="add-session"
+                >
+                  Add Journal Entry
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>,
+        <div
+          className="project-entries"
+        >
+          <div
+            className="milestone-container false"
+          >
+            <h1
+              className="proj-milestones"
+              onClick={[Function]}
+            >
+              Milestones 
+              +
+            </h1>
+            <div
+              className="collapse-section"
+            >
+              <Connect(Milestone)
+                caption="Did something"
+                date="4/6/76"
+              />
+            </div>
+          </div>
+          <div
+            className="journal-container false"
+          >
+            <h1
+              className="proj-journal"
+              onClick={[Function]}
+            >
+              Journal 
+              +
+            </h1>
+            <div
+              className="collapse-section"
+            >
+              <Connect(Journal)
+                date="11/14/15"
+                entry="Some stuff about some things"
+              />
+            </div>
+          </div>
+        </div>,
+      ],
+      "className": "project-page",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="proj-name"
+            >
+              Top Notch
+            </h1>,
+            <h5
+              className="proj-grade"
+            />,
+            <div
+              className="project-priority"
+            >
+              <h3>
+                Priority
+              </h3>
+              <div
+                className="priorityundefined"
+              />
+            </div>,
+            <h5
+              className="proj-location"
+            >
+              RMNP, CO
+            </h5>,
+            <h1
+              className="sent"
+            >
+              SENT!
+            </h1>,
+            <Link
+              replace={false}
+              to="/projects"
+            >
+              <button
+                className="add-project"
+              >
+                Back to Projects
+              </button>
+            </Link>,
+          ],
+          "className": "project-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Top Notch",
+              "className": "proj-name",
+            },
+            "ref": null,
+            "rendered": "Top Notch",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "proj-grade",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Priority
+                </h3>,
+                <div
+                  className="priorityundefined"
+                />,
+              ],
+              "className": "project-priority",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Priority",
+                },
+                "ref": null,
+                "rendered": "Priority",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "priorityundefined",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "RMNP, CO",
+              "className": "proj-location",
+            },
+            "ref": null,
+            "rendered": "RMNP, CO",
+            "type": "h5",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SENT!",
+              "className": "sent",
+            },
+            "ref": null,
+            "rendered": "SENT!",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="add-project"
+              >
+                Back to Projects
+              </button>,
+              "replace": false,
+              "to": "/projects",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Back to Projects",
+                "className": "add-project",
+              },
+              "ref": null,
+              "rendered": "Back to Projects",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="project-caption"
+            >
+              
+            </p>,
+            <div
+              className="project-right"
+            >
+              <div
+                className="progress-meter"
+              >
+                <h3
+                  className="season"
+                >
+                  Season: 
+                  <span
+                    className="season-span"
+                  />
+                </h3>
+                <div
+                  className="data-container"
+                >
+                  <div
+                    className="high-point"
+                  >
+                    <h3>
+                      High Point
+                    </h3>
+                    <div
+                      className="ten"
+                    />
+                  </div>
+                  <div
+                    className="moves-done"
+                  >
+                    <h3>
+                      Moves Done
+                    </h3>
+                    <div />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="project-actions"
+              >
+                <Link
+                  replace={false}
+                  to="/projects/edit"
+                >
+                  <button
+                    className="add-progress"
+                  >
+                    Edit Progress
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/milestones/add"
+                >
+                  <button
+                    className="add-milestone"
+                  >
+                    Add Milestone
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/journal/add"
+                >
+                  <button
+                    className="add-session"
+                  >
+                    Add Journal Entry
+                  </button>
+                </Link>
+              </div>
+            </div>,
+          ],
+          "className": "project-controls",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "project-caption",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="progress-meter"
+                >
+                  <h3
+                    className="season"
+                  >
+                    Season: 
+                    <span
+                      className="season-span"
+                    />
+                  </h3>
+                  <div
+                    className="data-container"
+                  >
+                    <div
+                      className="high-point"
+                    >
+                      <h3>
+                        High Point
+                      </h3>
+                      <div
+                        className="ten"
+                      />
+                    </div>
+                    <div
+                      className="moves-done"
+                    >
+                      <h3>
+                        Moves Done
+                      </h3>
+                      <div />
+                    </div>
+                  </div>
+                </div>,
+                <div
+                  className="project-actions"
+                >
+                  <Link
+                    replace={false}
+                    to="/projects/edit"
+                  >
+                    <button
+                      className="add-progress"
+                    >
+                      Edit Progress
+                    </button>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/milestones/add"
+                  >
+                    <button
+                      className="add-milestone"
+                    >
+                      Add Milestone
+                    </button>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/journal/add"
+                  >
+                    <button
+                      className="add-session"
+                    >
+                      Add Journal Entry
+                    </button>
+                  </Link>
+                </div>,
+              ],
+              "className": "project-right",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3
+                      className="season"
+                    >
+                      Season: 
+                      <span
+                        className="season-span"
+                      />
+                    </h3>,
+                    <div
+                      className="data-container"
+                    >
+                      <div
+                        className="high-point"
+                      >
+                        <h3>
+                          High Point
+                        </h3>
+                        <div
+                          className="ten"
+                        />
+                      </div>
+                      <div
+                        className="moves-done"
+                      >
+                        <h3>
+                          Moves Done
+                        </h3>
+                        <div />
+                      </div>
+                    </div>,
+                  ],
+                  "className": "progress-meter",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Season: ",
+                        <span
+                          className="season-span"
+                        />,
+                      ],
+                      "className": "season",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Season: ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                          "className": "season-span",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "span",
+                      },
+                    ],
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div
+                          className="high-point"
+                        >
+                          <h3>
+                            High Point
+                          </h3>
+                          <div
+                            className="ten"
+                          />
+                        </div>,
+                        <div
+                          className="moves-done"
+                        >
+                          <h3>
+                            Moves Done
+                          </h3>
+                          <div />
+                        </div>,
+                      ],
+                      "className": "data-container",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h3>
+                              High Point
+                            </h3>,
+                            <div
+                              className="ten"
+                            />,
+                          ],
+                          "className": "high-point",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "High Point",
+                            },
+                            "ref": null,
+                            "rendered": "High Point",
+                            "type": "h3",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "ten",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "div",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <h3>
+                              Moves Done
+                            </h3>,
+                            <div />,
+                          ],
+                          "className": "moves-done",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Moves Done",
+                            },
+                            "ref": null,
+                            "rendered": "Moves Done",
+                            "type": "h3",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": undefined,
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "div",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Link
+                      replace={false}
+                      to="/projects/edit"
+                    >
+                      <button
+                        className="add-progress"
+                      >
+                        Edit Progress
+                      </button>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/milestones/add"
+                    >
+                      <button
+                        className="add-milestone"
+                      >
+                        Add Milestone
+                      </button>
+                    </Link>,
+                    <Link
+                      replace={false}
+                      to="/journal/add"
+                    >
+                      <button
+                        className="add-session"
+                      >
+                        Add Journal Entry
+                      </button>
+                    </Link>,
+                  ],
+                  "className": "project-actions",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <button
+                        className="add-progress"
+                      >
+                        Edit Progress
+                      </button>,
+                      "replace": false,
+                      "to": "/projects/edit",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Edit Progress",
+                        "className": "add-progress",
+                      },
+                      "ref": null,
+                      "rendered": "Edit Progress",
+                      "type": "button",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <button
+                        className="add-milestone"
+                      >
+                        Add Milestone
+                      </button>,
+                      "replace": false,
+                      "to": "/milestones/add",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Add Milestone",
+                        "className": "add-milestone",
+                      },
+                      "ref": null,
+                      "rendered": "Add Milestone",
+                      "type": "button",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <button
+                        className="add-session"
+                      >
+                        Add Journal Entry
+                      </button>,
+                      "replace": false,
+                      "to": "/journal/add",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Add Journal Entry",
+                        "className": "add-session",
+                      },
+                      "ref": null,
+                      "rendered": "Add Journal Entry",
+                      "type": "button",
+                    },
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="milestone-container false"
+            >
+              <h1
+                className="proj-milestones"
+                onClick={[Function]}
+              >
+                Milestones 
+                +
+              </h1>
+              <div
+                className="collapse-section"
+              >
+                <Connect(Milestone)
+                  caption="Did something"
+                  date="4/6/76"
+                />
+              </div>
+            </div>,
+            <div
+              className="journal-container false"
+            >
+              <h1
+                className="proj-journal"
+                onClick={[Function]}
+              >
+                Journal 
+                +
+              </h1>
+              <div
+                className="collapse-section"
+              >
+                <Connect(Journal)
+                  date="11/14/15"
+                  entry="Some stuff about some things"
+                />
+              </div>
+            </div>,
+          ],
+          "className": "project-entries",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="proj-milestones"
+                  onClick={[Function]}
+                >
+                  Milestones 
+                  +
+                </h1>,
+                <div
+                  className="collapse-section"
+                >
+                  <Connect(Milestone)
+                    caption="Did something"
+                    date="4/6/76"
+                  />
+                </div>,
+              ],
+              "className": "milestone-container false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Milestones ",
+                    "+",
+                  ],
+                  "className": "proj-milestones",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Milestones ",
+                  "+",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Connect(Milestone)
+                      caption="Did something"
+                      date="4/6/76"
+                    />,
+                  ],
+                  "className": "collapse-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "uid3",
+                    "nodeType": "class",
+                    "props": Object {
+                      "caption": "Did something",
+                      "date": "4/6/76",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="proj-journal"
+                  onClick={[Function]}
+                >
+                  Journal 
+                  +
+                </h1>,
+                <div
+                  className="collapse-section"
+                >
+                  <Connect(Journal)
+                    date="11/14/15"
+                    entry="Some stuff about some things"
+                  />
+                </div>,
+              ],
+              "className": "journal-container false",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Journal ",
+                    "+",
+                  ],
+                  "className": "proj-journal",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Journal ",
+                  "+",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Connect(Journal)
+                      date="11/14/15"
+                      entry="Some stuff about some things"
+                    />,
+                  ],
+                  "className": "collapse-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "uid4",
+                    "nodeType": "class",
+                    "props": Object {
+                      "date": "11/14/15",
+                      "entry": "Some stuff about some things",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="project-header"
+          >
+            <h1
+              className="proj-name"
+            >
+              Top Notch
+            </h1>
+            <h5
+              className="proj-grade"
+            />
+            <div
+              className="project-priority"
+            >
+              <h3>
+                Priority
+              </h3>
+              <div
+                className="priorityundefined"
+              />
+            </div>
+            <h5
+              className="proj-location"
+            >
+              RMNP, CO
+            </h5>
+            <h1
+              className="sent"
+            >
+              SENT!
+            </h1>
+            <Link
+              replace={false}
+              to="/projects"
+            >
+              <button
+                className="add-project"
+              >
+                Back to Projects
+              </button>
+            </Link>
+          </div>,
+          <div
+            className="project-controls"
+          >
+            <p
+              className="project-caption"
+            >
+              
+            </p>
+            <div
+              className="project-right"
+            >
+              <div
+                className="progress-meter"
+              >
+                <h3
+                  className="season"
+                >
+                  Season: 
+                  <span
+                    className="season-span"
+                  />
+                </h3>
+                <div
+                  className="data-container"
+                >
+                  <div
+                    className="high-point"
+                  >
+                    <h3>
+                      High Point
+                    </h3>
+                    <div
+                      className="ten"
+                    />
+                  </div>
+                  <div
+                    className="moves-done"
+                  >
+                    <h3>
+                      Moves Done
+                    </h3>
+                    <div />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="project-actions"
+              >
+                <Link
+                  replace={false}
+                  to="/projects/edit"
+                >
+                  <button
+                    className="add-progress"
+                  >
+                    Edit Progress
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/milestones/add"
+                >
+                  <button
+                    className="add-milestone"
+                  >
+                    Add Milestone
+                  </button>
+                </Link>
+                <Link
+                  replace={false}
+                  to="/journal/add"
+                >
+                  <button
+                    className="add-session"
+                  >
+                    Add Journal Entry
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>,
+          <div
+            className="project-entries"
+          >
+            <div
+              className="milestone-container false"
+            >
+              <h1
+                className="proj-milestones"
+                onClick={[Function]}
+              >
+                Milestones 
+                +
+              </h1>
+              <div
+                className="collapse-section"
+              >
+                <Connect(Milestone)
+                  caption="Did something"
+                  date="4/6/76"
+                />
+              </div>
+            </div>
+            <div
+              className="journal-container false"
+            >
+              <h1
+                className="proj-journal"
+                onClick={[Function]}
+              >
+                Journal 
+                +
+              </h1>
+              <div
+                className="collapse-section"
+              >
+                <Connect(Journal)
+                  date="11/14/15"
+                  entry="Some stuff about some things"
+                />
+              </div>
+            </div>
+          </div>,
+        ],
+        "className": "project-page",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="proj-name"
+              >
+                Top Notch
+              </h1>,
+              <h5
+                className="proj-grade"
+              />,
+              <div
+                className="project-priority"
+              >
+                <h3>
+                  Priority
+                </h3>
+                <div
+                  className="priorityundefined"
+                />
+              </div>,
+              <h5
+                className="proj-location"
+              >
+                RMNP, CO
+              </h5>,
+              <h1
+                className="sent"
+              >
+                SENT!
+              </h1>,
+              <Link
+                replace={false}
+                to="/projects"
+              >
+                <button
+                  className="add-project"
+                >
+                  Back to Projects
+                </button>
+              </Link>,
+            ],
+            "className": "project-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Top Notch",
+                "className": "proj-name",
+              },
+              "ref": null,
+              "rendered": "Top Notch",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "proj-grade",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    Priority
+                  </h3>,
+                  <div
+                    className="priorityundefined"
+                  />,
+                ],
+                "className": "project-priority",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Priority",
+                  },
+                  "ref": null,
+                  "rendered": "Priority",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "priorityundefined",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "RMNP, CO",
+                "className": "proj-location",
+              },
+              "ref": null,
+              "rendered": "RMNP, CO",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SENT!",
+                "className": "sent",
+              },
+              "ref": null,
+              "rendered": "SENT!",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="add-project"
+                >
+                  Back to Projects
+                </button>,
+                "replace": false,
+                "to": "/projects",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Back to Projects",
+                  "className": "add-project",
+                },
+                "ref": null,
+                "rendered": "Back to Projects",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="project-caption"
+              >
+                
+              </p>,
+              <div
+                className="project-right"
+              >
+                <div
+                  className="progress-meter"
+                >
+                  <h3
+                    className="season"
+                  >
+                    Season: 
+                    <span
+                      className="season-span"
+                    />
+                  </h3>
+                  <div
+                    className="data-container"
+                  >
+                    <div
+                      className="high-point"
+                    >
+                      <h3>
+                        High Point
+                      </h3>
+                      <div
+                        className="ten"
+                      />
+                    </div>
+                    <div
+                      className="moves-done"
+                    >
+                      <h3>
+                        Moves Done
+                      </h3>
+                      <div />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="project-actions"
+                >
+                  <Link
+                    replace={false}
+                    to="/projects/edit"
+                  >
+                    <button
+                      className="add-progress"
+                    >
+                      Edit Progress
+                    </button>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/milestones/add"
+                  >
+                    <button
+                      className="add-milestone"
+                    >
+                      Add Milestone
+                    </button>
+                  </Link>
+                  <Link
+                    replace={false}
+                    to="/journal/add"
+                  >
+                    <button
+                      className="add-session"
+                    >
+                      Add Journal Entry
+                    </button>
+                  </Link>
+                </div>
+              </div>,
+            ],
+            "className": "project-controls",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "project-caption",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="progress-meter"
+                  >
+                    <h3
+                      className="season"
+                    >
+                      Season: 
+                      <span
+                        className="season-span"
+                      />
+                    </h3>
+                    <div
+                      className="data-container"
+                    >
+                      <div
+                        className="high-point"
+                      >
+                        <h3>
+                          High Point
+                        </h3>
+                        <div
+                          className="ten"
+                        />
+                      </div>
+                      <div
+                        className="moves-done"
+                      >
+                        <h3>
+                          Moves Done
+                        </h3>
+                        <div />
+                      </div>
+                    </div>
+                  </div>,
+                  <div
+                    className="project-actions"
+                  >
+                    <Link
+                      replace={false}
+                      to="/projects/edit"
+                    >
+                      <button
+                        className="add-progress"
+                      >
+                        Edit Progress
+                      </button>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/milestones/add"
+                    >
+                      <button
+                        className="add-milestone"
+                      >
+                        Add Milestone
+                      </button>
+                    </Link>
+                    <Link
+                      replace={false}
+                      to="/journal/add"
+                    >
+                      <button
+                        className="add-session"
+                      >
+                        Add Journal Entry
+                      </button>
+                    </Link>
+                  </div>,
+                ],
+                "className": "project-right",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h3
+                        className="season"
+                      >
+                        Season: 
+                        <span
+                          className="season-span"
+                        />
+                      </h3>,
+                      <div
+                        className="data-container"
+                      >
+                        <div
+                          className="high-point"
+                        >
+                          <h3>
+                            High Point
+                          </h3>
+                          <div
+                            className="ten"
+                          />
+                        </div>
+                        <div
+                          className="moves-done"
+                        >
+                          <h3>
+                            Moves Done
+                          </h3>
+                          <div />
+                        </div>
+                      </div>,
+                    ],
+                    "className": "progress-meter",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Season: ",
+                          <span
+                            className="season-span"
+                          />,
+                        ],
+                        "className": "season",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Season: ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": undefined,
+                            "className": "season-span",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "span",
+                        },
+                      ],
+                      "type": "h3",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <div
+                            className="high-point"
+                          >
+                            <h3>
+                              High Point
+                            </h3>
+                            <div
+                              className="ten"
+                            />
+                          </div>,
+                          <div
+                            className="moves-done"
+                          >
+                            <h3>
+                              Moves Done
+                            </h3>
+                            <div />
+                          </div>,
+                        ],
+                        "className": "data-container",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <h3>
+                                High Point
+                              </h3>,
+                              <div
+                                className="ten"
+                              />,
+                            ],
+                            "className": "high-point",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "High Point",
+                              },
+                              "ref": null,
+                              "rendered": "High Point",
+                              "type": "h3",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "ten",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "div",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <h3>
+                                Moves Done
+                              </h3>,
+                              <div />,
+                            ],
+                            "className": "moves-done",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Moves Done",
+                              },
+                              "ref": null,
+                              "rendered": "Moves Done",
+                              "type": "h3",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": undefined,
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "div",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Link
+                        replace={false}
+                        to="/projects/edit"
+                      >
+                        <button
+                          className="add-progress"
+                        >
+                          Edit Progress
+                        </button>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/milestones/add"
+                      >
+                        <button
+                          className="add-milestone"
+                        >
+                          Add Milestone
+                        </button>
+                      </Link>,
+                      <Link
+                        replace={false}
+                        to="/journal/add"
+                      >
+                        <button
+                          className="add-session"
+                        >
+                          Add Journal Entry
+                        </button>
+                      </Link>,
+                    ],
+                    "className": "project-actions",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <button
+                          className="add-progress"
+                        >
+                          Edit Progress
+                        </button>,
+                        "replace": false,
+                        "to": "/projects/edit",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Edit Progress",
+                          "className": "add-progress",
+                        },
+                        "ref": null,
+                        "rendered": "Edit Progress",
+                        "type": "button",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <button
+                          className="add-milestone"
+                        >
+                          Add Milestone
+                        </button>,
+                        "replace": false,
+                        "to": "/milestones/add",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Add Milestone",
+                          "className": "add-milestone",
+                        },
+                        "ref": null,
+                        "rendered": "Add Milestone",
+                        "type": "button",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <button
+                          className="add-session"
+                        >
+                          Add Journal Entry
+                        </button>,
+                        "replace": false,
+                        "to": "/journal/add",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Add Journal Entry",
+                          "className": "add-session",
+                        },
+                        "ref": null,
+                        "rendered": "Add Journal Entry",
+                        "type": "button",
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="milestone-container false"
+              >
+                <h1
+                  className="proj-milestones"
+                  onClick={[Function]}
+                >
+                  Milestones 
+                  +
+                </h1>
+                <div
+                  className="collapse-section"
+                >
+                  <Connect(Milestone)
+                    caption="Did something"
+                    date="4/6/76"
+                  />
+                </div>
+              </div>,
+              <div
+                className="journal-container false"
+              >
+                <h1
+                  className="proj-journal"
+                  onClick={[Function]}
+                >
+                  Journal 
+                  +
+                </h1>
+                <div
+                  className="collapse-section"
+                >
+                  <Connect(Journal)
+                    date="11/14/15"
+                    entry="Some stuff about some things"
+                  />
+                </div>
+              </div>,
+            ],
+            "className": "project-entries",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="proj-milestones"
+                    onClick={[Function]}
+                  >
+                    Milestones 
+                    +
+                  </h1>,
+                  <div
+                    className="collapse-section"
+                  >
+                    <Connect(Milestone)
+                      caption="Did something"
+                      date="4/6/76"
+                    />
+                  </div>,
+                ],
+                "className": "milestone-container false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Milestones ",
+                      "+",
+                    ],
+                    "className": "proj-milestones",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Milestones ",
+                    "+",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Connect(Milestone)
+                        caption="Did something"
+                        date="4/6/76"
+                      />,
+                    ],
+                    "className": "collapse-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "uid3",
+                      "nodeType": "class",
+                      "props": Object {
+                        "caption": "Did something",
+                        "date": "4/6/76",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="proj-journal"
+                    onClick={[Function]}
+                  >
+                    Journal 
+                    +
+                  </h1>,
+                  <div
+                    className="collapse-section"
+                  >
+                    <Connect(Journal)
+                      date="11/14/15"
+                      entry="Some stuff about some things"
+                    />
+                  </div>,
+                ],
+                "className": "journal-container false",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Journal ",
+                      "+",
+                    ],
+                    "className": "proj-journal",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Journal ",
+                    "+",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Connect(Journal)
+                        date="11/14/15"
+                        entry="Some stuff about some things"
+                      />,
+                    ],
+                    "className": "collapse-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "uid4",
+                      "nodeType": "class",
+                      "props": Object {
+                        "date": "11/14/15",
+                        "entry": "Some stuff about some things",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
 exports[`Project Page ProjectPage Component should match the snapshot with no user 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ProjectPage
+    journal={
+      Array [
+        Object {
+          "date": "11/14/15",
+          "entry": "Some stuff about some things",
+        },
+      ]
+    }
+    milestones={
+      Array [
+        Object {
+          "caption": "Did something",
+          "date": "4/6/76",
+        },
+      ]
+    }
+    project={
+      Object {
+        "caption": "",
+        "grade": "V13",
+        "high_point": 7,
+        "id": 4,
+        "location": "RMNP, CO",
+        "moves_total": 7,
+        "name": "Top Notch",
+      }
+    }
     user={
       Object {
         "email": "",

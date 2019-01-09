@@ -7,7 +7,8 @@ jest.mock('../../../thunks/deleteData')
 
 describe('Journal', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Journal />)
+    const mockDelete = jest.fn()
+    const wrapper = shallow(<Journal deleteJournal={mockDelete}/>)
 
     expect(wrapper).toMatchSnapshot()
   })

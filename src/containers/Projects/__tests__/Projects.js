@@ -14,6 +14,7 @@ describe('Projects', () => {
   let mockProjects
   let mockFetch
   let mockDelete
+  let mockSetCurrent
 
   beforeEach(() => {
     mockUser = {
@@ -26,7 +27,7 @@ describe('Projects', () => {
       {
         name: 'Nuthin But Sunshine',
         location: 'RMNP, CO',
-        grade: 'V13',
+        grade: 13,
         caption: '',
         id: 42,
         high_point: 5,
@@ -35,7 +36,7 @@ describe('Projects', () => {
       {
         name: 'Top Notch',
         location: 'RMNP, CO',
-        grade: 'V13',
+        grade: 13,
         caption: '',
         id: 4,
         high_point: 7,
@@ -44,31 +45,32 @@ describe('Projects', () => {
     ]
     mockFetch = jest.fn()
     mockDelete = jest.fn()
+    mockSetCurrent = jest.fn()
   })
 
   describe('Projects Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects} />)
+      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects} deleteProject={mockDelete} fetchData={mockFetch} disciplineBoulder={true} setCurrentProject={mockSetCurrent} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<Projects user={noUser} projects={mockProjects} />)
+      const wrapper = shallow(<Projects user={noUser} projects={mockProjects} fetchData={mockFetch} deleteProject={mockDelete} disciplineBoulder={true} setCurrentProject={mockSetCurrent} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no projects', () => {
       const noProjects = []
-      const wrapper = shallow(<Projects user={mockUser} projects={noProjects} />)
+      const wrapper = shallow(<Projects user={mockUser} projects={noProjects} fetchData={mockFetch} deleteProject={mockDelete} disciplineBoulder={true} setCurrentProject={mockSetCurrent} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should fetch project data on click', async () => {
-      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects}  fetchData={mockFetch} />)
+      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects}  fetchData={mockFetch} deleteProject={mockDelete} disciplineBoulder={true} setCurrentProject={mockSetCurrent} />)
 
       await wrapper.find('.project-link').first().simulate('click')
 
@@ -77,7 +79,7 @@ describe('Projects', () => {
     })
 
     it('should delete a project on click', () => {
-      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects}  deleteProject={mockDelete} />)
+      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects} fetchData={mockFetch} deleteProject={mockDelete} disciplineBoulder={true} setCurrentProject={mockSetCurrent} />)
 
       wrapper.find('.fa-times').first().simulate('click')
 

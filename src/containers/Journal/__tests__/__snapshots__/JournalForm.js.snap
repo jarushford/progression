@@ -3,7 +3,18 @@
 exports[`Journal Form JournalForm Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <JournalForm />,
+  Symbol(enzyme.__unrendered__): <JournalForm
+    addJournal={[MockFunction]}
+    project={2}
+    user={
+      Object {
+        "email": "chompy@yahoo.com",
+        "id": 4,
+        "name": "T-Rex",
+        "password": "smallarms",
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

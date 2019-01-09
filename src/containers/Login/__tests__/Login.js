@@ -18,7 +18,7 @@ describe('Login', () => {
 
   describe('Login Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<Login />)
+      const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
 
       expect(wrapper).toMatchSnapshot()
     })
@@ -32,13 +32,13 @@ describe('Login', () => {
         signUpPassword: '',
         loggedIn: false
       }
-      const wrapper = shallow(<Login />)
+      const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
 
       expect(wrapper.state()).toEqual(expected)
     })
 
     it('should login an existing user', async () => {
-      const wrapper = shallow(<Login loginUser={mockLogin} />)
+      const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
       const e = { preventDefault: jest.fn() }
       wrapper.setState({
         loginEmail: 'thegrey@gmail.com',
@@ -51,7 +51,7 @@ describe('Login', () => {
     })
 
     it('should sign up a new user', async () => {
-      const wrapper = shallow(<Login addNewUser={mockSignup} />)
+      const wrapper = shallow(<Login addNewUser={mockSignup} loginUser={mockLogin} />)
       const e = { preventDefault: jest.fn() }
       wrapper.setState({
         signUpName: 'Gandalf',
@@ -66,7 +66,7 @@ describe('Login', () => {
 
     it('should not reset state if login info is incorrect', async () => {
       mockLogin.mockImplementation(() => false)
-      const wrapper = shallow(<Login loginUser={mockLogin} />)
+      const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
       const e = { preventDefault: jest.fn() }
       wrapper.setState({
         loginEmail: 'thegrey@gmail.com',
@@ -80,7 +80,7 @@ describe('Login', () => {
 
     it('should not reset state if sign up user exists already', async () => {
       mockSignup.mockImplementation(() => false)
-      const wrapper = shallow(<Login addNewUser={mockSignup} />)
+      const wrapper = shallow(<Login addNewUser={mockSignup} loginUser={mockLogin} />)
       const e = { preventDefault: jest.fn() }
       wrapper.setState({
         signUpName: 'Gandalf',
@@ -94,7 +94,7 @@ describe('Login', () => {
     })
 
     it('should update state on change of the inputs', async () => {
-      const wrapper = shallow(<Login />)
+      const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
       const e = { target: { name: 'loginEmail', value: 'G' } }
 
       await wrapper.find('input').first().simulate('change', e)

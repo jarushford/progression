@@ -4,6 +4,7 @@ exports[`TrainingForm TrainingForm Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingForm
+    addWorkout={[MockFunction]}
     user={
       Object {
         "email": "spider@pig.oink",
@@ -66,7 +67,7 @@ ShallowWrapper {
           id="month"
           name="month"
           onChange={[Function]}
-          value="1"
+          value="01"
         >
           <option
             value="01"
@@ -133,7 +134,7 @@ ShallowWrapper {
           id="day"
           name="day"
           onChange={[Function]}
-          value="1"
+          value="08"
         >
           <option
             value="01"
@@ -284,11 +285,6 @@ ShallowWrapper {
             value="30"
           >
             30
-          </option>
-          <option
-            value="31"
-          >
-            31
           </option>
         </select>,
         <select
@@ -532,7 +528,7 @@ ShallowWrapper {
           "id": "month",
           "name": "month",
           "onChange": [Function],
-          "value": "1",
+          "value": "01",
         },
         "ref": null,
         "rendered": Array [
@@ -839,16 +835,12 @@ ShallowWrapper {
             >
               30
             </option>,
-            <option
-              value="31"
-            >
-              31
-            </option>,
+            undefined,
           ],
           "id": "day",
           "name": "day",
           "onChange": [Function],
-          "value": "1",
+          "value": "08",
         },
         "ref": null,
         "rendered": Array [
@@ -1212,18 +1204,7 @@ ShallowWrapper {
             "rendered": "30",
             "type": "option",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "31",
-              "value": "31",
-            },
-            "ref": null,
-            "rendered": "31",
-            "type": "option",
-          },
+          undefined,
         ],
         "type": "select",
       },
@@ -1438,7 +1419,7 @@ ShallowWrapper {
             id="month"
             name="month"
             onChange={[Function]}
-            value="1"
+            value="01"
           >
             <option
               value="01"
@@ -1505,7 +1486,7 @@ ShallowWrapper {
             id="day"
             name="day"
             onChange={[Function]}
-            value="1"
+            value="08"
           >
             <option
               value="01"
@@ -1656,11 +1637,6 @@ ShallowWrapper {
               value="30"
             >
               30
-            </option>
-            <option
-              value="31"
-            >
-              31
             </option>
           </select>,
           <select
@@ -1904,7 +1880,7 @@ ShallowWrapper {
             "id": "month",
             "name": "month",
             "onChange": [Function],
-            "value": "1",
+            "value": "01",
           },
           "ref": null,
           "rendered": Array [
@@ -2211,16 +2187,12 @@ ShallowWrapper {
               >
                 30
               </option>,
-              <option
-                value="31"
-              >
-                31
-              </option>,
+              undefined,
             ],
             "id": "day",
             "name": "day",
             "onChange": [Function],
-            "value": "1",
+            "value": "08",
           },
           "ref": null,
           "rendered": Array [
@@ -2584,18 +2556,7 @@ ShallowWrapper {
               "rendered": "30",
               "type": "option",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "31",
-                "value": "31",
-              },
-              "ref": null,
-              "rendered": "31",
-              "type": "option",
-            },
+            undefined,
           ],
           "type": "select",
         },
@@ -2789,6 +2750,7 @@ exports[`TrainingForm TrainingForm Component should match the snapshot for every
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingForm
+    addWorkout={[MockFunction]}
     user={
       Object {
         "email": "spider@pig.oink",
@@ -2918,7 +2880,7 @@ ShallowWrapper {
           id="day"
           name="day"
           onChange={[Function]}
-          value="1"
+          value="08"
         >
           <option
             value="01"
@@ -3615,7 +3577,7 @@ ShallowWrapper {
           "id": "day",
           "name": "day",
           "onChange": [Function],
-          "value": "1",
+          "value": "08",
         },
         "ref": null,
         "rendered": Array [
@@ -4250,7 +4212,7 @@ ShallowWrapper {
             id="day"
             name="day"
             onChange={[Function]}
-            value="1"
+            value="08"
           >
             <option
               value="01"
@@ -4947,7 +4909,7 @@ ShallowWrapper {
             "id": "day",
             "name": "day",
             "onChange": [Function],
-            "value": "1",
+            "value": "08",
           },
           "ref": null,
           "rendered": Array [
@@ -5494,6 +5456,7 @@ exports[`TrainingForm TrainingForm Component should match the snapshot with no u
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingForm
+    addWorkout={[MockFunction]}
     user={
       Object {
         "email": "",

@@ -17,17 +17,13 @@ describe('Milestone Form', () => {
       password: 'smallarms',
       id: 4
     }
-    mockProject = {
-      name: 'Top Notch',
-      location: 'RMNP, CO',
-      id: 2
-    }
+    mockProject = 2
     mockAddMilestone = jest.fn().mockImplementation(() => true)
   })
 
   describe('MilestoneForm Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<MilestoneForm />)
+      const wrapper = shallow(<MilestoneForm user={mockUser} project={mockProject} addMilestone={mockAddMilestone} />)
 
       expect(wrapper).toMatchSnapshot()
     })
@@ -37,7 +33,7 @@ describe('Milestone Form', () => {
         caption: '',
         milestoneAdded: false
       }
-      const wrapper = shallow(<MilestoneForm />)
+      const wrapper = shallow(<MilestoneForm user={mockUser} project={mockProject} addMilestone={mockAddMilestone} />)
 
       expect(wrapper.state()).toEqual(expected)
     })
@@ -45,7 +41,7 @@ describe('Milestone Form', () => {
     it('should reset state on change of the inputs', async () => {
       const expected = 'Did the thing!'
       const e = { target: { name: 'caption', value: 'Did the thing!' } }
-      const wrapper = shallow(<MilestoneForm />)
+      const wrapper = shallow(<MilestoneForm user={mockUser} project={mockProject} addMilestone={mockAddMilestone} />)
 
       wrapper.find('textarea').simulate('change', e)
 

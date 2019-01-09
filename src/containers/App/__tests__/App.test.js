@@ -3,33 +3,38 @@ import { shallow } from 'enzyme'
 import { mapStateToProps, App } from '../App'
 
 describe('App', () => {
-  it('should match the snapshot in default case', () => {
-    const wrapper = shallow(<App />)
+  let mockProjects
 
-    expect(wrapper).toMatchSnapshot()
-  })
-
-  it('should match the snapshot with an error', () => {
-    const wrapper = shallow(<App error='Oh no!' />)
-
-    expect(wrapper).toMatchSnapshot()
-  })
-
-  it('should match the snapshot with data', () => {
-    const mockProjects = [
+  beforeEach(() => {
+    mockProjects = [
       {
         name: 'Top Notch',
         grade: 'V13',
         id: 2
       }
     ]
-    const wrapper = shallow(<App projects={mockProjects} />)
+  })
+  
+  it('should match the snapshot in default case', () => {
+    const wrapper = shallow(<App error='Oh no!' projects={mockProjects} disciplineBoulder={false} />)
+
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should match the snapshot with an error', () => {
+    const wrapper = shallow(<App error='Oh no!' projects={mockProjects} disciplineBoulder={false} />)
+
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should match the snapshot with data', () => {
+    const wrapper = shallow(<App error='Oh no!' projects={mockProjects} disciplineBoulder={false} />)
 
     expect(wrapper).toMatchSnapshot()
   })
 
   it('should match the snapshot with discipline as sport', () => {
-    const wrapper = shallow(<App disciplineBoulder={false} />)
+    const wrapper = shallow(<App error='Oh no!' projects={mockProjects} disciplineBoulder={false} />)
 
     expect(wrapper).toMatchSnapshot()
   })

@@ -23,6 +23,7 @@ ShallowWrapper {
         },
       ]
     }
+    disciplineBoulder={true}
     user={
       Object {
         "email": "groot@groot.groot",
@@ -65,37 +66,7 @@ ShallowWrapper {
             </button>
           </Link>
         </div>,
-        Array [
-          <Connect(GradeSection)
-            ascents={
-              Array [
-                Object {
-                  "grade": "V13",
-                  "location": "RMNP, CO",
-                  "name": "Top Notch",
-                },
-                Object {
-                  "grade": "V13",
-                  "location": "Thunder Ridge, CO",
-                  "name": "Sabretooth",
-                },
-              ]
-            }
-            grade="V13"
-          />,
-          <Connect(GradeSection)
-            ascents={
-              Array [
-                Object {
-                  "grade": "V7",
-                  "location": "Newlin, CO",
-                  "name": "Megalodon",
-                },
-              ]
-            }
-            grade="V7"
-          />,
-        ],
+        Array [],
       ],
       "className": "ascents",
     },
@@ -170,47 +141,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      Object {
-        "instance": null,
-        "key": "val-V13",
-        "nodeType": "class",
-        "props": Object {
-          "ascents": Array [
-            Object {
-              "grade": "V13",
-              "location": "RMNP, CO",
-              "name": "Top Notch",
-            },
-            Object {
-              "grade": "V13",
-              "location": "Thunder Ridge, CO",
-              "name": "Sabretooth",
-            },
-          ],
-          "grade": "V13",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "val-V7",
-        "nodeType": "class",
-        "props": Object {
-          "ascents": Array [
-            Object {
-              "grade": "V7",
-              "location": "Newlin, CO",
-              "name": "Megalodon",
-            },
-          ],
-          "grade": "V7",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
     "type": "section",
   },
@@ -240,37 +170,7 @@ ShallowWrapper {
               </button>
             </Link>
           </div>,
-          Array [
-            <Connect(GradeSection)
-              ascents={
-                Array [
-                  Object {
-                    "grade": "V13",
-                    "location": "RMNP, CO",
-                    "name": "Top Notch",
-                  },
-                  Object {
-                    "grade": "V13",
-                    "location": "Thunder Ridge, CO",
-                    "name": "Sabretooth",
-                  },
-                ]
-              }
-              grade="V13"
-            />,
-            <Connect(GradeSection)
-              ascents={
-                Array [
-                  Object {
-                    "grade": "V7",
-                    "location": "Newlin, CO",
-                    "name": "Megalodon",
-                  },
-                ]
-              }
-              grade="V7"
-            />,
-          ],
+          Array [],
         ],
         "className": "ascents",
       },
@@ -345,47 +245,6 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        Object {
-          "instance": null,
-          "key": "val-V13",
-          "nodeType": "class",
-          "props": Object {
-            "ascents": Array [
-              Object {
-                "grade": "V13",
-                "location": "RMNP, CO",
-                "name": "Top Notch",
-              },
-              Object {
-                "grade": "V13",
-                "location": "Thunder Ridge, CO",
-                "name": "Sabretooth",
-              },
-            ],
-            "grade": "V13",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "val-V7",
-          "nodeType": "class",
-          "props": Object {
-            "ascents": Array [
-              Object {
-                "grade": "V7",
-                "location": "Newlin, CO",
-                "name": "Megalodon",
-              },
-            ],
-            "grade": "V7",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
       ],
       "type": "section",
     },
@@ -415,6 +274,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Ascents
     ascents={Array []}
+    disciplineBoulder={true}
     user={
       Object {
         "email": "groot@groot.groot",
@@ -696,6 +556,26 @@ exports[`Ascents Ascents Component should match the snapshot with no user 1`] = 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Ascents
+    ascents={
+      Array [
+        Object {
+          "grade": "V13",
+          "location": "RMNP, CO",
+          "name": "Top Notch",
+        },
+        Object {
+          "grade": "V7",
+          "location": "Newlin, CO",
+          "name": "Megalodon",
+        },
+        Object {
+          "grade": "V13",
+          "location": "Thunder Ridge, CO",
+          "name": "Sabretooth",
+        },
+      ]
+    }
+    disciplineBoulder={true}
     user={
       Object {
         "email": "",

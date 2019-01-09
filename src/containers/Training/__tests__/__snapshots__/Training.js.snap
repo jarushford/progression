@@ -4,13 +4,14 @@ exports[`Training Training Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Training
+    toggleComplete={[MockFunction]}
     trainingDataUnclean={
       Object {
         "0": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "01/01/2019",
+          "workout_date": "01/08/2019",
         },
         "2": Object {
           "completed": true,
@@ -90,7 +91,7 @@ ShallowWrapper {
           >
             <h2>
               Sunday 
-              30
+              6
             </h2>
             <ul />
           </div>
@@ -99,7 +100,7 @@ ShallowWrapper {
           >
             <h2>
               Monday 
-              31
+              7
             </h2>
             <ul />
           </div>
@@ -108,7 +109,7 @@ ShallowWrapper {
           >
             <h2>
               Tuesday 
-              1
+              8
             </h2>
             <ul>
               <li
@@ -129,7 +130,7 @@ ShallowWrapper {
           >
             <h2>
               Wednesday 
-              2
+              9
             </h2>
             <ul />
           </div>
@@ -138,7 +139,7 @@ ShallowWrapper {
           >
             <h2>
               Thursday 
-              3
+              10
             </h2>
             <ul />
           </div>
@@ -147,7 +148,7 @@ ShallowWrapper {
           >
             <h2>
               Friday 
-              4
+              11
             </h2>
             <ul />
           </div>
@@ -156,7 +157,7 @@ ShallowWrapper {
           >
             <h2>
               Saturday 
-              5
+              12
             </h2>
             <ul />
           </div>
@@ -322,7 +323,7 @@ ShallowWrapper {
             >
               <h2>
                 Sunday 
-                30
+                6
               </h2>
               <ul />
             </div>,
@@ -331,7 +332,7 @@ ShallowWrapper {
             >
               <h2>
                 Monday 
-                31
+                7
               </h2>
               <ul />
             </div>,
@@ -340,7 +341,7 @@ ShallowWrapper {
             >
               <h2>
                 Tuesday 
-                1
+                8
               </h2>
               <ul>
                 <li
@@ -361,7 +362,7 @@ ShallowWrapper {
             >
               <h2>
                 Wednesday 
-                2
+                9
               </h2>
               <ul />
             </div>,
@@ -370,7 +371,7 @@ ShallowWrapper {
             >
               <h2>
                 Thursday 
-                3
+                10
               </h2>
               <ul />
             </div>,
@@ -379,7 +380,7 @@ ShallowWrapper {
             >
               <h2>
                 Friday 
-                4
+                11
               </h2>
               <ul />
             </div>,
@@ -388,7 +389,7 @@ ShallowWrapper {
             >
               <h2>
                 Saturday 
-                5
+                12
               </h2>
               <ul />
             </div>,
@@ -405,7 +406,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Sunday 
-                  30
+                  6
                 </h2>,
                 <ul />,
               ],
@@ -420,13 +421,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Sunday ",
-                    30,
+                    6,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Sunday ",
-                  30,
+                  6,
                 ],
                 "type": "h2",
               },
@@ -452,7 +453,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Monday 
-                  31
+                  7
                 </h2>,
                 <ul />,
               ],
@@ -467,13 +468,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Monday ",
-                    31,
+                    7,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Monday ",
-                  31,
+                  7,
                 ],
                 "type": "h2",
               },
@@ -499,7 +500,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Tuesday 
-                  1
+                  8
                 </h2>,
                 <ul>
                   <li
@@ -526,13 +527,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Tuesday ",
-                    1,
+                    8,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Tuesday ",
-                  1,
+                  8,
                 ],
                 "type": "h2",
               },
@@ -614,7 +615,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Wednesday 
-                  2
+                  9
                 </h2>,
                 <ul />,
               ],
@@ -629,13 +630,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Wednesday ",
-                    2,
+                    9,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Wednesday ",
-                  2,
+                  9,
                 ],
                 "type": "h2",
               },
@@ -661,7 +662,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Thursday 
-                  3
+                  10
                 </h2>,
                 <ul />,
               ],
@@ -676,13 +677,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Thursday ",
-                    3,
+                    10,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Thursday ",
-                  3,
+                  10,
                 ],
                 "type": "h2",
               },
@@ -708,7 +709,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Friday 
-                  4
+                  11
                 </h2>,
                 <ul />,
               ],
@@ -723,13 +724,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Friday ",
-                    4,
+                    11,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Friday ",
-                  4,
+                  11,
                 ],
                 "type": "h2",
               },
@@ -755,7 +756,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Saturday 
-                  5
+                  12
                 </h2>,
                 <ul />,
               ],
@@ -770,13 +771,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Saturday ",
-                    5,
+                    12,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Saturday ",
-                  5,
+                  12,
                 ],
                 "type": "h2",
               },
@@ -848,7 +849,7 @@ ShallowWrapper {
             >
               <h2>
                 Sunday 
-                30
+                6
               </h2>
               <ul />
             </div>
@@ -857,7 +858,7 @@ ShallowWrapper {
             >
               <h2>
                 Monday 
-                31
+                7
               </h2>
               <ul />
             </div>
@@ -866,7 +867,7 @@ ShallowWrapper {
             >
               <h2>
                 Tuesday 
-                1
+                8
               </h2>
               <ul>
                 <li
@@ -887,7 +888,7 @@ ShallowWrapper {
             >
               <h2>
                 Wednesday 
-                2
+                9
               </h2>
               <ul />
             </div>
@@ -896,7 +897,7 @@ ShallowWrapper {
             >
               <h2>
                 Thursday 
-                3
+                10
               </h2>
               <ul />
             </div>
@@ -905,7 +906,7 @@ ShallowWrapper {
             >
               <h2>
                 Friday 
-                4
+                11
               </h2>
               <ul />
             </div>
@@ -914,7 +915,7 @@ ShallowWrapper {
             >
               <h2>
                 Saturday 
-                5
+                12
               </h2>
               <ul />
             </div>
@@ -1080,7 +1081,7 @@ ShallowWrapper {
               >
                 <h2>
                   Sunday 
-                  30
+                  6
                 </h2>
                 <ul />
               </div>,
@@ -1089,7 +1090,7 @@ ShallowWrapper {
               >
                 <h2>
                   Monday 
-                  31
+                  7
                 </h2>
                 <ul />
               </div>,
@@ -1098,7 +1099,7 @@ ShallowWrapper {
               >
                 <h2>
                   Tuesday 
-                  1
+                  8
                 </h2>
                 <ul>
                   <li
@@ -1119,7 +1120,7 @@ ShallowWrapper {
               >
                 <h2>
                   Wednesday 
-                  2
+                  9
                 </h2>
                 <ul />
               </div>,
@@ -1128,7 +1129,7 @@ ShallowWrapper {
               >
                 <h2>
                   Thursday 
-                  3
+                  10
                 </h2>
                 <ul />
               </div>,
@@ -1137,7 +1138,7 @@ ShallowWrapper {
               >
                 <h2>
                   Friday 
-                  4
+                  11
                 </h2>
                 <ul />
               </div>,
@@ -1146,7 +1147,7 @@ ShallowWrapper {
               >
                 <h2>
                   Saturday 
-                  5
+                  12
                 </h2>
                 <ul />
               </div>,
@@ -1163,7 +1164,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Sunday 
-                    30
+                    6
                   </h2>,
                   <ul />,
                 ],
@@ -1178,13 +1179,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Sunday ",
-                      30,
+                      6,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Sunday ",
-                    30,
+                    6,
                   ],
                   "type": "h2",
                 },
@@ -1210,7 +1211,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Monday 
-                    31
+                    7
                   </h2>,
                   <ul />,
                 ],
@@ -1225,13 +1226,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Monday ",
-                      31,
+                      7,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Monday ",
-                    31,
+                    7,
                   ],
                   "type": "h2",
                 },
@@ -1257,7 +1258,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Tuesday 
-                    1
+                    8
                   </h2>,
                   <ul>
                     <li
@@ -1284,13 +1285,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Tuesday ",
-                      1,
+                      8,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Tuesday ",
-                    1,
+                    8,
                   ],
                   "type": "h2",
                 },
@@ -1372,7 +1373,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Wednesday 
-                    2
+                    9
                   </h2>,
                   <ul />,
                 ],
@@ -1387,13 +1388,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Wednesday ",
-                      2,
+                      9,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Wednesday ",
-                    2,
+                    9,
                   ],
                   "type": "h2",
                 },
@@ -1419,7 +1420,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Thursday 
-                    3
+                    10
                   </h2>,
                   <ul />,
                 ],
@@ -1434,13 +1435,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Thursday ",
-                      3,
+                      10,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Thursday ",
-                    3,
+                    10,
                   ],
                   "type": "h2",
                 },
@@ -1466,7 +1467,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Friday 
-                    4
+                    11
                   </h2>,
                   <ul />,
                 ],
@@ -1481,13 +1482,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Friday ",
-                      4,
+                      11,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Friday ",
-                    4,
+                    11,
                   ],
                   "type": "h2",
                 },
@@ -1513,7 +1514,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Saturday 
-                    5
+                    12
                   </h2>,
                   <ul />,
                 ],
@@ -1528,13 +1529,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Saturday ",
-                      5,
+                      12,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Saturday ",
-                    5,
+                    12,
                   ],
                   "type": "h2",
                 },
@@ -1583,6 +1584,7 @@ exports[`Training Training Component should match the snapshot with no data 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Training
+    toggleComplete={[MockFunction]}
     trainingDataUnclean={Object {}}
     user={
       Object {
@@ -1648,7 +1650,7 @@ ShallowWrapper {
           >
             <h2>
               Sunday 
-              30
+              6
             </h2>
             <ul />
           </div>
@@ -1657,7 +1659,7 @@ ShallowWrapper {
           >
             <h2>
               Monday 
-              31
+              7
             </h2>
             <ul />
           </div>
@@ -1666,7 +1668,7 @@ ShallowWrapper {
           >
             <h2>
               Tuesday 
-              1
+              8
             </h2>
             <ul />
           </div>
@@ -1675,7 +1677,7 @@ ShallowWrapper {
           >
             <h2>
               Wednesday 
-              2
+              9
             </h2>
             <ul />
           </div>
@@ -1684,7 +1686,7 @@ ShallowWrapper {
           >
             <h2>
               Thursday 
-              3
+              10
             </h2>
             <ul />
           </div>
@@ -1693,7 +1695,7 @@ ShallowWrapper {
           >
             <h2>
               Friday 
-              4
+              11
             </h2>
             <ul />
           </div>
@@ -1702,7 +1704,7 @@ ShallowWrapper {
           >
             <h2>
               Saturday 
-              5
+              12
             </h2>
             <ul />
           </div>
@@ -1868,7 +1870,7 @@ ShallowWrapper {
             >
               <h2>
                 Sunday 
-                30
+                6
               </h2>
               <ul />
             </div>,
@@ -1877,7 +1879,7 @@ ShallowWrapper {
             >
               <h2>
                 Monday 
-                31
+                7
               </h2>
               <ul />
             </div>,
@@ -1886,7 +1888,7 @@ ShallowWrapper {
             >
               <h2>
                 Tuesday 
-                1
+                8
               </h2>
               <ul />
             </div>,
@@ -1895,7 +1897,7 @@ ShallowWrapper {
             >
               <h2>
                 Wednesday 
-                2
+                9
               </h2>
               <ul />
             </div>,
@@ -1904,7 +1906,7 @@ ShallowWrapper {
             >
               <h2>
                 Thursday 
-                3
+                10
               </h2>
               <ul />
             </div>,
@@ -1913,7 +1915,7 @@ ShallowWrapper {
             >
               <h2>
                 Friday 
-                4
+                11
               </h2>
               <ul />
             </div>,
@@ -1922,7 +1924,7 @@ ShallowWrapper {
             >
               <h2>
                 Saturday 
-                5
+                12
               </h2>
               <ul />
             </div>,
@@ -1939,7 +1941,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Sunday 
-                  30
+                  6
                 </h2>,
                 <ul />,
               ],
@@ -1954,13 +1956,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Sunday ",
-                    30,
+                    6,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Sunday ",
-                  30,
+                  6,
                 ],
                 "type": "h2",
               },
@@ -1986,7 +1988,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Monday 
-                  31
+                  7
                 </h2>,
                 <ul />,
               ],
@@ -2001,13 +2003,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Monday ",
-                    31,
+                    7,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Monday ",
-                  31,
+                  7,
                 ],
                 "type": "h2",
               },
@@ -2033,7 +2035,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Tuesday 
-                  1
+                  8
                 </h2>,
                 <ul />,
               ],
@@ -2048,13 +2050,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Tuesday ",
-                    1,
+                    8,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Tuesday ",
-                  1,
+                  8,
                 ],
                 "type": "h2",
               },
@@ -2080,7 +2082,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Wednesday 
-                  2
+                  9
                 </h2>,
                 <ul />,
               ],
@@ -2095,13 +2097,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Wednesday ",
-                    2,
+                    9,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Wednesday ",
-                  2,
+                  9,
                 ],
                 "type": "h2",
               },
@@ -2127,7 +2129,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Thursday 
-                  3
+                  10
                 </h2>,
                 <ul />,
               ],
@@ -2142,13 +2144,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Thursday ",
-                    3,
+                    10,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Thursday ",
-                  3,
+                  10,
                 ],
                 "type": "h2",
               },
@@ -2174,7 +2176,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Friday 
-                  4
+                  11
                 </h2>,
                 <ul />,
               ],
@@ -2189,13 +2191,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Friday ",
-                    4,
+                    11,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Friday ",
-                  4,
+                  11,
                 ],
                 "type": "h2",
               },
@@ -2221,7 +2223,7 @@ ShallowWrapper {
               "children": Array [
                 <h2>
                   Saturday 
-                  5
+                  12
                 </h2>,
                 <ul />,
               ],
@@ -2236,13 +2238,13 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     "Saturday ",
-                    5,
+                    12,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   "Saturday ",
-                  5,
+                  12,
                 ],
                 "type": "h2",
               },
@@ -2314,7 +2316,7 @@ ShallowWrapper {
             >
               <h2>
                 Sunday 
-                30
+                6
               </h2>
               <ul />
             </div>
@@ -2323,7 +2325,7 @@ ShallowWrapper {
             >
               <h2>
                 Monday 
-                31
+                7
               </h2>
               <ul />
             </div>
@@ -2332,7 +2334,7 @@ ShallowWrapper {
             >
               <h2>
                 Tuesday 
-                1
+                8
               </h2>
               <ul />
             </div>
@@ -2341,7 +2343,7 @@ ShallowWrapper {
             >
               <h2>
                 Wednesday 
-                2
+                9
               </h2>
               <ul />
             </div>
@@ -2350,7 +2352,7 @@ ShallowWrapper {
             >
               <h2>
                 Thursday 
-                3
+                10
               </h2>
               <ul />
             </div>
@@ -2359,7 +2361,7 @@ ShallowWrapper {
             >
               <h2>
                 Friday 
-                4
+                11
               </h2>
               <ul />
             </div>
@@ -2368,7 +2370,7 @@ ShallowWrapper {
             >
               <h2>
                 Saturday 
-                5
+                12
               </h2>
               <ul />
             </div>
@@ -2534,7 +2536,7 @@ ShallowWrapper {
               >
                 <h2>
                   Sunday 
-                  30
+                  6
                 </h2>
                 <ul />
               </div>,
@@ -2543,7 +2545,7 @@ ShallowWrapper {
               >
                 <h2>
                   Monday 
-                  31
+                  7
                 </h2>
                 <ul />
               </div>,
@@ -2552,7 +2554,7 @@ ShallowWrapper {
               >
                 <h2>
                   Tuesday 
-                  1
+                  8
                 </h2>
                 <ul />
               </div>,
@@ -2561,7 +2563,7 @@ ShallowWrapper {
               >
                 <h2>
                   Wednesday 
-                  2
+                  9
                 </h2>
                 <ul />
               </div>,
@@ -2570,7 +2572,7 @@ ShallowWrapper {
               >
                 <h2>
                   Thursday 
-                  3
+                  10
                 </h2>
                 <ul />
               </div>,
@@ -2579,7 +2581,7 @@ ShallowWrapper {
               >
                 <h2>
                   Friday 
-                  4
+                  11
                 </h2>
                 <ul />
               </div>,
@@ -2588,7 +2590,7 @@ ShallowWrapper {
               >
                 <h2>
                   Saturday 
-                  5
+                  12
                 </h2>
                 <ul />
               </div>,
@@ -2605,7 +2607,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Sunday 
-                    30
+                    6
                   </h2>,
                   <ul />,
                 ],
@@ -2620,13 +2622,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Sunday ",
-                      30,
+                      6,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Sunday ",
-                    30,
+                    6,
                   ],
                   "type": "h2",
                 },
@@ -2652,7 +2654,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Monday 
-                    31
+                    7
                   </h2>,
                   <ul />,
                 ],
@@ -2667,13 +2669,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Monday ",
-                      31,
+                      7,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Monday ",
-                    31,
+                    7,
                   ],
                   "type": "h2",
                 },
@@ -2699,7 +2701,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Tuesday 
-                    1
+                    8
                   </h2>,
                   <ul />,
                 ],
@@ -2714,13 +2716,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Tuesday ",
-                      1,
+                      8,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Tuesday ",
-                    1,
+                    8,
                   ],
                   "type": "h2",
                 },
@@ -2746,7 +2748,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Wednesday 
-                    2
+                    9
                   </h2>,
                   <ul />,
                 ],
@@ -2761,13 +2763,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Wednesday ",
-                      2,
+                      9,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Wednesday ",
-                    2,
+                    9,
                   ],
                   "type": "h2",
                 },
@@ -2793,7 +2795,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Thursday 
-                    3
+                    10
                   </h2>,
                   <ul />,
                 ],
@@ -2808,13 +2810,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Thursday ",
-                      3,
+                      10,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Thursday ",
-                    3,
+                    10,
                   ],
                   "type": "h2",
                 },
@@ -2840,7 +2842,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Friday 
-                    4
+                    11
                   </h2>,
                   <ul />,
                 ],
@@ -2855,13 +2857,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Friday ",
-                      4,
+                      11,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Friday ",
-                    4,
+                    11,
                   ],
                   "type": "h2",
                 },
@@ -2887,7 +2889,7 @@ ShallowWrapper {
                 "children": Array [
                   <h2>
                     Saturday 
-                    5
+                    12
                   </h2>,
                   <ul />,
                 ],
@@ -2902,13 +2904,13 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       "Saturday ",
-                      5,
+                      12,
                     ],
                   },
                   "ref": null,
                   "rendered": Array [
                     "Saturday ",
-                    5,
+                    12,
                   ],
                   "type": "h2",
                 },
@@ -2957,13 +2959,14 @@ exports[`Training Training Component should match the snapshot with no user 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Training
+    toggleComplete={[MockFunction]}
     trainingDataUnclean={
       Object {
         "0": Object {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "01/01/2019",
+          "workout_date": "01/08/2019",
         },
         "2": Object {
           "completed": true,

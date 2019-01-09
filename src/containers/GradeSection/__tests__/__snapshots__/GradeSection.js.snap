@@ -26,6 +26,7 @@ ShallowWrapper {
         },
       ]
     }
+    deleteAscent={[MockFunction]}
     user={
       Object {
         "email": "groot@groot.groot",

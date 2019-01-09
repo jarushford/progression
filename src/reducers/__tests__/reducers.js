@@ -1,5 +1,6 @@
 import { currentUserReducer } from '../currentUserReducer'
 import { errorReducer } from '../errorReducer'
+import { menuReducer } from '../menuReducer'
 import {
   trainingDataReducer,
   projectsReducer,
@@ -291,6 +292,25 @@ describe('reducers', () => {
       }
 
       const result = currentProjectReducer(undefined, action)
+
+      expect(result).toEqual(expected)
+    })
+  })
+
+  describe('menuReducer', () => {
+    it('should return the correct default state', () => {
+      const expected = false
+      
+      const result = menuReducer(undefined, {})
+
+      expect(result).toEqual(expected)
+    })
+
+    it('should return a boolean if type is TOGGLE_MENU', () => {
+      const expected = true
+      const action = { type: 'TOGGLE_MENU' }
+
+      const result = menuReducer(false, action)
 
       expect(result).toEqual(expected)
     })

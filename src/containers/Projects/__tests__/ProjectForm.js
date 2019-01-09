@@ -21,7 +21,7 @@ describe('Project Form', () => {
 
   describe('ProjectForm Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<ProjectForm user={mockUser} />)
+      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={true} />)
 
       expect(wrapper).toMatchSnapshot()
     })
@@ -39,14 +39,14 @@ describe('Project Form', () => {
         high_point: 0,
         projectAdded: false
       }
-      const wrapper = shallow(<ProjectForm user={mockUser} />)
+      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={true} />)
 
       expect(wrapper.state()).toEqual(expected)
     })
 
     it('should update state on change of the inputs', async () => {
       const expected = 'Thats a nice boulder'
-      const wrapper = shallow(<ProjectForm user={mockUser} />)
+      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={true} />)
       const e = { target: { name: 'name', value: 'Thats a nice boulder' } }
 
       await wrapper.find('input').first().simulate('change', e)
@@ -56,7 +56,7 @@ describe('Project Form', () => {
 
     it('should update state when a project is added', async () => {
       const e = { preventDefault: jest.fn() }
-      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} />)
+      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={true} />)
       wrapper.setState({
         name: 'Name',
         location: 'Place',
@@ -77,7 +77,7 @@ describe('Project Form', () => {
     it('should no update state if project is not added', async () => {
       mockAddProj.mockImplementation(() => false)
       const e = { preventDefault: jest.fn() }
-      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} />)
+      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={true} />)
       wrapper.setState({
         name: 'Name',
         location: 'Place',

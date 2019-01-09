@@ -3,7 +3,14 @@
 exports[`Milestone should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Milestone />,
+  Symbol(enzyme.__unrendered__): <Milestone
+    caption="Test caption"
+    deleteMilestone={[MockFunction]}
+    id={1}
+    milestone_date="1/1/12"
+    project_id={2}
+    user_id={4}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,7 +26,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div>
-          <h3 />
+          <h3>
+            1/1/12
+          </h3>
           <i
             className="fas fa-times"
             onClick={[Function]}
@@ -27,7 +36,9 @@ ShallowWrapper {
         </div>,
         <p
           className="milestone-cap"
-        />,
+        >
+          Test caption
+        </p>,
       ],
       "className": "milestone",
     },
@@ -39,7 +50,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3 />,
+            <h3>
+              1/1/12
+            </h3>,
             <i
               className="fas fa-times"
               onClick={[Function]}
@@ -53,10 +66,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": "1/1/12",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "1/1/12",
             "type": "h3",
           },
           Object {
@@ -79,11 +92,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "Test caption",
           "className": "milestone-cap",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Test caption",
         "type": "p",
       },
     ],
@@ -97,7 +110,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div>
-            <h3 />
+            <h3>
+              1/1/12
+            </h3>
             <i
               className="fas fa-times"
               onClick={[Function]}
@@ -105,7 +120,9 @@ ShallowWrapper {
           </div>,
           <p
             className="milestone-cap"
-          />,
+          >
+            Test caption
+          </p>,
         ],
         "className": "milestone",
       },
@@ -117,7 +134,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3 />,
+              <h3>
+                1/1/12
+              </h3>,
               <i
                 className="fas fa-times"
                 onClick={[Function]}
@@ -131,10 +150,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": "1/1/12",
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "1/1/12",
               "type": "h3",
             },
             Object {
@@ -157,11 +176,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "Test caption",
             "className": "milestone-cap",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Test caption",
           "type": "p",
         },
       ],

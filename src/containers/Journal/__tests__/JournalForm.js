@@ -17,24 +17,20 @@ describe('Journal Form', () => {
       password: 'smallarms',
       id: 4
     }
-    mockProject = {
-      name: 'Top Notch',
-      location: 'RMNP, CO',
-      id: 2
-    }
+    mockProject = 2
     mockAddEntry = jest.fn().mockImplementation(() => true)
   })
 
   describe('JournalForm Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<JournalForm />)
+      const wrapper = shallow(<JournalForm addJournal={mockAddEntry} user={mockUser} project={mockProject} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should have the correct default state', () => {
       const expected = { entry: '', entryAdded: false }
-      const wrapper = shallow(<JournalForm />)
+      const wrapper = shallow(<JournalForm addJournal={mockAddEntry} user={mockUser} project={mockProject} />)
 
       expect(wrapper.state()).toEqual(expected)
     })
@@ -42,7 +38,7 @@ describe('Journal Form', () => {
     it('should update state on input change', () => {
       const expected = 'Rocks!'
       const e = { target: { name: 'entry', value: 'Rocks!' } }
-      const wrapper = shallow(<JournalForm />)
+      const wrapper = shallow(<JournalForm addJournal={mockAddEntry} user={mockUser} project={mockProject} />)
 
       wrapper.find('textarea').simulate('change', e)
 

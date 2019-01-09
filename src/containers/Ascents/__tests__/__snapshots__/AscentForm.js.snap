@@ -4,6 +4,9 @@ exports[`AscentForm AscentForm Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AscentForm
+    addAscent={[MockFunction]}
+    disciplineBoulder={true}
+    error=""
     user={
       Object {
         "email": "chompy@yahoo.com",

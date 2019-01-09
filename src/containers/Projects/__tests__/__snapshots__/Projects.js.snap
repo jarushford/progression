@@ -4,11 +4,14 @@ exports[`Projects Projects Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Projects
+    deleteProject={[MockFunction]}
+    disciplineBoulder={true}
+    fetchData={[MockFunction]}
     projects={
       Array [
         Object {
           "caption": "",
-          "grade": "V13",
+          "grade": 13,
           "high_point": 5,
           "id": 42,
           "location": "RMNP, CO",
@@ -17,7 +20,7 @@ ShallowWrapper {
         },
         Object {
           "caption": "",
-          "grade": "V13",
+          "grade": 13,
           "high_point": 7,
           "id": 4,
           "location": "RMNP, CO",
@@ -26,6 +29,7 @@ ShallowWrapper {
         },
       ]
     }
+    setCurrentProject={[MockFunction]}
     user={
       Object {
         "email": "olaf@thatplace.com",
@@ -87,7 +91,9 @@ ShallowWrapper {
               </Link>
               <h5
                 className="project-grade"
-              />
+              >
+                V13 / 8B
+              </h5>
             </div>
             <h5
               className="project-location"
@@ -117,7 +123,9 @@ ShallowWrapper {
               </Link>
               <h5
                 className="project-grade"
-              />
+              >
+                V13 / 8B
+              </h5>
             </div>
             <h5
               className="project-location"
@@ -225,7 +233,9 @@ ShallowWrapper {
               </Link>
               <h5
                 className="project-grade"
-              />
+              >
+                V13 / 8B
+              </h5>
             </div>,
             <h5
               className="project-location"
@@ -261,7 +271,9 @@ ShallowWrapper {
                 </Link>,
                 <h5
                   className="project-grade"
-                />,
+                >
+                  V13 / 8B
+                </h5>,
               ],
             },
             "ref": null,
@@ -301,11 +313,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": undefined,
+                  "children": "V13 / 8B",
                   "className": "project-grade",
                 },
                 "ref": null,
-                "rendered": null,
+                "rendered": "V13 / 8B",
                 "type": "h5",
               },
             ],
@@ -359,7 +371,9 @@ ShallowWrapper {
               </Link>
               <h5
                 className="project-grade"
-              />
+              >
+                V13 / 8B
+              </h5>
             </div>,
             <h5
               className="project-location"
@@ -395,7 +409,9 @@ ShallowWrapper {
                 </Link>,
                 <h5
                   className="project-grade"
-                />,
+                >
+                  V13 / 8B
+                </h5>,
               ],
             },
             "ref": null,
@@ -435,11 +451,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": undefined,
+                  "children": "V13 / 8B",
                   "className": "project-grade",
                 },
                 "ref": null,
-                "rendered": null,
+                "rendered": "V13 / 8B",
                 "type": "h5",
               },
             ],
@@ -520,7 +536,9 @@ ShallowWrapper {
                 </Link>
                 <h5
                   className="project-grade"
-                />
+                >
+                  V13 / 8B
+                </h5>
               </div>
               <h5
                 className="project-location"
@@ -550,7 +568,9 @@ ShallowWrapper {
                 </Link>
                 <h5
                   className="project-grade"
-                />
+                >
+                  V13 / 8B
+                </h5>
               </div>
               <h5
                 className="project-location"
@@ -658,7 +678,9 @@ ShallowWrapper {
                 </Link>
                 <h5
                   className="project-grade"
-                />
+                >
+                  V13 / 8B
+                </h5>
               </div>,
               <h5
                 className="project-location"
@@ -694,7 +716,9 @@ ShallowWrapper {
                   </Link>,
                   <h5
                     className="project-grade"
-                  />,
+                  >
+                    V13 / 8B
+                  </h5>,
                 ],
               },
               "ref": null,
@@ -734,11 +758,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": undefined,
+                    "children": "V13 / 8B",
                     "className": "project-grade",
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": "V13 / 8B",
                   "type": "h5",
                 },
               ],
@@ -792,7 +816,9 @@ ShallowWrapper {
                 </Link>
                 <h5
                   className="project-grade"
-                />
+                >
+                  V13 / 8B
+                </h5>
               </div>,
               <h5
                 className="project-location"
@@ -828,7 +854,9 @@ ShallowWrapper {
                   </Link>,
                   <h5
                     className="project-grade"
-                  />,
+                  >
+                    V13 / 8B
+                  </h5>,
                 ],
               },
               "ref": null,
@@ -868,11 +896,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": undefined,
+                    "children": "V13 / 8B",
                     "className": "project-grade",
                   },
                   "ref": null,
-                  "rendered": null,
+                  "rendered": "V13 / 8B",
                   "type": "h5",
                 },
               ],
@@ -933,7 +961,11 @@ exports[`Projects Projects Component should match the snapshot with no projects 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Projects
+    deleteProject={[MockFunction]}
+    disciplineBoulder={true}
+    fetchData={[MockFunction]}
     projects={Array []}
+    setCurrentProject={[MockFunction]}
     user={
       Object {
         "email": "olaf@thatplace.com",
@@ -1215,11 +1247,14 @@ exports[`Projects Projects Component should match the snapshot with no user 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Projects
+    deleteProject={[MockFunction]}
+    disciplineBoulder={true}
+    fetchData={[MockFunction]}
     projects={
       Array [
         Object {
           "caption": "",
-          "grade": "V13",
+          "grade": 13,
           "high_point": 5,
           "id": 42,
           "location": "RMNP, CO",
@@ -1228,7 +1263,7 @@ ShallowWrapper {
         },
         Object {
           "caption": "",
-          "grade": "V13",
+          "grade": 13,
           "high_point": 7,
           "id": 4,
           "location": "RMNP, CO",
@@ -1237,6 +1272,7 @@ ShallowWrapper {
         },
       ]
     }
+    setCurrentProject={[MockFunction]}
     user={
       Object {
         "email": "",

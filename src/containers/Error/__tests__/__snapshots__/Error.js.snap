@@ -4,6 +4,7 @@ exports[`Error should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Error
+    clearError={[MockFunction]}
     error="Oh no!"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -26,7 +27,9 @@ ShallowWrapper {
         <h2>
           Something seems to have gone wrong!
         </h2>,
-        <button>
+        <button
+          onClick={[MockFunction]}
+        >
           Return to site
         </button>,
       ],
@@ -62,7 +65,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Return to site",
-          "onClick": undefined,
+          "onClick": [MockFunction],
         },
         "ref": null,
         "rendered": "Return to site",
@@ -84,7 +87,9 @@ ShallowWrapper {
           <h2>
             Something seems to have gone wrong!
           </h2>,
-          <button>
+          <button
+            onClick={[MockFunction]}
+          >
             Return to site
           </button>,
         ],
@@ -120,7 +125,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Return to site",
-            "onClick": undefined,
+            "onClick": [MockFunction],
           },
           "ref": null,
           "rendered": "Return to site",

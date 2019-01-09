@@ -34,21 +34,21 @@ describe('Ascents', () => {
 
   describe('Ascents Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<Ascents user={mockUser} ascents={mockAscents} />)
+      const wrapper = shallow(<Ascents user={mockUser} ascents={mockAscents} disciplineBoulder={true} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<Ascents user={noUser} />)
+      const wrapper = shallow(<Ascents user={noUser}ascents={mockAscents} disciplineBoulder={true} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no ascents', () => {
       const noAscents = []
-      const wrapper = shallow(<Ascents user={mockUser} ascents={noAscents} />)
+      const wrapper = shallow(<Ascents user={mockUser} ascents={noAscents} disciplineBoulder={true} />)
 
       expect(wrapper).toMatchSnapshot()
     })

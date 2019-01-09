@@ -49,7 +49,7 @@ describe('Project Page', () => {
 
   describe('ProjectPage Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<ProjectPage user={mockUser} />)
+      const wrapper = shallow(<ProjectPage user={mockUser} project={mockSentProj} journal={mockJournal} milestones={mockMilestones} />)
 
       expect(wrapper).toMatchSnapshot()
     })
@@ -62,14 +62,14 @@ describe('Project Page', () => {
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<ProjectPage user={noUser} />)
+      const wrapper = shallow(<ProjectPage user={noUser} project={mockSentProj} journal={mockJournal} milestones={mockMilestones} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should have the correct default state', () => {
       const expected = { milestonesOpen: false, journalOpen: false }
-      const wrapper = shallow(<ProjectPage user={mockUser} />)
+      const wrapper = shallow(<ProjectPage user={mockUser} project={mockSentProj} journal={mockJournal} milestones={mockMilestones} />)
 
       expect(wrapper.state()).toEqual(expected)
     })

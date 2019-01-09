@@ -4,6 +4,8 @@ exports[`Training All TrainingAll Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingAll
+    deleteWorkout={[MockFunction]}
+    toggleComplete={[MockFunction]}
     trainingDataUnclean={
       Object {
         "0": Object {
@@ -711,6 +713,8 @@ exports[`Training All TrainingAll Component should match the snapshot with no da
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingAll
+    deleteWorkout={[MockFunction]}
+    toggleComplete={[MockFunction]}
     trainingDataUnclean={Object {}}
     user={
       Object {
@@ -1173,6 +1177,8 @@ exports[`Training All TrainingAll Component should match the snapshot with no us
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingAll
+    deleteWorkout={[MockFunction]}
+    toggleComplete={[MockFunction]}
     trainingDataUnclean={
       Object {
         "0": Object {

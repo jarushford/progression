@@ -42,7 +42,7 @@ describe('GradeSection', () => {
   
   describe('GradeSection Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<GradeSection user={mockUser} ascents={mockAscents} />)
+      const wrapper = shallow(<GradeSection user={mockUser} ascents={mockAscents} deleteAscent={mockDeleteAscent} />)
 
       expect(wrapper).toMatchSnapshot()
     })

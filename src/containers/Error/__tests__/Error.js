@@ -5,13 +5,15 @@ import { mapStateToProps, mapDispatchToProps, Error } from '../Error'
 
 describe('Error', () => {
   let mockError
+  let mockClear
 
   beforeEach(() => {
     mockError = 'Oh no!'
+    mockClear = jest.fn()
   })
 
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Error error={mockError} />)
+    const wrapper = shallow(<Error error={mockError} clearError={mockClear} />)
 
     expect(wrapper).toMatchSnapshot()
   })

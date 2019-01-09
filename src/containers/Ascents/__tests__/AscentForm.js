@@ -21,7 +21,7 @@ describe('AscentForm', () => {
 
   describe('AscentForm Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<AscentForm user={mockUser} />)
+      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={true} />)
 
       expect(wrapper).toMatchSnapshot()
     })
@@ -34,14 +34,14 @@ describe('AscentForm', () => {
         grade: '',
         ascentAdded: false
       }
-      const wrapper = shallow(<AscentForm user={mockUser} />)
+      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={true} />)
 
       expect(wrapper.state()).toEqual(expected)
     })
 
     it('should update state onChange of the inputs', () => {
       const expected = '7'
-      const wrapper = shallow(<AscentForm user={mockUser} />)
+      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={true} />)
       const e = { target: { name: 'grade', value: '7' } }
 
       wrapper.find('#grade').simulate('change', e)
@@ -50,7 +50,7 @@ describe('AscentForm', () => {
     })
 
     it('should add an ascent with data from state', async () => {
-      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} />)
+      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={true} />)
       const e = { preventDefault: jest.fn() }
       wrapper.setState({
         name: 'Green Lantern',
@@ -66,7 +66,7 @@ describe('AscentForm', () => {
 
     it('should not set state if ascent is not added', async () => {
       mockAddAscent = jest.fn().mockImplementation(() => false)
-      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} />)
+      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={true} />)
       const e = { preventDefault: jest.fn() }
       wrapper.setState({
         name: 'Green Lantern',

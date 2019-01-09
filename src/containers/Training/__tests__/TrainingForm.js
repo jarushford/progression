@@ -21,20 +21,20 @@ describe('TrainingForm', () => {
 
   describe('TrainingForm Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<TrainingForm user={mockUser} />)
+      const wrapper = shallow(<TrainingForm user={mockUser} addWorkout={mockAdd} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<TrainingForm user={noUser} />)
+      const wrapper = shallow(<TrainingForm user={noUser} addWorkout={mockAdd} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot for every month', () => {
-      const wrapper = shallow(<TrainingForm user={mockUser} />)
+      const wrapper = shallow(<TrainingForm user={mockUser} addWorkout={mockAdd} />)
       wrapper.setState({ month: '2' })
 
       expect(wrapper).toMatchSnapshot()
@@ -43,14 +43,14 @@ describe('TrainingForm', () => {
     it('should have the correct default state', async () => {
       const date = new Date()
       const expected = {
-        day: date.getDate().toString(),
-        month: (date.getMonth() + 1).toString(),
+        day: ('0' + (date.getDate())).slice(-2).toString(),
+        month: ('0' + (date.getMonth() + 1)).slice(-2).toString(),
         year: date.getFullYear().toString(),
         type: '',
         description: '',
         workoutAdded: false
       }
-      const wrapper = shallow(<TrainingForm user={mockUser} />)
+      const wrapper = shallow(<TrainingForm user={mockUser} addWorkout={mockAdd} />)
       await wrapper.instance().componentDidMount()
 
       expect(wrapper.state()).toEqual(expected)
@@ -58,7 +58,7 @@ describe('TrainingForm', () => {
 
     it('should update state on change of an input', async () => {
       const expected = 'Power'
-      const wrapper = shallow(<TrainingForm user={mockUser} />)
+      const wrapper = shallow(<TrainingForm user={mockUser} addWorkout={mockAdd} />)
       const e = { target: { name: 'type', value: 'Power' } }
 
       await wrapper.find('#type').simulate('change', e)

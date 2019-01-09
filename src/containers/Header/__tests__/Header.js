@@ -11,6 +11,7 @@ describe('Header', () => {
   let mockClearProjects
   let mockClearWorkouts
   let mockLogoutUser
+  let mockToggle
 
   beforeEach(() => {
     mockUser = {
@@ -22,26 +23,27 @@ describe('Header', () => {
     mockClearProjects = jest.fn()
     mockClearWorkouts = jest.fn()
     mockLogoutUser = jest.fn()
+    mockToggle = jest.fn()
   })
 
   describe('Header Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<Header currentUser={mockUser} />)
+      const wrapper = shallow(<Header currentUser={mockUser} clearAscents={mockClearAscents} clearProjects={mockClearProjects} clearWorkouts={mockClearWorkouts} logoutUser={mockLogoutUser} toggleMenu={mockToggle} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<Header currentUser={noUser} />)
+      const wrapper = shallow(<Header currentUser={noUser} clearAscents={mockClearAscents} clearProjects={mockClearProjects} clearWorkouts={mockClearWorkouts} logoutUser={mockLogoutUser} toggleMenu={mockToggle} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should logout a user when they click on log out', () => {
-      const wrapper = shallow(<Header currentUser={mockUser} clearAscents={mockClearAscents} clearProjects={mockClearProjects} clearWorkouts={mockClearWorkouts} logoutUser={mockLogoutUser} />)
+      const wrapper = shallow(<Header currentUser={mockUser} clearAscents={mockClearAscents} clearProjects={mockClearProjects} clearWorkouts={mockClearWorkouts} logoutUser={mockLogoutUser} toggleMenu={mockToggle} />)
 
-      wrapper.find('.logout-link').simulate('click')
+      wrapper.find('.logout-link').first().simulate('click')
 
       expect(mockClearAscents).toBeCalled()
       expect(mockClearProjects).toBeCalled()

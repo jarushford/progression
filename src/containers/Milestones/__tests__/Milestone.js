@@ -7,14 +7,15 @@ jest.mock('../../../thunks/deleteData')
 
 describe('Milestone', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Milestone />)
+     const mockDelete = jest.fn()
+    const wrapper = shallow(<Milestone deleteMilestone={mockDelete} id={1} project_id={2} user_id={4} milestone_date="1/1/12" caption="Test caption" />)
 
     expect(wrapper).toMatchSnapshot()
   })
 
   it('should delete an entry on click', () => {
     const mockDelete = jest.fn()
-    const wrapper = shallow(<Milestone deleteMilestone={mockDelete} id={1} project_id={2} user_id={4} />)
+    const wrapper = shallow(<Milestone deleteMilestone={mockDelete} id={1} project_id={2} user_id={4} milestone_date="1/1/12" caption="Test caption" />)
 
     wrapper.find('.fa-times').simulate('click')
 

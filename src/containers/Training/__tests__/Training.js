@@ -2,10 +2,14 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { mapStateToProps, mapDispatchToProps, Training } from '../Training'
 import { toggleComplete } from '../../../actions'
+import { updateDataThunk } from '../../../thunks/updateData'
+
+jest.mock('../../../thunks/updateData')
 
 describe('Training', () => {
   let mockUser
-  let mockData 
+  let mockData
+  let mockToggle
 
   beforeEach(() => {
     mockUser = {
@@ -26,31 +30,31 @@ describe('Training', () => {
       2: { workout_date: `${month}/14/${year}`, type: 'Power', description: 'do stuff', completed: true },
       3: { workout_date: `${month}/29/${year}`, type: 'Power', description: 'do stuff', completed: true }
     }
+    mockToggle = jest.fn()
   })
 
   describe('Training Component', () => {
     it('should match the snapshot', () => {
-      const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={mockData} />)
+      const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no user', () => {
       const noUser = { name: '', email: '', password: '' }
-      const wrapper = shallow(<Training user={noUser} trainingDataUnclean={mockData} />)
+      const wrapper = shallow(<Training user={noUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     it('should match the snapshot with no data', () => {
       const noData = {}
-      const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={noData} />)
+      const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={noData} toggleComplete={mockToggle} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
-    it.skip('should toggle complete on click', () => {
-      const mockToggle = jest.fn()
+    it('should toggle complete on click', () => {
       const wrapper = shallow(<Training user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} />)
 
       wrapper.find('.workout-item').first().simulate('click')
@@ -73,9 +77,9 @@ describe('Training', () => {
   })
 
   describe('mapDispatchToProps', () => {
-    it.skip('should return a props object with a method toggleComplete', () => {
+    it('should return a props object with a method toggleComplete', () => {
       const mockDispatch = jest.fn()
-      const expected = toggleComplete()
+      const expected = updateDataThunk()
 
       const mappedProps = mapDispatchToProps(mockDispatch)
       mappedProps.toggleComplete()
