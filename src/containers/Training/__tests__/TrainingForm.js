@@ -17,6 +17,12 @@ describe('TrainingForm', () => {
       id: 12
     }
     mockAdd = jest.fn().mockImplementation(() => true)
+    global.Date = jest.fn().mockImplementation(() => ({
+      getDate: jest.fn().mockImplementation(() => 8),
+      getMonth: jest.fn().mockImplementation(() => 0),
+      getFullYear: jest.fn().mockImplementation(() => 2019),
+      getDay: jest.fn().mockImplementation(() => 2)
+    }))
   })
 
   describe('TrainingForm Component', () => {

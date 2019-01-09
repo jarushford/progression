@@ -1,5 +1,6 @@
 import React from 'react'
 import { uid } from 'react-uid'
+import { daysInPreviousMonth } from './daysInPreviousMonth'
 
 export const daysOfWeekHelper = (id, key, today, weekIndex, todayIndex, trainingData, toggleComplete) => {
 
@@ -51,11 +52,6 @@ export const endOfMonthHelper = (id, key, today, weekIndex, todayIndex, training
 export const daysInThisMonth = () => {
   const now = new Date()
   return new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate()
-}
-
-export const daysInPreviousMonth = () => {
-  const now = new Date()
-  return new Date(now.getFullYear(), now.getMonth(), 0).getDate()
 }
 
 export const highlightHelper = (day) => {
