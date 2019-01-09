@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { logoutUser, clearAscents, clearProjects, clearWorkouts } from '../../../actions'
+import { logoutUser, clearAscents, clearProjects, clearWorkouts, toggleMenu } from '../../../actions'
 import { mapStateToProps, mapDispatchToProps, Header } from '../Header'
 
 jest.mock('../../../actions')
@@ -44,6 +44,17 @@ describe('Header', () => {
       const wrapper = shallow(<Header currentUser={mockUser} clearAscents={mockClearAscents} clearProjects={mockClearProjects} clearWorkouts={mockClearWorkouts} logoutUser={mockLogoutUser} toggleMenu={mockToggle} />)
 
       wrapper.find('.logout-link').first().simulate('click')
+
+      expect(mockClearAscents).toBeCalled()
+      expect(mockClearProjects).toBeCalled()
+      expect(mockClearWorkouts).toBeCalled()
+      expect(mockLogoutUser).toBeCalled()
+    })
+
+    it('should logout a user when they click on log out from the dropdown menu', () => {
+      const wrapper = shallow(<Header currentUser={mockUser} clearAscents={mockClearAscents} clearProjects={mockClearProjects} clearWorkouts={mockClearWorkouts} logoutUser={mockLogoutUser} toggleMenu={mockToggle} />)
+
+      wrapper.find('.drop-logout').simulate('click')
 
       expect(mockClearAscents).toBeCalled()
       expect(mockClearProjects).toBeCalled()
@@ -99,6 +110,14 @@ describe('Header', () => {
       const expected = logoutUser()
 
       mappedProps.logoutUser()
+
+      expect(mockDispatch).toBeCalledWith(expected)
+    })
+
+    it('should return a props object with a method toggleMenu', () => {
+      const expected = toggleMenu()
+
+      mappedProps.toggleMenu()
 
       expect(mockDispatch).toBeCalledWith(expected)
     })

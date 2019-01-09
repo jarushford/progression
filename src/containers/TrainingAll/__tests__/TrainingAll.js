@@ -2,7 +2,9 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { deleteDataThunk } from '../../../thunks/deleteData'
 import { mapStateToProps, mapDispatchToProps, TrainingAll } from '../TrainingAll'
+import { updateDataThunk } from '../../../thunks/updateData'
 
+jest.mock('../../../thunks/updateData')
 jest.mock('../../../thunks/deleteData')
 
 describe('Training All', () => {
@@ -19,7 +21,10 @@ describe('Training All', () => {
       id: 8
     }
     mockData = {
-      0: { workout_date: '3/3/31', type: 'Power', description: 'do stuff', completed: true }
+      0: { workout_date: '3/3/13', type: 'Power', description: 'do stuff', completed: true },
+      1: { workout_date: '3/1/13', type: 'Power', description: 'do other stuff', completed: true },
+      2: { workout_date: '3/6/13', type: 'Power', description: 'do other stuff', completed: true },
+      3: { workout_date: '3/7/13', type: 'Power', description: 'do other stuff', completed: true }
     }
     mockToggle = jest.fn()
     mockDelete = jest.fn()
@@ -46,7 +51,7 @@ describe('Training All', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it.skip('should toggle a workout completed', () => {
+    it('should toggle a workout completed', () => {
       const wrapper = shallow(<TrainingAll user={mockUser} trainingDataUnclean={mockData} toggleComplete={mockToggle} deleteWorkout={mockDelete} />)
 
       wrapper.find('.project').first().simulate('click')
@@ -75,9 +80,9 @@ describe('Training All', () => {
   })
 
   describe('mapDispatchToProps', () => {
-    it.skip('should return a props object with a method toggleComplete', () => {
+    it('should return a props object with a method toggleComplete', () => {
       const mockDispatch = jest.fn()
-      const expected = toggleComplete()
+      const expected = updateDataThunk()
 
       const mappedProps = mapDispatchToProps(mockDispatch)
       mappedProps.toggleComplete()

@@ -12,7 +12,25 @@ ShallowWrapper {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "3/3/31",
+          "workout_date": "3/3/13",
+        },
+        "1": Object {
+          "completed": true,
+          "description": "do other stuff",
+          "type": "Power",
+          "workout_date": "3/1/13",
+        },
+        "2": Object {
+          "completed": true,
+          "description": "do other stuff",
+          "type": "Power",
+          "workout_date": "3/6/13",
+        },
+        "3": Object {
+          "completed": true,
+          "description": "do other stuff",
+          "type": "Power",
+          "workout_date": "3/7/13",
         },
       }
     }
@@ -81,7 +99,7 @@ ShallowWrapper {
               <h2
                 className="project-name"
               >
-                3/3/31
+                3/7/13
               </h2>
               <h5
                 className="project-grade"
@@ -92,7 +110,7 @@ ShallowWrapper {
             <h5
               className="project-location"
             >
-              do stuff
+              do other stuff
             </h5>
             <i
               className="fas fa-times"
@@ -260,7 +278,7 @@ ShallowWrapper {
               <h2
                 className="project-name"
               >
-                3/3/31
+                3/7/13
               </h2>
               <h5
                 className="project-grade"
@@ -271,7 +289,7 @@ ShallowWrapper {
             <h5
               className="project-location"
             >
-              do stuff
+              do other stuff
             </h5>,
             <i
               className="fas fa-times"
@@ -292,7 +310,7 @@ ShallowWrapper {
                 <h2
                   className="project-name"
                 >
-                  3/3/31
+                  3/7/13
                 </h2>,
                 <h5
                   className="project-grade"
@@ -308,11 +326,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "3/3/31",
+                  "children": "3/7/13",
                   "className": "project-name",
                 },
                 "ref": null,
-                "rendered": "3/3/31",
+                "rendered": "3/7/13",
                 "type": "h2",
               },
               Object {
@@ -335,11 +353,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "do stuff",
+              "children": "do other stuff",
               "className": "project-location",
             },
             "ref": null,
-            "rendered": "do stuff",
+            "rendered": "do other stuff",
             "type": "h5",
           },
           Object {
@@ -409,7 +427,7 @@ ShallowWrapper {
                 <h2
                   className="project-name"
                 >
-                  3/3/31
+                  3/7/13
                 </h2>
                 <h5
                   className="project-grade"
@@ -420,7 +438,7 @@ ShallowWrapper {
               <h5
                 className="project-location"
               >
-                do stuff
+                do other stuff
               </h5>
               <i
                 className="fas fa-times"
@@ -588,7 +606,7 @@ ShallowWrapper {
                 <h2
                   className="project-name"
                 >
-                  3/3/31
+                  3/7/13
                 </h2>
                 <h5
                   className="project-grade"
@@ -599,7 +617,7 @@ ShallowWrapper {
               <h5
                 className="project-location"
               >
-                do stuff
+                do other stuff
               </h5>,
               <i
                 className="fas fa-times"
@@ -620,7 +638,7 @@ ShallowWrapper {
                   <h2
                     className="project-name"
                   >
-                    3/3/31
+                    3/7/13
                   </h2>,
                   <h5
                     className="project-grade"
@@ -636,11 +654,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "3/3/31",
+                    "children": "3/7/13",
                     "className": "project-name",
                   },
                   "ref": null,
-                  "rendered": "3/3/31",
+                  "rendered": "3/7/13",
                   "type": "h2",
                 },
                 Object {
@@ -663,11 +681,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "do stuff",
+                "children": "do other stuff",
                 "className": "project-location",
               },
               "ref": null,
-              "rendered": "do stuff",
+              "rendered": "do other stuff",
               "type": "h5",
             },
             Object {
@@ -1185,7 +1203,25 @@ ShallowWrapper {
           "completed": true,
           "description": "do stuff",
           "type": "Power",
-          "workout_date": "3/3/31",
+          "workout_date": "3/3/13",
+        },
+        "1": Object {
+          "completed": true,
+          "description": "do other stuff",
+          "type": "Power",
+          "workout_date": "3/1/13",
+        },
+        "2": Object {
+          "completed": true,
+          "description": "do other stuff",
+          "type": "Power",
+          "workout_date": "3/6/13",
+        },
+        "3": Object {
+          "completed": true,
+          "description": "do other stuff",
+          "type": "Power",
+          "workout_date": "3/7/13",
         },
       }
     }

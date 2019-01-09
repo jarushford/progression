@@ -36,7 +36,7 @@ describe('Projects', () => {
       {
         name: 'Top Notch',
         location: 'RMNP, CO',
-        grade: 13,
+        grade: 5101,
         caption: '',
         id: 4,
         high_point: 7,
@@ -49,8 +49,14 @@ describe('Projects', () => {
   })
 
   describe('Projects Component', () => {
-    it('should match the snapshot', () => {
+    it('should match the snapshot for boulders', () => {
       const wrapper = shallow(<Projects user={mockUser} projects={mockProjects} deleteProject={mockDelete} fetchData={mockFetch} disciplineBoulder={true} setCurrentProject={mockSetCurrent} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should match the snapshot for sport', () => {
+      const wrapper = shallow(<Projects user={mockUser} projects={mockProjects} deleteProject={mockDelete} fetchData={mockFetch} disciplineBoulder={false} setCurrentProject={mockSetCurrent} />)
 
       expect(wrapper).toMatchSnapshot()
     })

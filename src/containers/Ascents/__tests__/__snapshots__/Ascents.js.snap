@@ -1,23 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Ascents Ascents Component should match the snapshot 1`] = `
+exports[`Ascents Ascents Component should match the snapshot for boulder 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Ascents
     ascents={
       Array [
         Object {
-          "grade": "V13",
+          "grade": 13,
           "location": "RMNP, CO",
           "name": "Top Notch",
         },
         Object {
-          "grade": "V7",
+          "grade": 7,
           "location": "Newlin, CO",
           "name": "Megalodon",
         },
         Object {
-          "grade": "V13",
+          "grade": 7,
+          "location": "Newlin, CO",
+          "name": "Nickness Stand",
+        },
+        Object {
+          "grade": 5101,
           "location": "Thunder Ridge, CO",
           "name": "Sabretooth",
         },
@@ -66,7 +71,37 @@ ShallowWrapper {
             </button>
           </Link>
         </div>,
-        Array [],
+        Array [
+          <Connect(GradeSection)
+            ascents={
+              Array [
+                Object {
+                  "grade": 13,
+                  "location": "RMNP, CO",
+                  "name": "Top Notch",
+                },
+              ]
+            }
+            grade="13"
+          />,
+          <Connect(GradeSection)
+            ascents={
+              Array [
+                Object {
+                  "grade": 7,
+                  "location": "Newlin, CO",
+                  "name": "Megalodon",
+                },
+                Object {
+                  "grade": 7,
+                  "location": "Newlin, CO",
+                  "name": "Nickness Stand",
+                },
+              ]
+            }
+            grade="7"
+          />,
+        ],
       ],
       "className": "ascents",
     },
@@ -141,6 +176,47 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": "val-13",
+        "nodeType": "class",
+        "props": Object {
+          "ascents": Array [
+            Object {
+              "grade": 13,
+              "location": "RMNP, CO",
+              "name": "Top Notch",
+            },
+          ],
+          "grade": "13",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "val-7",
+        "nodeType": "class",
+        "props": Object {
+          "ascents": Array [
+            Object {
+              "grade": 7,
+              "location": "Newlin, CO",
+              "name": "Megalodon",
+            },
+            Object {
+              "grade": 7,
+              "location": "Newlin, CO",
+              "name": "Nickness Stand",
+            },
+          ],
+          "grade": "7",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "section",
   },
@@ -170,7 +246,37 @@ ShallowWrapper {
               </button>
             </Link>
           </div>,
-          Array [],
+          Array [
+            <Connect(GradeSection)
+              ascents={
+                Array [
+                  Object {
+                    "grade": 13,
+                    "location": "RMNP, CO",
+                    "name": "Top Notch",
+                  },
+                ]
+              }
+              grade="13"
+            />,
+            <Connect(GradeSection)
+              ascents={
+                Array [
+                  Object {
+                    "grade": 7,
+                    "location": "Newlin, CO",
+                    "name": "Megalodon",
+                  },
+                  Object {
+                    "grade": 7,
+                    "location": "Newlin, CO",
+                    "name": "Nickness Stand",
+                  },
+                ]
+              }
+              grade="7"
+            />,
+          ],
         ],
         "className": "ascents",
       },
@@ -244,6 +350,383 @@ ShallowWrapper {
             },
           ],
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-13",
+          "nodeType": "class",
+          "props": Object {
+            "ascents": Array [
+              Object {
+                "grade": 13,
+                "location": "RMNP, CO",
+                "name": "Top Notch",
+              },
+            ],
+            "grade": "13",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "val-7",
+          "nodeType": "class",
+          "props": Object {
+            "ascents": Array [
+              Object {
+                "grade": 7,
+                "location": "Newlin, CO",
+                "name": "Megalodon",
+              },
+              Object {
+                "grade": 7,
+                "location": "Newlin, CO",
+                "name": "Nickness Stand",
+              },
+            ],
+            "grade": "7",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Ascents Ascents Component should match the snapshot for sport 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Ascents
+    ascents={
+      Array [
+        Object {
+          "grade": 13,
+          "location": "RMNP, CO",
+          "name": "Top Notch",
+        },
+        Object {
+          "grade": 7,
+          "location": "Newlin, CO",
+          "name": "Megalodon",
+        },
+        Object {
+          "grade": 7,
+          "location": "Newlin, CO",
+          "name": "Nickness Stand",
+        },
+        Object {
+          "grade": 5101,
+          "location": "Thunder Ridge, CO",
+          "name": "Sabretooth",
+        },
+      ]
+    }
+    disciplineBoulder={false}
+    user={
+      Object {
+        "email": "groot@groot.groot",
+        "id": 3,
+        "name": "Groot",
+        "password": "iamgroot",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="ascents-header"
+        >
+          <h1
+            className="ascents-title"
+          >
+            ASCENTS
+          </h1>
+          <Link
+            replace={false}
+            to="/ascents/add"
+          >
+            <button
+              className="add-ascent"
+            >
+              Add Ascent
+            </button>
+          </Link>
+        </div>,
+        Array [
+          <Connect(GradeSection)
+            ascents={
+              Array [
+                Object {
+                  "grade": 5101,
+                  "location": "Thunder Ridge, CO",
+                  "name": "Sabretooth",
+                },
+              ]
+            }
+            grade="5101"
+          />,
+        ],
+      ],
+      "className": "ascents",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="ascents-title"
+            >
+              ASCENTS
+            </h1>,
+            <Link
+              replace={false}
+              to="/ascents/add"
+            >
+              <button
+                className="add-ascent"
+              >
+                Add Ascent
+              </button>
+            </Link>,
+          ],
+          "className": "ascents-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ASCENTS",
+              "className": "ascents-title",
+            },
+            "ref": null,
+            "rendered": "ASCENTS",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <button
+                className="add-ascent"
+              >
+                Add Ascent
+              </button>,
+              "replace": false,
+              "to": "/ascents/add",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add Ascent",
+                "className": "add-ascent",
+              },
+              "ref": null,
+              "rendered": "Add Ascent",
+              "type": "button",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "val-5101",
+        "nodeType": "class",
+        "props": Object {
+          "ascents": Array [
+            Object {
+              "grade": 5101,
+              "location": "Thunder Ridge, CO",
+              "name": "Sabretooth",
+            },
+          ],
+          "grade": "5101",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="ascents-header"
+          >
+            <h1
+              className="ascents-title"
+            >
+              ASCENTS
+            </h1>
+            <Link
+              replace={false}
+              to="/ascents/add"
+            >
+              <button
+                className="add-ascent"
+              >
+                Add Ascent
+              </button>
+            </Link>
+          </div>,
+          Array [
+            <Connect(GradeSection)
+              ascents={
+                Array [
+                  Object {
+                    "grade": 5101,
+                    "location": "Thunder Ridge, CO",
+                    "name": "Sabretooth",
+                  },
+                ]
+              }
+              grade="5101"
+            />,
+          ],
+        ],
+        "className": "ascents",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="ascents-title"
+              >
+                ASCENTS
+              </h1>,
+              <Link
+                replace={false}
+                to="/ascents/add"
+              >
+                <button
+                  className="add-ascent"
+                >
+                  Add Ascent
+                </button>
+              </Link>,
+            ],
+            "className": "ascents-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ASCENTS",
+                "className": "ascents-title",
+              },
+              "ref": null,
+              "rendered": "ASCENTS",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <button
+                  className="add-ascent"
+                >
+                  Add Ascent
+                </button>,
+                "replace": false,
+                "to": "/ascents/add",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Add Ascent",
+                  "className": "add-ascent",
+                },
+                "ref": null,
+                "rendered": "Add Ascent",
+                "type": "button",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "val-5101",
+          "nodeType": "class",
+          "props": Object {
+            "ascents": Array [
+              Object {
+                "grade": 5101,
+                "location": "Thunder Ridge, CO",
+                "name": "Sabretooth",
+              },
+            ],
+            "grade": "5101",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "section",
@@ -559,17 +1042,22 @@ ShallowWrapper {
     ascents={
       Array [
         Object {
-          "grade": "V13",
+          "grade": 13,
           "location": "RMNP, CO",
           "name": "Top Notch",
         },
         Object {
-          "grade": "V7",
+          "grade": 7,
           "location": "Newlin, CO",
           "name": "Megalodon",
         },
         Object {
-          "grade": "V13",
+          "grade": 7,
+          "location": "Newlin, CO",
+          "name": "Nickness Stand",
+        },
+        Object {
+          "grade": 5101,
           "location": "Thunder Ridge, CO",
           "name": "Sabretooth",
         },

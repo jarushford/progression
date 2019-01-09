@@ -2746,7 +2746,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`TrainingForm TrainingForm Component should match the snapshot for every month 1`] = `
+exports[`TrainingForm TrainingForm Component should match the snapshot for February 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <TrainingForm
@@ -5263,6 +5263,2792 @@ ShallowWrapper {
             },
             undefined,
             undefined,
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="--"
+              >
+                 -- 
+              </option>,
+              <option
+                value="Power"
+              >
+                 Power 
+              </option>,
+              <option
+                value="Endurance"
+              >
+                 Endurance 
+              </option>,
+              <option
+                value="Fitness"
+              >
+                 Fitness 
+              </option>,
+              <option
+                value="Hangboard"
+              >
+                 Hangboard 
+              </option>,
+              <option
+                value="Campus"
+              >
+                 Campus 
+              </option>,
+              <option
+                value="Power Endurance"
+              >
+                 Power Endurance 
+              </option>,
+            ],
+            "id": "type",
+            "name": "type",
+            "onChange": [Function],
+            "value": "",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " -- ",
+                "value": "--",
+              },
+              "ref": null,
+              "rendered": " -- ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Power ",
+                "value": "Power",
+              },
+              "ref": null,
+              "rendered": " Power ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Endurance ",
+                "value": "Endurance",
+              },
+              "ref": null,
+              "rendered": " Endurance ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Fitness ",
+                "value": "Fitness",
+              },
+              "ref": null,
+              "rendered": " Fitness ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Hangboard ",
+                "value": "Hangboard",
+              },
+              "ref": null,
+              "rendered": " Hangboard ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Campus ",
+                "value": "Campus",
+              },
+              "ref": null,
+              "rendered": " Campus ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Power Endurance ",
+                "value": "Power Endurance",
+              },
+              "ref": null,
+              "rendered": " Power Endurance ",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "maxLength": "100",
+            "name": "description",
+            "onChange": [Function],
+            "placeholder": "description",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "textarea",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Workout",
+          },
+          "ref": null,
+          "rendered": "Add Workout",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`TrainingForm TrainingForm Component should match the snapshot for long months 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TrainingForm
+    addWorkout={[MockFunction]}
+    user={
+      Object {
+        "email": "spider@pig.oink",
+        "id": 12,
+        "name": "Spiderpig",
+        "password": " baconweb",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          ADD WORKOUT
+        </h2>,
+        <select
+          id="year"
+          name="year"
+          onChange={[Function]}
+          value="2019"
+        >
+          <option
+            value={2019}
+          >
+            2019
+          </option>
+          <option
+            value={2020}
+          >
+            2020
+          </option>
+          <option
+            value={2021}
+          >
+            2021
+          </option>
+          <option
+            value={2022}
+          >
+            2022
+          </option>
+          <option
+            value={2023}
+          >
+            2023
+          </option>
+        </select>,
+        <select
+          id="month"
+          name="month"
+          onChange={[Function]}
+          value="1"
+        >
+          <option
+            value="01"
+          >
+            1
+          </option>
+          <option
+            value="02"
+          >
+            2
+          </option>
+          <option
+            value="03"
+          >
+            3
+          </option>
+          <option
+            value="04"
+          >
+            4
+          </option>
+          <option
+            value="05"
+          >
+            5
+          </option>
+          <option
+            value="06"
+          >
+            6
+          </option>
+          <option
+            value="07"
+          >
+            7
+          </option>
+          <option
+            value="08"
+          >
+            8
+          </option>
+          <option
+            value="09"
+          >
+            9
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="11"
+          >
+            11
+          </option>
+          <option
+            value="12"
+          >
+            12
+          </option>
+        </select>,
+        <select
+          id="day"
+          name="day"
+          onChange={[Function]}
+          value="08"
+        >
+          <option
+            value="01"
+          >
+            1
+          </option>
+          <option
+            value="02"
+          >
+            2
+          </option>
+          <option
+            value="03"
+          >
+            3
+          </option>
+          <option
+            value="04"
+          >
+            4
+          </option>
+          <option
+            value="05"
+          >
+            5
+          </option>
+          <option
+            value="06"
+          >
+            6
+          </option>
+          <option
+            value="07"
+          >
+            7
+          </option>
+          <option
+            value="08"
+          >
+            8
+          </option>
+          <option
+            value="09"
+          >
+            9
+          </option>
+          <option
+            value="10"
+          >
+            10
+          </option>
+          <option
+            value="11"
+          >
+            11
+          </option>
+          <option
+            value="12"
+          >
+            12
+          </option>
+          <option
+            value="13"
+          >
+            13
+          </option>
+          <option
+            value="14"
+          >
+            14
+          </option>
+          <option
+            value="15"
+          >
+            15
+          </option>
+          <option
+            value="16"
+          >
+            16
+          </option>
+          <option
+            value="17"
+          >
+            17
+          </option>
+          <option
+            value="18"
+          >
+            18
+          </option>
+          <option
+            value="19"
+          >
+            19
+          </option>
+          <option
+            value="20"
+          >
+            20
+          </option>
+          <option
+            value="21"
+          >
+            21
+          </option>
+          <option
+            value="22"
+          >
+            22
+          </option>
+          <option
+            value="23"
+          >
+            23
+          </option>
+          <option
+            value="24"
+          >
+            24
+          </option>
+          <option
+            value="25"
+          >
+            25
+          </option>
+          <option
+            value="26"
+          >
+            26
+          </option>
+          <option
+            value="27"
+          >
+            27
+          </option>
+          <option
+            value="28"
+          >
+            28
+          </option>
+          <option
+            value="29"
+          >
+            29
+          </option>
+          <option
+            value="30"
+          >
+            30
+          </option>
+          <option
+            value="31"
+          >
+            31
+          </option>
+        </select>,
+        <select
+          id="type"
+          name="type"
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value="--"
+          >
+             -- 
+          </option>
+          <option
+            value="Power"
+          >
+             Power 
+          </option>
+          <option
+            value="Endurance"
+          >
+             Endurance 
+          </option>
+          <option
+            value="Fitness"
+          >
+             Fitness 
+          </option>
+          <option
+            value="Hangboard"
+          >
+             Hangboard 
+          </option>
+          <option
+            value="Campus"
+          >
+             Campus 
+          </option>
+          <option
+            value="Power Endurance"
+          >
+             Power Endurance 
+          </option>
+        </select>,
+        <textarea
+          maxLength="100"
+          name="description"
+          onChange={[Function]}
+          placeholder="description"
+          value=""
+        />,
+        <button>
+          Add Workout
+        </button>,
+      ],
+      "className": "training-form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ADD WORKOUT",
+        },
+        "ref": null,
+        "rendered": "ADD WORKOUT",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value={2019}
+            >
+              2019
+            </option>,
+            <option
+              value={2020}
+            >
+              2020
+            </option>,
+            <option
+              value={2021}
+            >
+              2021
+            </option>,
+            <option
+              value={2022}
+            >
+              2022
+            </option>,
+            <option
+              value={2023}
+            >
+              2023
+            </option>,
+          ],
+          "id": "year",
+          "name": "year",
+          "onChange": [Function],
+          "value": "2019",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2019,
+              "value": 2019,
+            },
+            "ref": null,
+            "rendered": 2019,
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2020,
+              "value": 2020,
+            },
+            "ref": null,
+            "rendered": 2020,
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2021,
+              "value": 2021,
+            },
+            "ref": null,
+            "rendered": 2021,
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2022,
+              "value": 2022,
+            },
+            "ref": null,
+            "rendered": 2022,
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 2023,
+              "value": 2023,
+            },
+            "ref": null,
+            "rendered": 2023,
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="01"
+            >
+              1
+            </option>,
+            <option
+              value="02"
+            >
+              2
+            </option>,
+            <option
+              value="03"
+            >
+              3
+            </option>,
+            <option
+              value="04"
+            >
+              4
+            </option>,
+            <option
+              value="05"
+            >
+              5
+            </option>,
+            <option
+              value="06"
+            >
+              6
+            </option>,
+            <option
+              value="07"
+            >
+              7
+            </option>,
+            <option
+              value="08"
+            >
+              8
+            </option>,
+            <option
+              value="09"
+            >
+              9
+            </option>,
+            <option
+              value="10"
+            >
+              10
+            </option>,
+            <option
+              value="11"
+            >
+              11
+            </option>,
+            <option
+              value="12"
+            >
+              12
+            </option>,
+          ],
+          "id": "month",
+          "name": "month",
+          "onChange": [Function],
+          "value": "1",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "1",
+              "value": "01",
+            },
+            "ref": null,
+            "rendered": "1",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "2",
+              "value": "02",
+            },
+            "ref": null,
+            "rendered": "2",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "3",
+              "value": "03",
+            },
+            "ref": null,
+            "rendered": "3",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "4",
+              "value": "04",
+            },
+            "ref": null,
+            "rendered": "4",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "5",
+              "value": "05",
+            },
+            "ref": null,
+            "rendered": "5",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "6",
+              "value": "06",
+            },
+            "ref": null,
+            "rendered": "6",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "7",
+              "value": "07",
+            },
+            "ref": null,
+            "rendered": "7",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "8",
+              "value": "08",
+            },
+            "ref": null,
+            "rendered": "8",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "9",
+              "value": "09",
+            },
+            "ref": null,
+            "rendered": "9",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "10",
+              "value": "10",
+            },
+            "ref": null,
+            "rendered": "10",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "11",
+              "value": "11",
+            },
+            "ref": null,
+            "rendered": "11",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "12",
+              "value": "12",
+            },
+            "ref": null,
+            "rendered": "12",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="01"
+            >
+              1
+            </option>,
+            <option
+              value="02"
+            >
+              2
+            </option>,
+            <option
+              value="03"
+            >
+              3
+            </option>,
+            <option
+              value="04"
+            >
+              4
+            </option>,
+            <option
+              value="05"
+            >
+              5
+            </option>,
+            <option
+              value="06"
+            >
+              6
+            </option>,
+            <option
+              value="07"
+            >
+              7
+            </option>,
+            <option
+              value="08"
+            >
+              8
+            </option>,
+            <option
+              value="09"
+            >
+              9
+            </option>,
+            <option
+              value="10"
+            >
+              10
+            </option>,
+            <option
+              value="11"
+            >
+              11
+            </option>,
+            <option
+              value="12"
+            >
+              12
+            </option>,
+            <option
+              value="13"
+            >
+              13
+            </option>,
+            <option
+              value="14"
+            >
+              14
+            </option>,
+            <option
+              value="15"
+            >
+              15
+            </option>,
+            <option
+              value="16"
+            >
+              16
+            </option>,
+            <option
+              value="17"
+            >
+              17
+            </option>,
+            <option
+              value="18"
+            >
+              18
+            </option>,
+            <option
+              value="19"
+            >
+              19
+            </option>,
+            <option
+              value="20"
+            >
+              20
+            </option>,
+            <option
+              value="21"
+            >
+              21
+            </option>,
+            <option
+              value="22"
+            >
+              22
+            </option>,
+            <option
+              value="23"
+            >
+              23
+            </option>,
+            <option
+              value="24"
+            >
+              24
+            </option>,
+            <option
+              value="25"
+            >
+              25
+            </option>,
+            <option
+              value="26"
+            >
+              26
+            </option>,
+            <option
+              value="27"
+            >
+              27
+            </option>,
+            <option
+              value="28"
+            >
+              28
+            </option>,
+            <option
+              value="29"
+            >
+              29
+            </option>,
+            <option
+              value="30"
+            >
+              30
+            </option>,
+            <option
+              value="31"
+            >
+              31
+            </option>,
+          ],
+          "id": "day",
+          "name": "day",
+          "onChange": [Function],
+          "value": "08",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "1",
+              "value": "01",
+            },
+            "ref": null,
+            "rendered": "1",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "2",
+              "value": "02",
+            },
+            "ref": null,
+            "rendered": "2",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "3",
+              "value": "03",
+            },
+            "ref": null,
+            "rendered": "3",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "4",
+              "value": "04",
+            },
+            "ref": null,
+            "rendered": "4",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "5",
+              "value": "05",
+            },
+            "ref": null,
+            "rendered": "5",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "6",
+              "value": "06",
+            },
+            "ref": null,
+            "rendered": "6",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "7",
+              "value": "07",
+            },
+            "ref": null,
+            "rendered": "7",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "8",
+              "value": "08",
+            },
+            "ref": null,
+            "rendered": "8",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "9",
+              "value": "09",
+            },
+            "ref": null,
+            "rendered": "9",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "10",
+              "value": "10",
+            },
+            "ref": null,
+            "rendered": "10",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "11",
+              "value": "11",
+            },
+            "ref": null,
+            "rendered": "11",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "12",
+              "value": "12",
+            },
+            "ref": null,
+            "rendered": "12",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "13",
+              "value": "13",
+            },
+            "ref": null,
+            "rendered": "13",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "14",
+              "value": "14",
+            },
+            "ref": null,
+            "rendered": "14",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "15",
+              "value": "15",
+            },
+            "ref": null,
+            "rendered": "15",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "16",
+              "value": "16",
+            },
+            "ref": null,
+            "rendered": "16",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "17",
+              "value": "17",
+            },
+            "ref": null,
+            "rendered": "17",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "18",
+              "value": "18",
+            },
+            "ref": null,
+            "rendered": "18",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "19",
+              "value": "19",
+            },
+            "ref": null,
+            "rendered": "19",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "20",
+              "value": "20",
+            },
+            "ref": null,
+            "rendered": "20",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "21",
+              "value": "21",
+            },
+            "ref": null,
+            "rendered": "21",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "22",
+              "value": "22",
+            },
+            "ref": null,
+            "rendered": "22",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "23",
+              "value": "23",
+            },
+            "ref": null,
+            "rendered": "23",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "24",
+              "value": "24",
+            },
+            "ref": null,
+            "rendered": "24",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "25",
+              "value": "25",
+            },
+            "ref": null,
+            "rendered": "25",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "26",
+              "value": "26",
+            },
+            "ref": null,
+            "rendered": "26",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "27",
+              "value": "27",
+            },
+            "ref": null,
+            "rendered": "27",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "28",
+              "value": "28",
+            },
+            "ref": null,
+            "rendered": "28",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "29",
+              "value": "29",
+            },
+            "ref": null,
+            "rendered": "29",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "30",
+              "value": "30",
+            },
+            "ref": null,
+            "rendered": "30",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "31",
+              "value": "31",
+            },
+            "ref": null,
+            "rendered": "31",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="--"
+            >
+               -- 
+            </option>,
+            <option
+              value="Power"
+            >
+               Power 
+            </option>,
+            <option
+              value="Endurance"
+            >
+               Endurance 
+            </option>,
+            <option
+              value="Fitness"
+            >
+               Fitness 
+            </option>,
+            <option
+              value="Hangboard"
+            >
+               Hangboard 
+            </option>,
+            <option
+              value="Campus"
+            >
+               Campus 
+            </option>,
+            <option
+              value="Power Endurance"
+            >
+               Power Endurance 
+            </option>,
+          ],
+          "id": "type",
+          "name": "type",
+          "onChange": [Function],
+          "value": "",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " -- ",
+              "value": "--",
+            },
+            "ref": null,
+            "rendered": " -- ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Power ",
+              "value": "Power",
+            },
+            "ref": null,
+            "rendered": " Power ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Endurance ",
+              "value": "Endurance",
+            },
+            "ref": null,
+            "rendered": " Endurance ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Fitness ",
+              "value": "Fitness",
+            },
+            "ref": null,
+            "rendered": " Fitness ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Hangboard ",
+              "value": "Hangboard",
+            },
+            "ref": null,
+            "rendered": " Hangboard ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Campus ",
+              "value": "Campus",
+            },
+            "ref": null,
+            "rendered": " Campus ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Power Endurance ",
+              "value": "Power Endurance",
+            },
+            "ref": null,
+            "rendered": " Power Endurance ",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "maxLength": "100",
+          "name": "description",
+          "onChange": [Function],
+          "placeholder": "description",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "textarea",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Workout",
+        },
+        "ref": null,
+        "rendered": "Add Workout",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            ADD WORKOUT
+          </h2>,
+          <select
+            id="year"
+            name="year"
+            onChange={[Function]}
+            value="2019"
+          >
+            <option
+              value={2019}
+            >
+              2019
+            </option>
+            <option
+              value={2020}
+            >
+              2020
+            </option>
+            <option
+              value={2021}
+            >
+              2021
+            </option>
+            <option
+              value={2022}
+            >
+              2022
+            </option>
+            <option
+              value={2023}
+            >
+              2023
+            </option>
+          </select>,
+          <select
+            id="month"
+            name="month"
+            onChange={[Function]}
+            value="1"
+          >
+            <option
+              value="01"
+            >
+              1
+            </option>
+            <option
+              value="02"
+            >
+              2
+            </option>
+            <option
+              value="03"
+            >
+              3
+            </option>
+            <option
+              value="04"
+            >
+              4
+            </option>
+            <option
+              value="05"
+            >
+              5
+            </option>
+            <option
+              value="06"
+            >
+              6
+            </option>
+            <option
+              value="07"
+            >
+              7
+            </option>
+            <option
+              value="08"
+            >
+              8
+            </option>
+            <option
+              value="09"
+            >
+              9
+            </option>
+            <option
+              value="10"
+            >
+              10
+            </option>
+            <option
+              value="11"
+            >
+              11
+            </option>
+            <option
+              value="12"
+            >
+              12
+            </option>
+          </select>,
+          <select
+            id="day"
+            name="day"
+            onChange={[Function]}
+            value="08"
+          >
+            <option
+              value="01"
+            >
+              1
+            </option>
+            <option
+              value="02"
+            >
+              2
+            </option>
+            <option
+              value="03"
+            >
+              3
+            </option>
+            <option
+              value="04"
+            >
+              4
+            </option>
+            <option
+              value="05"
+            >
+              5
+            </option>
+            <option
+              value="06"
+            >
+              6
+            </option>
+            <option
+              value="07"
+            >
+              7
+            </option>
+            <option
+              value="08"
+            >
+              8
+            </option>
+            <option
+              value="09"
+            >
+              9
+            </option>
+            <option
+              value="10"
+            >
+              10
+            </option>
+            <option
+              value="11"
+            >
+              11
+            </option>
+            <option
+              value="12"
+            >
+              12
+            </option>
+            <option
+              value="13"
+            >
+              13
+            </option>
+            <option
+              value="14"
+            >
+              14
+            </option>
+            <option
+              value="15"
+            >
+              15
+            </option>
+            <option
+              value="16"
+            >
+              16
+            </option>
+            <option
+              value="17"
+            >
+              17
+            </option>
+            <option
+              value="18"
+            >
+              18
+            </option>
+            <option
+              value="19"
+            >
+              19
+            </option>
+            <option
+              value="20"
+            >
+              20
+            </option>
+            <option
+              value="21"
+            >
+              21
+            </option>
+            <option
+              value="22"
+            >
+              22
+            </option>
+            <option
+              value="23"
+            >
+              23
+            </option>
+            <option
+              value="24"
+            >
+              24
+            </option>
+            <option
+              value="25"
+            >
+              25
+            </option>
+            <option
+              value="26"
+            >
+              26
+            </option>
+            <option
+              value="27"
+            >
+              27
+            </option>
+            <option
+              value="28"
+            >
+              28
+            </option>
+            <option
+              value="29"
+            >
+              29
+            </option>
+            <option
+              value="30"
+            >
+              30
+            </option>
+            <option
+              value="31"
+            >
+              31
+            </option>
+          </select>,
+          <select
+            id="type"
+            name="type"
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value="--"
+            >
+               -- 
+            </option>
+            <option
+              value="Power"
+            >
+               Power 
+            </option>
+            <option
+              value="Endurance"
+            >
+               Endurance 
+            </option>
+            <option
+              value="Fitness"
+            >
+               Fitness 
+            </option>
+            <option
+              value="Hangboard"
+            >
+               Hangboard 
+            </option>
+            <option
+              value="Campus"
+            >
+               Campus 
+            </option>
+            <option
+              value="Power Endurance"
+            >
+               Power Endurance 
+            </option>
+          </select>,
+          <textarea
+            maxLength="100"
+            name="description"
+            onChange={[Function]}
+            placeholder="description"
+            value=""
+          />,
+          <button>
+            Add Workout
+          </button>,
+        ],
+        "className": "training-form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ADD WORKOUT",
+          },
+          "ref": null,
+          "rendered": "ADD WORKOUT",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value={2019}
+              >
+                2019
+              </option>,
+              <option
+                value={2020}
+              >
+                2020
+              </option>,
+              <option
+                value={2021}
+              >
+                2021
+              </option>,
+              <option
+                value={2022}
+              >
+                2022
+              </option>,
+              <option
+                value={2023}
+              >
+                2023
+              </option>,
+            ],
+            "id": "year",
+            "name": "year",
+            "onChange": [Function],
+            "value": "2019",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2019,
+                "value": 2019,
+              },
+              "ref": null,
+              "rendered": 2019,
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2020,
+                "value": 2020,
+              },
+              "ref": null,
+              "rendered": 2020,
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2021,
+                "value": 2021,
+              },
+              "ref": null,
+              "rendered": 2021,
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2022,
+                "value": 2022,
+              },
+              "ref": null,
+              "rendered": 2022,
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2023,
+                "value": 2023,
+              },
+              "ref": null,
+              "rendered": 2023,
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="01"
+              >
+                1
+              </option>,
+              <option
+                value="02"
+              >
+                2
+              </option>,
+              <option
+                value="03"
+              >
+                3
+              </option>,
+              <option
+                value="04"
+              >
+                4
+              </option>,
+              <option
+                value="05"
+              >
+                5
+              </option>,
+              <option
+                value="06"
+              >
+                6
+              </option>,
+              <option
+                value="07"
+              >
+                7
+              </option>,
+              <option
+                value="08"
+              >
+                8
+              </option>,
+              <option
+                value="09"
+              >
+                9
+              </option>,
+              <option
+                value="10"
+              >
+                10
+              </option>,
+              <option
+                value="11"
+              >
+                11
+              </option>,
+              <option
+                value="12"
+              >
+                12
+              </option>,
+            ],
+            "id": "month",
+            "name": "month",
+            "onChange": [Function],
+            "value": "1",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1",
+                "value": "01",
+              },
+              "ref": null,
+              "rendered": "1",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2",
+                "value": "02",
+              },
+              "ref": null,
+              "rendered": "2",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "3",
+                "value": "03",
+              },
+              "ref": null,
+              "rendered": "3",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "4",
+                "value": "04",
+              },
+              "ref": null,
+              "rendered": "4",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "5",
+                "value": "05",
+              },
+              "ref": null,
+              "rendered": "5",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "6",
+                "value": "06",
+              },
+              "ref": null,
+              "rendered": "6",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "7",
+                "value": "07",
+              },
+              "ref": null,
+              "rendered": "7",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "8",
+                "value": "08",
+              },
+              "ref": null,
+              "rendered": "8",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "9",
+                "value": "09",
+              },
+              "ref": null,
+              "rendered": "9",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "10",
+                "value": "10",
+              },
+              "ref": null,
+              "rendered": "10",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "11",
+                "value": "11",
+              },
+              "ref": null,
+              "rendered": "11",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "12",
+                "value": "12",
+              },
+              "ref": null,
+              "rendered": "12",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="01"
+              >
+                1
+              </option>,
+              <option
+                value="02"
+              >
+                2
+              </option>,
+              <option
+                value="03"
+              >
+                3
+              </option>,
+              <option
+                value="04"
+              >
+                4
+              </option>,
+              <option
+                value="05"
+              >
+                5
+              </option>,
+              <option
+                value="06"
+              >
+                6
+              </option>,
+              <option
+                value="07"
+              >
+                7
+              </option>,
+              <option
+                value="08"
+              >
+                8
+              </option>,
+              <option
+                value="09"
+              >
+                9
+              </option>,
+              <option
+                value="10"
+              >
+                10
+              </option>,
+              <option
+                value="11"
+              >
+                11
+              </option>,
+              <option
+                value="12"
+              >
+                12
+              </option>,
+              <option
+                value="13"
+              >
+                13
+              </option>,
+              <option
+                value="14"
+              >
+                14
+              </option>,
+              <option
+                value="15"
+              >
+                15
+              </option>,
+              <option
+                value="16"
+              >
+                16
+              </option>,
+              <option
+                value="17"
+              >
+                17
+              </option>,
+              <option
+                value="18"
+              >
+                18
+              </option>,
+              <option
+                value="19"
+              >
+                19
+              </option>,
+              <option
+                value="20"
+              >
+                20
+              </option>,
+              <option
+                value="21"
+              >
+                21
+              </option>,
+              <option
+                value="22"
+              >
+                22
+              </option>,
+              <option
+                value="23"
+              >
+                23
+              </option>,
+              <option
+                value="24"
+              >
+                24
+              </option>,
+              <option
+                value="25"
+              >
+                25
+              </option>,
+              <option
+                value="26"
+              >
+                26
+              </option>,
+              <option
+                value="27"
+              >
+                27
+              </option>,
+              <option
+                value="28"
+              >
+                28
+              </option>,
+              <option
+                value="29"
+              >
+                29
+              </option>,
+              <option
+                value="30"
+              >
+                30
+              </option>,
+              <option
+                value="31"
+              >
+                31
+              </option>,
+            ],
+            "id": "day",
+            "name": "day",
+            "onChange": [Function],
+            "value": "08",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1",
+                "value": "01",
+              },
+              "ref": null,
+              "rendered": "1",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2",
+                "value": "02",
+              },
+              "ref": null,
+              "rendered": "2",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "3",
+                "value": "03",
+              },
+              "ref": null,
+              "rendered": "3",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "4",
+                "value": "04",
+              },
+              "ref": null,
+              "rendered": "4",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "5",
+                "value": "05",
+              },
+              "ref": null,
+              "rendered": "5",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "6",
+                "value": "06",
+              },
+              "ref": null,
+              "rendered": "6",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "7",
+                "value": "07",
+              },
+              "ref": null,
+              "rendered": "7",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "8",
+                "value": "08",
+              },
+              "ref": null,
+              "rendered": "8",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "9",
+                "value": "09",
+              },
+              "ref": null,
+              "rendered": "9",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "10",
+                "value": "10",
+              },
+              "ref": null,
+              "rendered": "10",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "11",
+                "value": "11",
+              },
+              "ref": null,
+              "rendered": "11",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "12",
+                "value": "12",
+              },
+              "ref": null,
+              "rendered": "12",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "13",
+                "value": "13",
+              },
+              "ref": null,
+              "rendered": "13",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "14",
+                "value": "14",
+              },
+              "ref": null,
+              "rendered": "14",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "15",
+                "value": "15",
+              },
+              "ref": null,
+              "rendered": "15",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "16",
+                "value": "16",
+              },
+              "ref": null,
+              "rendered": "16",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "17",
+                "value": "17",
+              },
+              "ref": null,
+              "rendered": "17",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "18",
+                "value": "18",
+              },
+              "ref": null,
+              "rendered": "18",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "19",
+                "value": "19",
+              },
+              "ref": null,
+              "rendered": "19",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "20",
+                "value": "20",
+              },
+              "ref": null,
+              "rendered": "20",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "21",
+                "value": "21",
+              },
+              "ref": null,
+              "rendered": "21",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "22",
+                "value": "22",
+              },
+              "ref": null,
+              "rendered": "22",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "23",
+                "value": "23",
+              },
+              "ref": null,
+              "rendered": "23",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "24",
+                "value": "24",
+              },
+              "ref": null,
+              "rendered": "24",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "25",
+                "value": "25",
+              },
+              "ref": null,
+              "rendered": "25",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "26",
+                "value": "26",
+              },
+              "ref": null,
+              "rendered": "26",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "27",
+                "value": "27",
+              },
+              "ref": null,
+              "rendered": "27",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "28",
+                "value": "28",
+              },
+              "ref": null,
+              "rendered": "28",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "29",
+                "value": "29",
+              },
+              "ref": null,
+              "rendered": "29",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "30",
+                "value": "30",
+              },
+              "ref": null,
+              "rendered": "30",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "31",
+                "value": "31",
+              },
+              "ref": null,
+              "rendered": "31",
+              "type": "option",
+            },
           ],
           "type": "select",
         },

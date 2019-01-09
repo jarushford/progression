@@ -20,8 +20,14 @@ describe('AscentForm', () => {
   })
 
   describe('AscentForm Component', () => {
-    it('should match the snapshot', () => {
+    it('should match the snapshot for boulder', () => {
       const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={true} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should match the snapshot for sport', () => {
+      const wrapper = shallow(<AscentForm user={mockUser} addAscent={mockAddAscent} error='' disciplineBoulder={false} />)
 
       expect(wrapper).toMatchSnapshot()
     })

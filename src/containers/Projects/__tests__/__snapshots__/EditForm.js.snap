@@ -1,11 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Project Form ProjectForm Component should match the snapshot for boulder 1`] = `
+exports[`editForm EditForm Component should match the snapshot for boulder 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectForm
-    addProject={[MockFunction]}
+  Symbol(enzyme.__unrendered__): <EditForm
     disciplineBoulder={true}
+    editProject={[MockFunction]}
+    project={4}
+    projects={
+      Array [
+        Object {
+          "caption": "",
+          "grade": 13,
+          "high_point": 5,
+          "id": 42,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Nuthin But Sunshine",
+        },
+        Object {
+          "caption": "",
+          "grade": 5101,
+          "high_point": 7,
+          "id": 4,
+          "location": "RMNP, CO",
+          "moves_done": 3,
+          "moves_total": 7,
+          "name": "Top Notch",
+          "priority": 8,
+          "season": "summer",
+        },
+      ]
+    }
     user={
       Object {
         "email": "olaf@thatplace.com",
@@ -30,26 +56,26 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2>
-          ADD PROJECT
+          EDIT
         </h2>,
         <input
           autoFocus={true}
           name="name"
           onChange={[Function]}
           placeholder="name"
-          value=""
+          value="Top Notch"
         />,
         <input
           name="location"
           onChange={[Function]}
           placeholder="location"
-          value=""
+          value="RMNP, CO"
         />,
         <select
           id="grade"
           name="grade"
           onChange={[Function]}
-          value=""
+          value={5101}
         >
           <option
             value="--"
@@ -146,7 +172,7 @@ ShallowWrapper {
           id="priority"
           name="priority"
           onChange={[Function]}
-          value=""
+          value={8}
         >
           <option
             value="--"
@@ -213,7 +239,7 @@ ShallowWrapper {
           name="season"
           onChange={[Function]}
           placeholder="season"
-          value=""
+          value="summer"
         />,
         <label>
           # of Moves
@@ -222,27 +248,29 @@ ShallowWrapper {
             name="moves_total"
             onChange={[Function]}
             type="number"
-            value={0}
+            value={7}
           />
         </label>,
         <label>
           Moves Done
           <input
+            max={7}
             min="0"
             name="moves_done"
             onChange={[Function]}
             type="number"
-            value={0}
+            value={3}
           />
         </label>,
         <label>
           High Point
           <input
+            max={7}
             min="0"
             name="high_point"
             onChange={[Function]}
             type="number"
-            value={0}
+            value={7}
           />
         </label>,
         <textarea
@@ -253,7 +281,7 @@ ShallowWrapper {
           value=""
         />,
         <button>
-          Add Project
+          Save
         </button>,
       ],
       "className": "project-form",
@@ -266,10 +294,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "ADD PROJECT",
+          "children": "EDIT",
         },
         "ref": null,
-        "rendered": "ADD PROJECT",
+        "rendered": "EDIT",
         "type": "h2",
       },
       Object {
@@ -281,7 +309,7 @@ ShallowWrapper {
           "name": "name",
           "onChange": [Function],
           "placeholder": "name",
-          "value": "",
+          "value": "Top Notch",
         },
         "ref": null,
         "rendered": null,
@@ -295,7 +323,7 @@ ShallowWrapper {
           "name": "location",
           "onChange": [Function],
           "placeholder": "location",
-          "value": "",
+          "value": "RMNP, CO",
         },
         "ref": null,
         "rendered": null,
@@ -401,7 +429,7 @@ ShallowWrapper {
           "id": "grade",
           "name": "grade",
           "onChange": [Function],
-          "value": "",
+          "value": 5101,
         },
         "ref": null,
         "rendered": Array [
@@ -694,7 +722,7 @@ ShallowWrapper {
           "id": "priority",
           "name": "priority",
           "onChange": [Function],
-          "value": "",
+          "value": 8,
         },
         "ref": null,
         "rendered": Array [
@@ -853,7 +881,7 @@ ShallowWrapper {
           "name": "season",
           "onChange": [Function],
           "placeholder": "season",
-          "value": "",
+          "value": "summer",
         },
         "ref": null,
         "rendered": null,
@@ -871,7 +899,7 @@ ShallowWrapper {
               name="moves_total"
               onChange={[Function]}
               type="number"
-              value={0}
+              value={7}
             />,
           ],
         },
@@ -887,7 +915,7 @@ ShallowWrapper {
               "name": "moves_total",
               "onChange": [Function],
               "type": "number",
-              "value": 0,
+              "value": 7,
             },
             "ref": null,
             "rendered": null,
@@ -904,11 +932,12 @@ ShallowWrapper {
           "children": Array [
             "Moves Done",
             <input
+              max={7}
               min="0"
               name="moves_done"
               onChange={[Function]}
               type="number"
-              value={0}
+              value={3}
             />,
           ],
         },
@@ -920,11 +949,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "max": 7,
               "min": "0",
               "name": "moves_done",
               "onChange": [Function],
               "type": "number",
-              "value": 0,
+              "value": 3,
             },
             "ref": null,
             "rendered": null,
@@ -941,11 +971,12 @@ ShallowWrapper {
           "children": Array [
             "High Point",
             <input
+              max={7}
               min="0"
               name="high_point"
               onChange={[Function]}
               type="number"
-              value={0}
+              value={7}
             />,
           ],
         },
@@ -957,11 +988,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "max": 7,
               "min": "0",
               "name": "high_point",
               "onChange": [Function],
               "type": "number",
-              "value": 0,
+              "value": 7,
             },
             "ref": null,
             "rendered": null,
@@ -990,10 +1022,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Add Project",
+          "children": "Save",
         },
         "ref": null,
-        "rendered": "Add Project",
+        "rendered": "Save",
         "type": "button",
       },
     ],
@@ -1007,26 +1039,26 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            ADD PROJECT
+            EDIT
           </h2>,
           <input
             autoFocus={true}
             name="name"
             onChange={[Function]}
             placeholder="name"
-            value=""
+            value="Top Notch"
           />,
           <input
             name="location"
             onChange={[Function]}
             placeholder="location"
-            value=""
+            value="RMNP, CO"
           />,
           <select
             id="grade"
             name="grade"
             onChange={[Function]}
-            value=""
+            value={5101}
           >
             <option
               value="--"
@@ -1123,7 +1155,7 @@ ShallowWrapper {
             id="priority"
             name="priority"
             onChange={[Function]}
-            value=""
+            value={8}
           >
             <option
               value="--"
@@ -1190,7 +1222,7 @@ ShallowWrapper {
             name="season"
             onChange={[Function]}
             placeholder="season"
-            value=""
+            value="summer"
           />,
           <label>
             # of Moves
@@ -1199,27 +1231,29 @@ ShallowWrapper {
               name="moves_total"
               onChange={[Function]}
               type="number"
-              value={0}
+              value={7}
             />
           </label>,
           <label>
             Moves Done
             <input
+              max={7}
               min="0"
               name="moves_done"
               onChange={[Function]}
               type="number"
-              value={0}
+              value={3}
             />
           </label>,
           <label>
             High Point
             <input
+              max={7}
               min="0"
               name="high_point"
               onChange={[Function]}
               type="number"
-              value={0}
+              value={7}
             />
           </label>,
           <textarea
@@ -1230,7 +1264,7 @@ ShallowWrapper {
             value=""
           />,
           <button>
-            Add Project
+            Save
           </button>,
         ],
         "className": "project-form",
@@ -1243,10 +1277,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "ADD PROJECT",
+            "children": "EDIT",
           },
           "ref": null,
-          "rendered": "ADD PROJECT",
+          "rendered": "EDIT",
           "type": "h2",
         },
         Object {
@@ -1258,7 +1292,7 @@ ShallowWrapper {
             "name": "name",
             "onChange": [Function],
             "placeholder": "name",
-            "value": "",
+            "value": "Top Notch",
           },
           "ref": null,
           "rendered": null,
@@ -1272,7 +1306,7 @@ ShallowWrapper {
             "name": "location",
             "onChange": [Function],
             "placeholder": "location",
-            "value": "",
+            "value": "RMNP, CO",
           },
           "ref": null,
           "rendered": null,
@@ -1378,7 +1412,7 @@ ShallowWrapper {
             "id": "grade",
             "name": "grade",
             "onChange": [Function],
-            "value": "",
+            "value": 5101,
           },
           "ref": null,
           "rendered": Array [
@@ -1671,7 +1705,7 @@ ShallowWrapper {
             "id": "priority",
             "name": "priority",
             "onChange": [Function],
-            "value": "",
+            "value": 8,
           },
           "ref": null,
           "rendered": Array [
@@ -1830,7 +1864,7 @@ ShallowWrapper {
             "name": "season",
             "onChange": [Function],
             "placeholder": "season",
-            "value": "",
+            "value": "summer",
           },
           "ref": null,
           "rendered": null,
@@ -1848,7 +1882,7 @@ ShallowWrapper {
                 name="moves_total"
                 onChange={[Function]}
                 type="number"
-                value={0}
+                value={7}
               />,
             ],
           },
@@ -1864,7 +1898,7 @@ ShallowWrapper {
                 "name": "moves_total",
                 "onChange": [Function],
                 "type": "number",
-                "value": 0,
+                "value": 7,
               },
               "ref": null,
               "rendered": null,
@@ -1881,11 +1915,12 @@ ShallowWrapper {
             "children": Array [
               "Moves Done",
               <input
+                max={7}
                 min="0"
                 name="moves_done"
                 onChange={[Function]}
                 type="number"
-                value={0}
+                value={3}
               />,
             ],
           },
@@ -1897,11 +1932,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "max": 7,
                 "min": "0",
                 "name": "moves_done",
                 "onChange": [Function],
                 "type": "number",
-                "value": 0,
+                "value": 3,
               },
               "ref": null,
               "rendered": null,
@@ -1918,11 +1954,12 @@ ShallowWrapper {
             "children": Array [
               "High Point",
               <input
+                max={7}
                 min="0"
                 name="high_point"
                 onChange={[Function]}
                 type="number"
-                value={0}
+                value={7}
               />,
             ],
           },
@@ -1934,11 +1971,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "max": 7,
                 "min": "0",
                 "name": "high_point",
                 "onChange": [Function],
                 "type": "number",
-                "value": 0,
+                "value": 7,
               },
               "ref": null,
               "rendered": null,
@@ -1967,10 +2005,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Add Project",
+            "children": "Save",
           },
           "ref": null,
-          "rendered": "Add Project",
+          "rendered": "Save",
           "type": "button",
         },
       ],
@@ -1997,12 +2035,38 @@ ShallowWrapper {
 }
 `;
 
-exports[`Project Form ProjectForm Component should match the snapshot for sport 1`] = `
+exports[`editForm EditForm Component should match the snapshot for sport 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectForm
-    addProject={[MockFunction]}
+  Symbol(enzyme.__unrendered__): <EditForm
     disciplineBoulder={false}
+    editProject={[MockFunction]}
+    project={4}
+    projects={
+      Array [
+        Object {
+          "caption": "",
+          "grade": 13,
+          "high_point": 5,
+          "id": 42,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Nuthin But Sunshine",
+        },
+        Object {
+          "caption": "",
+          "grade": 5101,
+          "high_point": 7,
+          "id": 4,
+          "location": "RMNP, CO",
+          "moves_done": 3,
+          "moves_total": 7,
+          "name": "Top Notch",
+          "priority": 8,
+          "season": "summer",
+        },
+      ]
+    }
     user={
       Object {
         "email": "olaf@thatplace.com",
@@ -2027,7 +2091,2482 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2>
-          ADD PROJECT
+          EDIT
+        </h2>,
+        <input
+          autoFocus={true}
+          name="name"
+          onChange={[Function]}
+          placeholder="name"
+          value="Top Notch"
+        />,
+        <input
+          name="location"
+          onChange={[Function]}
+          placeholder="location"
+          value="RMNP, CO"
+        />,
+        <select
+          id="grade"
+          name="grade"
+          onChange={[Function]}
+          value={5101}
+        >
+          <option
+            value="--"
+          >
+             -- 
+          </option>
+          <option
+            value="5600"
+          >
+             5.6 / 5a 
+          </option>
+          <option
+            value="5700"
+          >
+             5.7 / 5b 
+          </option>
+          <option
+            value="5800"
+          >
+             5.8 / 5c 
+          </option>
+          <option
+            value="5900"
+          >
+             5.9 / 6a 
+          </option>
+          <option
+            value="5101"
+          >
+             5.10a / 6a+ 
+          </option>
+          <option
+            value="5102"
+          >
+             5.10b / 6a+ 
+          </option>
+          <option
+            value="5103"
+          >
+             5.10c / 6b 
+          </option>
+          <option
+            value="5104"
+          >
+             5.10d / 6b+ 
+          </option>
+          <option
+            value="5111"
+          >
+             5.11a / 6c 
+          </option>
+          <option
+            value="5112"
+          >
+             5.11b / 6c+ 
+          </option>
+          <option
+            value="5113"
+          >
+             5.11c / 7a 
+          </option>
+          <option
+            value="5114"
+          >
+             5.11d / 7a+ 
+          </option>
+          <option
+            value="5121"
+          >
+             5.12a / 7b 
+          </option>
+          <option
+            value="5122"
+          >
+             5.12b / 7b+ 
+          </option>
+          <option
+            value="5123"
+          >
+             5.12c / 7c 
+          </option>
+          <option
+            value="5124"
+          >
+             5.12d / 7c+ 
+          </option>
+          <option
+            value="5131"
+          >
+             5.13a / 7c+ 
+          </option>
+          <option
+            value="5132"
+          >
+             5.13b / 8a 
+          </option>
+          <option
+            value="5133"
+          >
+             5.13c / 8a+ 
+          </option>
+          <option
+            value="5134"
+          >
+             5.13d / 8b 
+          </option>
+          <option
+            value="5141"
+          >
+             5.14a / 8b+ 
+          </option>
+          <option
+            value="5142"
+          >
+             5.14b / 8c 
+          </option>
+          <option
+            value="5143"
+          >
+             5.14c / 8c+ 
+          </option>
+          <option
+            value="5144"
+          >
+             5.14d / 9a 
+          </option>
+          <option
+            value="5151"
+          >
+             5.15a / 9a+ 
+          </option>
+          <option
+            value="5152"
+          >
+             5.15b / 9b
+          </option>
+          <option
+            value="5153"
+          >
+             5.15c / 9b+ 
+          </option>
+        </select>,
+        <select
+          id="priority"
+          name="priority"
+          onChange={[Function]}
+          value={8}
+        >
+          <option
+            value="--"
+          >
+             priority 
+          </option>
+          <option
+            value="0"
+          >
+             0 (meh) 
+          </option>
+          <option
+            value="1"
+          >
+             1 
+          </option>
+          <option
+            value="2"
+          >
+             2 
+          </option>
+          <option
+            value="3"
+          >
+             3 
+          </option>
+          <option
+            value="4"
+          >
+             4 
+          </option>
+          <option
+            value="5"
+          >
+             5 
+          </option>
+          <option
+            value="6"
+          >
+             6 
+          </option>
+          <option
+            value="7"
+          >
+             7 
+          </option>
+          <option
+            value="8"
+          >
+             8 
+          </option>
+          <option
+            value="9"
+          >
+             9 
+          </option>
+          <option
+            value="10"
+          >
+             10 (this is the only thing I want to climb) 
+          </option>
+        </select>,
+        <input
+          name="season"
+          onChange={[Function]}
+          placeholder="season"
+          value="summer"
+        />,
+        <label>
+          # of Moves
+          <input
+            min="0"
+            name="moves_total"
+            onChange={[Function]}
+            type="number"
+            value={7}
+          />
+        </label>,
+        <label>
+          Moves Done
+          <input
+            max={7}
+            min="0"
+            name="moves_done"
+            onChange={[Function]}
+            type="number"
+            value={3}
+          />
+        </label>,
+        <label>
+          High Point
+          <input
+            max={7}
+            min="0"
+            name="high_point"
+            onChange={[Function]}
+            type="number"
+            value={7}
+          />
+        </label>,
+        <textarea
+          maxLength="500"
+          name="caption"
+          onChange={[Function]}
+          placeholder="caption"
+          value=""
+        />,
+        <button>
+          Save
+        </button>,
+      ],
+      "className": "project-form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "EDIT",
+        },
+        "ref": null,
+        "rendered": "EDIT",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "autoFocus": true,
+          "name": "name",
+          "onChange": [Function],
+          "placeholder": "name",
+          "value": "Top Notch",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "location",
+          "onChange": [Function],
+          "placeholder": "location",
+          "value": "RMNP, CO",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="--"
+            >
+               -- 
+            </option>,
+            <option
+              value="5600"
+            >
+               5.6 / 5a 
+            </option>,
+            <option
+              value="5700"
+            >
+               5.7 / 5b 
+            </option>,
+            <option
+              value="5800"
+            >
+               5.8 / 5c 
+            </option>,
+            <option
+              value="5900"
+            >
+               5.9 / 6a 
+            </option>,
+            <option
+              value="5101"
+            >
+               5.10a / 6a+ 
+            </option>,
+            <option
+              value="5102"
+            >
+               5.10b / 6a+ 
+            </option>,
+            <option
+              value="5103"
+            >
+               5.10c / 6b 
+            </option>,
+            <option
+              value="5104"
+            >
+               5.10d / 6b+ 
+            </option>,
+            <option
+              value="5111"
+            >
+               5.11a / 6c 
+            </option>,
+            <option
+              value="5112"
+            >
+               5.11b / 6c+ 
+            </option>,
+            <option
+              value="5113"
+            >
+               5.11c / 7a 
+            </option>,
+            <option
+              value="5114"
+            >
+               5.11d / 7a+ 
+            </option>,
+            <option
+              value="5121"
+            >
+               5.12a / 7b 
+            </option>,
+            <option
+              value="5122"
+            >
+               5.12b / 7b+ 
+            </option>,
+            <option
+              value="5123"
+            >
+               5.12c / 7c 
+            </option>,
+            <option
+              value="5124"
+            >
+               5.12d / 7c+ 
+            </option>,
+            <option
+              value="5131"
+            >
+               5.13a / 7c+ 
+            </option>,
+            <option
+              value="5132"
+            >
+               5.13b / 8a 
+            </option>,
+            <option
+              value="5133"
+            >
+               5.13c / 8a+ 
+            </option>,
+            <option
+              value="5134"
+            >
+               5.13d / 8b 
+            </option>,
+            <option
+              value="5141"
+            >
+               5.14a / 8b+ 
+            </option>,
+            <option
+              value="5142"
+            >
+               5.14b / 8c 
+            </option>,
+            <option
+              value="5143"
+            >
+               5.14c / 8c+ 
+            </option>,
+            <option
+              value="5144"
+            >
+               5.14d / 9a 
+            </option>,
+            <option
+              value="5151"
+            >
+               5.15a / 9a+ 
+            </option>,
+            <option
+              value="5152"
+            >
+               5.15b / 9b
+            </option>,
+            <option
+              value="5153"
+            >
+               5.15c / 9b+ 
+            </option>,
+          ],
+          "id": "grade",
+          "name": "grade",
+          "onChange": [Function],
+          "value": 5101,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " -- ",
+              "value": "--",
+            },
+            "ref": null,
+            "rendered": " -- ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.6 / 5a ",
+              "value": "5600",
+            },
+            "ref": null,
+            "rendered": " 5.6 / 5a ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.7 / 5b ",
+              "value": "5700",
+            },
+            "ref": null,
+            "rendered": " 5.7 / 5b ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.8 / 5c ",
+              "value": "5800",
+            },
+            "ref": null,
+            "rendered": " 5.8 / 5c ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.9 / 6a ",
+              "value": "5900",
+            },
+            "ref": null,
+            "rendered": " 5.9 / 6a ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.10a / 6a+ ",
+              "value": "5101",
+            },
+            "ref": null,
+            "rendered": " 5.10a / 6a+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.10b / 6a+ ",
+              "value": "5102",
+            },
+            "ref": null,
+            "rendered": " 5.10b / 6a+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.10c / 6b ",
+              "value": "5103",
+            },
+            "ref": null,
+            "rendered": " 5.10c / 6b ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.10d / 6b+ ",
+              "value": "5104",
+            },
+            "ref": null,
+            "rendered": " 5.10d / 6b+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.11a / 6c ",
+              "value": "5111",
+            },
+            "ref": null,
+            "rendered": " 5.11a / 6c ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.11b / 6c+ ",
+              "value": "5112",
+            },
+            "ref": null,
+            "rendered": " 5.11b / 6c+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.11c / 7a ",
+              "value": "5113",
+            },
+            "ref": null,
+            "rendered": " 5.11c / 7a ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.11d / 7a+ ",
+              "value": "5114",
+            },
+            "ref": null,
+            "rendered": " 5.11d / 7a+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.12a / 7b ",
+              "value": "5121",
+            },
+            "ref": null,
+            "rendered": " 5.12a / 7b ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.12b / 7b+ ",
+              "value": "5122",
+            },
+            "ref": null,
+            "rendered": " 5.12b / 7b+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.12c / 7c ",
+              "value": "5123",
+            },
+            "ref": null,
+            "rendered": " 5.12c / 7c ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.12d / 7c+ ",
+              "value": "5124",
+            },
+            "ref": null,
+            "rendered": " 5.12d / 7c+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.13a / 7c+ ",
+              "value": "5131",
+            },
+            "ref": null,
+            "rendered": " 5.13a / 7c+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.13b / 8a ",
+              "value": "5132",
+            },
+            "ref": null,
+            "rendered": " 5.13b / 8a ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.13c / 8a+ ",
+              "value": "5133",
+            },
+            "ref": null,
+            "rendered": " 5.13c / 8a+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.13d / 8b ",
+              "value": "5134",
+            },
+            "ref": null,
+            "rendered": " 5.13d / 8b ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.14a / 8b+ ",
+              "value": "5141",
+            },
+            "ref": null,
+            "rendered": " 5.14a / 8b+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.14b / 8c ",
+              "value": "5142",
+            },
+            "ref": null,
+            "rendered": " 5.14b / 8c ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.14c / 8c+ ",
+              "value": "5143",
+            },
+            "ref": null,
+            "rendered": " 5.14c / 8c+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.14d / 9a ",
+              "value": "5144",
+            },
+            "ref": null,
+            "rendered": " 5.14d / 9a ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.15a / 9a+ ",
+              "value": "5151",
+            },
+            "ref": null,
+            "rendered": " 5.15a / 9a+ ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.15b / 9b",
+              "value": "5152",
+            },
+            "ref": null,
+            "rendered": " 5.15b / 9b",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5.15c / 9b+ ",
+              "value": "5153",
+            },
+            "ref": null,
+            "rendered": " 5.15c / 9b+ ",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="--"
+            >
+               priority 
+            </option>,
+            <option
+              value="0"
+            >
+               0 (meh) 
+            </option>,
+            <option
+              value="1"
+            >
+               1 
+            </option>,
+            <option
+              value="2"
+            >
+               2 
+            </option>,
+            <option
+              value="3"
+            >
+               3 
+            </option>,
+            <option
+              value="4"
+            >
+               4 
+            </option>,
+            <option
+              value="5"
+            >
+               5 
+            </option>,
+            <option
+              value="6"
+            >
+               6 
+            </option>,
+            <option
+              value="7"
+            >
+               7 
+            </option>,
+            <option
+              value="8"
+            >
+               8 
+            </option>,
+            <option
+              value="9"
+            >
+               9 
+            </option>,
+            <option
+              value="10"
+            >
+               10 (this is the only thing I want to climb) 
+            </option>,
+          ],
+          "id": "priority",
+          "name": "priority",
+          "onChange": [Function],
+          "value": 8,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " priority ",
+              "value": "--",
+            },
+            "ref": null,
+            "rendered": " priority ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 0 (meh) ",
+              "value": "0",
+            },
+            "ref": null,
+            "rendered": " 0 (meh) ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 1 ",
+              "value": "1",
+            },
+            "ref": null,
+            "rendered": " 1 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 2 ",
+              "value": "2",
+            },
+            "ref": null,
+            "rendered": " 2 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 3 ",
+              "value": "3",
+            },
+            "ref": null,
+            "rendered": " 3 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 4 ",
+              "value": "4",
+            },
+            "ref": null,
+            "rendered": " 4 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5 ",
+              "value": "5",
+            },
+            "ref": null,
+            "rendered": " 5 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 6 ",
+              "value": "6",
+            },
+            "ref": null,
+            "rendered": " 6 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 7 ",
+              "value": "7",
+            },
+            "ref": null,
+            "rendered": " 7 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 8 ",
+              "value": "8",
+            },
+            "ref": null,
+            "rendered": " 8 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 9 ",
+              "value": "9",
+            },
+            "ref": null,
+            "rendered": " 9 ",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 10 (this is the only thing I want to climb) ",
+              "value": "10",
+            },
+            "ref": null,
+            "rendered": " 10 (this is the only thing I want to climb) ",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "season",
+          "onChange": [Function],
+          "placeholder": "season",
+          "value": "summer",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "# of Moves",
+            <input
+              min="0"
+              name="moves_total"
+              onChange={[Function]}
+              type="number"
+              value={7}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "# of Moves",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "min": "0",
+              "name": "moves_total",
+              "onChange": [Function],
+              "type": "number",
+              "value": 7,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Moves Done",
+            <input
+              max={7}
+              min="0"
+              name="moves_done"
+              onChange={[Function]}
+              type="number"
+              value={3}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Moves Done",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "max": 7,
+              "min": "0",
+              "name": "moves_done",
+              "onChange": [Function],
+              "type": "number",
+              "value": 3,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "High Point",
+            <input
+              max={7}
+              min="0"
+              name="high_point"
+              onChange={[Function]}
+              type="number"
+              value={7}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "High Point",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "max": 7,
+              "min": "0",
+              "name": "high_point",
+              "onChange": [Function],
+              "type": "number",
+              "value": 7,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "maxLength": "500",
+          "name": "caption",
+          "onChange": [Function],
+          "placeholder": "caption",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "textarea",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Save",
+        },
+        "ref": null,
+        "rendered": "Save",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            EDIT
+          </h2>,
+          <input
+            autoFocus={true}
+            name="name"
+            onChange={[Function]}
+            placeholder="name"
+            value="Top Notch"
+          />,
+          <input
+            name="location"
+            onChange={[Function]}
+            placeholder="location"
+            value="RMNP, CO"
+          />,
+          <select
+            id="grade"
+            name="grade"
+            onChange={[Function]}
+            value={5101}
+          >
+            <option
+              value="--"
+            >
+               -- 
+            </option>
+            <option
+              value="5600"
+            >
+               5.6 / 5a 
+            </option>
+            <option
+              value="5700"
+            >
+               5.7 / 5b 
+            </option>
+            <option
+              value="5800"
+            >
+               5.8 / 5c 
+            </option>
+            <option
+              value="5900"
+            >
+               5.9 / 6a 
+            </option>
+            <option
+              value="5101"
+            >
+               5.10a / 6a+ 
+            </option>
+            <option
+              value="5102"
+            >
+               5.10b / 6a+ 
+            </option>
+            <option
+              value="5103"
+            >
+               5.10c / 6b 
+            </option>
+            <option
+              value="5104"
+            >
+               5.10d / 6b+ 
+            </option>
+            <option
+              value="5111"
+            >
+               5.11a / 6c 
+            </option>
+            <option
+              value="5112"
+            >
+               5.11b / 6c+ 
+            </option>
+            <option
+              value="5113"
+            >
+               5.11c / 7a 
+            </option>
+            <option
+              value="5114"
+            >
+               5.11d / 7a+ 
+            </option>
+            <option
+              value="5121"
+            >
+               5.12a / 7b 
+            </option>
+            <option
+              value="5122"
+            >
+               5.12b / 7b+ 
+            </option>
+            <option
+              value="5123"
+            >
+               5.12c / 7c 
+            </option>
+            <option
+              value="5124"
+            >
+               5.12d / 7c+ 
+            </option>
+            <option
+              value="5131"
+            >
+               5.13a / 7c+ 
+            </option>
+            <option
+              value="5132"
+            >
+               5.13b / 8a 
+            </option>
+            <option
+              value="5133"
+            >
+               5.13c / 8a+ 
+            </option>
+            <option
+              value="5134"
+            >
+               5.13d / 8b 
+            </option>
+            <option
+              value="5141"
+            >
+               5.14a / 8b+ 
+            </option>
+            <option
+              value="5142"
+            >
+               5.14b / 8c 
+            </option>
+            <option
+              value="5143"
+            >
+               5.14c / 8c+ 
+            </option>
+            <option
+              value="5144"
+            >
+               5.14d / 9a 
+            </option>
+            <option
+              value="5151"
+            >
+               5.15a / 9a+ 
+            </option>
+            <option
+              value="5152"
+            >
+               5.15b / 9b
+            </option>
+            <option
+              value="5153"
+            >
+               5.15c / 9b+ 
+            </option>
+          </select>,
+          <select
+            id="priority"
+            name="priority"
+            onChange={[Function]}
+            value={8}
+          >
+            <option
+              value="--"
+            >
+               priority 
+            </option>
+            <option
+              value="0"
+            >
+               0 (meh) 
+            </option>
+            <option
+              value="1"
+            >
+               1 
+            </option>
+            <option
+              value="2"
+            >
+               2 
+            </option>
+            <option
+              value="3"
+            >
+               3 
+            </option>
+            <option
+              value="4"
+            >
+               4 
+            </option>
+            <option
+              value="5"
+            >
+               5 
+            </option>
+            <option
+              value="6"
+            >
+               6 
+            </option>
+            <option
+              value="7"
+            >
+               7 
+            </option>
+            <option
+              value="8"
+            >
+               8 
+            </option>
+            <option
+              value="9"
+            >
+               9 
+            </option>
+            <option
+              value="10"
+            >
+               10 (this is the only thing I want to climb) 
+            </option>
+          </select>,
+          <input
+            name="season"
+            onChange={[Function]}
+            placeholder="season"
+            value="summer"
+          />,
+          <label>
+            # of Moves
+            <input
+              min="0"
+              name="moves_total"
+              onChange={[Function]}
+              type="number"
+              value={7}
+            />
+          </label>,
+          <label>
+            Moves Done
+            <input
+              max={7}
+              min="0"
+              name="moves_done"
+              onChange={[Function]}
+              type="number"
+              value={3}
+            />
+          </label>,
+          <label>
+            High Point
+            <input
+              max={7}
+              min="0"
+              name="high_point"
+              onChange={[Function]}
+              type="number"
+              value={7}
+            />
+          </label>,
+          <textarea
+            maxLength="500"
+            name="caption"
+            onChange={[Function]}
+            placeholder="caption"
+            value=""
+          />,
+          <button>
+            Save
+          </button>,
+        ],
+        "className": "project-form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "EDIT",
+          },
+          "ref": null,
+          "rendered": "EDIT",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "autoFocus": true,
+            "name": "name",
+            "onChange": [Function],
+            "placeholder": "name",
+            "value": "Top Notch",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "location",
+            "onChange": [Function],
+            "placeholder": "location",
+            "value": "RMNP, CO",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="--"
+              >
+                 -- 
+              </option>,
+              <option
+                value="5600"
+              >
+                 5.6 / 5a 
+              </option>,
+              <option
+                value="5700"
+              >
+                 5.7 / 5b 
+              </option>,
+              <option
+                value="5800"
+              >
+                 5.8 / 5c 
+              </option>,
+              <option
+                value="5900"
+              >
+                 5.9 / 6a 
+              </option>,
+              <option
+                value="5101"
+              >
+                 5.10a / 6a+ 
+              </option>,
+              <option
+                value="5102"
+              >
+                 5.10b / 6a+ 
+              </option>,
+              <option
+                value="5103"
+              >
+                 5.10c / 6b 
+              </option>,
+              <option
+                value="5104"
+              >
+                 5.10d / 6b+ 
+              </option>,
+              <option
+                value="5111"
+              >
+                 5.11a / 6c 
+              </option>,
+              <option
+                value="5112"
+              >
+                 5.11b / 6c+ 
+              </option>,
+              <option
+                value="5113"
+              >
+                 5.11c / 7a 
+              </option>,
+              <option
+                value="5114"
+              >
+                 5.11d / 7a+ 
+              </option>,
+              <option
+                value="5121"
+              >
+                 5.12a / 7b 
+              </option>,
+              <option
+                value="5122"
+              >
+                 5.12b / 7b+ 
+              </option>,
+              <option
+                value="5123"
+              >
+                 5.12c / 7c 
+              </option>,
+              <option
+                value="5124"
+              >
+                 5.12d / 7c+ 
+              </option>,
+              <option
+                value="5131"
+              >
+                 5.13a / 7c+ 
+              </option>,
+              <option
+                value="5132"
+              >
+                 5.13b / 8a 
+              </option>,
+              <option
+                value="5133"
+              >
+                 5.13c / 8a+ 
+              </option>,
+              <option
+                value="5134"
+              >
+                 5.13d / 8b 
+              </option>,
+              <option
+                value="5141"
+              >
+                 5.14a / 8b+ 
+              </option>,
+              <option
+                value="5142"
+              >
+                 5.14b / 8c 
+              </option>,
+              <option
+                value="5143"
+              >
+                 5.14c / 8c+ 
+              </option>,
+              <option
+                value="5144"
+              >
+                 5.14d / 9a 
+              </option>,
+              <option
+                value="5151"
+              >
+                 5.15a / 9a+ 
+              </option>,
+              <option
+                value="5152"
+              >
+                 5.15b / 9b
+              </option>,
+              <option
+                value="5153"
+              >
+                 5.15c / 9b+ 
+              </option>,
+            ],
+            "id": "grade",
+            "name": "grade",
+            "onChange": [Function],
+            "value": 5101,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " -- ",
+                "value": "--",
+              },
+              "ref": null,
+              "rendered": " -- ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.6 / 5a ",
+                "value": "5600",
+              },
+              "ref": null,
+              "rendered": " 5.6 / 5a ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.7 / 5b ",
+                "value": "5700",
+              },
+              "ref": null,
+              "rendered": " 5.7 / 5b ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.8 / 5c ",
+                "value": "5800",
+              },
+              "ref": null,
+              "rendered": " 5.8 / 5c ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.9 / 6a ",
+                "value": "5900",
+              },
+              "ref": null,
+              "rendered": " 5.9 / 6a ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.10a / 6a+ ",
+                "value": "5101",
+              },
+              "ref": null,
+              "rendered": " 5.10a / 6a+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.10b / 6a+ ",
+                "value": "5102",
+              },
+              "ref": null,
+              "rendered": " 5.10b / 6a+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.10c / 6b ",
+                "value": "5103",
+              },
+              "ref": null,
+              "rendered": " 5.10c / 6b ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.10d / 6b+ ",
+                "value": "5104",
+              },
+              "ref": null,
+              "rendered": " 5.10d / 6b+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.11a / 6c ",
+                "value": "5111",
+              },
+              "ref": null,
+              "rendered": " 5.11a / 6c ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.11b / 6c+ ",
+                "value": "5112",
+              },
+              "ref": null,
+              "rendered": " 5.11b / 6c+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.11c / 7a ",
+                "value": "5113",
+              },
+              "ref": null,
+              "rendered": " 5.11c / 7a ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.11d / 7a+ ",
+                "value": "5114",
+              },
+              "ref": null,
+              "rendered": " 5.11d / 7a+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.12a / 7b ",
+                "value": "5121",
+              },
+              "ref": null,
+              "rendered": " 5.12a / 7b ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.12b / 7b+ ",
+                "value": "5122",
+              },
+              "ref": null,
+              "rendered": " 5.12b / 7b+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.12c / 7c ",
+                "value": "5123",
+              },
+              "ref": null,
+              "rendered": " 5.12c / 7c ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.12d / 7c+ ",
+                "value": "5124",
+              },
+              "ref": null,
+              "rendered": " 5.12d / 7c+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.13a / 7c+ ",
+                "value": "5131",
+              },
+              "ref": null,
+              "rendered": " 5.13a / 7c+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.13b / 8a ",
+                "value": "5132",
+              },
+              "ref": null,
+              "rendered": " 5.13b / 8a ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.13c / 8a+ ",
+                "value": "5133",
+              },
+              "ref": null,
+              "rendered": " 5.13c / 8a+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.13d / 8b ",
+                "value": "5134",
+              },
+              "ref": null,
+              "rendered": " 5.13d / 8b ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.14a / 8b+ ",
+                "value": "5141",
+              },
+              "ref": null,
+              "rendered": " 5.14a / 8b+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.14b / 8c ",
+                "value": "5142",
+              },
+              "ref": null,
+              "rendered": " 5.14b / 8c ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.14c / 8c+ ",
+                "value": "5143",
+              },
+              "ref": null,
+              "rendered": " 5.14c / 8c+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.14d / 9a ",
+                "value": "5144",
+              },
+              "ref": null,
+              "rendered": " 5.14d / 9a ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.15a / 9a+ ",
+                "value": "5151",
+              },
+              "ref": null,
+              "rendered": " 5.15a / 9a+ ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.15b / 9b",
+                "value": "5152",
+              },
+              "ref": null,
+              "rendered": " 5.15b / 9b",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5.15c / 9b+ ",
+                "value": "5153",
+              },
+              "ref": null,
+              "rendered": " 5.15c / 9b+ ",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="--"
+              >
+                 priority 
+              </option>,
+              <option
+                value="0"
+              >
+                 0 (meh) 
+              </option>,
+              <option
+                value="1"
+              >
+                 1 
+              </option>,
+              <option
+                value="2"
+              >
+                 2 
+              </option>,
+              <option
+                value="3"
+              >
+                 3 
+              </option>,
+              <option
+                value="4"
+              >
+                 4 
+              </option>,
+              <option
+                value="5"
+              >
+                 5 
+              </option>,
+              <option
+                value="6"
+              >
+                 6 
+              </option>,
+              <option
+                value="7"
+              >
+                 7 
+              </option>,
+              <option
+                value="8"
+              >
+                 8 
+              </option>,
+              <option
+                value="9"
+              >
+                 9 
+              </option>,
+              <option
+                value="10"
+              >
+                 10 (this is the only thing I want to climb) 
+              </option>,
+            ],
+            "id": "priority",
+            "name": "priority",
+            "onChange": [Function],
+            "value": 8,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " priority ",
+                "value": "--",
+              },
+              "ref": null,
+              "rendered": " priority ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 0 (meh) ",
+                "value": "0",
+              },
+              "ref": null,
+              "rendered": " 0 (meh) ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 1 ",
+                "value": "1",
+              },
+              "ref": null,
+              "rendered": " 1 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 2 ",
+                "value": "2",
+              },
+              "ref": null,
+              "rendered": " 2 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 3 ",
+                "value": "3",
+              },
+              "ref": null,
+              "rendered": " 3 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 4 ",
+                "value": "4",
+              },
+              "ref": null,
+              "rendered": " 4 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5 ",
+                "value": "5",
+              },
+              "ref": null,
+              "rendered": " 5 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 6 ",
+                "value": "6",
+              },
+              "ref": null,
+              "rendered": " 6 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 7 ",
+                "value": "7",
+              },
+              "ref": null,
+              "rendered": " 7 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 8 ",
+                "value": "8",
+              },
+              "ref": null,
+              "rendered": " 8 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 9 ",
+                "value": "9",
+              },
+              "ref": null,
+              "rendered": " 9 ",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 10 (this is the only thing I want to climb) ",
+                "value": "10",
+              },
+              "ref": null,
+              "rendered": " 10 (this is the only thing I want to climb) ",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "season",
+            "onChange": [Function],
+            "placeholder": "season",
+            "value": "summer",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "# of Moves",
+              <input
+                min="0"
+                name="moves_total"
+                onChange={[Function]}
+                type="number"
+                value={7}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "# of Moves",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "min": "0",
+                "name": "moves_total",
+                "onChange": [Function],
+                "type": "number",
+                "value": 7,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Moves Done",
+              <input
+                max={7}
+                min="0"
+                name="moves_done"
+                onChange={[Function]}
+                type="number"
+                value={3}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Moves Done",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "max": 7,
+                "min": "0",
+                "name": "moves_done",
+                "onChange": [Function],
+                "type": "number",
+                "value": 3,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "High Point",
+              <input
+                max={7}
+                min="0"
+                name="high_point"
+                onChange={[Function]}
+                type="number"
+                value={7}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "High Point",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "max": 7,
+                "min": "0",
+                "name": "high_point",
+                "onChange": [Function],
+                "type": "number",
+                "value": 7,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "maxLength": "500",
+            "name": "caption",
+            "onChange": [Function],
+            "placeholder": "caption",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "textarea",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Save",
+          },
+          "ref": null,
+          "rendered": "Save",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`editForm EditForm Component should match the snapshot with no project 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EditForm
+    disciplineBoulder={false}
+    editProject={[MockFunction]}
+    project={8}
+    projects={
+      Array [
+        Object {
+          "caption": "",
+          "grade": 13,
+          "high_point": 5,
+          "id": 42,
+          "location": "RMNP, CO",
+          "moves_total": 7,
+          "name": "Nuthin But Sunshine",
+        },
+        Object {
+          "caption": "",
+          "grade": 5101,
+          "high_point": 7,
+          "id": 4,
+          "location": "RMNP, CO",
+          "moves_done": 3,
+          "moves_total": 7,
+          "name": "Top Notch",
+          "priority": 8,
+          "season": "summer",
+        },
+      ]
+    }
+    user={
+      Object {
+        "email": "olaf@thatplace.com",
+        "id": 1,
+        "name": "Olaf",
+        "password": "olaf",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          EDIT
         </h2>,
         <input
           autoFocus={true}
@@ -2275,6 +4814,7 @@ ShallowWrapper {
         <label>
           Moves Done
           <input
+            max={0}
             min="0"
             name="moves_done"
             onChange={[Function]}
@@ -2285,6 +4825,7 @@ ShallowWrapper {
         <label>
           High Point
           <input
+            max={0}
             min="0"
             name="high_point"
             onChange={[Function]}
@@ -2300,7 +4841,7 @@ ShallowWrapper {
           value=""
         />,
         <button>
-          Add Project
+          Save
         </button>,
       ],
       "className": "project-form",
@@ -2313,10 +4854,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "ADD PROJECT",
+          "children": "EDIT",
         },
         "ref": null,
-        "rendered": "ADD PROJECT",
+        "rendered": "EDIT",
         "type": "h2",
       },
       Object {
@@ -3121,6 +5662,7 @@ ShallowWrapper {
           "children": Array [
             "Moves Done",
             <input
+              max={0}
               min="0"
               name="moves_done"
               onChange={[Function]}
@@ -3137,6 +5679,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "max": 0,
               "min": "0",
               "name": "moves_done",
               "onChange": [Function],
@@ -3158,6 +5701,7 @@ ShallowWrapper {
           "children": Array [
             "High Point",
             <input
+              max={0}
               min="0"
               name="high_point"
               onChange={[Function]}
@@ -3174,6 +5718,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "max": 0,
               "min": "0",
               "name": "high_point",
               "onChange": [Function],
@@ -3207,10 +5752,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Add Project",
+          "children": "Save",
         },
         "ref": null,
-        "rendered": "Add Project",
+        "rendered": "Save",
         "type": "button",
       },
     ],
@@ -3224,7 +5769,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            ADD PROJECT
+            EDIT
           </h2>,
           <input
             autoFocus={true}
@@ -3472,6 +6017,7 @@ ShallowWrapper {
           <label>
             Moves Done
             <input
+              max={0}
               min="0"
               name="moves_done"
               onChange={[Function]}
@@ -3482,6 +6028,7 @@ ShallowWrapper {
           <label>
             High Point
             <input
+              max={0}
               min="0"
               name="high_point"
               onChange={[Function]}
@@ -3497,7 +6044,7 @@ ShallowWrapper {
             value=""
           />,
           <button>
-            Add Project
+            Save
           </button>,
         ],
         "className": "project-form",
@@ -3510,10 +6057,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "ADD PROJECT",
+            "children": "EDIT",
           },
           "ref": null,
-          "rendered": "ADD PROJECT",
+          "rendered": "EDIT",
           "type": "h2",
         },
         Object {
@@ -4318,6 +6865,7 @@ ShallowWrapper {
             "children": Array [
               "Moves Done",
               <input
+                max={0}
                 min="0"
                 name="moves_done"
                 onChange={[Function]}
@@ -4334,6 +6882,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "max": 0,
                 "min": "0",
                 "name": "moves_done",
                 "onChange": [Function],
@@ -4355,6 +6904,7 @@ ShallowWrapper {
             "children": Array [
               "High Point",
               <input
+                max={0}
                 min="0"
                 name="high_point"
                 onChange={[Function]}
@@ -4371,6 +6921,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "max": 0,
                 "min": "0",
                 "name": "high_point",
                 "onChange": [Function],
@@ -4404,10 +6955,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Add Project",
+            "children": "Save",
           },
           "ref": null,
-          "rendered": "Add Project",
+          "rendered": "Save",
           "type": "button",
         },
       ],

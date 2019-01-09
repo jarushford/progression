@@ -185,6 +185,14 @@ describe('ACTIONS', () => {
 
     expect(result).toEqual(expected)
   })
+
+  it('should TOGGLE_MENU when toggleMenu is called', () => {
+    const expected = { type: 'TOGGLE_MENU' }
+
+    const result = ACTIONS.toggleMenu()
+
+    expect(result).toEqual(expected)
+  })
 })
 
 

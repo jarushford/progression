@@ -4374,6 +4374,89 @@ ShallowWrapper {
 }
 `;
 
+exports[`Project Page ProjectPage Component should match the snapshot with no project 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProjectPage
+    journal={
+      Array [
+        Object {
+          "date": "11/14/15",
+          "entry": "Some stuff about some things",
+        },
+      ]
+    }
+    milestones={
+      Array [
+        Object {
+          "caption": "Did something",
+          "date": "4/6/76",
+        },
+      ]
+    }
+    project={null}
+    user={
+      Object {
+        "email": "solo@solo.com",
+        "name": "Han Solo",
+        "password": "hansolo",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "You have no projects",
+      "className": "no-user-msg",
+    },
+    "ref": null,
+    "rendered": "You have no projects",
+    "type": "h1",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "You have no projects",
+        "className": "no-user-msg",
+      },
+      "ref": null,
+      "rendered": "You have no projects",
+      "type": "h1",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
 exports[`Project Page ProjectPage Component should match the snapshot with no user 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],

@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-class EditForm extends Component {
+export class EditForm extends Component {
   constructor() {
     super()
     this.state = {

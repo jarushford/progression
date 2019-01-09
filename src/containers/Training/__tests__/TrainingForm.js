@@ -33,9 +33,16 @@ describe('TrainingForm', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should match the snapshot for every month', () => {
+    it('should match the snapshot for February', () => {
       const wrapper = shallow(<TrainingForm user={mockUser} addWorkout={mockAdd} />)
       wrapper.setState({ month: '2' })
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should match the snapshot for long months', () => {
+      const wrapper = shallow(<TrainingForm user={mockUser} addWorkout={mockAdd} />)
+      wrapper.setState({ month: '1' })
 
       expect(wrapper).toMatchSnapshot()
     })

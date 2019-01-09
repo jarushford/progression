@@ -17,24 +17,35 @@ describe('Ascents', () => {
         {
           name: 'Top Notch',
           location: 'RMNP, CO',
-          grade: 'V13'
+          grade: 13
         },
         {
           name: 'Megalodon',
           location: 'Newlin, CO',
-          grade: 'V7'
+          grade: 7
+        },
+        {
+          name: 'Nickness Stand',
+          location: 'Newlin, CO',
+          grade: 7
         },
         {
           name: 'Sabretooth',
           location: 'Thunder Ridge, CO',
-          grade: 'V13'
+          grade: 5101
         }
       ]
     })
 
   describe('Ascents Component', () => {
-    it('should match the snapshot', () => {
+    it('should match the snapshot for boulder', () => {
       const wrapper = shallow(<Ascents user={mockUser} ascents={mockAscents} disciplineBoulder={true} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should match the snapshot for sport', () => {
+      const wrapper = shallow(<Ascents user={mockUser} ascents={mockAscents} disciplineBoulder={false} />)
 
       expect(wrapper).toMatchSnapshot()
     })

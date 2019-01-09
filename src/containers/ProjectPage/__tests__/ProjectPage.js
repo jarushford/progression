@@ -54,6 +54,12 @@ describe('Project Page', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
+    it('should match the snapshot with no project', () => {
+      const wrapper = shallow(<ProjectPage user={mockUser} project={null} journal={mockJournal} milestones={mockMilestones} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
     it('should match the snapshot with a completed project', () => {
       const wrapper = shallow(<ProjectPage user={mockUser} project={mockSentProj} journal={mockJournal} milestones={mockMilestones} />)
 

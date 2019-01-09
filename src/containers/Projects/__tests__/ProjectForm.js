@@ -20,8 +20,14 @@ describe('Project Form', () => {
   })
 
   describe('ProjectForm Component', () => {
-    it('should match the snapshot', () => {
+    it('should match the snapshot for boulder', () => {
       const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={true} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    it('should match the snapshot for sport', () => {
+      const wrapper = shallow(<ProjectForm user={mockUser} addProject={mockAddProj} disciplineBoulder={false} />)
 
       expect(wrapper).toMatchSnapshot()
     })
