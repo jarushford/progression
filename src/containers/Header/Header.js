@@ -1,6 +1,6 @@
 import React from 'react'
 import { logoutUser, clearAscents, clearProjects, clearWorkouts, toggleMenu } from '../../actions'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import '../../main.scss'
@@ -34,7 +34,7 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
             type="checkbox"
             id="burger-check"
             checked={menuOpen}
-            onClick={toggleMenu}
+            onChange={toggleMenu}
           />
           <label htmlFor="burger-check" className="burger">
             <div className="burgerbar b1"></div>
@@ -42,9 +42,9 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
             <div className="burgerbar b3"></div>
           </label>
           <div className="drop-box">
-            <NavLink onClick={toggleMenu} to="/training" className="nav-item drop-nav"> TRAINING </NavLink>
-            <NavLink onClick={toggleMenu} to="/projects" className="nav-item drop-nav"> PROJECTS </NavLink>
-            <NavLink onClick={toggleMenu} to="/ascents" className="nav-item drop-nav"> ASCENTS </NavLink>
+            <Link onClick={toggleMenu} to="/training" className="nav-item drop-nav"> TRAINING </Link>
+            <Link onClick={toggleMenu} to="/projects" className="nav-item drop-nav"> PROJECTS </Link>
+            <Link onClick={toggleMenu} to="/ascents" className="nav-item drop-nav"> ASCENTS </Link>
             <Link
               to="/"
               className="logout-link drop-logout"
@@ -67,17 +67,41 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
     )
   }
 
-    return (
-      <div className="header">
-        <NavLink to="/">
-          <div className="logo" />
+  return (
+    <div className="header">
+      {userButton}
+      <NavLink to="/">
+        <div className="logo" />
+      </NavLink>
+      <NavLink
+        to="/training"
+        onClick={() => {
+          toggleMenu()
+          toggleMenu()
+        }} 
+        className="nav-item wide-nav"> 
+          TRAINING 
         </NavLink>
-        <NavLink to="/training" className="nav-item wide-nav"> TRAINING </NavLink>
-        <NavLink to="/projects" className="nav-item wide-nav"> PROJECTS </NavLink>
-        <NavLink to="/ascents" className="nav-item wide-nav"> ASCENTS </NavLink>
-        {userButton}
-      </div>
-    )
+      <NavLink
+        to="/projects"
+        onClick={() => {
+          toggleMenu()
+          toggleMenu()
+        }} 
+        className="nav-item wide-nav"> 
+          PROJECTS 
+        </NavLink>
+      <NavLink
+        to="/ascents" 
+        nClick={() => {
+          toggleMenu()
+          toggleMenu()
+        }} 
+        className="nav-item wide-nav"> 
+          ASCENTS 
+        </NavLink>
+    </div>
+  )
 }
 
 export const mapStateToProps = (state) => ({
@@ -93,7 +117,7 @@ export const mapDispatchToProps = (dispatch) => ({
   toggleMenu: () => dispatch(toggleMenu())
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header))
 
 Header.propTypes = {
   currentUser: PropTypes.object.isRequired,
