@@ -17,7 +17,7 @@ export const loginUserThunk = (user) => {
       }
       const result = await response.json()
       const currentUser = result.data
-      dispatch(setUser(currentUser))
+      dispatch(setUser({ id: currentUser.id, name: currentUser.name, email: currentUser.email }))
       await dispatch(fetchDataThunk(currentUser.id, '', 'ascent'))
       await dispatch(fetchDataThunk(currentUser.id, '', 'project'))
       await dispatch(fetchDataThunk(currentUser.id, '', 'workout'))
