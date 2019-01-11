@@ -12,7 +12,7 @@ export const addNewUserThunk = (user) => {
         root = 'https://progression-backend.herokuapp.com'
       }
 
-      const url = `${root}/api/progressionusers/new`
+      const url = `https://progression-backend.herokuapp.com/api/progressionusers/new`
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify(user),

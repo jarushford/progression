@@ -12,7 +12,6 @@ export const addDataThunk = (data, type) => {
       } else {
         root = 'https://progression-backend.herokuapp.com'
       }
-
       const url = `${root}/api/progressionusers/${type}s/new`
       const response = await fetch(url, {
         method: 'POST',
