@@ -7,9 +7,16 @@ export const deleteDataThunk = (item_id, user_id, project_id, type) => {
     try {
       const data = {item_id, user_id, project_id}
       let url
+      let root
+      if (process.env.NODE_ENV === 'development') {
+        root = 'http://localhost:3000'
+      } else {
+        root = 'https://progression-backend.herokuapp.com'
+      }
+
       type === 'journal' || type === 'milestone'
-        ? url = `http://localhost:3000/api/progressionusers/${user_id}/projects/${project_id}/${type}s/${item_id}`
-        : url = `http://localhost:3000/api/progressionusers/${user_id}/${type}s/${item_id}`
+        ? url = `${root}/api/progressionusers/${user_id}/projects/${project_id}/${type}s/${item_id}`
+        : url = `${root}/api/progressionusers/${user_id}/${type}s/${item_id}`
 
       const response = await fetch(url, {
         method: 'DELETE',

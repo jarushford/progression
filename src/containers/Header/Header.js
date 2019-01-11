@@ -93,7 +93,7 @@ export function Header({ currentUser, logoutUser, clearAscents, clearProjects, c
         </NavLink>
       <NavLink
         to="/ascents" 
-        nClick={() => {
+        onClick={() => {
           toggleMenu()
           toggleMenu()
         }} 

@@ -4,7 +4,15 @@ import { loginUserThunk } from './loginUser'
 export const addNewUserThunk = (user) => {
   return async (dispatch) => {
     try {
-      const url = 'http://localhost:3000/api/progressionusers/new'
+
+      let root
+      if (process.env.NODE_ENV === 'development') {
+        root = 'http://localhost:3000'
+      } else {
+        root = 'https://progression-backend.herokuapp.com'
+      }
+
+      const url = `${root}/api/progressionusers/new`
       const response = await fetch(url, {
         method: 'POST',
         body: JSON.stringify(user),
