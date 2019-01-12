@@ -3,7 +3,7 @@
 ### Abstract 
 
 
-### View live at [https://www.climb-progression.com](https://www.climb-progression.com)
+### View live at [https://climb-progression.com](https://climb-progression.com)
 
 ### Installation & Set Up
 
