@@ -14,13 +14,15 @@ export class Login extends Component {
       signUpEmail: '',
       signUpName: '',
       signUpPassword: '',
-      loggedIn: false
+      loggedIn: false,
+      loggingIn: false
     }
   }
 
   handleLogin = async (e) => {
     const { loginUser } = this.props
     e.preventDefault()
+    await this.setState({ loggingIn: true })
     const user = {
       email: this.state.loginEmail.toLowerCase(),
       password: this.state.loginPassword
@@ -34,6 +36,7 @@ export class Login extends Component {
   handleSignUp = async (e) => {
     const { addNewUser } = this.props
     e.preventDefault()
+    await this.setState({ loggingIn: true })
     const user = {
       name: this.state.signUpName,
       email: this.state.signUpEmail,
@@ -51,10 +54,20 @@ export class Login extends Component {
   }
 
   render() {
-    const { loginEmail, loginPassword, signUpName, signUpEmail, signUpPassword, loggedIn } = this.state
+    const { loginEmail, loginPassword, signUpName, signUpEmail, signUpPassword, loggedIn, loggingIn } = this.state
 
     if (loggedIn) {
       return <Redirect to='/' />
+    }
+
+    if (loggingIn) {
+      return (
+        <div className="loader">
+          <div className="spin1" />
+          Loading...
+          <div className="spin2" />
+        </div>
+      )
     }
 
     return (

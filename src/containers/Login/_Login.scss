@@ -46,6 +46,58 @@
   }
 }
 
+.loader {
+  margin: 160px auto;
+  width: 250px;
+  height: 250px;
+  background: $lightGrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  color: $darkGrey;
+  box-shadow: 0 0 30px 2px $darkGrey;
+  position: relative;
+
+  div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $accent;
+    box-shadow: 0 0 10px 1px $accent,
+                0 -8px 10px 1px $accent,
+                0 -18px 20px 1px $accent;
+    position: absolute;
+  }
+}
+
+.spin1 {
+  animation: rotate1 3s linear infinite;
+}
+
+.spin2 {
+  animation: rotate2 3s linear infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg) translateX(105px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(105px); 
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(180deg) translateX(105px);
+  }
+  100% {
+    transform: rotate(540deg) translateX(105px); 
+  }
+}
+
 @media screen and (max-width: 750px) {
   .login-section {
     flex-direction: column;
