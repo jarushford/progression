@@ -19,7 +19,9 @@ Run npm start and visit localhost:3000 in your browser
 
 ```
 
-
+![alt text](src/assets/home.png)
+![alt text](src/assets/calendar.png)
+![alt text](src/assets/project.png)
 
 #### Author
 
