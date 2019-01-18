@@ -23,6 +23,13 @@ describe('Login', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
+    it('should match the snapshot if loading', () => {
+      const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
+      wrapper.setState({ loggingIn: true })
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
     it('should have the correct default state', () => {
       const expected =  {
         loginEmail: '',
@@ -30,7 +37,8 @@ describe('Login', () => {
         signUpEmail: '',
         signUpName: '',
         signUpPassword: '',
-        loggedIn: false
+        loggedIn: false,
+        loggingIn: false
       }
       const wrapper = shallow(<Login loginUser={mockLogin} addNewUser={mockSignup} />)
 

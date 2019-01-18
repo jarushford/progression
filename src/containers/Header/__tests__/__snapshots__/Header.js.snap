@@ -31,39 +31,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          to="/"
-        >
-          <div
-            className="logo"
-          />
-        </NavLink>,
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="nav-item wide-nav"
-          to="/training"
-        >
-           TRAINING 
-        </NavLink>,
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="nav-item wide-nav"
-          to="/projects"
-        >
-           PROJECTS 
-        </NavLink>,
-        <NavLink
-          activeClassName="active"
-          aria-current="page"
-          className="nav-item wide-nav"
-          to="/ascents"
-        >
-           ASCENTS 
-        </NavLink>,
         <div>
           <div
             className="current-user"
@@ -97,7 +64,7 @@ ShallowWrapper {
           >
             <input
               id="burger-check"
-              onClick={[MockFunction]}
+              onChange={[MockFunction]}
               type="checkbox"
             />
             <label
@@ -117,33 +84,30 @@ ShallowWrapper {
             <div
               className="drop-box"
             >
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
+              <Link
                 className="nav-item drop-nav"
                 onClick={[MockFunction]}
+                replace={false}
                 to="/training"
               >
                  TRAINING 
-              </NavLink>
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
+              </Link>
+              <Link
                 className="nav-item drop-nav"
                 onClick={[MockFunction]}
+                replace={false}
                 to="/projects"
               >
                  PROJECTS 
-              </NavLink>
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
+              </Link>
+              <Link
                 className="nav-item drop-nav"
                 onClick={[MockFunction]}
+                replace={false}
                 to="/ascents"
               >
                  ASCENTS 
-              </NavLink>
+              </Link>
               <Link
                 className="logout-link drop-logout"
                 onClick={[Function]}
@@ -157,82 +121,47 @@ ShallowWrapper {
             </div>
           </div>
         </div>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/"
+        >
+          <div
+            className="logo"
+          />
+        </NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="nav-item wide-nav"
+          onClick={[Function]}
+          to="/training"
+        >
+          TRAINING
+        </NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="nav-item wide-nav"
+          onClick={[Function]}
+          to="/projects"
+        >
+          PROJECTS
+        </NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="nav-item wide-nav"
+          onClick={[Function]}
+          to="/ascents"
+        >
+          ASCENTS
+        </NavLink>,
       ],
       "className": "header",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "aria-current": "page",
-          "children": <div
-            className="logo"
-          />,
-          "to": "/",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "logo",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "aria-current": "page",
-          "children": " TRAINING ",
-          "className": "nav-item wide-nav",
-          "to": "/training",
-        },
-        "ref": null,
-        "rendered": " TRAINING ",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "aria-current": "page",
-          "children": " PROJECTS ",
-          "className": "nav-item wide-nav",
-          "to": "/projects",
-        },
-        "ref": null,
-        "rendered": " PROJECTS ",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "aria-current": "page",
-          "children": " ASCENTS ",
-          "className": "nav-item wide-nav",
-          "to": "/ascents",
-        },
-        "ref": null,
-        "rendered": " ASCENTS ",
-        "type": [Function],
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -271,7 +200,7 @@ ShallowWrapper {
             >
               <input
                 id="burger-check"
-                onClick={[MockFunction]}
+                onChange={[MockFunction]}
                 type="checkbox"
               />
               <label
@@ -291,33 +220,30 @@ ShallowWrapper {
               <div
                 className="drop-box"
               >
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
+                <Link
                   className="nav-item drop-nav"
                   onClick={[MockFunction]}
+                  replace={false}
                   to="/training"
                 >
                    TRAINING 
-                </NavLink>
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
+                </Link>
+                <Link
                   className="nav-item drop-nav"
                   onClick={[MockFunction]}
+                  replace={false}
                   to="/projects"
                 >
                    PROJECTS 
-                </NavLink>
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
+                </Link>
+                <Link
                   className="nav-item drop-nav"
                   onClick={[MockFunction]}
+                  replace={false}
                   to="/ascents"
                 >
                    ASCENTS 
-                </NavLink>
+                </Link>
                 <Link
                   className="logout-link drop-logout"
                   onClick={[Function]}
@@ -481,7 +407,7 @@ ShallowWrapper {
               "children": Array [
                 <input
                   id="burger-check"
-                  onClick={[MockFunction]}
+                  onChange={[MockFunction]}
                   type="checkbox"
                 />,
                 <label
@@ -501,33 +427,30 @@ ShallowWrapper {
                 <div
                   className="drop-box"
                 >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
+                  <Link
                     className="nav-item drop-nav"
                     onClick={[MockFunction]}
+                    replace={false}
                     to="/training"
                   >
                      TRAINING 
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
+                  </Link>
+                  <Link
                     className="nav-item drop-nav"
                     onClick={[MockFunction]}
+                    replace={false}
                     to="/projects"
                   >
                      PROJECTS 
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
+                  </Link>
+                  <Link
                     className="nav-item drop-nav"
                     onClick={[MockFunction]}
+                    replace={false}
                     to="/ascents"
                   >
                      ASCENTS 
-                  </NavLink>
+                  </Link>
                   <Link
                     className="logout-link drop-logout"
                     onClick={[Function]}
@@ -551,7 +474,7 @@ ShallowWrapper {
                 "props": Object {
                   "checked": undefined,
                   "id": "burger-check",
-                  "onClick": [MockFunction],
+                  "onChange": [MockFunction],
                   "type": "checkbox",
                 },
                 "ref": null,
@@ -621,33 +544,30 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
+                    <Link
                       className="nav-item drop-nav"
                       onClick={[MockFunction]}
+                      replace={false}
                       to="/training"
                     >
                        TRAINING 
-                    </NavLink>,
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
+                    </Link>,
+                    <Link
                       className="nav-item drop-nav"
                       onClick={[MockFunction]}
+                      replace={false}
                       to="/projects"
                     >
                        PROJECTS 
-                    </NavLink>,
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
+                    </Link>,
+                    <Link
                       className="nav-item drop-nav"
                       onClick={[MockFunction]}
+                      replace={false}
                       to="/ascents"
                     >
                        ASCENTS 
-                    </NavLink>,
+                    </Link>,
                     <Link
                       className="logout-link drop-logout"
                       onClick={[Function]}
@@ -666,13 +586,12 @@ ShallowWrapper {
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "function",
+                    "nodeType": "class",
                     "props": Object {
-                      "activeClassName": "active",
-                      "aria-current": "page",
                       "children": " TRAINING ",
                       "className": "nav-item drop-nav",
                       "onClick": [MockFunction],
+                      "replace": false,
                       "to": "/training",
                     },
                     "ref": null,
@@ -682,13 +601,12 @@ ShallowWrapper {
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "function",
+                    "nodeType": "class",
                     "props": Object {
-                      "activeClassName": "active",
-                      "aria-current": "page",
                       "children": " PROJECTS ",
                       "className": "nav-item drop-nav",
                       "onClick": [MockFunction],
+                      "replace": false,
                       "to": "/projects",
                     },
                     "ref": null,
@@ -698,13 +616,12 @@ ShallowWrapper {
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "function",
+                    "nodeType": "class",
                     "props": Object {
-                      "activeClassName": "active",
-                      "aria-current": "page",
                       "children": " ASCENTS ",
                       "className": "nav-item drop-nav",
                       "onClick": [MockFunction],
+                      "replace": false,
                       "to": "/ascents",
                     },
                     "ref": null,
@@ -747,6 +664,80 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": <div
+            className="logo"
+          />,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "logo",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "TRAINING",
+          "className": "nav-item wide-nav",
+          "onClick": [Function],
+          "to": "/training",
+        },
+        "ref": null,
+        "rendered": "TRAINING",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "PROJECTS",
+          "className": "nav-item wide-nav",
+          "onClick": [Function],
+          "to": "/projects",
+        },
+        "ref": null,
+        "rendered": "PROJECTS",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "ASCENTS",
+          "className": "nav-item wide-nav",
+          "onClick": [Function],
+          "to": "/ascents",
+        },
+        "ref": null,
+        "rendered": "ASCENTS",
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -757,39 +748,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            to="/"
-          >
-            <div
-              className="logo"
-            />
-          </NavLink>,
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            className="nav-item wide-nav"
-            to="/training"
-          >
-             TRAINING 
-          </NavLink>,
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            className="nav-item wide-nav"
-            to="/projects"
-          >
-             PROJECTS 
-          </NavLink>,
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            className="nav-item wide-nav"
-            to="/ascents"
-          >
-             ASCENTS 
-          </NavLink>,
           <div>
             <div
               className="current-user"
@@ -823,7 +781,7 @@ ShallowWrapper {
             >
               <input
                 id="burger-check"
-                onClick={[MockFunction]}
+                onChange={[MockFunction]}
                 type="checkbox"
               />
               <label
@@ -843,33 +801,30 @@ ShallowWrapper {
               <div
                 className="drop-box"
               >
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
+                <Link
                   className="nav-item drop-nav"
                   onClick={[MockFunction]}
+                  replace={false}
                   to="/training"
                 >
                    TRAINING 
-                </NavLink>
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
+                </Link>
+                <Link
                   className="nav-item drop-nav"
                   onClick={[MockFunction]}
+                  replace={false}
                   to="/projects"
                 >
                    PROJECTS 
-                </NavLink>
-                <NavLink
-                  activeClassName="active"
-                  aria-current="page"
+                </Link>
+                <Link
                   className="nav-item drop-nav"
                   onClick={[MockFunction]}
+                  replace={false}
                   to="/ascents"
                 >
                    ASCENTS 
-                </NavLink>
+                </Link>
                 <Link
                   className="logout-link drop-logout"
                   onClick={[Function]}
@@ -883,82 +838,47 @@ ShallowWrapper {
               </div>
             </div>
           </div>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/"
+          >
+            <div
+              className="logo"
+            />
+          </NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="nav-item wide-nav"
+            onClick={[Function]}
+            to="/training"
+          >
+            TRAINING
+          </NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="nav-item wide-nav"
+            onClick={[Function]}
+            to="/projects"
+          >
+            PROJECTS
+          </NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="nav-item wide-nav"
+            onClick={[Function]}
+            to="/ascents"
+          >
+            ASCENTS
+          </NavLink>,
         ],
         "className": "header",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": <div
-              className="logo"
-            />,
-            "to": "/",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "logo",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "div",
-          },
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": " TRAINING ",
-            "className": "nav-item wide-nav",
-            "to": "/training",
-          },
-          "ref": null,
-          "rendered": " TRAINING ",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": " PROJECTS ",
-            "className": "nav-item wide-nav",
-            "to": "/projects",
-          },
-          "ref": null,
-          "rendered": " PROJECTS ",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": " ASCENTS ",
-            "className": "nav-item wide-nav",
-            "to": "/ascents",
-          },
-          "ref": null,
-          "rendered": " ASCENTS ",
-          "type": [Function],
-        },
         Object {
           "instance": null,
           "key": undefined,
@@ -997,7 +917,7 @@ ShallowWrapper {
               >
                 <input
                   id="burger-check"
-                  onClick={[MockFunction]}
+                  onChange={[MockFunction]}
                   type="checkbox"
                 />
                 <label
@@ -1017,33 +937,30 @@ ShallowWrapper {
                 <div
                   className="drop-box"
                 >
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
+                  <Link
                     className="nav-item drop-nav"
                     onClick={[MockFunction]}
+                    replace={false}
                     to="/training"
                   >
                      TRAINING 
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
+                  </Link>
+                  <Link
                     className="nav-item drop-nav"
                     onClick={[MockFunction]}
+                    replace={false}
                     to="/projects"
                   >
                      PROJECTS 
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    aria-current="page"
+                  </Link>
+                  <Link
                     className="nav-item drop-nav"
                     onClick={[MockFunction]}
+                    replace={false}
                     to="/ascents"
                   >
                      ASCENTS 
-                  </NavLink>
+                  </Link>
                   <Link
                     className="logout-link drop-logout"
                     onClick={[Function]}
@@ -1207,7 +1124,7 @@ ShallowWrapper {
                 "children": Array [
                   <input
                     id="burger-check"
-                    onClick={[MockFunction]}
+                    onChange={[MockFunction]}
                     type="checkbox"
                   />,
                   <label
@@ -1227,33 +1144,30 @@ ShallowWrapper {
                   <div
                     className="drop-box"
                   >
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
+                    <Link
                       className="nav-item drop-nav"
                       onClick={[MockFunction]}
+                      replace={false}
                       to="/training"
                     >
                        TRAINING 
-                    </NavLink>
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
+                    </Link>
+                    <Link
                       className="nav-item drop-nav"
                       onClick={[MockFunction]}
+                      replace={false}
                       to="/projects"
                     >
                        PROJECTS 
-                    </NavLink>
-                    <NavLink
-                      activeClassName="active"
-                      aria-current="page"
+                    </Link>
+                    <Link
                       className="nav-item drop-nav"
                       onClick={[MockFunction]}
+                      replace={false}
                       to="/ascents"
                     >
                        ASCENTS 
-                    </NavLink>
+                    </Link>
                     <Link
                       className="logout-link drop-logout"
                       onClick={[Function]}
@@ -1277,7 +1191,7 @@ ShallowWrapper {
                   "props": Object {
                     "checked": undefined,
                     "id": "burger-check",
-                    "onClick": [MockFunction],
+                    "onChange": [MockFunction],
                     "type": "checkbox",
                   },
                   "ref": null,
@@ -1347,33 +1261,30 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
+                      <Link
                         className="nav-item drop-nav"
                         onClick={[MockFunction]}
+                        replace={false}
                         to="/training"
                       >
                          TRAINING 
-                      </NavLink>,
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
+                      </Link>,
+                      <Link
                         className="nav-item drop-nav"
                         onClick={[MockFunction]}
+                        replace={false}
                         to="/projects"
                       >
                          PROJECTS 
-                      </NavLink>,
-                      <NavLink
-                        activeClassName="active"
-                        aria-current="page"
+                      </Link>,
+                      <Link
                         className="nav-item drop-nav"
                         onClick={[MockFunction]}
+                        replace={false}
                         to="/ascents"
                       >
                          ASCENTS 
-                      </NavLink>,
+                      </Link>,
                       <Link
                         className="logout-link drop-logout"
                         onClick={[Function]}
@@ -1392,13 +1303,12 @@ ShallowWrapper {
                     Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "function",
+                      "nodeType": "class",
                       "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
                         "children": " TRAINING ",
                         "className": "nav-item drop-nav",
                         "onClick": [MockFunction],
+                        "replace": false,
                         "to": "/training",
                       },
                       "ref": null,
@@ -1408,13 +1318,12 @@ ShallowWrapper {
                     Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "function",
+                      "nodeType": "class",
                       "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
                         "children": " PROJECTS ",
                         "className": "nav-item drop-nav",
                         "onClick": [MockFunction],
+                        "replace": false,
                         "to": "/projects",
                       },
                       "ref": null,
@@ -1424,13 +1333,12 @@ ShallowWrapper {
                     Object {
                       "instance": null,
                       "key": undefined,
-                      "nodeType": "function",
+                      "nodeType": "class",
                       "props": Object {
-                        "activeClassName": "active",
-                        "aria-current": "page",
                         "children": " ASCENTS ",
                         "className": "nav-item drop-nav",
                         "onClick": [MockFunction],
+                        "replace": false,
                         "to": "/ascents",
                       },
                       "ref": null,
@@ -1472,6 +1380,80 @@ ShallowWrapper {
             },
           ],
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": <div
+              className="logo"
+            />,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "logo",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "TRAINING",
+            "className": "nav-item wide-nav",
+            "onClick": [Function],
+            "to": "/training",
+          },
+          "ref": null,
+          "rendered": "TRAINING",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "PROJECTS",
+            "className": "nav-item wide-nav",
+            "onClick": [Function],
+            "to": "/projects",
+          },
+          "ref": null,
+          "rendered": "PROJECTS",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "ASCENTS",
+            "className": "nav-item wide-nav",
+            "onClick": [Function],
+            "to": "/ascents",
+          },
+          "ref": null,
+          "rendered": "ASCENTS",
+          "type": [Function],
         },
       ],
       "type": "div",
@@ -1528,6 +1510,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <Link
+          replace={false}
+          to="/login"
+        >
+          <button>
+            Login / Sign Up
+          </button>
+        </Link>,
         <NavLink
           activeClassName="active"
           aria-current="page"
@@ -1541,39 +1531,59 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="nav-item wide-nav"
+          onClick={[Function]}
           to="/training"
         >
-           TRAINING 
+          TRAINING
         </NavLink>,
         <NavLink
           activeClassName="active"
           aria-current="page"
           className="nav-item wide-nav"
+          onClick={[Function]}
           to="/projects"
         >
-           PROJECTS 
+          PROJECTS
         </NavLink>,
         <NavLink
           activeClassName="active"
           aria-current="page"
           className="nav-item wide-nav"
+          onClick={[Function]}
           to="/ascents"
         >
-           ASCENTS 
+          ASCENTS
         </NavLink>,
-        <Link
-          replace={false}
-          to="/login"
-        >
-          <button>
-            Login / Sign Up
-          </button>
-        </Link>,
       ],
       "className": "header",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <button>
+            Login / Sign Up
+          </button>,
+          "replace": false,
+          "to": "/login",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Login / Sign Up",
+          },
+          "ref": null,
+          "rendered": "Login / Sign Up",
+          "type": "button",
+        },
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -1607,12 +1617,13 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "aria-current": "page",
-          "children": " TRAINING ",
+          "children": "TRAINING",
           "className": "nav-item wide-nav",
+          "onClick": [Function],
           "to": "/training",
         },
         "ref": null,
-        "rendered": " TRAINING ",
+        "rendered": "TRAINING",
         "type": [Function],
       },
       Object {
@@ -1622,12 +1633,13 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "aria-current": "page",
-          "children": " PROJECTS ",
+          "children": "PROJECTS",
           "className": "nav-item wide-nav",
+          "onClick": [Function],
           "to": "/projects",
         },
         "ref": null,
-        "rendered": " PROJECTS ",
+        "rendered": "PROJECTS",
         "type": [Function],
       },
       Object {
@@ -1637,37 +1649,13 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "aria-current": "page",
-          "children": " ASCENTS ",
+          "children": "ASCENTS",
           "className": "nav-item wide-nav",
+          "onClick": [Function],
           "to": "/ascents",
         },
         "ref": null,
-        "rendered": " ASCENTS ",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <button>
-            Login / Sign Up
-          </button>,
-          "replace": false,
-          "to": "/login",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Login / Sign Up",
-          },
-          "ref": null,
-          "rendered": "Login / Sign Up",
-          "type": "button",
-        },
+        "rendered": "ASCENTS",
         "type": [Function],
       },
     ],
@@ -1680,6 +1668,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <Link
+            replace={false}
+            to="/login"
+          >
+            <button>
+              Login / Sign Up
+            </button>
+          </Link>,
           <NavLink
             activeClassName="active"
             aria-current="page"
@@ -1693,39 +1689,59 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="nav-item wide-nav"
+            onClick={[Function]}
             to="/training"
           >
-             TRAINING 
+            TRAINING
           </NavLink>,
           <NavLink
             activeClassName="active"
             aria-current="page"
             className="nav-item wide-nav"
+            onClick={[Function]}
             to="/projects"
           >
-             PROJECTS 
+            PROJECTS
           </NavLink>,
           <NavLink
             activeClassName="active"
             aria-current="page"
             className="nav-item wide-nav"
+            onClick={[Function]}
             to="/ascents"
           >
-             ASCENTS 
+            ASCENTS
           </NavLink>,
-          <Link
-            replace={false}
-            to="/login"
-          >
-            <button>
-              Login / Sign Up
-            </button>
-          </Link>,
         ],
         "className": "header",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <button>
+              Login / Sign Up
+            </button>,
+            "replace": false,
+            "to": "/login",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login / Sign Up",
+            },
+            "ref": null,
+            "rendered": "Login / Sign Up",
+            "type": "button",
+          },
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -1759,12 +1775,13 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "aria-current": "page",
-            "children": " TRAINING ",
+            "children": "TRAINING",
             "className": "nav-item wide-nav",
+            "onClick": [Function],
             "to": "/training",
           },
           "ref": null,
-          "rendered": " TRAINING ",
+          "rendered": "TRAINING",
           "type": [Function],
         },
         Object {
@@ -1774,12 +1791,13 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "aria-current": "page",
-            "children": " PROJECTS ",
+            "children": "PROJECTS",
             "className": "nav-item wide-nav",
+            "onClick": [Function],
             "to": "/projects",
           },
           "ref": null,
-          "rendered": " PROJECTS ",
+          "rendered": "PROJECTS",
           "type": [Function],
         },
         Object {
@@ -1789,37 +1807,13 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "aria-current": "page",
-            "children": " ASCENTS ",
+            "children": "ASCENTS",
             "className": "nav-item wide-nav",
+            "onClick": [Function],
             "to": "/ascents",
           },
           "ref": null,
-          "rendered": " ASCENTS ",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <button>
-              Login / Sign Up
-            </button>,
-            "replace": false,
-            "to": "/login",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Login / Sign Up",
-            },
-            "ref": null,
-            "rendered": "Login / Sign Up",
-            "type": "button",
-          },
+          "rendered": "ASCENTS",
           "type": [Function],
         },
       ],
