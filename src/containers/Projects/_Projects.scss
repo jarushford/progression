@@ -111,9 +111,10 @@ input[type=number] {
 
 @media screen and (max-width: 380px) {
   button.add-project {
-    width: 110px;
+    width: 120px;
     font-size: .8rem;
     margin-left: 5px;
+    margin-right: 10px;
   }
 
   .project-form label {

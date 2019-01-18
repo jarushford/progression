@@ -300,4 +300,8 @@ input[type="checkbox"]:checked ~ .burger .b3 {
   .current-user {
     display: none;
   }
+
+  .header button {
+    width: 155px;
+  }
 }

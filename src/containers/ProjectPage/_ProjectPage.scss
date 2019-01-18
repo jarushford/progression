@@ -8,6 +8,7 @@
 .add-session,
 .add-milestone {
   @include button();
+  width: 160px;
 }
 
 .add-session {
@@ -280,5 +281,9 @@
   .project-header {
     height: 175px;
     padding-right: 0;
+  }
+
+  .data-container h3 {
+    padding: 11px 0;
   }
 }
